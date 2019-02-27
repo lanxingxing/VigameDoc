@@ -11,22 +11,20 @@
     无
 ```
 
-## Manifest参数选项
-
-```text
-无
-```
-
-## 配置文件说明
-
-```text
-无
-```
-
 ## 混淆过滤
 
 ```text
-无
+-keep class com.qq.e.** {
+      public protected *;
+  }
+-keep class android.support.v4.app.NotificationCompat**{
+      public *;
+}
+#百度SDK
+-keep class com.baidu.mobads.*.** { *; }
+#vivoSDK
+-keep class com.vivo.mobilead.*.** { *; }
+-dontwarn com.androidquery.auth.**
 ```
 
 ## 集成测试
