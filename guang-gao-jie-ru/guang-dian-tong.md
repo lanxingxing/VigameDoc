@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-	implementation 'com.libVigame.AD2:GDTUnion:2.4.3'
+	implementation 'com.libVigame.AD:GDTUnion:2.4.3'
 	和
     implementation 'com.libVigame.AD2:GDTUnion:2.4.3'
 ```
