@@ -1,4 +1,4 @@
-# oppo接入参考
+# oppo
 
 ## Getting Super Powers
 
