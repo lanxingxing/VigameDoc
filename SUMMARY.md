@@ -13,7 +13,7 @@
   * [酷派](qu-dao-jie-ru-can-kao/coolpad.md)
   * [安智](qu-dao-jie-ru-can-kao/an-zhi.md)
   * [三星](qu-dao-jie-ru-can-kao/san-xing.md)
-  * [华为](qu-dao-jie-ru-can-kao/hua-wei-jie-ru-can-kao.md)
+  * [华为](qu-dao-jie-ru-can-kao/huawei.md)
   * [oppo](qu-dao-jie-ru-can-kao/oppo-jie-ru-can-kao.md)
   * [vivo](qu-dao-jie-ru-can-kao/vivo-jie-ru-can-kao.md)
   * [360](qu-dao-jie-ru-can-kao/360.md)
