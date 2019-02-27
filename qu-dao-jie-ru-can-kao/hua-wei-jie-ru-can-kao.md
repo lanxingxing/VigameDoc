@@ -1,24 +1,26 @@
-## 华为接入参考
-### 模块引入
+# 华为接入参考
 
-```
+## 模块引入
+
+```text
     implementation 'com.libVigame.Pay:Huawei:2.2.5'
-
 ```
 
-### Manifest参数选项
+## Manifest参数选项
 
-参数 | 说明 | 备注
----|---|---
-HWCpId | 华为商户id | eg：890086000102058425
-HWAppId | 华为应用id | eg：10762302
+| 参数 | 说明 | 备注 |
+| :--- | :--- | :--- |
+| HWCpId | 华为商户id | eg：890086000102058425 |
+| HWAppId | 华为应用id | eg：10762302 |
 
-### 配置文件说明
-assets目录加入feedata_huawei.xml
-```
+## 配置文件说明
+
+assets目录加入feedata\_huawei.xml
+
+```text
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
-	<company>深圳市动能无线传媒有限公司</company>
+    <company>深圳市动能无线传媒有限公司</company>
     <!--华为支付公钥-->
     <appkey>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlohZLPbK/tKC7YlAhc81gV2pNEap1Odty3C+10FMyCrzb5PdCc6rSXboNhJTK6UdskAI3GADkcpDE7aohlxkQCOPChTTXQ5b6P712WyR0unORLod3bkJ6i/RluuW9QhycdR7k2zLgbYlCL35on3L7SJDJxJ1IwcTSZc0EkhmGifTV/5+ubAt/RtiCBtm7O8Q7hmWqSSXE+uFi+MlE8Y0KzkdWh3VTsb1928R7MIAVou1ob4i3eKcSQH6ieWId9+Cqk0u4zfXr6zYjv/CmJCGV2HFHP8I3WdDGd9Q7loyYm+eyQsN5DwOw0e1CvVKgSrB5TOBY4i8eaSng9HH4krlAwIDAQAB</appkey>
     <!--华为应用id-->
@@ -32,12 +34,11 @@ assets目录加入feedata_huawei.xml
         <desc>测试华为计费</desc>
     </feeinfo>
 </data>
-
 ```
 
-### 混淆过滤
+## 混淆过滤
 
-```
+```text
 #华为
 -keep class com.huawei.**
 -keep class com.huawei.**{*;}
@@ -60,14 +61,9 @@ assets目录加入feedata_huawei.xml
 -keep class * extends com.huawei.android.hms.agent.common.INoProguard {*;}
 ```
 
-### 集成测试
-如何判断sdk是否初始化成功？  
+## 集成测试
+
+如何判断sdk是否初始化成功？
 
 可通过名为"HuaweiAgent"的Tag查看日志，登陆成功会有“game login: onResult: retCode=”等日志输出。
-
-
-
-
-
-
 

@@ -1,39 +1,37 @@
-# Summary
-
-
+# Table of contents
 
 * [功能介绍](README.md)
-* 快速集成指南
-  - Android接入
-  - IOS接入
-* 渠道接入参考
-  - [华为接入参考](channel/华为接入参考.md)
-  - oppo接入参考
-  - vivo接入参考
-  - 360
-  - 小米
-  - 金立
-  - 魅族
-  - 4399
-  - GooglePlay
-* 社交接入
-  - 微信
-  - Facebook
-* 广告接入
-  - 头条
-  - 广点通
-  - OneWay
-  - 玩转互联
-  - API
-  - 百度
-  - vivo
-  - oppo
-  - unity
-  - 神奇广告
-  - Mobivista
-  - 魅族
-  - 小米
-* 统计接入
-  - umeng
-  - DateEyeTrcking
+* [快速集成指南](kuai-su-ji-cheng-zhi-nan/README.md)
+  * [Android接入](kuai-su-ji-cheng-zhi-nan/android-jie-ru.md)
+  * [IOS接入](kuai-su-ji-cheng-zhi-nan/ios-jie-ru.md)
+* [渠道接入参考](qu-dao-jie-ru-can-kao/README.md)
+  * [华为接入参考](qu-dao-jie-ru-can-kao/hua-wei-jie-ru-can-kao.md)
+  * [oppo接入参考](qu-dao-jie-ru-can-kao/oppo-jie-ru-can-kao.md)
+  * [vivo接入参考](qu-dao-jie-ru-can-kao/vivo-jie-ru-can-kao.md)
+  * [360](qu-dao-jie-ru-can-kao/360.md)
+  * [小米](qu-dao-jie-ru-can-kao/xiao-mi.md)
+  * [金立](qu-dao-jie-ru-can-kao/jin-li.md)
+  * [魅族](qu-dao-jie-ru-can-kao/mei-zu.md)
+  * [4399](qu-dao-jie-ru-can-kao/4399.md)
+  * [GooglePlay](qu-dao-jie-ru-can-kao/googleplay.md)
+* [社交接入](she-jiao-jie-ru/README.md)
+  * [微信](she-jiao-jie-ru/wei-xin.md)
+  * [Facebook](she-jiao-jie-ru/facebook.md)
+* [广告接入](guang-gao-jie-ru/README.md)
+  * [头条](guang-gao-jie-ru/tou-tiao.md)
+  * [广点通](guang-gao-jie-ru/guang-dian-tong.md)
+  * [OneWay](guang-gao-jie-ru/oneway.md)
+  * [玩转互联](guang-gao-jie-ru/wan-zhuan-hu-lian.md)
+  * [API](guang-gao-jie-ru/api.md)
+  * [百度](guang-gao-jie-ru/bai-du.md)
+  * [vivo](guang-gao-jie-ru/vivo.md)
+  * [oppo](guang-gao-jie-ru/oppo.md)
+  * [unity](guang-gao-jie-ru/unity.md)
+  * [神奇广告](guang-gao-jie-ru/shen-qi-guang-gao.md)
+  * [Mobivista](guang-gao-jie-ru/mobivista.md)
+  * [魅族](guang-gao-jie-ru/mei-zu.md)
+  * [小米](guang-gao-jie-ru/xiao-mi.md)
+* [统计接入](tong-ji-jie-ru/README.md)
+  * [umeng](tong-ji-jie-ru/umeng.md)
+  * [DateEyeTrcking](tong-ji-jie-ru/dateeyetrcking.md)
 
