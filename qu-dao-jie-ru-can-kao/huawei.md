@@ -15,7 +15,7 @@
 
 ## 配置文件说明
 
-assets目录加入feedata\_huawei.xml
+assets目录加入feedata_huawei.xml
 
 ```text
 <?xml version="1.0" encoding="UTF-8"?>
