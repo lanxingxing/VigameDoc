@@ -3,9 +3,9 @@
 ## 模块引入
 
 ```text
-	implementation 'com.libVigame.AD:BaiduMob:2.3.7_temp2'
+	implementation 'com.libVigame.AD:BaiduMob:2.3.7_temp2'  (带MobVisita用）
 	和
-    implementation 'com.libVigame.AD2:BaiduMob:2.3.7_temp2'
+    implementation 'com.libVigame.AD2:BaiduMob:2.3.7_temp2'  （不带MobVisita用）
 ```
 
 ## 注意事项
@@ -14,7 +14,6 @@
 ```
 
 ## 混淆过滤
-
 ```text
 -keepclassmembers	class *	extends	android.app.Activity{ public void *(android.view.View);	}
 
