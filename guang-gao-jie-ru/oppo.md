@@ -7,6 +7,7 @@
 ```
 
 ## 注意事项
+
 ```text
     无
 ```
@@ -30,7 +31,6 @@ public protected *;
 -keepattributes *JavascriptInterface*
 #support-v4
 -keep class android.support.v4.** { *; }
-
 ```
 
 ## 集成测试
@@ -38,3 +38,4 @@ public protected *;
 如何判断sdk是否初始化成功？
 
 通过OPPO或者ADLog查看广告的状态，或者直接通过弹出的广告进行判断
+
