@@ -10,10 +10,12 @@
 
 | 参数 | 说明 | 备注 |
 | :--- | :--- | :--- |
-| AppsFlyer_DevKey | 在AppsFlyer上申请的参数 | eg：X9NxxaMp4neHCFYreDxtd5 |
+| AppsFlyer\_DevKey | 在AppsFlyer上申请的参数 | eg：X9NxxaMp4neHCFYreDxtd5 |
 
 ## 配置文件说明
-需要在app的build.gradle的manifestPlaceholders中设置“AppsFlyer_DevKey”的值,如下：
+
+需要在app的build.gradle的manifestPlaceholders中设置“AppsFlyer\_DevKey”的值,如下：
+
 ```text
 android {
     compileSdkVersion 28
