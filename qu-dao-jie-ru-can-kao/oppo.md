@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-
+	implementation 'com.libVigame.Pay:Oppo:2.1.5'
 ```
 
 ## Manifest参数选项
