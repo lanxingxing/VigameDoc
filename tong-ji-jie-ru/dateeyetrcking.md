@@ -9,16 +9,16 @@
 ## Manifest参数选项
 
 | 参数 | 说明 | 备注 |
-| :--- | :--- | :--- | :--- | :--- |
-| DC_APPID | 无 | eg：无 |
-| WB_CHANNEL | 渠道 | eg：vivo |
-| DC_TRACKING_APPID | dataeye tracking | eg：C6079041E388322EAB5F6D7718E86DB6F |
-| DC_REPORT_MODE | 无 | eg：无 |
+| :--- | :--- | :--- |
+| DC\_APPID | 无 | eg：无 |
+| WB\_CHANNEL | 渠道 | eg：vivo |
+| DC\_TRACKING\_APPID | dataeye tracking | eg：C6079041E388322EAB5F6D7718E86DB6F |
+| DC\_REPORT\_MODE | 无 | eg：无 |
 
 ## 配置文件说明
 
 ```text
-	需要在app的build.gradle的manifestPlaceholders中设置各个参数的值,
+    需要在app的build.gradle的manifestPlaceholders中设置各个参数的值,
 一般只需要设置DC_TRACKING_APPID和WB_CHANNEL的值，如下：
 android {
     compileSdkVersion 28
@@ -26,12 +26,12 @@ android {
     publishNonDefault true
     defaultConfig {
     manifestPlaceholders = [
-	....
+    ....
                 DC_APPID:"",
                 DC_TRACKING_APPID:"C6079041E388322EAB5F6D7718E86DB6F",
                 DC_REPORT_MODE:"",
                 WB_CHANNEL:"vivo",
-	...
+    ...
             ]
     }
 }
@@ -43,3 +43,4 @@ android {
 -dontwarn com.android.installreferrer
 -keep class com.appsflyer.** { *; }
 ```
+

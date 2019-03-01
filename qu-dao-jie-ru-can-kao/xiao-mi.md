@@ -11,11 +11,13 @@ description: 小米
 ```
 
 ## Manifest参数选项
+
 无
 
 ## 配置文件说明
 
-assets目录加入feedata_oppo.xml
+assets目录加入feedata\_oppo.xml
+
 ```text
 <?xml version="1.0" encoding="utf-8"?>
 <data>
@@ -36,7 +38,6 @@ assets目录加入feedata_oppo.xml
 ```text
 -keep class com.xiaomi.**
 -keep class com.xiaomi.**{*;}
-
 ```
 
 ## 集成测试
@@ -44,3 +45,4 @@ assets目录加入feedata_oppo.xml
 如何判断sdk是否初始化成功？
 
 游戏打开会有oppo对应的悬浮按钮
+

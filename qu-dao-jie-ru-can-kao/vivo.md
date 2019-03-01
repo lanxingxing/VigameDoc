@@ -16,7 +16,8 @@
 
 ## 配置文件说明
 
-assets目录加入feedata_vivo.xml
+assets目录加入feedata\_vivo.xml
+
 ```text
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
@@ -38,7 +39,6 @@ assets目录加入feedata_vivo.xml
 ```text
 -keep class com.bbkmobile.**
 -keep class com.bbkmobile.**{*;}
-
 ```
 
 ## 集成测试
@@ -46,3 +46,4 @@ assets目录加入feedata_vivo.xml
 如何判断sdk是否初始化成功？
 
 游戏打开会有vivo对应的悬浮按钮
+

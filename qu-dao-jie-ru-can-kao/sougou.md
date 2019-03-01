@@ -1,8 +1,9 @@
 # 搜狗
 
 SouGou
+
 ```text
-	implementation 'com.libVigame.Pay:SouGou:2.1.2'
+    implementation 'com.libVigame.Pay:SouGou:2.1.2'
 ```
 
 ## Manifest参数选项
@@ -10,7 +11,6 @@ SouGou
 | 参数 | 说明 | 备注 |
 | :--- | :--- | :--- |
 |  |  | eg： |
-
 
 ## 配置文件说明
 
@@ -22,7 +22,6 @@ SouGou
 
 ```text
 待添加
-
 ```
 
 ## 集成测试
@@ -30,3 +29,4 @@ SouGou
 如何判断sdk是否初始化成功？
 
 待添加
+

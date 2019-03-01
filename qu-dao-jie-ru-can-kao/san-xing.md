@@ -7,7 +7,7 @@ description: 三星
 ## 模块引入
 
 ```text
-	implementation 'com.libVigame.Pay:Samsung:2.1.0'
+    implementation 'com.libVigame.Pay:Samsung:2.1.0'
 ```
 
 ## Manifest参数选项
@@ -16,9 +16,7 @@ description: 三星
 | :--- | :--- | :--- |
 |  |  | eg： |
 
-
 ## 配置文件说明
-
 
 ```text
 待添加
@@ -28,7 +26,6 @@ description: 三星
 
 ```text
 待添加
-
 ```
 
 ## 集成测试
@@ -36,3 +33,4 @@ description: 三星
 如何判断sdk是否初始化成功？
 
 待添加
+

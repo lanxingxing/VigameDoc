@@ -5,8 +5,9 @@ description: 腾讯YSDK
 # YSdk
 
 SouGou
+
 ```text
-	implementation 'com.libVigame.Pay:YSDK:2.1.3'
+    implementation 'com.libVigame.Pay:YSDK:2.1.3'
 ```
 
 ## Manifest参数选项
@@ -14,7 +15,6 @@ SouGou
 | 参数 | 说明 | 备注 |
 | :--- | :--- | :--- |
 |  |  | eg： |
-
 
 ## 配置文件说明
 
@@ -102,7 +102,6 @@ SouGou
 -dontwarn java.nio.file.Path
 -dontwarn java.nio.file.OpenOption
 -dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
-
 ```
 
 ## 集成测试
@@ -110,3 +109,4 @@ SouGou
 如何判断sdk是否初始化成功？
 
 待添加
+
