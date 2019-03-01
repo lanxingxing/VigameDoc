@@ -13,9 +13,8 @@
 | AppsFlyer\_DevKey | 在AppsFlyer上申请的参数 | eg：X9NxxaMp4neHCFYreDxtd5 |
 
 ## 配置文件说明
+需要在app的build.gradle的manifestPlaceholders中设置“AppsFlyer_DevKey”的值,如下：
 
-```text
-    需要在app的build.gradle的manifestPlaceholders中设置“AppsFlyer_DevKey”的值,如下：
 android {
     compileSdkVersion 28
     buildToolsVersion '28.0.3'
@@ -23,12 +22,14 @@ android {
     defaultConfig {
     manifestPlaceholders = [
     ....
+```text
                 AppsFlyer_DevKey:"X9NxxaMp4neHCFYreDxtd5",
+```
     ...
             ]
     }
 }
-```
+
 
 ## 混淆过滤
 
