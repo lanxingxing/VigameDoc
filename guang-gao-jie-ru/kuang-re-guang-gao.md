@@ -4,29 +4,29 @@
 
 ```text
     1.采用本地导入的方式，将libAD_UpAds当做一个module引入你的工程当中
-	2.在app的build.gardle的dependencies前加入如下代码：
-		repositories {
-		    flatDir {
-		        dirs 'libs'
-		        dirs project(':libAD_UpAds').file('libs')
-		    }
-		}
+    2.在app的build.gardle的dependencies前加入如下代码：
+        repositories {
+            flatDir {
+                dirs 'libs'
+                dirs project(':libAD_UpAds').file('libs')
+            }
+        }
     3.在app的build.gardle的dependencies中加入以下代码
-	implementation project(':libAD_UpAds')
-	    fileTree(dir: 'libs', include: ['*.aar']).each { file ->
-	        api(name: file.name.lastIndexOf('.').with {
-	            it != -1 ? file.name[0..<it] : file.name
-	        }, ext: 'aar')
-	    }
+    implementation project(':libAD_UpAds')
+        fileTree(dir: 'libs', include: ['*.aar']).each { file ->
+            api(name: file.name.lastIndexOf('.').with {
+                it != -1 ? file.name[0..<it] : file.name
+            }, ext: 'aar')
+        }
 ```
 
 ## 注意事项
 
 ```text
     1.当打包结束的时候，建议把build.gradle中加入的代码注释掉，
-	  以免接其他渠道的时候还带了狂热聚合广告的代码。
-	2.当接入狂热广告的时候不建议再接入我们的其他家广告，因为狂热广告是一个聚合广告，
-	  有可能带来广告的版本冲突和收益不知道算哪边的问题。
+      以免接其他渠道的时候还带了狂热聚合广告的代码。
+    2.当接入狂热广告的时候不建议再接入我们的其他家广告，因为狂热广告是一个聚合广告，
+      有可能带来广告的版本冲突和收益不知道算哪边的问题。
 ```
 
 ## 混淆过滤
@@ -217,8 +217,6 @@
 # amazon
 -keep class com.amazon.device.ads.** { *; }
 # amazon end
-
-
 ```
 
 ## 集成测试
@@ -226,3 +224,4 @@
 如何判断sdk是否初始化成功？
 
 通过UpADSAgent或者ADLog过滤日志查看广告状态，或者直接通过弹出的广告进行判断
+

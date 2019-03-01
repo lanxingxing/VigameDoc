@@ -3,18 +3,19 @@
 ## 模块引入
 
 ```text
+
 ```
 
 ## Manifest参数选项
 
 | 参数 | 说明 | 备注 |
 | :--- | :--- | :--- |
-| OPPO_APPKEY | OPPO的APPKEY | eg：59fc9873a2c244c9a085554ca31f63b5 |
-
+| OPPO\_APPKEY | OPPO的APPKEY | eg：59fc9873a2c244c9a085554ca31f63b5 |
 
 ## 配置文件说明
 
-assets目录加入feedata_oppo.xml
+assets目录加入feedata\_oppo.xml
+
 ```text
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
@@ -47,7 +48,6 @@ public protected *;
 -keep public class com.cdo.oaps.base.**{ *; }
 -keepattributes *Annotation*
 -keepattributes *JavascriptInterface*
-
 ```
 
 ## 集成测试
@@ -55,8 +55,4 @@ public protected *;
 如何判断sdk是否初始化成功？
 
 游戏打开会有oppo对应的悬浮按钮
-
-
-
-
 

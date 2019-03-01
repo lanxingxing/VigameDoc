@@ -4,20 +4,20 @@
 
 ```text
     1.采用本地导入的方式，将libAD_GoogleCN当做一个module引入你的工程当中
-	2.在app的build.gardle的dependencies前加入如下代码：
-		repositories {
-		    flatDir {
-		        dirs 'libs'
-		        dirs project(':libAD_GoogleCN').file('libs')
-		    }
-		}
+    2.在app的build.gardle的dependencies前加入如下代码：
+        repositories {
+            flatDir {
+                dirs 'libs'
+                dirs project(':libAD_GoogleCN').file('libs')
+            }
+        }
     3.在app的build.gardle的dependencies中加入以下代码
-	implementation project(':libAD_GoogleCN')
-	    fileTree(dir: 'libs', include: ['*.aar']).each { file ->
-	        api(name: file.name.lastIndexOf('.').with {
-	            it != -1 ? file.name[0..<it] : file.name
-	        }, ext: 'aar')
-	    }
+    implementation project(':libAD_GoogleCN')
+        fileTree(dir: 'libs', include: ['*.aar']).each { file ->
+            api(name: file.name.lastIndexOf('.').with {
+                it != -1 ? file.name[0..<it] : file.name
+            }, ext: 'aar')
+        }
 ```
 
 ## 注意事项
@@ -55,7 +55,6 @@
 -dontwarn com.google.protobuf.**
 -keep class com.google.ads.mediation.** {*;}
 -dontwarn com.google.ads.mediation.**
-
 ```
 
 ## 集成测试
@@ -63,3 +62,4 @@
 如何判断sdk是否初始化成功？
 
 通过GoogleADAgent或者ADLog过滤日志查看广告状态，或者直接通过弹出的广告进行判断
+

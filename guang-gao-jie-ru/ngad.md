@@ -95,3 +95,4 @@ description: 九游广告
 如何判断sdk是否初始化成功？
 
 通过NgadAgent或者ADLog过滤日志查看广告状态，或者直接通过弹出的广告进行判断
+

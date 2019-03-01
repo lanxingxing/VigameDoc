@@ -12,7 +12,7 @@ description: 魅族
 
 ## 配置文件说明
 
-assets目录加入feedata_meizu.xml
+assets目录加入feedata\_meizu.xml
 
 ```text
 <data>
@@ -25,7 +25,7 @@ assets目录加入feedata_meizu.xml
         <price>1</price>
         <desc>30赠25枚钻石</desc>
     </feeinfo>
-    
+
 </data>
 ```
 
@@ -41,3 +41,4 @@ assets目录加入feedata_meizu.xml
 如何判断sdk是否初始化成功？
 
 游戏打开会有魅族的悬浮按钮
+

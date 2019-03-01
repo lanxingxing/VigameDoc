@@ -14,7 +14,6 @@
 ## 混淆过滤
 
 ```text
-
 -dontnote android.net.http.*
 -dontnote org.apache.http.**
 
@@ -239,8 +238,6 @@ public *;
 # Google Android Advertising ID
 -keep class com.google.android.gms.internal.** { *; }
 -dontwarn com.google.android.gms.ads.identifier.**
-
-
 ```
 
 ## 集成测试
@@ -248,3 +245,4 @@ public *;
 如何判断sdk是否初始化成功？
 
 通过LeDouAgent或者ADLog过滤日志查看广告状态，或者直接通过弹出的广告进行判断
+
