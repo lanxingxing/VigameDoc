@@ -16,7 +16,7 @@
   * [华为](qu-dao-jie-ru-can-kao/huawei.md)
   * [oppo](qu-dao-jie-ru-can-kao/oppo.md)
   * [vivo](qu-dao-jie-ru-can-kao/vivo.md)
-  * [360](she-jiao-jie-ru/360.md)
+  * [360](qu-dao-jie-ru-can-kao/360.md)
   * [小米](qu-dao-jie-ru-can-kao/xiao-mi.md)
   * [金立](qu-dao-jie-ru-can-kao/jin-li.md)
   * [魅族](qu-dao-jie-ru-can-kao/mei-zu.md)
