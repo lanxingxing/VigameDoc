@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:Shenqi:2.1.1'
+    implementation 'com.libVigame.AD:MobVista:1.0.8'
 ```
 
 ## 注意事项
