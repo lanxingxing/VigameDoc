@@ -1,2 +1,40 @@
 # HeadlineTrcking
 
+## 模块引入
+
+```text
+    implementation 'com.libVigame.TJ:AppsFlyer:2.0.4'
+```
+
+## Manifest参数选项
+
+| 参数 | 说明 | 备注 |
+| :--- | :--- |
+| HEADLINE_APPID | 在头条统计上申请的appId | eg：153354 |
+
+## 配置文件说明
+
+```text
+	需要在app的build.gradle的manifestPlaceholders中设置“HEADLINE_APPID”的值,如下：
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    publishNonDefault true
+    defaultConfig {
+    manifestPlaceholders = [
+	....
+                HEADLINE_APPID:"153354",
+	...
+            ]
+    }
+}
+```
+
+## 混淆过滤
+
+```text
+-keep com.bytedance.**
+-keep com.bytedance.**{*;}
+-keep com.ss.android.common.**
+-keep com.ss.android.common.**{*;}
+```
