@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:Headline:2.5.2'
+    implementation 'com.libVigame.AD:Headline:2.5.3'
 ```
 
 ## 混淆过滤
