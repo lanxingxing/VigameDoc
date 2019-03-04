@@ -9,11 +9,13 @@
 ## Manifest参数选项
 
 | 参数 | 说明 | 备注 |
-| :--- | :--- |
-| UMENG_APPKEY | 在友盟上申请的appKey | eg：5bbb2803b465f5c58c000017 |
+| :--- | :--- | :--- |
+| UMENG\_APPKEY | 在友盟上申请的appKey | eg：5bbb2803b465f5c58c000017 |
 
 ## 配置文件说明
- 需要在app的build.gradle的manifestPlaceholders中设置“UMENG_APPKEY”的值,如下：
+
+需要在app的build.gradle的manifestPlaceholders中设置“UMENG\_APPKEY”的值,如下：
+
 ```text
 android {
     compileSdkVersion 28
@@ -35,3 +37,4 @@ android {
 -keep class com.umeng.**
 -keep class com.umeng.**{*;}
 ```
+
