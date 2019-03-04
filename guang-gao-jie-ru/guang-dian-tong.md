@@ -3,9 +3,9 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:GDTUnion:2.4.3'  (带MobVisita用）
+    implementation 'com.libVigame.AD:GDTUnion:2.4.4'  (带MobVisita用）
     和
-    implementation 'com.libVigame.AD2:GDTUnion:2.4.3' （不带MobVisita用）
+    implementation 'com.libVigame.AD2:GDTUnion:2.4.4' （不带MobVisita用）
 ```
 
 ## 注意事项
