@@ -96,6 +96,7 @@ public class MyApplication extends Application {
 | SupportAdPositions | 支持的广告位名称 | 否 |
 | SplashFile | 默认的闪屏文件（assets中） | 否 |
 | WithSplashAD | 是否出现闪屏广告（默认出现） | 否 |
+| Permissions | 申请的权限 | 是 |
 
 ![](C:/Users/%E5%AE%87/AppData/Local/YNote/data/qq0736283A0554F655E0818672E0467D30/022399cbb449476daaa9614d980f7b7e/clipboard.png)
 
