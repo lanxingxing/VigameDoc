@@ -4,8 +4,6 @@ description: 腾讯YSDK
 
 # YSdk
 
-SouGou
-
 ```text
     implementation 'com.libVigame.Pay:YSDK:2.1.3'
 ```
