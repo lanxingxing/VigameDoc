@@ -208,8 +208,6 @@ vigame::ad::ADManager::isAdReady("level_fail_mfzs");
 
 ## 8.参数填写
 
-![2F3562D6-8169-4579-9D29-B939EB8587DD](https://github.com/jieban0604/VigameDoc/tree/5a1fb0ad0d072ea3db93f560b8c831218b03af93/Users/dlwx/Desktop/2F3562D6-8169-4579-9D29-B939EB8587DD.png)
-
 `apple_appid` 苹果id 在苹果商店 注册应用产生的参数 `company_appid` 公司appid
 
 `company_prjid` 公司的项目id

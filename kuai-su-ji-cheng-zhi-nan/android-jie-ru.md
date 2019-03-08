@@ -56,8 +56,6 @@ public class MyApplication extends Application {
 }
 ```
 
-
-
 ## 第四步：修改Manifest文件
 
 ```text
@@ -98,5 +96,5 @@ public class MyApplication extends Application {
 | WithSplashAD | 是否出现闪屏广告（默认出现） | 否 |
 | Permissions | 申请的权限 | 是 |
 
-![](C:/Users/%E5%AE%87/AppData/Local/YNote/data/qq0736283A0554F655E0818672E0467D30/022399cbb449476daaa9614d980f7b7e/clipboard.png)
+![](https://github.com/jieban0604/VigameDoc/tree/8cf06273fbae0bd555693ae2a1ebc6cfade8f391/kuai-su-ji-cheng-zhi-nan/C:/Users/宇/AppData/Local/YNote/data/qq0736283A0554F655E0818672E0467D30/022399cbb449476daaa9614d980f7b7e/clipboard.png)
 
