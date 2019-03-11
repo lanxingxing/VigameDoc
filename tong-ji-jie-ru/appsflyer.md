@@ -3,7 +3,9 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.TJ:AppsFlyer:2.0.4'
+    implementation 'com.libVigame.TJ:AppsFlyer:2.0.4'（读取IMEI）
+    
+    implementation 'com.libVigame.TJ:AppsFlyer:2.0.5' (不读取IMEI)
 ```
 
 ## Manifest参数选项
