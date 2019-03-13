@@ -56,6 +56,16 @@ public class MyApplication extends Application {
 }
 ```
 
+```text
+    VigameLoader.activityOnCreate(this);
+    VigameLoader.activityOnDestroy(this);
+    VigameLoader.activityOnResume(this);
+    VigameLoader.activityOnPause(this);
+    VigameLoader.activityOnWindowFocusChanged(this,hasFocus);
+    VigameLoader.activityOnActivityResult(this, requestCode, resultCode, data);
+    VigameLoader.activityOnRestart(this);
+```
+
 ## 第四步：修改Manifest文件
 
 ```text
