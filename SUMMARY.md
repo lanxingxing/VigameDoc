@@ -2,7 +2,8 @@
 
 * [功能介绍](README.md)
 * [快速集成指南](kuai-su-ji-cheng-zhi-nan/README.md)
-  * [Android接入](kuai-su-ji-cheng-zhi-nan/android-jie-ru.md)
+  * [Android接入](kuai-su-ji-cheng-zhi-nan/android-jie-ru/README.md)
+    * [业务接口](kuai-su-ji-cheng-zhi-nan/android-jie-ru/ye-wu-jie-kou.md)
   * [IOS接入](kuai-su-ji-cheng-zhi-nan/ios-jie-ru.md)
 * [渠道接入参考](qu-dao-jie-ru-can-kao/README.md)
   * [YSdk](qu-dao-jie-ru-can-kao/tecent.md)
