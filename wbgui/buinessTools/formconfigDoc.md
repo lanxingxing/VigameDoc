@@ -48,7 +48,7 @@ typora-root-url: ..\..
 
 **出包：** 右键出包，将会显示出包工具，参数数据将会显示在出包工具里，同时你需要将出包工具与配置工具放在同一根目录
 
-![tyml](C:\Users\Administrator\Desktop\edd\wbdoc\VigameDoc\.gitbook\assets\wbgui\buinessTool\tyml.png)
+![tyml](../../.gitbook/assets/wbgui/buinessTool/tyml.png)
 
 
 
