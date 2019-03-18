@@ -22,7 +22,7 @@
 
 
 
-![main](C:\Users\Administrator\Desktop\edd\wbdoc\VigameDoc\.gitbook\assets\wbgui\createApk\main.png)
+![main](../../.gitbook/assets/wbgui/createApk/main.png)
 
 
 
@@ -42,7 +42,7 @@
 
 ## 附属窗口
 
-### ![fsck](C:\Users\Administrator\Desktop\edd\wbdoc\VigameDoc\.gitbook\assets\wbgui\createApk\fsck.png)
+![fsck](../../.gitbook/assets/wbgui/createApk/fsck.png)
 
 **测试配置**：
 

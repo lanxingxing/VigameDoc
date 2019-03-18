@@ -32,7 +32,7 @@ typora-root-url: ..\..
 
 ​	
 
-![form](C:\Users\Administrator\Desktop\edd\wbdoc\VigameDoc\.gitbook\assets\wbgui\buinessTool\form.png)
+![form](../../.gitbook/assets/wbgui/buinessTool/form.png)
 
 
 
@@ -54,7 +54,7 @@ typora-root-url: ..\..
 
 ## icon 配置
 
-![icon](C:\Users\Administrator\Desktop\edd\wbdoc\VigameDoc\.gitbook\assets\wbgui\buinessTool\icon.png)
+![icon](../../.gitbook/assets/wbgui/buinessTool/icon.png)
 
 
 
@@ -70,7 +70,7 @@ typora-root-url: ..\..
 
 ## 游戏类别配置 
 
-![gametype](C:\Users\Administrator\Desktop\edd\wbdoc\VigameDoc\.gitbook\assets\wbgui\buinessTool\gametype.png)
+![gametype](../../.gitbook/assets/wbgui/buinessTool/gametype.png)
 
    
 
@@ -80,7 +80,7 @@ typora-root-url: ..\..
 
 ## 广告配置
 
-![adtype](C:\Users\Administrator\Desktop\edd\wbdoc\VigameDoc\.gitbook\assets\wbgui\buinessTool\adtype.png)
+![adtype](../../.gitbook/assets/wbgui/buinessTool/adtype.png)
 
 
 
@@ -92,7 +92,7 @@ typora-root-url: ..\..
 
 ## 账号配置
 
-![pemssion](C:\Users\Administrator\Desktop\edd\wbdoc\VigameDoc\.gitbook\assets\wbgui\buinessTool\pemssion.png)
+![pemssion](../../.gitbook/assets/wbgui/buinessTool/pemssion.png)
 
 
 
@@ -104,6 +104,6 @@ typora-root-url: ..\..
 
 
 
-![test](C:\Users\Administrator\Desktop\edd\wbdoc\VigameDoc\.gitbook\assets\wbgui\buinessTool\test.png)
+![test](../../.gitbook/assets/wbgui/buinessTool/test.png)
 
 测试用的测试 id 和包名可以配置在这里，在出包工具里将会显示
