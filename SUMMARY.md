@@ -55,21 +55,15 @@
   * [魅族](guang-gao-jie-ru/mei-zu.md)
   * [小米](guang-gao-jie-ru/xiao-mi.md)
 * [统计接入参考](tong-ji-jie-ru/README.md)
-
   * [Umeng](tong-ji-jie-ru/umeng.md)
   * [Facebook](tong-ji-jie-ru/facebook.md)
   * [HeadlineTrcking](tong-ji-jie-ru/headlinetrcking.md)
   * [AppsFlyer](tong-ji-jie-ru/appsflyer.md)
   * [DateEyeTrcking](tong-ji-jie-ru/dateeyetrcking.md)
 * [推送接入参考](tui-song-jie-ru-can-kao/README.md)
-
   * [Umeng推送](tui-song-jie-ru-can-kao/umeng-tui-song.md)
-
 * [wbGui](wbgui/README.md)
-
-  * [配置工具](wbgui/buinessTools/formconfigDoc.md)
-  * [出包工具](wbgui/createApk/createApk.md)
-  * [apk信息工具](wbgui/apkInfo/apkInfo.md)
-
-    
+  * [配置工具](wbgui/formconfigdoc.md)
+  * [出包工具](wbgui/createapk.md)
+  * [apk信息工具](wbgui/apkinfo.md)
 
