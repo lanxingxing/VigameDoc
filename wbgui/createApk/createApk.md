@@ -14,7 +14,19 @@
 
 ​	下载完后，解压压缩包，会有 **添加到鼠标右键.bat**  文件，右键以**管理员运行**，则会添加到鼠标右键
 
-比较方便的对 apk 进行操作。
+比较方便的对 apk 进行操作。 显示如下
+
+​        **wbDecompileApk ：** 反编译apk
+
+​        **wbCompileApk：**重编译apk, 会在 dist 目录 生成已签好名的包
+
+​        **wbSignApk：**签名apk
+
+​        **wbInstallApk：**安装apk
+
+​        **wbReBuildApk：**打开出包工具
+
+
 
 
 
