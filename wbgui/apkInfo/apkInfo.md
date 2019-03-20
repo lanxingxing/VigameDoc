@@ -20,7 +20,7 @@
 
 ## 主界面
 
-![main](..\..\.gitbook\assets\wbgui\apkInfo\main.png)
+![main](../../.gitbook/assets/wbgui/apkInfo/main.png)
 
 
 
