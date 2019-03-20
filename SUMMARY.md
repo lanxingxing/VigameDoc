@@ -69,6 +69,7 @@
 
   * [配置工具](wbgui/buinessTools/formconfigDoc.md)
   * [出包工具](wbgui/createApk/createApk.md)
+  * [apk信息工具](wbgui/apkInfo/apkInfo.md)
 
     
 
