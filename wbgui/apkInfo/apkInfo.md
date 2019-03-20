@@ -6,7 +6,7 @@
 
 ​	
 
-[v1.0.0](http://gui.vigame.cn/apkInfo/v1.0.0/apkInfo_1.0.0.zip)
+[v1.0.1](http://gui.vigame.cn/apkInfo/v1.0.1/apkInfo_1.0.1.zip)
 
 
 
