@@ -4,7 +4,13 @@
 
 ## 下载地址
 
-​	
+[v1.0.2](http://gui.vigame.cn/apkInfo/v1.0.2/apkInfo_1.0.2.zip)
+
+**修改** ：
+
+1. 显示 签名MD5 ，显示 oppo app_key, huawei (appid) , com.gg.wb.game, com.qq.e.ads
+
+   微信 wxapi ， 支付宝 alipay
 
 [v1.0.1](http://gui.vigame.cn/apkInfo/v1.0.1/apkInfo_1.0.1.zip)
 
