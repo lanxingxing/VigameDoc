@@ -23,9 +23,9 @@ allprojects {
 
 ```text
     //vigame相关模块
-    implementation 'com.vigame.Proxy:Features:2.3.0'
+    implementation 'com.vigame.Proxy:Features:2.4.0'
     implementation 'com.libVigame:VigameLoader:2.3.5'
-    implementation 'com.libVigame.Core:CoreManager:2.3.3'
+    implementation 'com.libVigame.Core:CoreManager:2.3.5'
     implementation 'com.libVigame.Pay:PayManager:2.1.7'
     implementation 'com.libVigame.AD2:ADManager:2.2.6'
     implementation 'com.libVigame.Social:SocialManager:2.1.5'

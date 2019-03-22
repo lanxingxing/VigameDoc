@@ -69,6 +69,12 @@ UserAgreement.open();
 注：用户协议的内容可通过assets/agrement.html修改
 {% endhint %}
 
+### 1.8 打开问题反馈
+
+```text
+Feedback.open();
+```
+
 ## 2. 计费相关
 
 ### 2.1 初始化
