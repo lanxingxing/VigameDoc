@@ -15,7 +15,10 @@
 ## 混淆过滤
 
 ```text
-无
+-dontwarn com.uniplay.**
+-keep class com.uniplay.** { *; }
+-dontwarn com.wzhl.**
+-keep class com.wzhl.** { *; }
 ```
 
 ## 集成测试
