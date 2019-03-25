@@ -4,6 +4,8 @@
 
 ```text
     implementation 'com.libVigame.AD:Uniplay:2.1.6'
+    和
+    implementation 'com.libVigame.AD:UniplayA:1.0.0'（隐藏广告）
 ```
 
 ## 注意事项
