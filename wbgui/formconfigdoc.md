@@ -8,7 +8,7 @@ typora-root-url: ..\..
 
 ## 下载
 
-[v1.0.3](http://gui.vigame.cn/businessTools/v1.0.3/businessTools_1.0.3.zip)
+[v1.0.4](http://gui.vigame.cn/businessTools/v1.0.4/businessTools_1.0.4.zip)
 
 ## 登陆
 
