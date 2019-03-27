@@ -4,6 +4,12 @@
 
 ## 下载地址
 
+[v1.0.3](http://gui.vigame.cn/apkInfo/v1.0.3/apkInfo_1.0.3.zip)
+
+**修改** ：
+
+1. 搜索com.gg.wb.game  在AndroidManifest里面确认是否广点通的路径改变  搜索com.bdtt.sdk.wmsdk 确认头条  com.wzhl.sdk确认玩转
+
 [v1.0.2](http://gui.vigame.cn/apkInfo/v1.0.2/apkInfo_1.0.2.zip)
 
 **修改** ：
@@ -21,6 +27,8 @@
 ​	解压后右键以管理员身份运行，然后右键 apk 出现 showApkInfo 则代表成功
 
 若安装了 apkdb 这个工具，则右键快捷方式则无效果，卸载后即可。
+
+​        若无 showApkInfo 这个选项 ，则 以管理员身份运行  ，添加到鼠标右键2.bat
 
 
 
