@@ -5,7 +5,7 @@
 ```text
     implementation 'com.libVigame.AD:Headline:2.5.5'
     和
-    implementation 'com.libVigame.AD:HeadlineA:1.0.2'（华为最新广告隐藏方式）
+    implementation 'com.libVigame.AD:HeadlineA:1.0.3'（最新广告隐藏方式）
 ```
 
 ## 混淆过滤
@@ -16,7 +16,7 @@
 -keep class com.bytedance.sdk.openadsdk.** { *; }
 -keep class com.androidquery.callback.** {*;}
 -keep class com.bytedance.sdk.openadsdk.service.TTDownloadProvider
-#华为最新广告隐藏方式
+#最新广告隐藏方式
 -keep class com.bdtt.sdk.wmsdk.** { *; }
 -keep class com.androidquery.callback.** {*;}
 -keep class com.bdtt.sdk.wmsdk.service.TTDownloadProvider
