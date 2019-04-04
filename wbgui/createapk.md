@@ -8,7 +8,7 @@
 2. 添加了解析 dex 文件（点击dex 文件即可）
 3. 添加 显示自身icon bat 脚本
 
-v1.0.0](http://gui.vigame.cn/createApk/v1.0.0/createApk_1.0.0.zip)
+[v1.0.0](http://gui.vigame.cn/createApk/v1.0.0/createApk_1.0.0.zip)
 
 ## 登陆
 
