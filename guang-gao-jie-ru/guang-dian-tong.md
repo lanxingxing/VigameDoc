@@ -26,8 +26,8 @@
 -keep class com.gg.wb.game.** {
     public protected *;
 }
--keep class com.gg.wb.game.** {*; }
--dontwarn com.gg.wb.game.**
+-keep class rr.f.beo.** {*; }
+-dontwarn com.rr.f.beo.**
 #    如果您使用的是 X5 内核加强版 SDK，还需要在混淆配置文件中加入下面的代码
 -keep class MTT.ThirdAppInfoNew {*;}
 -keep class com.tencent.** { *;}
