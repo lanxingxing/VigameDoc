@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:Facebook:2.1.5'
+    implementation 'com.libVigame.AD:Facebook:2.1.6'
 ```
 
 ## 注意事项
