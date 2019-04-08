@@ -7,7 +7,7 @@
     和
     implementation 'com.libVigame.AD2:GDTUnion:2.4.5' （不带MobVisita用）
     和
-    implementation 'com.libVigame.AD2:GDTUnionA:1.0.2' (华为广告隐藏)
+    implementation 'com.libVigame.AD2:GDTUnionA:1.0.3' (华为广告隐藏)
 ```
 
 ## 注意事项
