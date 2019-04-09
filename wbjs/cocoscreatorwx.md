@@ -2,6 +2,10 @@
 
 # cocoscreator   微信
 
+## git地址
+
+## http://192.168.1.252:8080/r/wbjs.git
+
 ## 示例项目
 
 wbjs\creatortest\cccTest    目录下是 示例，可以用cocoscreator 打开查看
