@@ -1,17 +1,18 @@
 # Google国内
 
 ## 模块引入
-
+1.采用本地导入的方式，将libAD_GoogleCN当做一个module引入你的工程当中
+2.在app的build.gardle的dependencies前加入如下代码：
 ```text
-    1.采用本地导入的方式，将libAD_GoogleCN当做一个module引入你的工程当中
-    2.在app的build.gardle的dependencies前加入如下代码：
-        repositories {
-            flatDir {
-                dirs 'libs'
-                dirs project(':libAD_GoogleCN').file('libs')
-            }
+    repositories {
+        flatDir {
+            dirs 'libs'
+            dirs project(':libAD_GoogleCN').file('libs')
         }
-    3.在app的build.gardle的dependencies中加入以下代码
+    }
+```
+3.在app的build.gardle的dependencies中加入以下代码
+```text
     implementation project(':libAD_GoogleCN')
         fileTree(dir: 'libs', include: ['*.aar']).each { file ->
             api(name: file.name.lastIndexOf('.').with {
@@ -19,12 +20,9 @@
             }, ext: 'aar')
         }
 ```
-
 ## 注意事项
 
-```text
-    当打包结束的时候，建议把build.gradle中加入的代码注释掉，以免接其他渠道的时候还带了google广告的代码
-```
+  当打包结束的时候，建议把build.gradle中加入的代码注释掉，以免接其他渠道的时候还带了google广告的代码
 
 ## 混淆过滤
 
