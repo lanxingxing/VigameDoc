@@ -2,6 +2,14 @@
 
 ## 下载
 
+[v1.0.2](http://gui.vigame.cn/createApk/v1.0.2/createApk_1.0.2.zip)
+
+1. 添加记录上次出包配置
+
+2. 修改了数据库地址（重要）
+
+   
+
 [v1.0.1](http://gui.vigame.cn/createApk/v1.0.1/createApk_1.0.1.zip)
 
 1. 更新 鼠标右键bat 脚本，添加了 apk 默认icon 
