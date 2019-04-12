@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:VIVO:2.4.4'
+    implementation 'com.libVigame.AD:VIVO:2.4.6'
 ```
 
 ## 注意事项
@@ -15,16 +15,14 @@
 ## 混淆过滤
 
 ```text
--keep class com.qq.e.** {
-      public protected *;
-  }
--keep class android.support.v4.app.NotificationCompat**{
-      public *;
-}
-#百度SDK
+-keepattributes SourceFile,LineNumberTable
+#GDT
+-keep class com.qq.e.** { public protected *; }
+-keep class android.support.v4.app.NotificationCompat**{ public *; }
+#baidu
 -keep class com.baidu.mobads.*.** { *; }
 #vivoSDK
--keep class com.vivo.mobilead.*.** { *; }
+-keep class com.vivo.*.** { *; }
 -dontwarn com.androidquery.auth.**
 ```
 
