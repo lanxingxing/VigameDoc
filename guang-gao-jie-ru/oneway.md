@@ -5,6 +5,10 @@
 ```text
     implementation 'com.libVigame.AD:OneWay:2.1.7'
 ```
+和
+```text
+    implementation 'com.libVigame.AD:OneWayA:1.0.0'（隐藏广告方式）
+```
 
 ## 注意事项
 
@@ -21,8 +25,11 @@
 -keepattributes *Annotation*
 -keep enum mobi.oneway.sdk.* {*;}
 -keep class mobi.oneway.sdk.** {*;}
-
-
+############################################
+##           OneWay隐藏广告方式 混淆配置      ##
+############################################
+-keep enum npcj.pofxbz.sdk.* {*;}
+-keep class npcj.pofxbz.sdk.** {*;}
 ############################################
 ##           OkDownload 混淆配置            ##
 ############################################
