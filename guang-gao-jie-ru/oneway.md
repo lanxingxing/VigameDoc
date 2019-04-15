@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:OneWay:2.1.7'
+    implementation 'com.libVigame.AD:OneWay:2.1.8'
 ```
 和
 ```text
