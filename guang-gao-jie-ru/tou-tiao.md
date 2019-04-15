@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:Headline:2.5.5'
+    implementation 'com.libVigame.AD:Headline:2.5.8'
     和
     implementation 'com.libVigame.AD:HeadlineA:1.0.3'（最新广告隐藏方式）
 ```
