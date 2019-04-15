@@ -15,6 +15,7 @@
 ###Toutiao v1.9.3.2
 -keep class com.bytedance.sdk.openadsdk.** { *; }
 -keep class com.androidquery.callback.** {*;}
+-keep class com.ss.android.**{*;}
 -keep class com.bytedance.sdk.openadsdk.service.TTDownloadProvider
 #最新广告隐藏方式
 -keep class com.bdtt.sdk.wmsdk.** { *; }
