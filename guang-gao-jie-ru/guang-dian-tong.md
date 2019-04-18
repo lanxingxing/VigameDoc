@@ -3,11 +3,11 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:GDTUnion:2.4.5'  (带MobVisita用）
+    implementation 'com.libVigame.AD:GDTUnion:2.4.7'  (带MobVisita用）
     和
-    implementation 'com.libVigame.AD2:GDTUnion:2.4.5' （不带MobVisita用）
+    implementation 'com.libVigame.AD2:GDTUnion:2.4.7' （不带MobVisita用）
     和
-    implementation 'com.libVigame.AD:GDTUnionA:1.0.3' (华为广告隐藏)
+    implementation 'com.libVigame.AD:GDTUnionA:1.0.4' (广告隐藏)
 ```
 
 ## 注意事项
@@ -22,7 +22,7 @@
 -keep class com.qq.e.** {public protected *;}
 -keep class android.support.v4.**{public *;}
 -keep class android.support.v7.**{public *;}
-# 华为最新广告隐藏
+# 最新广告隐藏
 -keep class com.gg.wb.game.** {
     public protected *;
 }
