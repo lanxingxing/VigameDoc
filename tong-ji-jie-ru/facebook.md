@@ -6,11 +6,16 @@
     implementation 'com.libVigame.TJ:Facebook:2.1.3'
 ```
 
-## Manifest参数选项
-
+## Manifest
+###1.参数选项
 | 参数 | 说明 | 备注 |
 | :--- | :--- | :--- |
 | facebook\_app\_id | 在facebook上申请的参数 | eg：344465672947670 |
+###2.测试检测
+反编译出包的apk，搜索“com.facebook.sdk.ApplicationId”看看它的value值是否为344465672947670
+```text
+    com.facebook.sdk.ApplicationId
+```
 
 ## 配置文件说明
 
