@@ -39,6 +39,7 @@
 -dontwarn com.google.protobuf.**
 -keep class com.google.ads.mediation.** {*;}
 -dontwarn com.google.ads.mediation.**
+
 ```
 
 ## 集成测试
