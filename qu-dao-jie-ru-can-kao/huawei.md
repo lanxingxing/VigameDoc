@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.Pay:Huawei:2.2.5'
+    implementation 'com.libVigame.Pay:Huawei:2.2.7'
 ```
 
 ## Manifest参数选项
