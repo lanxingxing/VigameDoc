@@ -3,11 +3,11 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:GDTUnion:2.5.0'  (带MobVisita用）
+    implementation 'com.libVigame.AD:GDTUnion:2.5.1'  (带MobVisita用）
     和
-    implementation 'com.libVigame.AD2:GDTUnion:2.5.0' （不带MobVisita用）
+    implementation 'com.libVigame.AD2:GDTUnion:2.5.1' （不带MobVisita用）
     和
-    implementation 'com.libVigame.AD:GDTUnionA:1.0.7' (广告隐藏)
+    implementation 'com.libVigame.AD:GDTUnionA:1.0.8' (广告隐藏)
 ```
 
 ## 注意事项
