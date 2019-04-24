@@ -1,10 +1,34 @@
 # 360广告
 
 ## 模块引入
-
 ```text
-    implementation 'com.libVigame.AD:Ad360:1.0.6'
+    implementation 'com.libVigame.AD:Ad360:1.0.7_temp'
 ```
+
+采用本地导入的方式：
+1.模块下载地址：
+```text
+http://192.168.1.252:8080/tree/VigameAndroidLibrary.git/master/libAD
+```
+下载libAD_Ad360的zip格式的模块到本地并解压；
+
+2.采用本地导入的方式，将libAD_Ad360当做一个module引入你的工程当中
+
+3.在app的build.gardle的dependencies前加入如下代码：
+```text
+    repositories {
+        flatDir {
+            dirs 'libs'
+            dirs project(':libAD_Ad360').file('libs')
+        }
+    }
+```
+4.在app的build.gardle的dependencies中加入以下代码
+```text
+    compile(name: 'msadsdk-release', ext: 'aar') 
+	compile(name: 'newslib-newssdk-release', ext: 'aar')
+```
+
 
 ## 注意事项
 
