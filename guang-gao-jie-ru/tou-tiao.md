@@ -5,7 +5,7 @@
 ```text
     implementation 'com.libVigame.AD:Headline:2.5.9'
     和
-    implementation 'com.libVigame.AD:HeadlineA:1.0.4'（最新广告隐藏方式）
+    implementation 'com.libVigame.AD:HeadlineA:1.0.5'（最新广告隐藏方式）
 ```
 
 ## 混淆过滤
