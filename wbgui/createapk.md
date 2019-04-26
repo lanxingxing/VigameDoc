@@ -2,6 +2,16 @@
 
 ## 下载
 
+[v1.0.3](http://gui.vigame.cn/createApk/v1.0.3/createApk_1.0.3.zip)
+
+1. 可替换 targetsdk 
+
+2. 修改为重新打开界面后，关闭直前界面
+
+3. 提示apk路径不合法
+
+   
+
 [v1.0.2](http://gui.vigame.cn/createApk/v1.0.2/createApk_1.0.2.zip)
 
 1. 添加记录上次出包配置
