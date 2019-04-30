@@ -3,7 +3,9 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:MobVista:1.0.9'
+    implementation 'com.libVigame.AD:MobVista:1.0.9'（国内）
+	和
+	implementation 'com.libVigame.AD:MobVistaOversea:2.0.2'（海外）
 ```
 
 ## 注意事项
