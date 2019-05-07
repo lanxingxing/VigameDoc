@@ -2,6 +2,12 @@
 
 ## 下载
 
+[v1.0.4](http://gui.vigame.cn/createApk/v1.0.4/createApk_1.0.4.zip)
+
+1. 添加签名界面
+
+   
+
 [v1.0.3](http://gui.vigame.cn/createApk/v1.0.3/createApk_1.0.3.zip)
 
 1. 可替换 targetsdk 
