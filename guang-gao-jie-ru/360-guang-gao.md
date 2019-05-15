@@ -2,7 +2,7 @@
 
 ## 模块引入
 ```text
-    implementation 'com.libVigame.AD:Ad360:1.0.7_temp'
+    implementation 'com.libVigame.AD:Ad360:1.0.8'
 ```
 
 采用本地导入的方式：
@@ -26,7 +26,7 @@ http://192.168.1.252:8080/tree/VigameAndroidLibrary.git/master/libAD
 4.在app的build.gardle的dependencies中加入以下代码
 ```text
     compile(name: 'msadsdk-release', ext: 'aar') 
-	compile(name: 'newslib-newssdk-release', ext: 'aar')
+	compile(name: 'news-lib-newssdk-release', ext: 'aar')
 ```
 
 
