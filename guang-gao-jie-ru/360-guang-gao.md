@@ -1,9 +1,6 @@
 # 360广告
 
 ## 模块引入
-```text
-    implementation 'com.libVigame.AD:Ad360:1.0.8'
-```
 
 采用本地导入的方式：
 1.模块下载地址：
@@ -40,30 +37,60 @@ http://192.168.1.252:8080/tree/VigameAndroidLibrary.git/master/libAD
 ## 混淆过滤
 
 ```text
--keepclasseswithmembernames,allowshrinking class * {
-    native <methods>;
- }
--keepclasseswithmembers class * { public <init>(...); }
--keepclasseswithmembernames class * {public <init>(android.content.Context, android.util.AttributeSet);}
--keepclasseswithmembernames class * {public <init>(android.content.Context, android.util.AttributeSet, int);}
--keepclassmembers enum * {public static **[] values();public static ** valueOf(java.lang.String);}
--keepclassmembers class * implements android.os.Parcelable {
-  public static final android.os.Parcelable$Creator CREATOR;
-}
+
+-ignorewarning
+-repackageclasses ''
+-allowaccessmodification
+-optimizationpasses 2
+# Show line number when crash#
+-keepattributes SourceFile,LineNumberTable
+-dontskipnonpubliclibraryclassmembers
+-keepattributes Signature
 -keepattributes *Annotation*
--keepattributes *JavascriptInterface*
 
+#Ad code
+-dontwarn com.qihoo.**
+-dontwarn com.qihoo360.**
+-dontwarn pl.droidsonroids.**
+-dontwarn com.androidquery.**
+-dontwarn com.lucan.ajtools.**
+-dontwarn okhttp3.**
+-dontwarn org.aspectj.**
+-dontwarn com.qq.e.**
+-dontwarn android.net.http.**
+-dontwarn okhttp3.**
+-dontwarn com.ak.torch.**
+-dontwarn okio.**
+-dontwarn javax.annotation.**
+-dontwarn org.conscrypt.**
+-dontwarn com.bytedance.**
+-dontwarn com.ss.android.**
+-dontwarn org.apache.http.**
+-keep class com.qihoo.** {*;}
+-keep class com.qihoo360.** { *; }
+-keep class pl.droidsonroids.** { *; }
+-keep class com.makeramen.** { *; }
+-keep class com.bytedance.sdk.openadsdk.** { *; }
+-keep class com.androidquery.callback.** {*;}
+-keep public interface com.bytedance.sdk.openadsdk.downloadnew.** {*;}
+-keep class android.support.v4.app.NotificationCompat**{
+    public *;
+}
+-keep class **.R$* {
+     *;
+}
+-keep class com.qq.e.** {
+    public protected *;
+}
+-keepclassmembers class * extends android.webkit.WebChromeClient{
+    public void openFileChooser(...);
+}
+-keep class org.apache.** {*;}
+-keep class android.net.http.** {*;}
+# A resource is loaded with a relative path so the package of this class must be preserved.
+-keepnames class okhttp3.internal.publicsuffix.PublicSuffixDatabase
+#Ad code End
 
--keep class com.ak.**
--keep class com.ak.** { *; }
-
-#support-v4
--keep class android.support.v4.** { *; }
-
--keep class com.androidquery.**
--keep class com.androidquery.**{*;}
--keep class com.androidquery.*.**
--keep class com.androidquery.*.**{*;}
 ```
 
 ## 集成测试
