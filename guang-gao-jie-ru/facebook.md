@@ -3,13 +3,13 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:Facebook:2.2.4' 
+    implementation 'com.libVigame.AD:Facebook:2.2.5' 
 ```
 
 ## 注意事项
 
 ```text
-    无
+    无 
 ```
 
 ## 混淆过滤
