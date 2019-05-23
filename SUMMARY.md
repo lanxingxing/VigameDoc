@@ -69,6 +69,7 @@
   * [apk校验工具](wbgui/checkapk.md)
   * [logcat工具](wbgui/logcat.md)
   * [图片工具](wbgui/imageTool.md)
+  * [textTool工具](wbgui/textTool.md)
 * [wbjs](wbjs/README.md)
   * [cocoscreator 微信小游戏](wbjs/cocoscreatorwx.md)
   * [cocoscreator 头条小游戏](wbjs/cocoscreatortt.md)
