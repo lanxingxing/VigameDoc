@@ -2,6 +2,12 @@
 
 ## 下载
 
+[v1.0.5](http://gui.vigame.cn/createApk/v1.0.5/createApk_1.0.5.zip)
+
+1. 修改统计参数数据库
+
+
+
 [v1.0.4](http://gui.vigame.cn/createApk/v1.0.4/createApk_1.0.4.zip)
 
 1. 添加签名界面
