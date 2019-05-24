@@ -4,6 +4,14 @@
 
 ## 下载地址
 
+[v1.0.4](http://gui.vigame.cn/apkInfo/v1.0.4/apkInfo_1.0.4.zip
+
+**修改** ：
+
+1. 添加 签名 SHA1  SHA256 显示
+
+
+
 [v1.0.3](http://gui.vigame.cn/apkInfo/v1.0.3/apkInfo_1.0.3.zip)
 
 **修改** ：
