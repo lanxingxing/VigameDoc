@@ -4,7 +4,9 @@
 
 ## 下载地址
 
-[v1.0.4](http://gui.vigame.cn/apkInfo/v1.0.4/apkInfo_1.0.4.zip
+
+
+[v1.0.4](http://gui.vigame.cn/apkInfo/v1.0.4/apkInfo_1.0.4.zip)
 
 **修改** ：
 
