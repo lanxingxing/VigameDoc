@@ -4,9 +4,11 @@
 
 ## 下载地址
 
-[v1.0.1](http://gui.vigame.cn/logcat/v1.0.0/logcat_1.0.0.zip)
+[v1.0.1](http://gui.vigame.cn/logcat/v1.0.1/logcat_1.0.1.zip)
 
-  添加 ios log日志，优化软件性能。
+  添加 ios log日志，ios 截屏,优化软件性能。
+
+（需要用 iTunes，连接ios,  截屏需要 打开手机 开发者）
 
 [v1.0.0](http://gui.vigame.cn/logcat/v1.0.0/logcat_1.0.0.zip)
 
