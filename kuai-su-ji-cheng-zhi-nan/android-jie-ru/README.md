@@ -27,7 +27,7 @@ allprojects {
     implementation 'com.libVigame.Loader:VigameLoader:2.3.9'
     implementation 'com.libVigame.Core:CoreManager:2.3.5'
     implementation 'com.libVigame.Pay:PayManager:2.1.7'
-    implementation 'com.libVigame.AD2:ADManager:2.2.8'
+    implementation 'com.libVigame.AD2:ADManager:2.3.1'
     implementation 'com.libVigame.Social:SocialManager:2.1.5'
     implementation 'com.libVigame.Extention:ExtManager:2.0.1'
     implementation 'com.libVigame.TJ:TJManager:2.0.2'
