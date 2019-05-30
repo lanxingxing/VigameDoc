@@ -54,6 +54,7 @@
   * [Mobivista](guang-gao-jie-ru/mobivista.md)
   * [魅族](guang-gao-jie-ru/mei-zu.md)
   * [小米](guang-gao-jie-ru/xiao-mi.md)
+  * [推啊](guang-gao-jie-ru/tuiA.md)
 * [统计接入参考](tong-ji-jie-ru/README.md)
   * [Umeng](tong-ji-jie-ru/umeng.md)
   * [Facebook](tong-ji-jie-ru/facebook.md)
