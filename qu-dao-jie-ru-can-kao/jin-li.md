@@ -7,7 +7,7 @@ description: 金立
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.Pay:Amigo:2.1.2'
+    implementation 'com.libVigame.Pay:Amigo:2.1.3'
 ```
 
 ## 配置文件说明

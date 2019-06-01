@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.TJ:HeadLine:2.0.1'
+    implementation 'com.libVigame.TJ:HeadLine:2.0.2'
 ```
 
 ## Manifest参数选项

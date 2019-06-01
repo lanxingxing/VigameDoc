@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.TJ:DateEye:2.0.7'
+    implementation 'com.libVigame.TJ:DateEye:2.0.8'
 ```
 
 ## Manifest参数选项

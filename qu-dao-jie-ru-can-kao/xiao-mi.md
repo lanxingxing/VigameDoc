@@ -7,9 +7,9 @@ description: 小米
 ## 模块引入
 
 ```text
-  implementation 'com.libVigame.Pay:MiPay_New:2.2.3'
+  implementation 'com.libVigame.Pay:MiPay_New:2.2.4'
   和
-  implementation 'com.libVigame.Pay:MiSingle:2.1.2' （单机计费）
+  implementation 'com.libVigame.Pay:MiSingle:2.1.3' （单机计费）
 ```
 
 ## Manifest参数选项

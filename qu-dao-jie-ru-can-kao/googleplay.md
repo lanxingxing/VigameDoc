@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.Pay:GooglePlay:2.1.1'
+    implementation 'com.libVigame.Pay:GooglePlay:2.1.3'
 ```
 
 ## 配置文件说明

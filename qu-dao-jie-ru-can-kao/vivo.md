@@ -5,9 +5,9 @@
 ```text
   implementation 'com.libVigame.Pay:VivoSingle:2.0.0' (Vivo单机计费)
   和
-  implementation 'com.libVigame.Pay:Vivo:2.1.9' (Vivo联运)
+  implementation 'com.libVigame.Pay:Vivo:2.2.0' (Vivo联运)
   和
-  implementation 'com.libVigame.Pay:VivoOverseas:2.0.2' (Vivo海外)
+  implementation 'com.libVigame.Pay:VivoOverseas:2.0.4' (Vivo海外)
 ```
 
 ## Manifest参数选项

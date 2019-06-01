@@ -7,7 +7,7 @@ description: 安智
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.Pay:AnzhiPay:2.1.4'
+    implementation 'com.libVigame.Pay:AnzhiPay:2.1.5'
 ```
 
 ## 配置文件说明

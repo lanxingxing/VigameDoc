@@ -7,7 +7,7 @@ description: 魅族
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.Pay:Meizu:2.1.7'
+    implementation 'com.libVigame.Pay:Meizu:2.1.9'
 ```
 
 ## 配置文件说明
