@@ -23,7 +23,7 @@ allprojects {
 
 ```text
     //vigame相关模块
-    implementation 'com.libVigame.Proxy:Features:2.4.4'
+    implementation 'com.libVigame.Proxy:Features:2.4.5'
     implementation 'com.libVigame.Loader:VigameLoader:2.3.9'
     implementation 'com.libVigame.Core:CoreManager:2.3.5'
     implementation 'com.libVigame.Pay:PayManager:2.1.7'
