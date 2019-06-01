@@ -1,7 +1,7 @@
 # IronSource
 
 ```text
-    implementation 'com.libVigame.AD:Ironsource:2.0.2'
+    implementation 'com.libVigame.AD:Ironsource:2.0.4'
 ```
 
 ## 注意事项

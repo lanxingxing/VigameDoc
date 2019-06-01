@@ -5,7 +5,7 @@ description: 九游广告
 # Ngad
 
 ```text
-    implementation 'com.libVigame.AD:Ngad:2.2.7'
+    implementation 'com.libVigame.AD:Ngad:2.2.8'
 ```
 
 ## 注意事项
