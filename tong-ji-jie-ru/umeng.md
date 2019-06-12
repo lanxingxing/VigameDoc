@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.TJ:UMeng:2.0.4'
+    implementation 'com.libVigame.TJ:UMeng:2.0.5'
 ```
 
 ## Manifest参数选项
@@ -36,5 +36,24 @@ android {
 ```text
 -keep class com.umeng.**
 -keep class com.umeng.**{*;}
+```
+
+## 其他注意事项
+
+```text
+须在工程根目录的build.gradle中添加
+buildscript {
+    repositories {
+        ...
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+    }
+   }
+   
+   allprojects {
+    repositories {
+      ...
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+    }
+}
 ```
 
