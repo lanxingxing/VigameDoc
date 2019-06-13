@@ -3,6 +3,16 @@
 ## 第一步：添加本地maven仓库
 
 ```text
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+    }    
+}
+```
+
+```text
 allprojects {
     repositories {
         google()
@@ -15,9 +25,11 @@ allprojects {
         maven {
             url "http://192.168.1.252:8081/repository/VigameSnapshot/"
         }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
     }
 }
 ```
+
 
 ## 第二步：引入仓库中的模块
 
