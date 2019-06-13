@@ -7,6 +7,7 @@ buildscript {
     repositories {
         google()
         jcenter()
+        //添加友盟仓库
         maven { url 'https://dl.bintray.com/umsdk/release' }
     }    
 }
@@ -25,6 +26,7 @@ allprojects {
         maven {
             url "http://192.168.1.252:8081/repository/VigameSnapshot/"
         }
+        //添加友盟仓库
         maven { url 'https://dl.bintray.com/umsdk/release' }
     }
 }
