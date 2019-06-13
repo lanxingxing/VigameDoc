@@ -1,5 +1,8 @@
 # Android接入
 
+#### 内网Demo工程克隆地址：  
+ssh://192.168.1.252:29418/android/VigameApplication.git
+
 ## 第一步：添加本地maven仓库
 
 ```text
