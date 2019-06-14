@@ -16,5 +16,5 @@ xxx_Implementation 'com.libVigame.Push:Oppo:1.0.0'
 ## 注意事项
 
 ```text
-确保包名、参数正确，AppKey，AppSecret是配置再 feedata_oppo.xml 中的
+确保包名、参数正确，AppKey，AppSecret是配置在 feedata_oppo.xml 中的
 ```
