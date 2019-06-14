@@ -4,3 +4,17 @@
 ```text
 xxx_Implementation 'com.libVigame.Push:Oppo:1.0.0'
 ```
+
+
+## 添加混淆
+
+```text
+# OPPO 推送
+-dontwarn com.coloros.mcssdk.**
+-keep class com.coloros.mcssdk.** { *; }
+```
+## 注意事项
+
+```text
+确保包名、参数正确，AppKey，AppSecret是配置再 feedata_oppo.xml 中的
+```
