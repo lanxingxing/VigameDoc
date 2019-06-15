@@ -36,7 +36,8 @@ OFFER_ID= qq appid
 YSDK_URL=https://ysdk.qq.com
 ;************** YSDK相关配置项,游戏需要根据各自情况修改 END **************
 
-
+```
+```text
 如果用 ysdk支付需注意：
 
 assets 目录需添加 feedata_ysdk.xml文件
