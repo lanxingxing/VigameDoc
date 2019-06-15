@@ -7,7 +7,7 @@ description: 腾讯YSDK
 ### 模块引入
 
 ```text
-    implementation 'com.libVigame.Pay:YSDK:2.1.5'
+    implementation 'com.libVigame.Pay:YSDK:2.1.6'
 ```
 
 ## Manifest参数选项
@@ -19,8 +19,38 @@ description: 腾讯YSDK
 ## 配置文件说明
 
 ```text
-待添加
+assets 目录需添加 ysdkconf.ini文件
+;**************游戏相关配置, 游戏需要根据各自情况修改 START **********
+;游戏的QQAPPID
+QQ_APP_ID= qq appid
+;游戏的微信APPID
+WX_APP_ID=微信appid
+;游戏的OFFER_ID
+OFFER_ID= qq appid
+;***************游戏配置项, 游戏需要根据各自情况修改 END **************
+
+;************* YSDK相关配置项,游戏需要根据各自情况修改 START **********
+;联调环境
+;YSDK_URL=https://ysdktest.qq.com
+;正式环境
+YSDK_URL=https://ysdk.qq.com
+;************** YSDK相关配置项,游戏需要根据各自情况修改 END **************
+
+
+如果用 ysdk支付需注意：
+
+assets 目录需添加 feedata_ysdk.xml文件
+
+<data>    
+    <midasKey>米大师支付key</midasKey>
+    <feeinfo>
+        ...
+    </feeinfo>
+</data>  
+
 ```
+
+
 
 ## 混淆过滤
 
