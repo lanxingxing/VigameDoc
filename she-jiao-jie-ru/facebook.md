@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.Social:Facebook:2.1.8'
+    implementation 'com.libVigame.Social:Facebook:2.1.9'
 ```
 
 ## Manifest参数选项
