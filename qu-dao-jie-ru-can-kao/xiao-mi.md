@@ -12,8 +12,11 @@ description: 小米
   implementation 'com.libVigame.Pay:MiSingle:2.1.3' （单机计费）
 ```
 
-## Manifest参数选项
+## 小米签名权限需注意
 
+```text
+   如果需要小米签名 需在 AndroidManifest.xml文件中添加下面的权限
+```
 ```text
  <!--带了下面的权限后小米会重新签名 新产品需要添加下面的权限-->
  <uses-permission android:name="com.xiaomi.sdk.permission.PAYMENT" />
