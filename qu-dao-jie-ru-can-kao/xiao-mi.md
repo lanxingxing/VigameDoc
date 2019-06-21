@@ -14,7 +14,10 @@ description: 小米
 
 ## Manifest参数选项
 
-无
+```text
+ <!--带了下面的权限后小米会重新签名 新产品需要添加下面的权限-->
+ <uses-permission android:name="com.xiaomi.sdk.permission.PAYMENT" />
+```
 
 ## 配置文件说明
 
