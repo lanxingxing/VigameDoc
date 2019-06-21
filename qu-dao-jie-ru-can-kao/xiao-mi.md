@@ -71,5 +71,4 @@ assets目录加入feedata\_oppo.xml
 
 如何判断sdk是否初始化成功？
 
-游戏打开会有oppo对应的悬浮按钮
-
+可根据 MiAgent tag 筛选log，进行查看
