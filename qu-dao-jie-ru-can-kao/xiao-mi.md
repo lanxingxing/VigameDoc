@@ -14,9 +14,7 @@ description: 小米
 
 ## 小米签名权限需注意
 
-```text
    如果需要小米签名 需在 AndroidManifest.xml文件中添加下面的权限
-```
 ```text
  <!--带了下面的权限后小米会重新签名 新产品需要添加下面的权限-->
  <uses-permission android:name="com.xiaomi.sdk.permission.PAYMENT" />
@@ -73,5 +71,6 @@ assets目录加入feedata\_oppo.xml
 ## 集成测试
 
 如何判断sdk是否初始化成功？
+答：查看Tag为MiAgent的日志输出。
 
 可根据 MiAgent tag 筛选log，进行查看
