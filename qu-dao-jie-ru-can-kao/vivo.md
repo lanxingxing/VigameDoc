@@ -40,6 +40,20 @@ assets目录加入feedata\_vivo.xml
 -keep class com.bbkmobile.**
 -keep class com.bbkmobile.**{*;}
 ```
+## vivo渠道特殊要求
+
+```text
+icon需注意：
+res中需包含以下四个文件夹及对应的icon,icon尺寸要正确
+drawable-hdpi     对应 icon尺寸 192x192
+drawable-xhdpi    对应 icon尺寸 256x256
+drawable-xxhdpi   对应 icon尺寸 384x384
+drawable-xxxhdpi  对应 icon尺寸 512x512
+```
+```text
+退出弹框要求：
+游戏退出前需弹出vivo渠道的退出弹框（vivo手机，非vivo手机会直接退出看不到vivo退出弹框）
+```
 
 ## 集成测试
 
