@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-  implementation 'com.libVigame.Pay:VivoSingle:2.0.0' (Vivo单机计费)
+  implementation 'com.libVigame.Pay:VivoSingle:2.0.0' (Vivo单机计费  特殊说明才用此版本的sdk)
   和
   implementation 'com.libVigame.Pay:Vivo:2.2.0' (Vivo联运)
   和
