@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:Mi:2.2.6'
+    implementation 'com.libVigame.AD:Mi:2.2.7'
 ```
 
 ## 注意事项

@@ -3,11 +3,11 @@
 ## 模块引入
 
 ```text
-  implementation 'com.libVigame.Pay:VivoSingle:2.0.0' (Vivo单机计费)
+  implementation 'com.libVigame.Pay:VivoSingle:2.0.0' (Vivo单机计费  特殊说明才用此版本的sdk)
   和
-  implementation 'com.libVigame.Pay:Vivo:2.1.9' (Vivo联运)
+  implementation 'com.libVigame.Pay:Vivo:2.2.0' (Vivo联运)
   和
-  implementation 'com.libVigame.Pay:VivoOverseas:2.0.2' (Vivo海外)
+  implementation 'com.libVigame.Pay:VivoOverseas:2.0.4' (Vivo海外)
 ```
 
 ## Manifest参数选项
@@ -39,6 +39,20 @@ assets目录加入feedata\_vivo.xml
 ```text
 -keep class com.bbkmobile.**
 -keep class com.bbkmobile.**{*;}
+```
+## vivo渠道特殊要求
+
+```text
+icon需注意：
+res中需包含以下四个文件夹及对应的icon,icon尺寸要正确
+drawable-hdpi     对应 icon尺寸 192x192
+drawable-xhdpi    对应 icon尺寸 256x256
+drawable-xxhdpi   对应 icon尺寸 384x384
+drawable-xxxhdpi  对应 icon尺寸 512x512
+```
+```text
+退出弹框要求：
+游戏退出前需弹出vivo渠道的退出弹框（vivo手机，非vivo手机会直接退出看不到vivo退出弹框）
 ```
 
 ## 集成测试

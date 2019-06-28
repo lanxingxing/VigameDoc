@@ -3,13 +3,13 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:VIVO:2.5.1' 
+    implementation 'com.libVigame.AD:VIVO:2.5.2' 
 ```
 
 ## 注意事项
 
 ```text
-    无
+    vivo视频广告比较特殊，打开视频广告的时候需暂停游戏背景音乐，在打开结果回调中打开游戏背景音乐 
 ```
 
 ## 混淆过滤

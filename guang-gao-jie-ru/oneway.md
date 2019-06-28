@@ -3,11 +3,11 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:OneWay:2.1.8'
+    implementation 'com.libVigame.AD:OneWay:2.1.9'
 ```
 和
 ```text
-    implementation 'com.libVigame.AD:OneWayA:1.0.0'（隐藏广告方式）
+    implementation 'com.libVigame.AD:OneWayA:1.0.1'（隐藏广告方式）
 ```
 
 ## 注意事项

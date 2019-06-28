@@ -7,14 +7,18 @@ description: 小米
 ## 模块引入
 
 ```text
-  implementation 'com.libVigame.Pay:MiPay_New:2.2.3'
+  implementation 'com.libVigame.Pay:MiPay_New:2.2.4'
   和
-  implementation 'com.libVigame.Pay:MiSingle:2.1.2' （单机计费）
+  implementation 'com.libVigame.Pay:MiSingle:2.1.3' （单机计费）
 ```
 
-## Manifest参数选项
+## 小米签名权限需注意
 
-无
+   如果需要小米签名 需在 AndroidManifest.xml文件中添加下面的权限
+```text
+ <!--带了下面的权限后小米会重新签名 新产品需要添加下面的权限-->
+ <uses-permission android:name="com.xiaomi.sdk.permission.PAYMENT" />
+```
 
 ## 配置文件说明
 
@@ -67,6 +71,6 @@ assets目录加入feedata\_oppo.xml
 ## 集成测试
 
 如何判断sdk是否初始化成功？
+答：查看Tag为MiAgent的日志输出。
 
-游戏打开会有oppo对应的悬浮按钮
-
+可根据 MiAgent tag 筛选log，进行查看

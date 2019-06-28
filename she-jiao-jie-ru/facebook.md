@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.Social:Facebook:2.1.7'
+    implementation 'com.libVigame.Social:Facebook:2.1.9'
 ```
 
 ## Manifest参数选项
@@ -48,5 +48,13 @@
 
 ```text
 -keep class com.facebook.**{*;}
+```
+
+## fb登录需注意
+
+```text
+需在mac电脑生成密钥散列，命令如下
+keytool -exportcert -alias YOUR_RELEASE_KEY_ALIAS -keystore YOUR_RELEASE_KEY_PATH | openssl sha1 -binary | openssl base64
+window系统生成的密钥散列有问题，需注意不要用window生成
 ```
 

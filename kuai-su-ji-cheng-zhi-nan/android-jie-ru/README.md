@@ -1,6 +1,20 @@
 # Android接入
 
+#### 内网Demo工程克隆地址：  
+ssh://192.168.1.252:29418/android/VigameApplication.git
+
 ## 第一步：添加本地maven仓库
+
+```text
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        //添加友盟仓库
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+    }    
+}
+```
 
 ```text
 allprojects {
@@ -15,25 +29,28 @@ allprojects {
         maven {
             url "http://192.168.1.252:8081/repository/VigameSnapshot/"
         }
+        //添加友盟仓库
+        maven { url 'https://dl.bintray.com/umsdk/release' }
     }
 }
 ```
+
 
 ## 第二步：引入仓库中的模块
 
 ```text
     //vigame相关模块
-    implementation 'com.libVigame.Proxy:Features:2.4.4'
-    implementation 'com.libVigame.Loader:VigameLoader:2.3.9'
-    implementation 'com.libVigame.Core:CoreManager:2.3.5'
-    implementation 'com.libVigame.Pay:PayManager:2.1.7'
+    implementation 'com.libVigame.Proxy:Features:2.4.8'
+    implementation 'com.libVigame.Loader:VigameLoader:2.4.1'
+    implementation 'com.libVigame.Core:CoreManager:2.3.8'
+    implementation 'com.libVigame.Pay:PayManager:2.2.0'
     implementation 'com.libVigame.AD2:ADManager:2.3.1'
-    implementation 'com.libVigame.Social:SocialManager:2.1.5'
+    implementation 'com.libVigame.Social:SocialManager:2.1.6'
     implementation 'com.libVigame.Extention:ExtManager:2.0.1'
-    implementation 'com.libVigame.TJ:TJManager:2.0.2'
+    implementation 'com.libVigame.TJ:TJManager:2.0.5'
     implementation 'com.android.support:support-v4:28.0.0'
     implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.libVigame.Core:android-query:2.1.0'
+    implementation 'com.libVigame.Core:android-query:2.1.1'
 ```
 
 ## 第三步：添加框架代码调用
