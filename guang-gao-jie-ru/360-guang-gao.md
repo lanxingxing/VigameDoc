@@ -32,7 +32,7 @@ http://192.168.1.252:8080/tree/VigameAndroidLibrary.git/master/libAD
 	下面这个gif模块会和360广告冲突：
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
 	处理方式有下面两种，任选一种：
-	1.注释掉pl.droidsonroids.gif:android-gif-drawable:1.2.6模块
+	1.注释掉pl.droidsonroids.gif:android-gif-drawable:1.2.6模块，不过出其他渠道的包需要这个模块，建议采用第二种方式
 	2.在build.gradle的dependencies之前加入模块去重复的代码
 	```text
 	configurations {
