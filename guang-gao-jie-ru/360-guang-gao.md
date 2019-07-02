@@ -29,10 +29,16 @@ http://192.168.1.252:8080/tree/VigameAndroidLibrary.git/master/libAD
 
 
 ## 注意事项
-
-```text
-    无 
-```
+	下面这个gif模块会和360广告冲突：
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
+	处理方式有下面两种，任选一种：
+	1.注释掉pl.droidsonroids.gif:android-gif-drawable:1.2.6模块
+	2.在build.gradle的dependencies之前加入模块去重复的代码
+	```text
+	configurations {
+    	all*.exclude group: 'pl.droidsonroids.gif'
+	}
+	```
 
 ## 混淆过滤
 
