@@ -74,6 +74,7 @@
   * [textTool工具](wbgui/textTool.md)
   * [psdTool工具](wbgui/psdTool.md)
   * [musicTool工具](wbgui/musicTool.md)
+  * [九宫格工具](wbgui/jggTool.md)
 * [wbjs](wbjs/README.md)
   * [cocoscreator 微信小游戏](wbjs/cocoscreatorwx.md)
   * [cocoscreator 头条小游戏](wbjs/cocoscreatortt.md)
