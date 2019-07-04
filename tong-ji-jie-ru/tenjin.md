@@ -23,10 +23,11 @@
 ## 测试 引荐安装
 ```text
 运行应用程序，然后在logcat中过滤 RFF tag,
-在命令行中先启动adb，然后输入命令 adb shell am broadcast -a com.android.vending.INSTALL_REFERRER -n <com.your.apppackage>/com.tenjin.android.TenjinReferrerReceiver --es "referrer" "ai=test&gclid=click_test"
-会再logcat中看到 ai=test&gclid=click_test的输出
+在命令行中先启动adb，然后输入命令： adb shell am broadcast -a com.android.vending.INSTALL_REFERRER -n <com.your.apppackage>/com.tenjin.android.TenjinReferrerReceiver --es "referrer" "ai=test&gclid=click_test"
+会在logcat中看到 ai=test&gclid=click_test 的输出
 注意 <com.your.apppackage> 替换成成包名 例如：
 adb shell am broadcast -a com.android.vending.INSTALL_REFERRER -n com.puzzle.game.hw/com.tenjin.android.TenjinReferrerReceiver --es "referrer" "ai=test&gclid=click_test"
+能看到日志正常输出
 
 
 
