@@ -61,6 +61,7 @@
   * [HeadlineTrcking](tong-ji-jie-ru/headlinetrcking.md)
   * [AppsFlyer](tong-ji-jie-ru/appsflyer.md)
   * [DateEyeTrcking](tong-ji-jie-ru/dateeyetrcking.md)
+  * [Tenjin](tong-ji-jie-ru/tenjin.md)  
 * [推送接入参考](tui-song-jie-ru-can-kao/README.md)
   * [Umeng推送](tui-song-jie-ru-can-kao/umeng-tui-song.md)
   * [OPPO推送](tui-song-jie-ru-can-kao/oppo-tui-song.md)
