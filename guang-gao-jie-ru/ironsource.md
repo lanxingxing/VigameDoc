@@ -28,6 +28,12 @@
 -dontwarn com.ironsource.adapters.**
 -dontwarn com.moat.**
 -keep class com.moat.** { public protected private *; }
+-keep class com.ironsource.adapters.**
+-keep class com.ironsource.adapters.** {*; }
+-keep class com.applovin.**
+-keep class com.applovin.** {*; }
+-keep class com.integralads.**
+-keep class com.integralads.** {*; }
 ```
 
 ## 集成测试
