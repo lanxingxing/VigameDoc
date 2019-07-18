@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.TJ:Tenjin:1.0.1'
+    implementation 'com.libVigame.TJ:Tenjin:1.0.0'
 ```
 
 
