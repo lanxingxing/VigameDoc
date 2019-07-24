@@ -1,9 +1,9 @@
 # IronSource
 
 ```text
-    implementation 'com.libVigame.AD:Ironsource:2.0.5'
+    implementation 'com.libVigame.AD:Ironsource:2.0.6'
 	和
-	implementation 'com.libVigame.AD:Ironsource_JuHe:2.0.5'
+	implementation 'com.libVigame.AD:Ironsource_JuHe:2.0.6' (聚合)
 ```
 
 ## 注意事项
