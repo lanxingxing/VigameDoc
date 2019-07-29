@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:OPPO:2.5.0'
+    implementation 'com.libVigame.AD:OPPO:2.5.2'
 ```
 
 ## 注意事项

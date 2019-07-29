@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:LeDou:2.0.8'
+    implementation 'com.libVigame.AD:LeDou:2.0.9'
 
 ## 注意事项
 

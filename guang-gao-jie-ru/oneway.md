@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:OneWay:2.1.9'
+    implementation 'com.libVigame.AD:OneWay:2.2.1'
 ```
 和
 ```text
@@ -23,8 +23,8 @@
 ##           OneWaySDK 混淆配置             ##
 ############################################
 -keepattributes *Annotation*
--keep enum mobi.oneway.sdk.* {*;}
--keep class mobi.oneway.sdk.** {*;}
+-keep enum mobi.oneway.** {*;}
+-keep class mobi.oneway.** {*;}
 ############################################
 ##           OneWay隐藏广告方式 混淆配置      ##
 ############################################
