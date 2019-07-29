@@ -2,6 +2,12 @@
 
 ## 下载
 
+[v1.0.6](http://gui.vigame.cn/createApk/v1.0.6/createApk_1.0.6.zip)
+
+1. 添加二进制出包，加快出包速度
+
+2. 增加渠道自动签名
+
 [v1.0.5](http://gui.vigame.cn/createApk/v1.0.5/createApk_1.0.5.zip)
 
 1. 修改统计参数数据库
