@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:TuiA:1.0.1'
+    implementation 'com.libVigame.AD:TuiA:1.0.2'
 ```
 
 ## 注意事项
