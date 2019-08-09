@@ -4,7 +4,13 @@
 
 ## 下载地址
 
+[v1.0.5](http://gui.vigame.cn/apkInfo/v1.0.5/apkInfo_1.0.5.zip)
 
+**修改** ：
+
+1. 添加 ios  ipa 包解析
+
+   
 
 [v1.0.4](http://gui.vigame.cn/apkInfo/v1.0.4/apkInfo_1.0.4.zip)
 
