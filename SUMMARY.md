@@ -58,6 +58,7 @@
   * [推啊](guang-gao-jie-ru/tuiA.md)
   * [Tapjoy](guang-gao-jie-ru/tapjoy.md)
 * [统计接入参考](tong-ji-jie-ru/README.md)
+  * [Adjust](tong-ji-jie-ru/adjust.md)
   * [Umeng](tong-ji-jie-ru/umeng.md)
   * [Facebook](tong-ji-jie-ru/facebook.md)
   * [HeadlineTrcking](tong-ji-jie-ru/headlinetrcking.md)
