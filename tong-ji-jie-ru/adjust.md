@@ -15,7 +15,7 @@ android {
     ....
                 ADJUST_KEY:"xxx", //应用识别码,adjust后台获取               
                 ADJUST_TESTMODEL:"false", //是否是测试模式， 测试时设置为 true，注意正式版一定要为false
-                ADJUST_APPSECRET:"1,2,1,4,5", //签名配置，再adjust后台 sdk签名中获取
+                ADJUST_APPSECRET:"1,2,1,4,5", //签名配置，再adjust后台 sdk签名中获取 注意不能带 （ ）字符
 
     ...
             ]
@@ -42,7 +42,7 @@ android {
 
 ##其他注意事项
 ```text
-正式包 ADJUST_TESTMODEL 一定要设置为true 
+正式包 ADJUST_TESTMODEL 一定要设置为 false
 
 可通过 Adjust tag过滤日志，在测试模式下可看到如下输出说明接入没有问题
 V/Adjust: Path:      /sdk_click
