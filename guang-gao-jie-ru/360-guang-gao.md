@@ -105,3 +105,7 @@ http://192.168.1.252:8080/tree/VigameAndroidLibrary.git/master/libAD
 
 通过Ad360Agent或者ADLog查看广告的状态，或者直接通过弹出的广告进行判断
 
+
+## 广告接入
+
+2019-8-8：banner广告存在关不掉的情况，因为是传入的Activity去加载banner广告，所以会在closebanner之后openBanner里加载360banner广告的代码还在进行。解决办法：添加flag在调用QihooGameSDK.stopShowBanner()修复

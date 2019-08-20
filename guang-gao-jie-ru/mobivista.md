@@ -3,9 +3,9 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:MobVista:1.1.0'（国内）
+    implementation 'com.libVigame.AD:MobVista:1.1.1'（国内）
 	和
-	implementation 'com.libVigame.AD:MobVistaOversea:2.0.3'（海外）
+	implementation 'com.libVigame.AD:MobVistaOversea:2.0.4'（海外）
 ```
 
 ## 注意事项
@@ -34,3 +34,5 @@
 
 通过MVAgent或者ADLog查看广告的状态，或者直接通过弹出的广告进行判断
 
+#广告集成
+2.0.4版本，2019年8月20号，不支持分层，分层如果中途关闭会导致下一个播放不了，并且有一定的概率崩溃
