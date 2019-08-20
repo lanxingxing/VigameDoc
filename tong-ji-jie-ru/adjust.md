@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.TJ:Adjust:1.0.0'
+    implementation 'com.libVigame.TJ:Adjust:1.0.1'
 ```
 
 ## 配置文件说明
@@ -13,8 +13,7 @@
 android {
     manifestPlaceholders = [
     ....
-                ADJUST_KEY:"xxx", //应用识别码,adjust后台获取
-                ADJUST_PUSH_TOKEN:"xxx", //推送token 地址 https://firebase.google.com/docs/cloud-messaging/?hl=zh-cn
+                ADJUST_KEY:"xxx", //应用识别码,adjust后台获取               
                 ADJUST_TESTMODEL:"false", //是否是测试模式， 测试时设置为 true，注意正式版一定要为false
                 ADJUST_APPSECRET:"1,2,1,4,5", //签名配置，再adjust后台 sdk签名中获取
 
