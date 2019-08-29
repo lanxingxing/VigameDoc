@@ -1,9 +1,9 @@
 # IronSource
 
 ```text
-    implementation 'com.libVigame.AD:Ironsource:2.0.6'
+    implementation 'com.libVigame.AD:Ironsource:2.1.3'
 	和
-	implementation 'com.libVigame.AD:Ironsource_JuHe:2.0.9' (聚合)
+	implementation 'com.libVigame.AD:Ironsource_JuHe:2.1.3' (聚合)
 ```
 
 ## 注意事项
@@ -145,6 +145,17 @@
 -keep class com.google.gson.** {*;}
 -dontwarn android.support.**
 # support end
+#MobiVista start
+-keepattributes Signature
+-keepattributes *Annotation*
+-keep class com.mintegral.** {*; }
+-keep interface com.mintegral.** {*; }
+-keep class android.support.v4.** { *; }
+-dontwarn com.mintegral.**
+-keep class **.R$* { public static final int mintegral*; }
+-keep class com.alphab.** {*; }
+-keep interface com.alphab.** {*; }
+#MobiVista end
 ```
 
 ## 集成测试
