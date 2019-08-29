@@ -8,8 +8,20 @@
 
 ## 配置文件说明
 
-需要在app的build.gradle的manifestPlaceholders中添加如下配置：
 ```text
+在工程目录下的 build.gradle中添加
+buildscript {    
+    dependencies {
+        ...
+        classpath 'com.google.gms:google-services:3.0.0'   // 使用 firebase 要添加
+       ...
+    }
+}
+```
+
+```text
+需要在app的build.gradle的添加如下配置：
+apply plugin: 'com.google.gms.google-services'//一定要有，不然统计不到卸载数据
 android {
     manifestPlaceholders = [
     ....
