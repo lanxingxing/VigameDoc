@@ -55,7 +55,6 @@ android {
 ##其他注意事项
 ```text
 正式包 ADJUST_TESTMODEL 一定要设置为 false
-
 可通过 Adjust tag过滤日志，在测试模式下可看到如下输出说明接入没有问题
 V/Adjust: Path:      /sdk_click
     ClientSdk: android4.6.0
@@ -72,5 +71,7 @@ V/Adjust: Path:      /sdk_click
       tracking_enabled 1
 
 其他问题可查看 https://github.com/adjust/android_sdk/blob/master/doc/chinese/README.md
-
+```
+```text
+通过 AdjustAgent tag过滤，查看是否有 FirebaseInstanceId  pushToken 输出，在装有 googleplay的手机上测试，如果有输出则正常，无输出则不能统计卸载需要排查上面步骤是否都正确
 ```
