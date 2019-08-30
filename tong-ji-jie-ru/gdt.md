@@ -5,8 +5,22 @@
 ```text
     implementation 'com.libVigame.TJ:GDT:2.0.0'
 ```
+##配置文件说明
+```text
+需要在app的build.gradle的添加如下配置：
+android {
+    manifestPlaceholders = [
+    ....
+                GDTAppId:"", //appid参数，配置工具统计参数里面可以拿到               
+                GDTAppKey:"", //appkey参数，配置工具统计参数里面可以拿到       
+                
 
+    ...
+            ]
+    }
+}
 
+```
 ## 混淆过滤
 
 ```text
