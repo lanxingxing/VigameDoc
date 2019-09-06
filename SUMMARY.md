@@ -69,7 +69,7 @@
 * [推送接入参考](tui-song-jie-ru-can-kao/README.md)
   * [Umeng推送](tui-song-jie-ru-can-kao/umeng-tui-song.md)
   * [OPPO推送](tui-song-jie-ru-can-kao/oppo-tui-song.md)
-* [模块混淆文件](proguard/vigame_proguard.pro)  
+* [模块混淆文件](proguard/README.md)  
 * [wbGui](wbgui/README.md)
   * [配置工具](wbgui/formconfigdoc.md)
   * [出包工具](wbgui/createapk.md)
