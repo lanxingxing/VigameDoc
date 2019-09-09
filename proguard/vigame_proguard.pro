@@ -1485,14 +1485,14 @@ public protected *;
 # amazon end
 ########### UpAds（狂热广告）###########
 
-########### Vigame（API广告）###########
+########### Vigame（API广告）########
 #sdk版本：
 #模块引入：com.libVigame.AD:Vigame:2.3.5
 -keep class com.qapp.appunion.sdk.**
 -keep class com.qapp.appunion.sdk.** {*;}
 -keep class com.qapp.android.common.**
 -keep class com.qapp.android.common.** {*;}
-########### Vigame（API广告）###########
+########### Vigame（API广告）########
 
 ########### Vivo 广告 ###########
 #sdk版本：vivo_adsdk_v2.9.0.1
