@@ -26,6 +26,7 @@
 -keepclassmembers public class * extends com.libPay.PayAgent{
     public static *** ***(...);
 }
+#-keep public class com.libPay.**
 #-keep public class com.libPay.PayParams
 #-keepclassmembers public class com.libPay.PayParams{*;}
 #-keep public class com.libPay.PayManager
