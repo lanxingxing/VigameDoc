@@ -70,6 +70,8 @@
   * [Umeng推送](tui-song-jie-ru-can-kao/umeng-tui-song.md)
   * [OPPO推送](tui-song-jie-ru-can-kao/oppo-tui-song.md)
 * [模块混淆文件](proguard/README.md)  
+* [插件使用](plugins/README.md)  
+  * [版本修正插件](plugins/CheckPlugin.md)
 * [wbGui](wbgui/README.md)
   * [配置工具](wbgui/formconfigdoc.md)
   * [出包工具](wbgui/createapk.md)
