@@ -87,3 +87,6 @@
 * [wbjs](wbjs/README.md)
   * [cocoscreator 微信小游戏](wbjs/cocoscreatorwx.md)
   * [cocoscreator 头条小游戏](wbjs/cocoscreatortt.md)
+* [uniwb](uniwb/README.md)
+  * [wb运营接口](uniwb/wb.md)
+
