@@ -63,7 +63,9 @@ assets目录加入feedata\_huawei.xml
 
 ## 集成测试
 
-如何判断sdk是否初始化成功？
+1.如何判断sdk是否初始化成功？
 
 可通过名为"HuaweiAgent"的Tag查看日志，登陆成功会有“game login: onResult: retCode=”等日志输出。
 
+2.官方错误码参考文档
+https://developer.huawei.com/consumer/cn/service/hms/catalog/HuaweiJointOperation.html?page=hmssdk_jointOper_api_reference_errorcode
