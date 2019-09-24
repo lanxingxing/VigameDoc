@@ -84,4 +84,10 @@ Activity 继承 UniWbActivity 即可， 与 unity 交互的 接口在 UniWbActiv
  Wb.CoreManager.Instance.CheckSignature();
 ```
 
-在游戏开始的时候，如果需要签名验证，调用该方法， st.txt 文件保存签名的 哈希值。
+在游戏开始的时候，如果需要签名验证，调用该方法， st.txt 文件保存签名信息。
+
+##获取签名信息获取工具
+[UniWb.Wb](http://gui.vigame.cn/signtool/获取vigame签名工具.apk)
+
+​	 st.txt 文件里添加上述工具中获取到的签名信息
+
