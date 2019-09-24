@@ -88,7 +88,7 @@ Activity 继承 UniWbActivity 即可， 与 unity 交互的 接口在 UniWbActiv
 
 ## 签名配置
 
-签名获取工具下载地址 [UniWb.Wb](http://gui.vigame.cn/signtool/获取vigame签名工具.apk)
+下载地址 [vigame签名获取工具](http://gui.vigame.cn/signtool/vigame签名获取工具.apk)
 
 ​	 用待添加的签名，签名上述apk，然后再 st.txt 文件里添加上述工具中获取到的签名信息
 
