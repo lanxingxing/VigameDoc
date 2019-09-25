@@ -306,9 +306,10 @@ extern "C"
     {
         std::unordered_map<std::string,std::string > umap;
         
-        vector<string> spv =  split(map,",");
+        vector<string> spv =  split(map,"#");
         for (int i =0; i< spv.size(); i++) {
-            vector<string> kv = split(spv[i],"#");
+            if(spv[i].length() <=0) continue;
+            vector<string> kv = split(spv[i],",");
             umap.insert(std::pair<std::string,std::string>(kv[0],kv[1]));
         }
         vigame::tj::DataTJManager::event(eventId,umap);
