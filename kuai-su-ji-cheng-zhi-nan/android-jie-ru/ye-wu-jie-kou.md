@@ -17,13 +17,13 @@ CoreNative.init();
 ```text
 PayNative.setGameExitCallback(new Runnable() {
 
-	@Override
-	public void run() {
-		// TODO Auto-generated method stub
-		CoreNative.gameExit();//该方法必须调用
-		currentActivity.finish();
-		System.exit(0);
-	}
+    @Override
+    public void run() {
+        // TODO Auto-generated method stub
+        CoreNative.gameExit();//该方法必须调用
+        currentActivity.finish();
+        System.exit(0);
+    }
 });
 ```
 
@@ -33,11 +33,11 @@ PayNative.setGameExitCallback(new Runnable() {
 String dhm = "111111";
 CDKey.use(dhm,new CDKey.DhmCallback() {
 
-	@Override
-	public void onFinish(CDKey.DhmData data) {
-		// TODO Auto-generated method stub
-		showToast(data.message);
-	}
+    @Override
+    public void onFinish(CDKey.DhmData data) {
+        // TODO Auto-generated method stub
+        showToast(data.message);
+    }
 });
 ```
 
@@ -88,27 +88,27 @@ PayNative.init();
 ```text
 PayNative.setPayResultCallback(new PayManager.PayCallback() {
 
-	@Override
-	public void onPayFinish(PayParams params) {
-		// TODO Auto-generated method stub
-		switch (params.getPayResult()){
-			//支付成功
-			case PayDef.PAY_RESULT_SUCCESS:
-				break;
-			//支付失败
-			case PayDef.PAY_RESULT_FAIL:
-				break;
-			//取消支付
-			case PayDef.PAY_RESULT_CANCEL:
-				break;
-		}
-	}
+    @Override
+    public void onPayFinish(PayParams params) {
+        // TODO Auto-generated method stub
+        switch (params.getPayResult()){
+            //支付成功
+            case PayDef.PAY_RESULT_SUCCESS:
+                break;
+            //支付失败
+            case PayDef.PAY_RESULT_FAIL:
+                break;
+            //取消支付
+            case PayDef.PAY_RESULT_CANCEL:
+                break;
+        }
+    }
 
-	@Override
-	public void onInitPayAgentFinish(BasePayAgent arg0) {
-		// TODO Auto-generated method stub
+    @Override
+    public void onInitPayAgentFinish(BasePayAgent arg0) {
+        // TODO Auto-generated method stub
 
-	}
+    }
 });
 ```
 
@@ -131,7 +131,7 @@ PayNative.openExitGame();
 ```
 
 {% hint style="info" %}
- _**因游戏有自己的退出界面，建议按照如下方法判断：**_
+_**因游戏有自己的退出界面，建议按照如下方法判断：**_
 
 \_\_
 
@@ -232,36 +232,36 @@ ADNative.init();
 //设置广告回调
 ADNative.setAdResultCallback(new ADManager.AdParamCallback() {
 
-	@Override
-	public void onStatusChanged(ADParam arg0, int status) {
-		// TODO Auto-generated method stub
-		Log.d(TAG,"onStatusChanged:"+status);
-	}
+    @Override
+    public void onStatusChanged(ADParam arg0, int status) {
+        // TODO Auto-generated method stub
+        Log.d(TAG,"onStatusChanged:"+status);
+    }
 
-	@Override
-	public void onRequestAddGameCoin(ADParam arg0, int arg1, int arg2,
-			String arg3) {
-		// TODO Auto-generated method stub
-		Log.d(TAG,"onRequestAddGameCoin");
+    @Override
+    public void onRequestAddGameCoin(ADParam arg0, int arg1, int arg2,
+            String arg3) {
+        // TODO Auto-generated method stub
+        Log.d(TAG,"onRequestAddGameCoin");
 
-	}
+    }
 
-	@Override
-	public void onOpenResult(ADParam adParam, int result) {
-		// TODO Auto-generated method stub
-		Log.d(TAG,"onOpenResult:"+result);
-    	//判断广告类型是否是视频
-    	if(adParam.getType().equals(ADDef.AD_TypeName_Video)){
-    
-    	}
-    	
+    @Override
+    public void onOpenResult(ADParam adParam, int result) {
+        // TODO Auto-generated method stub
+        Log.d(TAG,"onOpenResult:"+result);
+        //判断广告类型是否是视频
+        if(adParam.getType().equals(ADDef.AD_TypeName_Video)){
+
+        }
+
         if(result== ADParam.ADOpenResult_Success){//广告打开成功
 
-		}
-		else {//广告打开失败
+        }
+        else {//广告打开失败
 
-		}
-	}
+        }
+    }
 });
 ```
 
@@ -345,15 +345,12 @@ TJNative.init();
 TJNative.event(String eventId);
 TJNative.event(String eventId, String label);
 TJNative.event(String eventId, HashMap<String, String> attributes);
-
 ```
 
 eventId: 为当前统计的事件ID  
 label：事件的标签属性
 
 ## 5. 互推相关
-
-
 
 ### 5.1 初始化
 
@@ -373,8 +370,8 @@ XYXNative.getConfig();
 XYXConfig config = XYXNative.getConfig();
 ArrayList<XYXItem> list = config.getItemList();
 if (list != null && list.size() > 0) {
-	XYXItem item = list.get(0);
-	config.exposureShow(item);
+    XYXItem item = list.get(0);
+    config.exposureShow(item);
 }
 ```
 
@@ -384,16 +381,19 @@ if (list != null && list.size() > 0) {
 XYXConfig config = XYXNative.getConfig();
 ArrayList<XYXItem> list = config.getItemList();
 if (list != null && list.size() > 0) {
-	XYXItem item = list.get(0);
-	config.handleClick(item);
+    XYXItem item = list.get(0);
+    config.handleClick(item);
 }
 ```
+
 ## 6. 社交相关
+
 ### 6.1 初始化
 
 ```text
 SocialProxy.init()
 ```
+
 ### 6.2 登录及获取用户信息
 
 ```text
@@ -414,11 +414,15 @@ SocialProxy.loginAndUpdateInfo(SocialDef.TYPE_WX,new SocialProxy.SocialCallBack(
                     }
                 });
 ```
+
 ### 6.3 微信需引用微信模块
+
 ```text
 implementation 'com.libVigame.Social:WeChat:2.1.9'//改为最新版本
 ```
-### 6.4 微信登录需添加 WXEntryActivity类(包名为 applicationID + ".wxapi")
+
+### 6.4 微信登录需添加 WXEntryActivity类\(包名为 applicationID + ".wxapi"\)
+
 ```text
 package com.hw2.jgzsj2.wxapi;//包名为 applicationID + ".wxapi"
 
@@ -446,5 +450,5 @@ public class WXEntryActivity extends Activity {
         }
     }
 }
-
 ```
+
