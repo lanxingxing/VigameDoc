@@ -46,61 +46,61 @@
 
 target->build phases -> Link Binary With Libraries
 
-`OpenGLES.framwork`
+`OpenGLES.framework`
 
-`OpenAL.framwork`
+`OpenAL.framework`
 
-`iAd.framwork`
+`iAd.framework`
 
-`WebKit.framwork`
+`WebKit.framework`
 
-`AVFoundation.framwork`
+`AVFoundation.framework`
 
-`Accelerate.framwork`
+`Accelerate.framework`
 
-`MobileCoreServices.framwork`
+`MobileCoreServices.framework`
 
-`CoreMotion.framwork`
+`CoreMotion.framework`
 
-`CoreLocation.framwork`
+`CoreLocation.framework`
 
-`CoreTelephony.framwork`
+`CoreTelephony.framework`
 
-`QuartzCore.framwork`
+`QuartzCore.framework`
 
-`StoreKit.framwork`
+`StoreKit.framework`
 
-`AdSupport.framwork`
+`AdSupport.framework`
 
-`UIKit.framwork`
+`UIKit.framework`
 
-`CoreFoundation.framwork`
+`CoreFoundation.framework`
 
-`CoreGraphics.framwork`
+`CoreGraphics.framework`
 
-`CoreMedia.framwork`
+`CoreMedia.framework`
 
-`CoreBluetooth.framwork`
+`CoreBluetooth.framework`
 
-`CoreText.framwork`
+`CoreText.framework`
 
-`Security.framwork`
+`Security.framework`
 
-`MediaPlayer.framwork`
+`MediaPlayer.framework`
 
-`CFNetwork.framwork`
+`CFNetwork.framework`
 
 `libresolv.9.tbd`
 
-`SystemConfiguration.framwork`
+`SystemConfiguration.framework`
 
-`MessageUI.framwork`
+`MessageUI.framework`
 
-`JavaScriptCore.framwork`
+`JavaScriptCore.framework`
 
-`AudioToolBox.framwork`
+`AudioToolBox.framework`
 
-`GLKit.framwork`
+`GLKit.framework`
 
 `libz.tbd`
 
@@ -431,47 +431,47 @@ userInfo数据格式如下，按需获取头像地址、openid、nickname等信�
 2. 使用测试包名和证书出一个测试包--然后测试
 3. 测试完成后 换正式包名和证书出正式包上传苹果商店
 
-```OpenGLES.framwork
+```OpenGLES.framework
 ```
 
 ```text
-```iAd.framwork
+```iAd.framework
 ```
 
 ```text
-```AVFoundation.framwork
+```AVFoundation.framework
 ```
 
 ```text
-```MobileCoreServices.framwork
+```MobileCoreServices.framework
 ```
 
 ```text
-```CoreLocation.framwork
+```CoreLocation.framework
 ```
 
 ```text
-```QuartzCore.framwork
+```QuartzCore.framework
 ```
 
 ```text
-```AdSupport.framwork
+```AdSupport.framework
 ```
 
 ```text
-```CoreFoundation.framwork
+```CoreFoundation.framework
 ```
 
 ```text
-```CoreMedia.framwork
+```CoreMedia.framework
 ```
 
 ```text
-```CoreText.framwork
+```CoreText.framework
 ```
 
 ```text
-```MediaPlayer.framwork
+```MediaPlayer.framework
 ```
 
 ```text
@@ -479,11 +479,11 @@ userInfo数据格式如下，按需获取头像地址、openid、nickname等信�
 ```
 
 ```text
-```MessageUI.framwork
+```MessageUI.framework
 ```
 
 ```text
-```AudioToolBox.framwork
+```AudioToolBox.framework
 ```
 
 ```text
