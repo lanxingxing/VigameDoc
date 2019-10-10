@@ -2,6 +2,11 @@
 
 ## 下载
 
+[v1.0.8](http://gui.vigame.cn/createApk/v1.0.8/createApk_1.0.8.zip)
+
+1. 添加 GDTAppId，GDTAppKey 修改
+2. 去除 apktool 出包方式，只保留 二进制出包。
+
 [v1.0.7](http://gui.vigame.cn/createApk/v1.0.7/createApk_1.0.7.zip)
 
 1. 添加头条统计id修改 
