@@ -1,6 +1,6 @@
 # Unity游戏接入
 
-​
+
 
 ## 下载地址
 
@@ -8,15 +8,15 @@
 
 ## 使用
 
-​ 导入到工程后，有两个文件夹，**StreamingAssets/st.txt** 保存的是签名的信息，若需要新的签名则可以添加在这个文件中。
+ 导入到工程后，有两个文件夹，**StreamingAssets/st.txt** 保存的是签名的信息，若需要新的签名则可以添加在这个文件中。
 
-​ UniWb/wb 是业务接口，主要有 ADManger , CoreManger, PayManger, ToolManger, XyxManger
+ UniWb/wb 是业务接口，主要有 ADManger , CoreManger, PayManger, ToolManger, XyxManger
 
 接口在对应的 interface 文件夹下， 例如 AD 在 AD/interface/ADBase
 
 ## 接口使用
 
-​ AD：
+ AD：
 
 ```text
       Wb.ADManager.Instance.OpenAd("banner");
@@ -72,6 +72,16 @@ Activity 继承 UniWbActivity 即可， 与 unity 交互的 接口在 UniWbActiv
 ```
 
 在游戏开始的时候，如果需要签名验证，调用该方法， st.txt 文件保存签名的 哈希值。
+
+st.txt 放在 StreamingAssets 文件夹下
+
+st.txt 内容  
+
+
+
+-49852205,1765204456,346301091,-1055745680,1748137913,-2020137424, -728229342,153677221,1641916295,1837452767,2012466220,398286831, 414646104,87863567,	-1518269883,2035536297, 581009347,-718862971,1976954490,-870499414,-795299939,127722580
+
+
 
 ## 签名配置
 
