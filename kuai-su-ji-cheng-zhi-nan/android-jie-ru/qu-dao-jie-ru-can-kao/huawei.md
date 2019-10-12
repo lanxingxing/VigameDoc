@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.Pay:Huawei:2.2.9'
+    implementation 'com.libVigame.Pay:Huawei:2.3.1'
 ```
 
 ## Manifest参数选项
@@ -15,6 +15,32 @@
 
 ## 配置文件说明
 
+根目录 build.gradle中需添加：
+
+```text
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven {url 'http://developer.huawei.com/repo/'}
+    }
+    dependencies {
+         ...
+        classpath 'com.huawei.agconnect:agcp:1.0.0.300'    
+    }
+}
+
+allprojects {
+    repositories {
+        ...
+        maven {url 'http://developer.huawei.com/repo/'}
+    }
+
+    ...
+}
+
+```
 assets目录加入feedata\_huawei.xml
 
 ```text
