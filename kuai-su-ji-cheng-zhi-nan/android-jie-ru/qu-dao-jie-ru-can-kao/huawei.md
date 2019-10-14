@@ -3,15 +3,9 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.Pay:Huawei:2.3.1'
+    implementation 'com.libVigame.Pay:Huawei:2.3.3'
 ```
 
-## Manifest参数选项
-
-| 参数 | 说明 | 备注 |
-| :--- | :--- | :--- |
-| HWCpId | 华为商户id | eg：890086000102058425 |
-| HWAppId | 华为应用id | eg：10762302 |
 
 ## 配置文件说明
 
@@ -41,6 +35,21 @@ allprojects {
 }
 
 ```
+app目录 build.gradle中需添加：
+```text
+apply plugin: 'com.huawei.agconnect'  //引入华为插件    需要商务提供 agconnect-services.json 文件，不然会报错
+
+
+manifestPlaceholders = [
+                ...
+                HWCpId:"",// 华为商户id
+                HWAppId:"",// 华为应用id
+        ]
+
+
+```
+
+
 assets目录加入feedata\_huawei.xml
 
 ```text
