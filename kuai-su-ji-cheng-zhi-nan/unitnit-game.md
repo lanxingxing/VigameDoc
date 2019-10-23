@@ -6,15 +6,15 @@
 
 ## 使用
 
- 导入到工程后，有两个文件夹，**StreamingAssets/st.txt** 保存的是签名的信息，若需要新的签名则可以添加在这个文件中。
+导入到工程后，有两个文件夹，**StreamingAssets/st.txt** 保存的是签名的信息，若需要新的签名则可以添加在这个文件中。
 
- UniWb/wb 是业务接口，主要有 ADManger , CoreManger, PayManger, ToolManger, XyxManger
+UniWb/wb 是业务接口，主要有 ADManger , CoreManger, PayManger, ToolManger, XyxManger
 
 接口在对应的 interface 文件夹下， 例如 AD 在 AD/interface/ADBase
 
 ## 接口使用
 
- AD：
+AD：
 
 ```text
       Wb.ADManager.Instance.OpenAd("banner");
@@ -73,13 +73,9 @@ Activity 继承 UniWbActivity 即可， 与 unity 交互的 接口在 UniWbActiv
 
 st.txt 放在 StreamingAssets 文件夹下
 
-st.txt 内容  
-
-
+st.txt 内容
 
 -49852205,1765204456
-
-
 
 ## 签名配置
 

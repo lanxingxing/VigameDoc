@@ -6,13 +6,11 @@
     implementation 'com.libVigame.Pay:Huawei:2.3.3'
 ```
 
-
 ## 配置文件说明
 
 根目录 build.gradle中需添加：
 
 ```text
-
 buildscript {
     repositories {
         google()
@@ -33,9 +31,10 @@ allprojects {
 
     ...
 }
-
 ```
+
 app目录 build.gradle中需添加：
+
 ```text
 apply plugin: 'com.huawei.agconnect'  //引入华为插件    需要商务提供 agconnect-services.json 文件，不然会报错
 
@@ -45,10 +44,7 @@ manifestPlaceholders = [
                 HWCpId:"",// 华为商户id
                 HWAppId:"",// 华为应用id
         ]
-
-
 ```
-
 
 assets目录加入feedata\_huawei.xml
 

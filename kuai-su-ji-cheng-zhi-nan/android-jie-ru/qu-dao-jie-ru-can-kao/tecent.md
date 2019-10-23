@@ -18,16 +18,14 @@ description: 腾讯YSDK
 
 ## 配置文件说明
 
-在包名目录下添加 .wxapi 包名，然后添加WXEntryActivity.java文件，
-文件内容为
-```text
+在包名目录下添加 .wxapi 包名，然后添加WXEntryActivity.java文件， 文件内容为
 
+```text
 public class WXEntryActivity extends com.tencent.ysdk.module.user.impl.wx.YSDKWXEntryActivity {
 
 }
-
-
 ```
+
 ```text
 assets 目录需添加 ysdkconf.ini文件
 ;**************游戏相关配置, 游戏需要根据各自情况修改 START **********
