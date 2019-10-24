@@ -72,7 +72,7 @@
       * [OPPO推送](kuai-su-ji-cheng-zhi-nan/android-jie-ru/tui-song-jie-ru-can-kao/oppo-tui-song.md)
   * [IOS接入](kuai-su-ji-cheng-zhi-nan/ios-jie-ru.md)
   * [Unity游戏接入](kuai-su-ji-cheng-zhi-nan/unitnit-game.md)
-  * [微信小程序接入](kuai-su-ji-cheng-zhi-nan/wei-xin-xiao-cheng-xu-jie-ru.md)
+  * [微信小游戏接入](kuai-su-ji-cheng-zhi-nan/wei-xin-xiao-cheng-xu-jie-ru.md)
 * [wbjs](wbjs/README.md)
   * [cocoscreator 微信小游戏](wbjs/cocoscreatorwx.md)
   * [cocoscreator 头条小游戏](wbjs/cocoscreatortt.md)
