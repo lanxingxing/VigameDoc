@@ -41,6 +41,7 @@ http://gitblit.vigame.cn:6300/r/WechatDemo-Creator.git
 
 ### 4.测试
 查看输出，有服务器数据输出即表示接入成功。
+
 ![image](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/%E8%BE%93%E5%87%BA.png)
 
 ## 二、接入方法说明
