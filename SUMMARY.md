@@ -58,6 +58,7 @@
       * [小米](kuai-su-ji-cheng-zhi-nan/android-jie-ru/guang-gao-jie-ru/xiao-mi.md)
       * [推啊](kuai-su-ji-cheng-zhi-nan/android-jie-ru/guang-gao-jie-ru/tuia.md)
       * [Tapjoy](kuai-su-ji-cheng-zhi-nan/android-jie-ru/guang-gao-jie-ru/tapjoy.md)
+      * [新义](kuai-su-ji-cheng-zhi-nan/android-jie-ru/guang-gao-jie-ru/xinyi.md)
     * [统计接入参考](kuai-su-ji-cheng-zhi-nan/android-jie-ru/tong-ji-jie-ru/README.md)
       * [Adjust](kuai-su-ji-cheng-zhi-nan/android-jie-ru/tong-ji-jie-ru/adjust.md)
       * [Umeng](kuai-su-ji-cheng-zhi-nan/android-jie-ru/tong-ji-jie-ru/umeng.md)
