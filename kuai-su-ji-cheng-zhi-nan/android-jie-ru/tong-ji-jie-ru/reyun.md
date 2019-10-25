@@ -12,7 +12,7 @@
 
 ## 配置文件说明
 
-需要在app的build.gradle的manifestPlaceholders中设置“UMENG\_APPKEY”的值,如下：
+需要在app的build.gradle的manifestPlaceholders中设置“ReYunAppKey”的值,如下：
 
 ```text
 android {
