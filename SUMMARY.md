@@ -67,7 +67,7 @@
       * [DateEyeTrcking](kuai-su-ji-cheng-zhi-nan/android-jie-ru/tong-ji-jie-ru/dateeyetrcking.md)
       * [Tenjin](kuai-su-ji-cheng-zhi-nan/android-jie-ru/tong-ji-jie-ru/tenjin.md)
       * [GDT](kuai-su-ji-cheng-zhi-nan/android-jie-ru/tong-ji-jie-ru/gdt.md)
-      * [热云](kuai-su-ji-cheng-zhi-nan/android-jie-ru/tong-ji-jie-ru/re-yun.md)
+      * [热云](kuai-su-ji-cheng-zhi-nan/android-jie-ru/tong-ji-jie-ru/reyun.md)
     * [推送接入参考](kuai-su-ji-cheng-zhi-nan/android-jie-ru/tui-song-jie-ru-can-kao/README.md)
       * [Umeng推送](kuai-su-ji-cheng-zhi-nan/android-jie-ru/tui-song-jie-ru-can-kao/umeng-tui-song.md)
       * [OPPO推送](kuai-su-ji-cheng-zhi-nan/android-jie-ru/tui-song-jie-ru-can-kao/oppo-tui-song.md)
