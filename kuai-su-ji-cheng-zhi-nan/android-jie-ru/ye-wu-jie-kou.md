@@ -97,9 +97,7 @@ Rank.open();
 UserAgreement.open();
 ```
 
-{% hint style="info" %}
 注：用户协议的内容可通过assets/agrement.html修改
-{% endhint %}
 
 ### 1.8 打开问题反馈
 
@@ -293,10 +291,8 @@ PayNative.isExitGame();
 PayNative.openExitGame();
 ```
 
-{% hint style="info" %}
-_**因游戏有自己的退出界面，建议按照如下方法判断：**_
+**因游戏有自己的退出界面，建议按照如下方法判断：**
 
-\_\_
 
 ```text
 if(PayNative.isExitGame()){
@@ -308,7 +304,6 @@ else{
     ...
 }
 ```
-{% endhint %}
 
 ### 3.6 获取所在的市场类型
 
@@ -413,7 +408,6 @@ TJNative.event(String eventId, HashMap<String, String> attributes);
 
 eventId: 为当前统计的事件ID  
 label：事件的标签属性  
-
 attributes:事件的多标签属性
 
 ### 4.3 关卡统计
@@ -425,7 +419,6 @@ TJNative.failLevel(String level, String score)
 ```
 
 level:关卡名称
-
 score:关卡得分，可传空
 
 ### 4.4 计费统计
@@ -437,9 +430,7 @@ TJNative.pay(double money, double coin, int source);
 ```
 
 money:金额，单位元
-
 coin：买到的钻石数
-
 source：充值渠道标识（使用PayNative.getDefaultPayType获取）
 
 
@@ -451,13 +442,9 @@ TJNative.pay(double money, String item, int number, double price, int source);
 ```
 
 money:金额，单位元
-
 item:买到的道具名称
-
 number：买到的道具数量
-
 price：买到的道具价值
-
 source：充值渠道标识（使用PayNative.getDefaultPayType获取）
 
 ## 5. 互推相关
