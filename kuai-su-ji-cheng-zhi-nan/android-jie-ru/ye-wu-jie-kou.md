@@ -59,52 +59,6 @@ String customKey = "你的自定义key值";
 ChnlManager.getValueForKey(customKey);
 ```
 
-### 1.3 使用兑换码
-
-```text
-String dhm = "111111";
-CDKey.use(dhm,new CDKey.DhmCallback() {
-
-    @Override
-    public void onFinish(CDKey.DhmData data) {
-        // TODO Auto-generated method stub
-        showToast(data.message);
-    }
-});
-```
-
-### 1.4 打开活动页面
-
-```text
-com.vigame.Activity.open();
-```
-
-### 1.5 打开公告
-
-```text
-Notice.open();
-```
-
-### 1.6 打开排行榜
-
-```text
-Rank.open();
-```
-
-### 1.7 打开用户协议
-
-```text
-UserAgreement.open();
-```
-
-注：用户协议的内容可通过assets/agrement.html修改
-
-### 1.8 打开问题反馈
-
-```text
-Feedback.open();
-```
-
 ## 2. 广告能力
 
 ### 2.1 初始化（必接）
@@ -447,21 +401,99 @@ number：买到的道具数量
 price：买到的道具价值
 source：充值渠道标识（使用PayNative.getDefaultPayType获取）
 
-## 5. 互推相关
 
-### 5.1 初始化
+
+# 5.扩展功能
+
+### 5.1 打开活动页面
+
+```text
+com.vigame.Activity.open();
+```
+
+### 5.2 打开公告
+
+```text
+Notice.open();
+```
+
+### 5.3 提交排行数据
+
+```
+Rank.submit(level,score,usedCoins,leftCoins);//提交排行数据
+```
+
+level:关卡ID
+
+score：分数
+
+usedCoins:已用钻石数
+
+leftCoins:剩余钻石数
+
+### 5.4 打开排行榜
+
+```text
+Rank.open();
+```
+
+### 5.5 打开用户反馈
+
+```text
+Feedback.open();
+```
+
+注：用户协议的内容可通过assets/agrement.html修改
+
+### 5.6 打开隐私政策
+
+```text
+ProtocolUtil.openPrivacyPolicy();
+```
+
+注：隐私政策中的公司名称可通过assets/VigameConfig.xml中的CompanyIndex修改
+
+### 5.7 打开用户协议
+
+```text
+UserAgreement.open();
+```
+
+### 5.8 打开问题反馈
+
+```text
+Feedback.open();
+```
+
+### 5.9 使用兑换码
+
+```text
+String dhm = "111111";
+CDKey.use(dhm,new CDKey.DhmCallback() {
+
+    @Override
+    public void onFinish(CDKey.DhmData data) {
+        // TODO Auto-generated method stub
+        showToast(data.message);
+    }
+});
+```
+
+## 6. 互推相关
+
+### 6.1 初始化
 
 ```text
 XYXNative.init();
 ```
 
-### 5.2 获取互推数据
+### 6.2 获取互推数据
 
 ```text
 XYXNative.getConfig();
 ```
 
-### 5.3 上报互推展示
+### 6.3 上报互推展示
 
 ```text
 XYXConfig config = XYXNative.getConfig();
@@ -472,7 +504,7 @@ if (list != null && list.size() > 0) {
 }
 ```
 
-### 5.4 响应互推点击
+### 6.4 响应互推点击
 
 ```text
 XYXConfig config = XYXNative.getConfig();
@@ -483,15 +515,15 @@ if (list != null && list.size() > 0) {
 }
 ```
 
-## 6. 社交相关
+## 7. 社交相关
 
-### 6.1 初始化
+### 7.1 初始化
 
 ```text
 SocialProxy.init()
 ```
 
-### 6.2 登录及获取用户信息
+### 7.2 登录及获取用户信息
 
 ```text
 SocialProxy.loginAndUpdateInfo(SocialDef.TYPE_WX,new SocialProxy.SocialCallBack() {
@@ -512,13 +544,13 @@ SocialProxy.loginAndUpdateInfo(SocialDef.TYPE_WX,new SocialProxy.SocialCallBack(
 });
 ```
 
-### 6.3 微信需引用微信模块
+### 7.3 微信需引用微信模块
 
 ```text
 implementation 'com.libVigame.Social:WeChat:2.1.9'//改为最新版本
 ```
 
-### 6.4 微信登录需添加 WXEntryActivity类\(包名为 applicationID + ".wxapi"\)
+### 7.4 微信登录需添加 WXEntryActivity类\(包名为 applicationID + ".wxapi"\)
 
 ```text
 package com.hw2.jgzsj2.wxapi;//包名为 applicationID + ".wxapi"
