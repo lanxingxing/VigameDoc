@@ -403,7 +403,7 @@ source：充值渠道标识（使用PayNative.getDefaultPayType获取）
 
 
 
-# 5.扩展功能
+## 5.扩展功能
 
 ### 5.1 打开活动页面
 
