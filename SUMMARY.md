@@ -78,7 +78,7 @@
       * [3.计费能力](kuai-su-ji-cheng-zhi-nan/ke-hu-duan-jie-ru/ye-wu-jie-kou/3.-ji-fei-neng-li.md)
       * [4.统计能力](kuai-su-ji-cheng-zhi-nan/ke-hu-duan-jie-ru/ye-wu-jie-kou/4.-tong-ji-neng-li.md)
       * [5.扩展能力](kuai-su-ji-cheng-zhi-nan/ke-hu-duan-jie-ru/ye-wu-jie-kou/5.-kuo-zhan-neng-li.md)
-      * [6.其他](kuai-su-ji-cheng-zhi-nan/ke-hu-duan-jie-ru/ye-wu-jie-kou/6.-qi-ta.md)
+      * [6.其他（未完）](kuai-su-ji-cheng-zhi-nan/ke-hu-duan-jie-ru/ye-wu-jie-kou/6.-qi-ta.md)）
   * [小游戏接入](kuai-su-ji-cheng-zhi-nan/xiao-you-xi-jie-ru/README.md)
     * [微信小游戏](kuai-su-ji-cheng-zhi-nan/xiao-you-xi-jie-ru/wei-xin-xiao-cheng-xu-jie-ru.md)
 
