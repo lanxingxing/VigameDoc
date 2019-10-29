@@ -146,7 +146,7 @@ target-&gt;build phases -&gt; Link Binary With Libraries
 1. Enable Bitcode 设置为NO
 2.   ![&#x8BBE;&#x7F6E;Bitcode](../../.gitbook/assets/1648908-a8b9998bf49b9737.png)
 
-### 6 常见配置错误及解决方法
+### 6. 常见配置错误及解决方法
 
 1. 在info.plist添加Google广告配置 GADIsAdManagerApp：YES不配置会出现崩溃
 
@@ -186,11 +186,11 @@ target-&gt;build phases -&gt; Link Binary With Libraries
 
  ![D970B31A66A9D0CC47F120ECE3C4F362.jpg](../../.gitbook/assets/1648908-dc7dca47a865b797.jpg)
 
-### 8设置项目为自动内存管理
+### 8. 设置项目为自动内存管理
 
 ![&#x8BBE;&#x7F6E;ARC](../../.gitbook/assets/2183351-ff19eccac2bf6326.png.jpeg) ![&#x8BBE;&#x7F6E;.png](../../.gitbook/assets/1648908-2b663a3c58c6a41b.png)
 
-## 9接入微信配置（不接入忽略）
+### 9. 接入微信配置（不接入忽略）
 
 在info.plist文件添加
 
@@ -200,7 +200,7 @@ target-&gt;build phases -&gt; Link Binary With Libraries
 
 ![](../../.gitbook/assets/1648908-7aa347ae8a163c04.png)
 
-### 10 SDK初始化工作
+### 10. SDK初始化工作
 
 **1 导入头文件**
 
@@ -208,7 +208,7 @@ target-&gt;build phases -&gt; Link Binary With Libraries
 
 **2 调用初始化入口文件**
 
-```text
+```objective-c
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [IOSLoader splashReport];//统计上报
     return YES;
