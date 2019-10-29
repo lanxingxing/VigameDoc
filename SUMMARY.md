@@ -4,8 +4,6 @@
 * [快速集成指南](kuai-su-ji-cheng-zhi-nan/README.md)
   * [客户端接入](kuai-su-ji-cheng-zhi-nan/ke-hu-duan-jie-ru/README.md)
     * [Android](kuai-su-ji-cheng-zhi-nan/ke-hu-duan-jie-ru/android-jie-ru/README.md)
-      * [插件使用](kuai-su-ji-cheng-zhi-nan/ke-hu-duan-jie-ru/android-jie-ru/plugins/README.md)
-        * [版本修正插件](kuai-su-ji-cheng-zhi-nan/ke-hu-duan-jie-ru/android-jie-ru/plugins/checkplugin.md)
       * [渠道接入参考](kuai-su-ji-cheng-zhi-nan/ke-hu-duan-jie-ru/android-jie-ru/qu-dao-jie-ru-can-kao/README.md)
         * [YSdk](kuai-su-ji-cheng-zhi-nan/ke-hu-duan-jie-ru/android-jie-ru/qu-dao-jie-ru-can-kao/tecent.md)
         * [360](kuai-su-ji-cheng-zhi-nan/ke-hu-duan-jie-ru/android-jie-ru/qu-dao-jie-ru-can-kao/360.md)
@@ -83,7 +81,4 @@
       * [6.其他](kuai-su-ji-cheng-zhi-nan/ke-hu-duan-jie-ru/ye-wu-jie-kou/6.-qi-ta.md)
   * [小游戏接入](kuai-su-ji-cheng-zhi-nan/xiao-you-xi-jie-ru/README.md)
     * [微信小游戏](kuai-su-ji-cheng-zhi-nan/xiao-you-xi-jie-ru/wei-xin-xiao-cheng-xu-jie-ru.md)
-* [wbjs](wbjs/README.md)
-  * [cocoscreator 微信小游戏](wbjs/cocoscreatorwx.md)
-  * [cocoscreator 头条小游戏](wbjs/cocoscreatortt.md)
 
