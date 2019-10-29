@@ -1,6 +1,8 @@
 # iOS
 
-## Vigame接入说明手册
+\### Demo工程克隆地址：
+
+[http://gitblit.vigame.cn:6300/summary/VigameDemo-iOS.git](http://gitblit.vigame.cn:6300/summary/VigameDemo-iOS.git)
 
 ### 1. 将相关的文件添加到工程中
 
@@ -213,7 +215,6 @@ target-&gt;build phases -&gt; Link Binary With Libraries
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [IOSLoader progressWKContentViewCrash];//处理GDT开屏广告点击崩溃
     [IOSLoader startLoaderLibrary];//初始化
     return YES;
 }
@@ -243,189 +244,6 @@ target-&gt;build phases -&gt; Link Binary With Libraries
 -(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
     [IOSLoader isOpenURL];//解决唤醒广告在微信登录、充值频繁问题
     return YES;
-}
-```
-
-### 11 代码调用
-
-```text
-#import "IOSLoader.h"
-```
-
-**1.通过广告位名称打开一个广告**
-
-```text
- // 打开一个横幅广告
-  [IOSLoader openBanner];
-```
-
-```text
- // 关闭横幅广告
-  [IOSLoader closeBanner];
-```
-
-```text
-// 打开一个原生横幅广告
-[IOSLoader openYSBanner:@"yuans" rect:CGRectMake(100, 20, 300, 190)];
-```
-
-```text
-// 关闭原生横幅广告
-[IOSLoader closeYSBanner:@"yuans"];
-```
-
-```text
-  // 打开一个插屏广告
-  [IOSLoader openAd:@"game_fail" callback:^(BOOL flag) {
-      if (flag == false) {
-      //恢复游戏音效
-      }
-  }];
-
-//建议更换下面接口
-[IOSLoader openAd:@"game_fail" adCallback:^(BOOL flag, KTMADType type) {
-    if (type == KTMADTypePlaque && flag == false) {
-    //恢复游戏音效
-    }
-}];
-```
-
-```text
- /*检查某个视频广告位是否加载成功*/
- //
- [IOSLoader isAdReady:@"rotary_mfzs"];
-```
-
-```text
-// 打开一个视频广告 && 监听是否视频播放成功
-
-[IOSLoader openAd:@"rotary_mfzs" callback:^(BOOL flag) {
-    //处理加载框
-    if (flag) {
-    NSLog(@"open succed");
-    }
-    else {
-    NSLog(@"open failure");
-    }
-}];
-
-//建议更换下面接口
-[IOSLoader openAd:@"rotary_mfzs" adCallback:^(BOOL flag, KTMADType type) {
-//处理加载框
-    if (type == KTMADTypeVideo) {
-
-        if (flag) {
-        NSLog(@"open succed");
-        }
-        else {
-        NSLog(@"open failure");
-        }
-    }
-}];
-```
-
-**2.添加自定义统计事件**
-
-```text
-//统计
-```
-
-```text
-//统计付费
-[IOSLoader tj_payWithMoney:6.00 productId:@"xxx.xxx.xxx" number:60 price:60];
-```
-
-```text
-+ (void)setFirstLaunchEventID0:(const char*)eventId0 eventID1:(const char*)eventId1 eventID2:(const char*)eventId2 eventID3:(const char*)eventId3;
-
-+ (void)tj_name:(NSString *)name;
-+  (void)tj_name:(NSString *)name value:(NSString *)value;
-+ (void)tj_name:(const char  *)name map:(const char *)json;
-
-+ (void)isAdBeOpenInLevel:(NSString *)adPostionName level:(int)level;
-
-//关卡统计相关接口
-+ (void)tj_startLevel:(NSString *)level;
-+ (void)tj_finishLevel:(NSString *)level;
-+ (void)tj_failLevel:(NSString *)level;
-
-//充值统计
-+ (void)tj_payWithMoney:(double)money productId:(NSString *)productId number:(int)number price:(double)price;
-```
-
-```text
-// 导入支付头文件 发起支付
-//充值接口
-[IOSLoader textPayWithProductId:2003 callBack:^(NSDictionary *dic) {
-    if ([dic[@"reasonCode"] integerValue] == 0) {
-    //购买成功
-}
-}];
-
-//补发道具
- [IOSLoader payConsumableGoodsRecoveryCallBack:^(NSDictionary * dic) {
-            //补发道具
-
-            //补发成功调用接口
-            [IOSLoader payConsumableGoodsRecoveryFinish];
-}];
-```
-
-**3.是否越狱/审核中**
-
-```text
-#pragma mark - 是否审核中
-+ (BOOL)isAudit;
-#pragma mark - 是否越狱
-+ (BOOL)isRoot;
-```
-
-**4.微信登陆**
-
-```text
-// 在AppDelegate.m导入头文件
-#import "WXSocialAgent.h"
-
- - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  [WXSocialAgent application:application DidFinishLaunchingWithOptions:launchOptions];
-
-    return YES;
-}
-
--(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-     [[[WXSocialAgent alloc] init] application:app handleOpenURL:url];
-    return YES;
-}
-```
-
-```text
-// 导入头文件
-#import "IOSLoader.h"
-*注本接口已整合微信登录逻辑（已登录不再跳转到登录，游戏方不需再判断是否登录的情况）
-[IOSLoader wxLogin:^(KTMLoginState code, NSString *returnMsg) {
-            if (code == KTMLoginStateSuccess) {
-                //调用获取用户信息接口
-                [IOSLoader getWXUserInfo:^(NSDictionary *userInfo) {
-                    NSLog(@"userInfo == %@",userInfo);
-                }];
-            }
-        }];
-```
-
-```text
-userInfo数据格式如下，按需获取头像地址、openid、nickname等信息
-{
-    city = "";
-    country = "";
-    headimgurl = "http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epXrSKiaXoSxs38WdicmRuwQQjzk5Xnia9N3OAfGCGdIjRCWXic5mbm2vMDPkx96tLKAHVHKjdjcWYDgA/132";
-    language = "zh_CN";
-    nickname = "\U5149\U5934\U5f3a2\U53f7";
-    openid = "oN702waxaalZ-1ycPtpfj0ALpbeg";
-    privilege =     (
-    );
-    province = "";
-    sex = 0;
-    unionid = ofp95s1JJofVChMLEULM0H40iaEs;
 }
 ```
 
