@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Languages](README.md)
-* [功能介绍](cn/README.md)
+* [中文](cn/README.md)
   * [客户端接入](cn/ke-hu-duan-jie-ru/README.md)
     * [Android](cn/ke-hu-duan-jie-ru/android-jie-ru/README.md)
       * [广告接入参考](cn/ke-hu-duan-jie-ru/android-jie-ru/guang-gao-jie-ru/README.md)
@@ -81,7 +81,7 @@
     * [Unity](cn/ke-hu-duan-jie-ru/unitnit-game.md)
   * [小游戏接入](cn/xiao-you-xi-jie-ru/README.md)
     * [微信小游戏](cn/xiao-you-xi-jie-ru/wei-xin-xiao-cheng-xu-jie-ru.md)
-* [功能介绍](en/README.md)
+* [English](en/README.md)
   * [客户端接入](en/ke-hu-duan-jie-ru/README.md)
     * [业务接口](en/ke-hu-duan-jie-ru/ye-wu-jie-kou/README.md)
       * [1.基础能力](en/ke-hu-duan-jie-ru/ye-wu-jie-kou/1.-ji-chu-neng-li.md)
