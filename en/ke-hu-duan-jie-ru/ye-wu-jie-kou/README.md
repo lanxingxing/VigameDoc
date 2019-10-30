@@ -1,5 +1,5 @@
 ---
-description: 常用业务接口说明
+description: Common interface description
 ---
 
 # Interface
