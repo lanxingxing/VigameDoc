@@ -1,5 +1,4 @@
-# Languages
+# VigameDoc
 
-* [English](en/)
-* [中文](cn/)
+
 

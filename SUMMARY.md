@@ -1,6 +1,5 @@
 # Table of contents
 
-* [Languages](README.md)
 * [中文](cn/README.md)
   * [客户端接入](cn/ke-hu-duan-jie-ru/README.md)
     * [Android](cn/ke-hu-duan-jie-ru/android-jie-ru/README.md)

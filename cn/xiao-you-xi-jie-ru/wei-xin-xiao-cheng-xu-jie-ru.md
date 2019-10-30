@@ -45,7 +45,7 @@ Demo克隆地址（Creator2.2.0制作）：
 
 查看输出，有服务器数据输出即表示接入成功。
 
-![image](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/%E8%BE%93%E5%87%BA.png)
+![image](./输出.png)
 
 ## 二、接入方法说明
 
