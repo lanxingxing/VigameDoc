@@ -8,11 +8,11 @@
 
 ![](../../.gitbook/assets/1.png)
 
-### \(Remark: Delete deps file)
+### \(Remark: Delete deps file\)
 
 ## 2. Add  xx .a  dependency path
 
-\(target-&gt;build setting -&gt; search path -&gt;Header Search Paths add the following set\) 
+\(target-&gt;build setting -&gt; search path -&gt;Header Search Paths add the following set\)
 
 `"$(SRCROOT)/Vigame/include"`
 
@@ -30,8 +30,7 @@
 
 ## 3. Add necessary configuration
 
-1. open Capabilities-&gt; Keychain Sharing 
-
+1. open Capabilities-&gt; Keychain Sharing
 2. Add Google ad configuration in info.plist
 
    GADIsAdManagerApp：YES
@@ -40,7 +39,7 @@
 
    AppLovinSdkKey：Occxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-4. Detect company_appid 、apple_appid、company_prijid in VigameLibrary.plist.
+4. Detect company\_appid 、apple\_appid、company\_prijid in VigameLibrary.plist.
 
    And relevant statistical parameters
 
@@ -49,9 +48,7 @@
    ![fb&#x914D;&#x7F6E;](../../.gitbook/assets/2183351-96f3333dbc663e72.png)
 
 6. Apple's new rules require permission to use camera albums or not
-
 7. Games need access to the network, and network permission is required.
-
 8. The third party of the game may use location. All games info.plist add nslocationwheninuseusagedescription
 
 ## 4.Add system support library file
@@ -158,9 +155,7 @@ Add as follows：
 ![&#x6DFB;&#x52A0;Google&#x5E7F;&#x544A;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;](../../.gitbook/assets/1648908-89539912206f3690.png)
 
 1. Due to the use of Xib for automatic layout of Google ads, the minimum version of IOS 9 will report the following errors ![&#x7CFB;&#x7EDF;&#x7248;&#x672C;&#x592A;&#x4F4E;&#x62A5;&#x9519;](../../.gitbook/assets/1648908-60441f51b86e81a6.png)
-
 2. Modify the game to support IOS version to at least IOS 9 ![&#x8BBE;&#x7F6E;iOS&#x6700;&#x4F4E;&#x652F;&#x6301;9](../../.gitbook/assets/1648908-e94d66e37fb2142e.png)
-
 3. Missing include file configuration error
 
    ![&#x7F3A;&#x5C11;&#x914D;&#x7F6E;&#x9519;&#x8BEF;](../../.gitbook/assets/1648908-cf447bd6d14c7a26.png)
@@ -179,7 +174,7 @@ Solution：
 
 1. **weak typeof\(self\)wSelf = self error：- A parameter list without types is only allowed in a function definition. A corresponding warning tells me that** weak only applies to Objective-C object or block pointer types;type here is 'int'
 
-Solution: Xcode－&gt; Build Settings-&gt; C Language Dialect  Modify configuration，C99--GNU99，C99  does not contain typeof
+Solution: Xcode－&gt; Build Settings-&gt; C Language Dialect Modify configuration，C99--GNU99，C99 does not contain typeof
 
 ## 7. Confirm C + + compiler
 
@@ -193,14 +188,13 @@ If it is not set, the following error will be reported
 
 ![&#x8BBE;&#x7F6E;ARC](../../.gitbook/assets/2183351-ff19eccac2bf6326.png.jpeg) ![&#x8BBE;&#x7F6E;.png](../../.gitbook/assets/1648908-2b663a3c58c6a41b.png)
 
-
 ## 9. Access wechat configuration（No access ignore）
 
 Add in info.plist file
 
 ![](../../.gitbook/assets/1648908-3b9d2adf2506a9a7.jpg)
 
-Add wechat  URL Type
+Add wechat URL Type
 
 ![](../../.gitbook/assets/1648908-7aa347ae8a163c04.png)
 
@@ -212,7 +206,7 @@ Introduce header file in appdelegate file `#import "IOSLoader.h"`
 
 **2. Call initialization entry file**
 
-```objective-c
+```text
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [IOSLoader splashReport];
     return YES;
@@ -253,7 +247,7 @@ Introduce header file in appdelegate file `#import "IOSLoader.h"`
 
 ## Interaction process
 
-1. We provide a test package name and certificate (for the projects that have been launched, in order to be able to advertise)
+1. We provide a test package name and certificate \(for the projects that have been launched, in order to be able to advertise\)
 2. Use the test package name and certificate to create a test package -- then test
 3. After the test, change the official package name and certificate, and upload the official package to Apple store.
 

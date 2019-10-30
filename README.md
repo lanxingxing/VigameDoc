@@ -1,4 +1,2 @@
-# VigameDoc
-
-
+# Introduction
 

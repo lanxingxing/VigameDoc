@@ -144,7 +144,7 @@ And You can configurate ConfigVigame.xml in assets. Property description is as f
 | Name | description | necessary |
 | :--- | :--- | :--- |
 | GameOpenActivity | the path of your main Activity | yes |
-| ScreenOrientation | the orientation of screen       | no |
+| ScreenOrientation | the orientation of screen | no |
 | SupportAdPositions | the adPositionName of supports | no |
 | WithSplashAD | Support splash ad | no |
 | IsSDK | 'true' always and don't modify | yes |
@@ -169,7 +169,5 @@ defaultConfig {
 
 #### 2. Modify the background of Splash AD.
 
-If needs,repalace bg_splash_vigame.png file in res/drawable.
-
-
+If needs,repalace bg\_splash\_vigame.png file in res/drawable.
 

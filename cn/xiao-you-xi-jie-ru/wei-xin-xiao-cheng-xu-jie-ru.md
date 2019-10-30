@@ -45,7 +45,7 @@ Demo克隆地址（Creator2.2.0制作）：
 
 查看输出，有服务器数据输出即表示接入成功。
 
-![image](./输出.png)
+![image](https://github.com/jieban0604/VigameDoc/tree/17d46193fc6db2c469fd1b0288b57d3039ab9641/cn/xiao-you-xi-jie-ru/输出.png)
 
 ## 二、接入方法说明
 
