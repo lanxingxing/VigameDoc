@@ -89,7 +89,6 @@
       * [3.Payment](en/ke-hu-duan-jie-ru/ye-wu-jie-kou/3.-ji-fei-neng-li.md)
       * [4.Analysis](en/ke-hu-duan-jie-ru/ye-wu-jie-kou/4.-tong-ji-neng-li.md)
       * [5.Extensions](en/ke-hu-duan-jie-ru/ye-wu-jie-kou/5.-kuo-zhan-neng-li.md)
-    * [Unity](en/ke-hu-duan-jie-ru/unitnit-game.md)
     * [iOS](en/ke-hu-duan-jie-ru/ios-jie-ru.md)
     * [Android](en/ke-hu-duan-jie-ru/android-jie-ru.md)
 

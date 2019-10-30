@@ -150,7 +150,7 @@ And You can configurate ConfigVigame.xml in assets. Property description is as f
 | IsSDK | 'true' always and don't modify | yes |
 | CompanyIndex | the index of company，default 1 | yes |
 
-## 第六步：Configuration items of test
+## 6：Configuration items of test
 
 #### 1.Open app/build.gradle，modify package/channel/umeng appkey.
 

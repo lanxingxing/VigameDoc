@@ -1,4 +1,4 @@
-# 客户端接入
+# For Client
 
-介绍Android和iOS平台的SDK接入方法，同时也针对Unity引擎做了适配接口。
+Introduce the functions and interface usage of core services. Support Android, iOS, Unity.
 
