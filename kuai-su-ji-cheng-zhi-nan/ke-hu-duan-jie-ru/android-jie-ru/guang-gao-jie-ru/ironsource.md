@@ -3,7 +3,7 @@
 ```text
     implementation 'com.libVigame.AD:Ironsource:2.1.3'
     和
-    implementation 'com.libVigame.AD:Ironsource_JuHe:2.1.3' (聚合)
+    implementation 'com.libVigame.AD:Ironsource_JuHe:2.1.8' (聚合)
 ```
 
 ## 注意事项
