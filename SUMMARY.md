@@ -93,6 +93,4 @@
     * [Unity](en/ke-hu-duan-jie-ru/unitnit-game.md)
     * [iOS](en/ke-hu-duan-jie-ru/ios-jie-ru.md)
     * [Android](en/ke-hu-duan-jie-ru/android-jie-ru.md)
-  * [小游戏接入](en/xiao-you-xi-jie-ru/README.md)
-    * [微信小游戏](en/xiao-you-xi-jie-ru/wei-xin-xiao-cheng-xu-jie-ru.md)
 
