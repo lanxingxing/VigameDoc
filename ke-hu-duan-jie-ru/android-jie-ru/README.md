@@ -48,7 +48,6 @@ allprojects {
     implementation 'com.libVigame.Core:android-query:2.1.1'
     implementation 'com.android.support:support-v4:28.0.0'
     implementation 'com.android.support:appcompat-v7:28.0.0'
-    
 ```
 
 ## 第三步：添加框架代码调用
