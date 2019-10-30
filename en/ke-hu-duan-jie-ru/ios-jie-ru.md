@@ -1,18 +1,18 @@
 # iOS
 
-## Demo工程克隆地址：
+## Clone URL of Demo：
 
 [http://gitblit.vigame.cn:6300/summary/VigameDemo-iOS.git](http://gitblit.vigame.cn:6300/summary/VigameDemo-iOS.git)
 
-## 1. 将相关的文件添加到工程中
+## 1. Add related files to the project
 
 ![](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/1.png)
 
-### \(备注: 将deps文件删除引用。\)
+### \(Remark: Delete deps file)
 
-## 2. 添加所有的 .framework .a 文件 路径和头文件链接
+## 2. Add  xx .a  dependency path
 
-\(target-&gt;build setting -&gt; search path -&gt;Header Search Paths 中添加\) 特殊添加一项目录 路径
+\(target-&gt;build setting -&gt; search path -&gt;Header Search Paths add the following set\) 
 
 `"$(SRCROOT)/Vigame/include"`
 
@@ -28,30 +28,33 @@
 
 ![](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/1648908-f0a533025fd7e71f.png)
 
-## 3. 添加必要配置
+## 3. Add necessary configuration
 
-1. 打开 Capabilities-&gt; Keychain Sharing 获取设备唯一标识
-2. 在info.plist添加Google广告配置
+1. open Capabilities-&gt; Keychain Sharing 
+
+2. Add Google ad configuration in info.plist
 
    GADIsAdManagerApp：YES
 
-3. 如果项目中使用到Applovin广告在info.plist添加
+3. Add AppLovin ad configuration in info.plist
 
    AppLovinSdkKey：Occxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-4. 在VigameLibrary.plist 中检测 company\_appid 、apple\_appid、company\_prijid.
+4. Detect company_appid 、apple_appid、company_prijid in VigameLibrary.plist.
 
-   以及相关的统计参数
+   And relevant statistical parameters
 
-5. 如果出海外包带有Facebook广告 需要在info.plist文件中添加Facebook 中相关的配置如下：
+5. If there are Facebook ads in offshore outsourcing, you need to add the following configuration in the info.plist file:
 
    ![fb&#x914D;&#x7F6E;](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/2183351-96f3333dbc663e72.png)
 
-6. 苹果新出的规定无论有没有使用到相机相册都得申请 权限
-7. 游戏需要访问网络 需要有网络权限
-8. 游戏第三方可能会用到定位，所有游戏info.plist添加NSLocationWhenInUseUsageDescription
+6. Apple's new rules require permission to use camera albums or not
 
-## 4.添加系统支持库文件
+7. Games need access to the network, and network permission is required.
+
+8. The third party of the game may use location. All games info.plist add nslocationwheninuseusagedescription
+
+## 4.Add system support library file
 
 target-&gt;build phases -&gt; Link Binary With Libraries
 
@@ -89,8 +92,6 @@ target-&gt;build phases -&gt; Link Binary With Libraries
 
 `CoreMedia.framework`
 
-`CoreBluetooth.framework`
-
 `CoreText.framework`
 
 `Security.framework`
@@ -127,7 +128,7 @@ target-&gt;build phases -&gt; Link Binary With Libraries
 
 `libsqlite3.0.tbd`
 
-`//接入tapjoy需要下面库并且需要添加测试设备`
+`//Access to tapjoy requires the following libraries and add test equipment`
 
 `PassKit.framework`
 
@@ -137,99 +138,101 @@ target-&gt;build phases -&gt; Link Binary With Libraries
 
 `CoreData.framework`
 
-## 5. 设备编译选项
+## 5. Device compilation options
 
-1. `Other Linker Flags添加-ObjC`
+1. `Other Linker Flags add -ObjC`
 
 ![](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/2183351-f13ed84628186502.png.jpeg)
 
-1. Enable Bitcode 设置为NO
+1. Enable Bitcode set to  NO
 2. ![&#x8BBE;&#x7F6E;Bitcode](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/1648908-a8b9998bf49b9737.png)
 
-## 6. 常见配置错误及解决方法
+## 6. Common configuration errors and Solutions
 
-1. 在info.plist添加Google广告配置 GADIsAdManagerApp：YES不配置会出现崩溃
+1. Add Google ad configuration gadisadmanagerapp in info.plist: If yes is not configured, it will crash.
 
    ![&#x672A;&#x914D;&#x7F6E;Google&#x5E7F;&#x544A;ID](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/1648908-10b02a368fa1b206.png)
 
-添加方式如下：
+Add as follows：
 
 ![&#x6DFB;&#x52A0;Google&#x5E7F;&#x544A;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/1648908-89539912206f3690.png)
 
-1. Google广告由于用xib自动布局，需要最低iOS9版本会报如下错误 ![&#x7CFB;&#x7EDF;&#x7248;&#x672C;&#x592A;&#x4F4E;&#x62A5;&#x9519;](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/1648908-60441f51b86e81a6.png)
-2. 如果报这个错误，修改游戏支持iOS版本最低为iOS9，参考下图 ![&#x8BBE;&#x7F6E;iOS&#x6700;&#x4F4E;&#x652F;&#x6301;9](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/1648908-e94d66e37fb2142e.png)
-3. 缺少include文件配置报错
+1. Due to the use of Xib for automatic layout of Google ads, the minimum version of IOS 9 will report the following errors ![&#x7CFB;&#x7EDF;&#x7248;&#x672C;&#x592A;&#x4F4E;&#x62A5;&#x9519;](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/1648908-60441f51b86e81a6.png)
+
+2. Modify the game to support IOS version to at least IOS 9 ![&#x8BBE;&#x7F6E;iOS&#x6700;&#x4F4E;&#x652F;&#x6301;9](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/1648908-e94d66e37fb2142e.png)
+
+3. Missing include file configuration error
 
    ![&#x7F3A;&#x5C11;&#x914D;&#x7F6E;&#x9519;&#x8BEF;](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/1648908-cf447bd6d14c7a26.png)
 
-解决如下：
+Solution：
 
 ![&#x6DFB;&#x52A0;include&#x5F15;&#x7528;](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/1648908-933ec652fe73bbd7.png)
 
-1. 缺少include中boost文件引入错误
+1. The introduction error of boost file in include is missing
 
    ![&#x7F3A;&#x5C11;boost&#x5F15;&#x5165;&#x9519;&#x8BEF;](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/1648908-5f38236e86b5d8e8.png)
 
-解决如下：
+Solution：
 
 ![&#x6DFB;&#x52A0;boost&#x5F15;&#x7528;](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/1648908-a4fce67fdbbba4ef.png)
 
-1. **weak typeof\(self\)wSelf = self报错：- A parameter list without types is only allowed in a function definition. A corresponding warning tells me that** weak only applies to Objective-C object or block pointer types;type here is 'int'
+1. **weak typeof\(self\)wSelf = self error：- A parameter list without types is only allowed in a function definition. A corresponding warning tells me that** weak only applies to Objective-C object or block pointer types;type here is 'int'
 
-解决方案: Xcode－&gt; Build Settings-&gt; C Language Dialect修改配置，C99改为GNU99，C99不包含typeof
+Solution: Xcode－&gt; Build Settings-&gt; C Language Dialect  Modify configuration，C99--GNU99，C99  does not contain typeof
 
-## 7. 确认c++ 编译项
+## 7. Confirm C + + compiler
 
 ![](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/2183351-cb8d2dc8d55a615c.png)
 
-如未设置会报如下错
+If it is not set, the following error will be reported
 
 ![D970B31A66A9D0CC47F120ECE3C4F362.jpg](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/1648908-dc7dca47a865b797.jpg)
 
-## 8. 设置项目为自动内存管理
+## 8. Set project to ARC
 
 ![&#x8BBE;&#x7F6E;ARC](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/2183351-ff19eccac2bf6326.png.jpeg) ![&#x8BBE;&#x7F6E;.png](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/1648908-2b663a3c58c6a41b.png)
 
-## 9. 接入微信配置（不接入忽略）
+## 9. Access wechat configuration（No access ignore）
 
-在info.plist文件添加
+Add in info.plist file
 
 ![](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/1648908-3b9d2adf2506a9a7.jpg)
 
-添加微信登陆URL Type
+Add wechat  URL Type
 
 ![](https://github.com/jieban0604/VigameDoc/tree/3e6ec92fbfeb594c2d6cc7a14fdca2834eb651ee/en/.gitbook/assets/1648908-7aa347ae8a163c04.png)
 
-## 10. SDK初始化工作
+## 10. SDK initialization
 
-**1. 导入头文件**
+**1. Import header file**
 
-在appDelegate文件中引入头文件`#import "IOSLoader.h"`
+Introduce header file in appdelegate file `#import "IOSLoader.h"`
 
-**2. 调用初始化入口文件**
+**2. Call initialization entry file**
 
-```text
+```objective-c
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [IOSLoader splashReport];//统计上报
+    [IOSLoader splashReport];
     return YES;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [IOSLoader startLoaderLibrary];//初始化
+    [IOSLoader startLoaderLibrary];
     return YES;
 }
 
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
 
     if (userActivity.activityType == NSUserActivityTypeBrowsingWeb) {
-    [IOSLoader application:application continueUserActivity:userActivity];//appflyer统计相关设置
+    [IOSLoader application:application continueUserActivity:userActivity];
     return YES;
     }
     return NO;
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    [IOSLoader is_Active:false];//更新状态
+    [IOSLoader is_Active:false];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -237,19 +240,19 @@ target-&gt;build phases -&gt; Link Binary With Libraries
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    [IOSLoader is_Active:true]; //更新状态、开屏广告
+    [IOSLoader is_Active:true]; 
      [IOSLoader openAwakenAd];
 }
 
 -(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-    [IOSLoader isOpenURL];//解决唤醒广告在微信登录、充值频繁问题
+    [IOSLoader isOpenURL];
     return YES;
 }
 ```
 
-## 交互流程
+## Interaction process
 
-1. 我们提供一个测试包名和证书（已上线的项目\#为了能出广告\#）
-2. 使用测试包名和证书出一个测试包--然后测试
-3. 测试完成后 换正式包名和证书出正式包上传苹果商店
+1. We provide a test package name and certificate (for the projects that have been launched, in order to be able to advertise)
+2. Use the test package name and certificate to create a test package -- then test
+3. After the test, change the official package name and certificate, and upload the official package to Apple store.
 
