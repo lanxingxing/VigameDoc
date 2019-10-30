@@ -1,6 +1,6 @@
 # iOS
 
-\### Demo工程克隆地址：
+### Demo工程克隆地址：
 
 [http://gitblit.vigame.cn:6300/summary/VigameDemo-iOS.git](http://gitblit.vigame.cn:6300/summary/VigameDemo-iOS.git)
 
@@ -202,11 +202,11 @@ target-&gt;build phases -&gt; Link Binary With Libraries
 
 ### 10. SDK初始化工作
 
-**1 导入头文件**
+**1. 导入头文件**
 
 在appDelegate文件中引入头文件`#import "IOSLoader.h"`
 
-**2 调用初始化入口文件**
+**2. 调用初始化入口文件**
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
