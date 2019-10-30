@@ -1,7 +1,7 @@
 # Google海外
 
 ```text
-    implementation 'com.libVigame.AD:Google:2.3.4'
+    implementation 'com.libVigame.AD:Google:2.3.7'
 ```
 
 ## 注意事项
