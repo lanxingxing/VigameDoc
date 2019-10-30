@@ -1,4 +1,4 @@
-# 功能介绍
+# Features
 
-介绍核心业务的接入和接口使用。支持Android、iOS、Unity小游戏接入。
+Introduce the functions and interface usage of core services. Support Android, iOS, Unity.
 
