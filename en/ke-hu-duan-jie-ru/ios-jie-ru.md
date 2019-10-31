@@ -2,7 +2,7 @@
 
 ## Clone URL of Demo：
 
-[http://gitblit.vigame.cn:6300/summary/VigameDemo-iOS.git](http://gitblit.vigame.cn:6300/summary/VigameDemo-iOS.git)
+[http://dnsdk.vimedia.cn:8080/summary/VigameDemo-iOS.git](http://dnsdk.vimedia.cn:8080/summary/VigameDemo-iOS.git)
 
 ## 1. Add related files to the project
 
