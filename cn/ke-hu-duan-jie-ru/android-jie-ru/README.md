@@ -2,7 +2,7 @@
 
 ### Demo工程克隆地址：
 
-[http://gitblit.vigame.cn:6300/r/VigameDemo-Android.git](http://gitblit.vigame.cn:6300/r/VigameDemo-Android.git)
+[http://dnsdk.vimedia.cn:8080/r/VigameDemo-Android.git](http://dnsdk.vimedia.cn:8080/r/VigameDemo-Android.git)
 
 ## 第一步：添加maven仓库地址
 
