@@ -21,6 +21,8 @@
 
 1\)下载SDK压缩包，解压至本地目录。
 
+[2.0下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/2.0/dnsdk.zip)
+
 [1.0下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/1.0/dnsdk.zip)
 
 Demo克隆地址（Creator2.2.0制作）：
@@ -45,7 +47,7 @@ Demo克隆地址（Creator2.2.0制作）：
 
 查看输出，有服务器数据输出即表示接入成功。
 
-![image](https://github.com/jieban0604/VigameDoc/tree/17d46193fc6db2c469fd1b0288b57d3039ab9641/cn/xiao-you-xi-jie-ru/输出.png)
+![image](./输出.png)
 
 ## 二、接入方法说明
 
@@ -54,7 +56,7 @@ Demo克隆地址（Creator2.2.0制作）：
 方法接口：
 
 ```text
-dnsdk.init(appid);
+dnsdk.init(appid,pt);
 ```
 
 参数说明：
@@ -62,11 +64,20 @@ dnsdk.init(appid);
 | 参数 | 描述 | 参数类型 | 长度 | 是否必传 |
 | :--- | :--- | :--- | :--- | :--- |
 | appid | 产品ID | String |  | 是 |
+| pt | 平台 | String | | 是 |
+
+| 标识 | 描述       |
+| ---- | ---------- |
+| wx   | 微信小游戏 |
+| qq   | QQ小游戏   |
+| tt   | 头条小游戏 |
+
+
 
 示例代码：
 
 ```javascript
-dnsdk.init("10000");
+dnsdk.init("10000","wx");
 ```
 
 ### 2.分享接口
@@ -116,7 +127,7 @@ dnsdk.shareAppMessage(object);
 方法接口：
 
 ```text
-dnsdk.tj.sendEvent(eventId, object);
+dnsdk.tjSendEvent(eventId, object);
 ```
 
 参数说明：
@@ -129,7 +140,7 @@ dnsdk.tj.sendEvent(eventId, object);
 示例代码：
 
 ```javascript
-dnsdk.tj.sendEvent('事件名称',{'参数key' : '参数value'})
+dnsdk.tjSendEvent('事件名称',{'参数key' : '参数value'})
 ```
 
 ### 4.关卡统计
@@ -140,14 +151,14 @@ dnsdk.tj.sendEvent('事件名称',{'参数key' : '参数value'})
 
 ```text
 //关卡开始
-dnsdk.tj.onStart(object)
+dnsdk.tjOnStart(object)
 //关卡进行中
-dnsdk.tj.onRunning(object)
+dnsdk.tjOnRunning(object)
 //关卡结束
-dnsdk.tj.onEnd(object)
+dnsdk.tjOnEnd(object)
 ```
 
-#### dnsdk.tj.onStart关卡开始
+#### dnsdk.tjOnStart关卡开始
 
 | 参数 | 描述 | 参数类型 | 规则 | 是否必传 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -158,14 +169,14 @@ dnsdk.tj.onEnd(object)
 示例代码：
 
 ```javascript
-dnsdk.tj.onStart({
+dnsdk.tjOnStart({
   stageId : "1.1", //关卡ID， 必须是1 || 2 || 1.1 || 12.2 格式  该字段必传
   stageName : "第一大关-第一小关",//关卡名称，该字段必传
   userId  : "123456" //用户ID
 })
 ```
 
-#### dnsdk.tj.onRunning捕捉用户在关卡中的一些行为和操作
+#### dnsdk.tjOnRunning捕捉用户在关卡中的一些行为和操作
 
 | 参数 | 描述 | 参数类型 | 规则 | 是否必传 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -184,7 +195,7 @@ dnsdk.tj.onStart({
 
 ```javascript
 // 在关卡中使用道具
-dnsdk.tj.onRunning({
+dnsdk.tjOnRunning({
   stageId : "1.1",
   stageName : "第一大关-第一小关",
   userId : "123456",
@@ -196,7 +207,7 @@ dnsdk.tj.onRunning({
 })
 ```
 
-#### dnsdk.tj.onEnd 关卡结束
+#### dnsdk.tjOnEnd 关卡结束
 
 | 参数 | 描述 | 参数类型 | 规则 | 是否必传 |  |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -211,7 +222,7 @@ dnsdk.tj.onRunning({
 
 ```javascript
 //关卡完成
-dnsdk.tj.onEnd({
+dnsdk.tjOnEnd({
   stageId : "1",    //关卡ID 该字段必传
   stageName : "第一关", //关卡名称  该字段必传
   userId : "06_bmjrPtlm6_2sgVt7hMZOPfL2M",  //用户ID 可选
@@ -245,13 +256,13 @@ dnsdk.onDataReceived(func)
 方法接口:
 
 ```javascript
-dnsdk.Data.pushData
+dnsdk.data.pushData
 ```
 
 示例代码：
 
 ```javascript
-dnsdk.Data.pushData.iconList
+dnsdk.data.pushData.iconList
 ```
 
 互推数据说明：
@@ -286,7 +297,7 @@ dnsdk.Data.pushData.iconList
 方法接口：
 
 ```text
-dnsdk.tj.sendShowEvent(object)
+dnsdk.tjSendShowEvent(object)
 ```
 
 参数说明：
@@ -308,7 +319,7 @@ var tjData = {
         placement: "home",
           eventid: "grouppage"
 };
-dnsdk.tj.sendShowEvent("bottom", tjData);
+dnsdk.tjSendShowEvent("bottom", tjData);
 ```
 
 #### 5.4 互推点击统计
@@ -316,7 +327,7 @@ dnsdk.tj.sendShowEvent("bottom", tjData);
 方法接口：
 
 ```text
-dnsdk.tj.sendClickEvent(object)
+dnsdk.tjSendClickEvent(object)
 ```
 
 参数说明：
@@ -340,10 +351,52 @@ var tjData = {
  eventid: "grouppage"
  };
 
-dnsdk.tj.sendClickEvent(tjData);
+dnsdk.tjSendClickEvent(tjData);
 ```
 
-### 6.SDK版本更新日志
+### 6.小程序跳转
+
+> 在微信、QQ、OPPO小游戏上生效
+
+方法接口：
+
+```text
+dnsdk.navigateToMiniProgram(object)
+```
+
+参数说明：
+
+| 属性       | 类型     | 默认值  | 必填 | 说明                                                         |
+| ---------- | -------- | ------- | ---- | ------------------------------------------------------------ |
+| appId      | string   |         | 是   | 要打开的小程序 appId，对于oppo小游戏该参数是包名             |
+| path       | string   |         | 否   | 打开的页面路径，如果为空则打开首页                           |
+| extraData  | object   |         | 否   | 需要传递给目标小程序的数据，目标小程序可在 `App.onLaunch`，`App.onShow` 中获取到这份数据。 |
+| envVersion | string   | release | 否   | 要打开的小程序版本。仅在当前小程序为开发版或体验版时此参数有效。如果当前小程序是正式版，则打开的小程序必定是正式版。 |
+| success    | function |         | 否   | 接口调用成功的回调函数                                       |
+| fail       | function |         | 否   | 接口调用失败的回调函数                                       |
+| complete   | function |         | 否   | 接口调用结束的回调函数（调用成功、失败都会执行               |
+
+示例代码：
+
+```js
+dnsdk.navigateToMiniProgram({
+  appId: '',
+  path: 'page/index/index?id=123',
+  extraData: {
+    foo: 'bar'
+  },
+  envVersion: 'develop',
+  success(res) {
+    // 打开成功
+  }
+})
+```
+
+# 三、版本更新日志
+
+#### 版本：v2.0  发布时间：2019-11-5
+
+- 小游戏统计SDKV2.0发布！增加多平台接口支持
 
 #### 版本：v1.0  发布时间：2019-10-24
 
