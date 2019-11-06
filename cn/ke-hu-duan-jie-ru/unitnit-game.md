@@ -4,15 +4,15 @@
 
 ### Unity工程：
 
-http://dnsdk.vimedia.cn:8080/r/UnityDemo.git
+[http://dnsdk.vimedia.cn:8080/r/UnityDemo.git](http://dnsdk.vimedia.cn:8080/r/UnityDemo.git)
 
 ### Android Studio 工程：
 
-http://dnsdk.vimedia.cn:8080/r/UnityDemo-Android.git
+[http://dnsdk.vimedia.cn:8080/r/UnityDemo-Android.git](http://dnsdk.vimedia.cn:8080/r/UnityDemo-Android.git)
 
 ### Xcode 工程：
 
-http://dnsdk.vimedia.cn:8080/r/UnityDemo-IOS.git
+[http://dnsdk.vimedia.cn:8080/r/UnityDemo-IOS.git](http://dnsdk.vimedia.cn:8080/r/UnityDemo-IOS.git)
 
 ## 下载地址
 

@@ -21,7 +21,7 @@
 
 1\)下载SDK压缩包，解压至本地目录。
 
-[SDK下载](./SDK-xia-zai.md)
+[SDK下载](https://github.com/jieban0604/VigameDoc/tree/ae1f4751fe94af54e045fa9496e9ecbf6cdbebe6/cn/xiao-you-xi-jie-ru/SDK-xia-zai.md)
 
 Demo克隆地址（Creator2.2.0制作）：
 
@@ -45,7 +45,7 @@ Demo克隆地址（Creator2.2.0制作）：
 
 查看输出，有服务器数据输出即表示接入成功。
 
-![image](I:/MyGitBook/VigameDoc/cn/xiao-you-xi-jie-ru/输出.png)
+![image](https://github.com/jieban0604/VigameDoc/tree/ae1f4751fe94af54e045fa9496e9ecbf6cdbebe6/cn/xiao-you-xi-jie-ru/I:/MyGitBook/VigameDoc/cn/xiao-you-xi-jie-ru/输出.png)
 
 ## 二、接入方法说明
 
@@ -59,20 +59,18 @@ dnsdk.init(appid,pt);
 
 参数说明：
 
-| 参数  | 描述   | 参数类型 | 长度 | 是否必传 |
-| :---- | :----- | :------- | :--- | :------- |
-| appid | 产品ID | String   |      | 是       |
-| pt    | 平台   | String   |      | 是       |
+| 参数 | 描述 | 参数类型 | 长度 | 是否必传 |
+| :--- | :--- | :--- | :--- | :--- |
+| appid | 产品ID | String |  | 是 |
+| pt | 平台 | String |  | 是 |
 
 平台说明：
 
-| 标识 | 描述       |
-| ---- | ---------- |
-| wx   | 微信小游戏 |
-| qq   | QQ小游戏   |
-| tt   | 头条小游戏 |
-
-
+| 标识 | 描述 |
+| :--- | :--- |
+| wx | 微信小游戏 |
+| qq | QQ小游戏 |
+| tt | 头条小游戏 |
 
 示例代码：
 
@@ -132,10 +130,10 @@ dnsdk.tjSendEvent(eventId, object);
 
 参数说明：
 
-| 参数    | 描述     | 参数类型 | 长度            | 是否必传 |
-| :------ | :------- | :------- | :-------------- | :------- |
-| eventId | 事件名称 | String   | 不超过255个字符 | 是       |
-| object  | 事件参数 | Object   |                 | 是       |
+| 参数 | 描述 | 参数类型 | 长度 | 是否必传 |
+| :--- | :--- | :--- | :--- | :--- |
+| eventId | 事件名称 | String | 不超过255个字符 | 是 |
+| object | 事件参数 | Object |  | 是 |
 
 示例代码：
 
@@ -156,16 +154,15 @@ dnsdk.tjOnStart(object)
 dnsdk.tjOnRunning(object)
 //关卡结束
 dnsdk.tjOnEnd(object)
-
 ```
 
 #### dnsdk.tjOnStart关卡开始
 
-| 参数      | 描述     | 参数类型 | 规则                                                | 是否必传 |
-| :-------- | :------- | :------- | :-------------------------------------------------- | :------- |
-| stageId   | 关卡ID   | String   | 1 , 2 , 3 , 1.1 , 1.2 , 1.3 格式 最多支持 32 个字符 | 是       |
-| stageName | 关卡名称 | String   | 最多支持 32 个字符                                  | 是       |
-| userId    | 用户名称 | String   | 最多支持 32 个字符                                  | 否       |
+| 参数 | 描述 | 参数类型 | 规则 | 是否必传 |
+| :--- | :--- | :--- | :--- | :--- |
+| stageId | 关卡ID | String | 1 , 2 , 3 , 1.1 , 1.2 , 1.3 格式 最多支持 32 个字符 | 是 |
+| stageName | 关卡名称 | String | 最多支持 32 个字符 | 是 |
+| userId | 用户名称 | String | 最多支持 32 个字符 | 否 |
 
 示例代码：
 
@@ -175,23 +172,22 @@ dnsdk.tjOnStart({
   stageName : "第一大关-第一小关",//关卡名称，该字段必传
   userId  : "123456" //用户ID
 })
-
 ```
 
 #### dnsdk.tjOnRunning捕捉用户在关卡中的一些行为和操作
 
-| 参数             | 描述                  | 参数类型 | 规则                                                         | 是否必传  |
-| :--------------- | :-------------------- | :------- | :----------------------------------------------------------- | :-------- |
-| stageId          | 关卡ID                | String   | 1 , 2 , 3 , 1.1 , 1.2 , 1.3 格式 最多支持 32 个字符          | 是        |
-| stageName        | 关卡名称              | String   | 最多支持 32 个字符                                           | 是        |
-| userId           | 用户名称              | String   | 最多支持 32 个字符                                           | 否        |
-| event            | 时间类型              | String   | payStart:发起支付 paySuccess:支付成功 payFail:支付失败 tools:使用道具 revive:复活 award:奖励 | 否        |
-| params           | 事件参数              | Object   | 否                                                           |           |
-| params.itemName  | 商品/道具名称         | String   | “屠龙刀”                                                     | 是        |
-| params.itemId    | 商品/道具ID    String | "123"    | 否                                                           |           |
-| params.itemCount | 商品/道具数量         | Number   | 1                                                            | 否 默认:1 |
-| params.desc      | 描述                  | String   | “+9屠龙刀”                                                   | 否        |
-| params.itemMoney | 商品/道具价格         | Number   | 12                                                           | 否 默认:0 |
+| 参数 | 描述 | 参数类型 | 规则 | 是否必传 |
+| :--- | :--- | :--- | :--- | :--- |
+| stageId | 关卡ID | String | 1 , 2 , 3 , 1.1 , 1.2 , 1.3 格式 最多支持 32 个字符 | 是 |
+| stageName | 关卡名称 | String | 最多支持 32 个字符 | 是 |
+| userId | 用户名称 | String | 最多支持 32 个字符 | 否 |
+| event | 时间类型 | String | payStart:发起支付 paySuccess:支付成功 payFail:支付失败 tools:使用道具 revive:复活 award:奖励 | 否 |
+| params | 事件参数 | Object | 否 |  |
+| params.itemName | 商品/道具名称 | String | “屠龙刀” | 是 |
+| params.itemId | 商品/道具ID    String | "123" | 否 |  |
+| params.itemCount | 商品/道具数量 | Number | 1 | 否 默认:1 |
+| params.desc | 描述 | String | “+9屠龙刀” | 否 |
+| params.itemMoney | 商品/道具价格 | Number | 12 | 否 默认:0 |
 
 示例代码：
 
@@ -207,19 +203,18 @@ dnsdk.tjOnRunning({
 
   }
 })
-
 ```
 
 #### dnsdk.tjOnEnd 关卡结束
 
-| 参数        | 描述     | 参数类型 | 规则                             | 是否必传           |      |
-| :---------- | :------- | :------- | :------------------------------- | :----------------- | :--- |
-| stageId     | 关卡ID   | String   | 1 , 2 , 3 , 1.1 , 1.2 , 1.3 格式 | 最多支持 32 个字符 | 是   |
-| stageName   | 关卡名称 | String   | 最多支持 32 个字符               | 是                 |      |
-| userId      | 用户ID   | String   | 最多支持 32 个字符               | 否                 |      |
-| event       | 事件类型 | String   | complete:关卡完成 fail:关卡失败  | 是                 |      |
-| params      | 事件参数 | Object   |                                  |                    |      |
-| params.desc | 描述     | String   | 对关卡失败/成功的描述            | 否                 |      |
+| 参数 | 描述 | 参数类型 | 规则 | 是否必传 |  |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| stageId | 关卡ID | String | 1 , 2 , 3 , 1.1 , 1.2 , 1.3 格式 | 最多支持 32 个字符 | 是 |
+| stageName | 关卡名称 | String | 最多支持 32 个字符 | 是 |  |
+| userId | 用户ID | String | 最多支持 32 个字符 | 否 |  |
+| event | 事件类型 | String | complete:关卡完成 fail:关卡失败 | 是 |  |
+| params | 事件参数 | Object |  |  |  |
+| params.desc | 描述 | String | 对关卡失败/成功的描述 | 否 |  |
 
 示例代码：
 
@@ -234,7 +229,6 @@ dnsdk.tjOnEnd({
     desc : "关卡完成"   //描述
   }
 })
-
 ```
 
 ### 5.互推接口
@@ -245,7 +239,6 @@ dnsdk.tjOnEnd({
 
 ```javascript
 dnsdk.onDataReceived(func)
-
 ```
 
 示例代码：
@@ -254,7 +247,6 @@ dnsdk.onDataReceived(func)
  dnsdk.onDataReceived(function (data) {
         dnsdk.log(data);
     });
-
 ```
 
 #### 5.2 使用互推数据
@@ -263,42 +255,40 @@ dnsdk.onDataReceived(func)
 
 ```javascript
 dnsdk.data.pushData
-
 ```
 
 示例代码：
 
 ```javascript
 dnsdk.data.pushData.iconList
-
 ```
 
 互推数据说明：
 
-| 参数          | 类型  | 描述                       |
-| :------------ | :---- | :------------------------- |
-| iconList      | Array | icon广告互推列表           |
-| bannerList    | Array | 横幅式互推列表             |
-| plaqueList    | Array | 插屏式互推列表             |
-| buttomList    | Array | 首页的滚动互推列表         |
-| gouppageList  | Array | 首页侧边栏热门推荐互推列表 |
-| moregroupList | Array | 分发页的更多游戏互推列表   |
-| hotgameList   | Array | 分发页的大图滚动互推列表   |
-| fungameList   | Array | 分发页的滚动互推列表       |
+| 参数 | 类型 | 描述 |
+| :--- | :--- | :--- |
+| iconList | Array | icon广告互推列表 |
+| bannerList | Array | 横幅式互推列表 |
+| plaqueList | Array | 插屏式互推列表 |
+| buttomList | Array | 首页的滚动互推列表 |
+| gouppageList | Array | 首页侧边栏热门推荐互推列表 |
+| moregroupList | Array | 分发页的更多游戏互推列表 |
+| hotgameList | Array | 分发页的大图滚动互推列表 |
+| fungameList | Array | 分发页的滚动互推列表 |
 
 互推二级字段说明：
 
-| 参数      | 类型   | 描述                                    |
-| :-------- | :----- | :-------------------------------------- |
-| id        | String | 推广产品的id                            |
-| icon      | String | 推广产品图标地址                        |
-| plist     | String | 帧动画文件地址                          |
-| pushImage | String | 推广产品二维码图                        |
-| pushAppID | String | 推广产品的微信Appid                     |
-| open      | String | 打开类型（1.image 2.url 3.miniprogram） |
-| openPath  | String | 打开的小程序的路径                      |
-| gameName  | String | 推广产品的名称                          |
-| extra     | String | 额外参数                                |
+| 参数 | 类型 | 描述 |
+| :--- | :--- | :--- |
+| id | String | 推广产品的id |
+| icon | String | 推广产品图标地址 |
+| plist | String | 帧动画文件地址 |
+| pushImage | String | 推广产品二维码图 |
+| pushAppID | String | 推广产品的微信Appid |
+| open | String | 打开类型（1.image 2.url 3.miniprogram） |
+| openPath | String | 打开的小程序的路径 |
+| gameName | String | 推广产品的名称 |
+| extra | String | 额外参数 |
 
 #### 5.3 互推展示统计
 
@@ -306,17 +296,16 @@ dnsdk.data.pushData.iconList
 
 ```text
 dnsdk.tjSendShowEvent(object)
-
 ```
 
 参数说明：
 
-| 参数/key  | 描述                 | 参数类型/value | 是否必传 |
-| :-------- | :------------------- | :------------- | :------- |
-| label     | 当前互推的唯一标识符 | String         | 是       |
-| pushappid | 要跳转的appid        | String         | 是       |
-| placement | 展示界面名称标识     | String         | 是       |
-| eventid   | 互推数据列表标识     | String         | 是       |
+| 参数/key | 描述 | 参数类型/value | 是否必传 |
+| :--- | :--- | :--- | :--- |
+| label | 当前互推的唯一标识符 | String | 是 |
+| pushappid | 要跳转的appid | String | 是 |
+| placement | 展示界面名称标识 | String | 是 |
+| eventid | 互推数据列表标识 | String | 是 |
 
 示例代码：
 
@@ -329,7 +318,6 @@ var tjData = {
           eventid: "grouppage"
 };
 dnsdk.tjSendShowEvent("bottom", tjData);
-
 ```
 
 #### 5.4 互推点击统计
@@ -338,17 +326,16 @@ dnsdk.tjSendShowEvent("bottom", tjData);
 
 ```text
 dnsdk.tjSendClickEvent(object)
-
 ```
 
 参数说明：
 
-| 参数/key  | 描述                 | 参数类型/value | 是否必传 |
-| :-------- | :------------------- | :------------- | :------- |
-| label     | 当前互推的唯一标识符 | String         | 是       |
-| pushappid | 要跳转的appid        | String         | 是       |
-| placement | 展示界面名称标识     | String         | 是       |
-| eventid   | 互推数据列表标识     | String         | 是       |
+| 参数/key | 描述 | 参数类型/value | 是否必传 |
+| :--- | :--- | :--- | :--- |
+| label | 当前互推的唯一标识符 | String | 是 |
+| pushappid | 要跳转的appid | String | 是 |
+| placement | 展示界面名称标识 | String | 是 |
+| eventid | 互推数据列表标识 | String | 是 |
 
 示例代码：
 
@@ -363,7 +350,6 @@ var tjData = {
  };
 
 dnsdk.tjSendClickEvent(tjData);
-
 ```
 
 ### 6.小程序跳转
@@ -374,24 +360,23 @@ dnsdk.tjSendClickEvent(tjData);
 
 ```text
 dnsdk.navigateToMiniProgram(object)
-
 ```
 
 参数说明：
 
-| 属性       | 类型     | 默认值  | 必填 | 说明                                                         |
-| ---------- | -------- | ------- | ---- | ------------------------------------------------------------ |
-| appId      | string   |         | 是   | 要打开的小程序 appId，对于oppo小游戏该参数是包名             |
-| path       | string   |         | 否   | 打开的页面路径，如果为空则打开首页                           |
-| extraData  | object   |         | 否   | 需要传递给目标小程序的数据，目标小程序可在 `App.onLaunch`，`App.onShow` 中获取到这份数据。 |
-| envVersion | string   | release | 否   | 要打开的小程序版本。仅在当前小程序为开发版或体验版时此参数有效。如果当前小程序是正式版，则打开的小程序必定是正式版。 |
-| success    | function |         | 否   | 接口调用成功的回调函数                                       |
-| fail       | function |         | 否   | 接口调用失败的回调函数                                       |
-| complete   | function |         | 否   | 接口调用结束的回调函数（调用成功、失败都会执行               |
+| 属性 | 类型 | 默认值 | 必填 | 说明 |
+| :--- | :--- | :--- | :--- | :--- |
+| appId | string |  | 是 | 要打开的小程序 appId，对于oppo小游戏该参数是包名 |
+| path | string |  | 否 | 打开的页面路径，如果为空则打开首页 |
+| extraData | object |  | 否 | 需要传递给目标小程序的数据，目标小程序可在 `App.onLaunch`，`App.onShow` 中获取到这份数据。 |
+| envVersion | string | release | 否 | 要打开的小程序版本。仅在当前小程序为开发版或体验版时此参数有效。如果当前小程序是正式版，则打开的小程序必定是正式版。 |
+| success | function |  | 否 | 接口调用成功的回调函数 |
+| fail | function |  | 否 | 接口调用失败的回调函数 |
+| complete | function |  | 否 | 接口调用结束的回调函数（调用成功、失败都会执行 |
 
 示例代码：
 
-```js
+```javascript
 dnsdk.navigateToMiniProgram({
   appId: '',
   path: 'page/index/index?id=123',
@@ -403,6 +388,5 @@ dnsdk.navigateToMiniProgram({
     // 打开成功
   }
 })
-
 ```
 
