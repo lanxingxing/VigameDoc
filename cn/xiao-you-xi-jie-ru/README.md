@@ -21,7 +21,7 @@
 
 1\)下载SDK压缩包，解压至本地目录。
 
-[SDK下载](https://github.com/jieban0604/VigameDoc/tree/ae1f4751fe94af54e045fa9496e9ecbf6cdbebe6/cn/xiao-you-xi-jie-ru/SDK-xia-zai.md)
+[SDK下载](./SDK-xia-zai.md)
 
 Demo克隆地址（Creator2.2.0制作）：
 
@@ -45,7 +45,7 @@ Demo克隆地址（Creator2.2.0制作）：
 
 查看输出，有服务器数据输出即表示接入成功。
 
-![image](https://github.com/jieban0604/VigameDoc/tree/ae1f4751fe94af54e045fa9496e9ecbf6cdbebe6/cn/xiao-you-xi-jie-ru/I:/MyGitBook/VigameDoc/cn/xiao-you-xi-jie-ru/输出.png)
+![image](./输出.png)
 
 ## 二、接入方法说明
 
