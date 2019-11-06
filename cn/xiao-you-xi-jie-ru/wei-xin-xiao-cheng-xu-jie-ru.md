@@ -6,9 +6,9 @@
 
 联系动能商务人员获取产品参数。包括：
 
+* 小游戏等平台的Appid，比如微信、手Q等
 * 动能的Appid
-* 微信的Appid
-* 阿拉丁的app\_key
+* 如果发布微信还需要阿拉丁的app\_key
 
 需确保在微信后台配置以下request域名地址：
 
@@ -21,9 +21,7 @@
 
 1\)下载SDK压缩包，解压至本地目录。
 
-[2.0下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/2.0/dnsdk.zip)
-
-[1.0下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/1.0/dnsdk.zip)
+[SDK下载](./SDK-xia-zai.md)
 
 Demo克隆地址（Creator2.2.0制作）：
 
@@ -33,7 +31,7 @@ Demo克隆地址（Creator2.2.0制作）：
 
 注：建议导入到公用头部，确保项目环境能访问到TrackingIO工具类。
 
-3\)接入阿拉丁SDK。
+3\)如发布微信，需接入阿拉丁SDK。
 
 > 参考： [http://doc.aldwx.com/aldwx/src/game.html](http://doc.aldwx.com/aldwx/src/game.html) 的“一、接入SDK”部分。
 >
@@ -65,6 +63,8 @@ dnsdk.init(appid,pt);
 | :--- | :--- | :--- | :--- | :--- |
 | appid | 产品ID | String |  | 是 |
 | pt | 平台 | String | | 是 |
+
+平台说明：
 
 | 标识 | 描述       |
 | ---- | ---------- |
@@ -391,14 +391,4 @@ dnsdk.navigateToMiniProgram({
   }
 })
 ```
-
-# 三、版本更新日志
-
-#### 版本：v2.0  发布时间：2019-11-5
-
-- 小游戏统计SDKV2.0发布！增加多平台接口支持
-
-#### 版本：v1.0  发布时间：2019-10-24
-
-* 小游戏统计SDKV1.0发布！
 
