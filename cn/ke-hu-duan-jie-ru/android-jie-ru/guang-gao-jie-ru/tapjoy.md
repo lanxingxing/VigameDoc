@@ -15,10 +15,7 @@
 ## 混淆过滤
 
 ```text
--dontwarn com.tapjoy.**
--keep class com.tapjoy.** { *; }
--dontwarn com.moat.analytics.mobile.tjy.**
--keep class com.moat.analytics.mobile.tjy.** { *; }
+-dontwarn com.tapjoy.**-keep class com.tapjoy.** { *; }-dontwarn com.moat.analytics.mobile.tjy.**-keep class com.moat.analytics.mobile.tjy.** { *; }
 ```
 
 ## 集成测试

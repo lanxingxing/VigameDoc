@@ -21,41 +21,7 @@
 ## 混淆过滤
 
 ```text
-############################################
-##           OneWaySDK 混淆配置             ##
-############################################
--keepattributes *Annotation*
--keep enum mobi.oneway.** {*;}
--keep class mobi.oneway.** {*;}
-############################################
-##           OneWay隐藏广告方式 混淆配置      ##
-############################################
--keep enum npcj.pofxbz.sdk.* {*;}
--keep class npcj.pofxbz.sdk.** {*;}
-############################################
-##           OkDownload 混淆配置            ##
-############################################
-
--dontwarn com.liulishuo.okdownload.**
--keep class com.liulishuo.okdownload.core.breakpoint.BreakpointStoreOnSQLite {
-    public com.liulishuo.okdownload.core.breakpoint.DownloadStore createRemitSelf();
-    public com.liulishuo.okdownload.core.breakpoint.BreakpointStoreOnSQLite(android.content.Context);
-}
-# okdownload:okhttp
--keepnames class com.liulishuo.okdownload.core.connection.DownloadOk
-
-
-############################################
-##             OkHttp 混淆配置              ##
-############################################
-
-# okhttp https://github.com/square/okhttp/#proguard
--dontwarn okhttp3.**
--dontwarn okio.**
--dontwarn javax.annotation.**
--dontwarn org.conscrypt.**
-# A resource is loaded with a relative path so the package of this class must be preserved.
--keepnames class okhttp3.internal.publicsuffix.PublicSuffixDatabase
+##############################################           OneWaySDK 混淆配置             ##############################################-keepattributes *Annotation*-keep enum mobi.oneway.** {*;}-keep class mobi.oneway.** {*;}##############################################           OneWay隐藏广告方式 混淆配置      ##############################################-keep enum npcj.pofxbz.sdk.* {*;}-keep class npcj.pofxbz.sdk.** {*;}##############################################           OkDownload 混淆配置            ##############################################-dontwarn com.liulishuo.okdownload.**-keep class com.liulishuo.okdownload.core.breakpoint.BreakpointStoreOnSQLite {    public com.liulishuo.okdownload.core.breakpoint.DownloadStore createRemitSelf();    public com.liulishuo.okdownload.core.breakpoint.BreakpointStoreOnSQLite(android.content.Context);}# okdownload:okhttp-keepnames class com.liulishuo.okdownload.core.connection.DownloadOk##############################################             OkHttp 混淆配置              ############################################### okhttp https://github.com/square/okhttp/#proguard-dontwarn okhttp3.**-dontwarn okio.**-dontwarn javax.annotation.**-dontwarn org.conscrypt.**# A resource is loaded with a relative path so the package of this class must be preserved.-keepnames class okhttp3.internal.publicsuffix.PublicSuffixDatabase
 ```
 
 ## 集成测试

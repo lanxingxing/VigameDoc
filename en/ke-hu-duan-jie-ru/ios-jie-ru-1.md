@@ -207,42 +207,7 @@ Introduce header file in appdelegate file `#import "IOSLoader.h"`
 **2. Call initialization entry file**
 
 ```text
-- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [IOSLoader splashReport];
-    return YES;
-}
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [IOSLoader startLoaderLibrary];
-    return YES;
-}
-
-- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
-
-    if (userActivity.activityType == NSUserActivityTypeBrowsingWeb) {
-    [IOSLoader application:application continueUserActivity:userActivity];
-    return YES;
-    }
-    return NO;
-}
-
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    [IOSLoader is_Active:false];
-}
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-   [IOSLoader isAwaken];
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    [IOSLoader is_Active:true]; 
-     [IOSLoader openAwakenAd];
-}
-
--(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-    [IOSLoader isOpenURL];
-    return YES;
-}
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    [IOSLoader splashReport];    return YES;}- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    [IOSLoader startLoaderLibrary];    return YES;}- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {    if (userActivity.activityType == NSUserActivityTypeBrowsingWeb) {    [IOSLoader application:application continueUserActivity:userActivity];    return YES;    }    return NO;}- (void)applicationDidEnterBackground:(UIApplication *)application {    [IOSLoader is_Active:false];}- (void)applicationWillEnterForeground:(UIApplication *)application {   [IOSLoader isAwaken];}- (void)applicationDidBecomeActive:(UIApplication *)application {    [IOSLoader is_Active:true];      [IOSLoader openAwakenAd];}-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {    [IOSLoader isOpenURL];    return YES;}
 ```
 
 ## Interaction process
