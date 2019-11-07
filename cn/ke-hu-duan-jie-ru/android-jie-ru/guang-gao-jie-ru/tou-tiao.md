@@ -3,24 +3,13 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:Headline:2.6.6'
-    和
-    implementation 'com.libVigame.AD:HeadlineA:2.6.6'（最新广告隐藏方式）
+    implementation 'com.libVigame.AD:Headline:2.6.6'    和    implementation 'com.libVigame.AD:HeadlineA:2.6.6'（最新广告隐藏方式）
 ```
 
 ## 混淆过滤
 
 ```text
-#穿山甲(今日头条)
-###Toutiao v1.9.3.2
--keep class com.bytedance.sdk.openadsdk.** { *; }
--keep class com.androidquery.callback.** {*;}
--keep class com.ss.android.**{*;}
--keep class com.bytedance.sdk.openadsdk.service.TTDownloadProvider
-#最新广告隐藏方式
--keep class com.bdtt.sdk.wmsdk.** { *; }
--keep class com.androidquery.callback.** {*;}
--keep class com.bdtt.sdk.wmsdk.service.TTDownloadProvider
+#穿山甲(今日头条)###Toutiao v1.9.3.2-keep class com.bytedance.sdk.openadsdk.** { *; }-keep class com.androidquery.callback.** {*;}-keep class com.ss.android.**{*;}-keep class com.bytedance.sdk.openadsdk.service.TTDownloadProvider#最新广告隐藏方式-keep class com.bdtt.sdk.wmsdk.** { *; }-keep class com.androidquery.callback.** {*;}-keep class com.bdtt.sdk.wmsdk.service.TTDownloadProvider
 ```
 
 ## 集成测试

@@ -20,27 +20,12 @@
 需要在app的build.gradle的manifestPlaceholders中设置各个参数的值, 一般只需要设置DC\_TRACKING\_APPID和WB\_CHANNEL的值，如下：
 
 ```text
-android {
-    compileSdkVersion 28
-    buildToolsVersion '28.0.3'
-    publishNonDefault true
-    defaultConfig {
-    manifestPlaceholders = [
-    ....
-                DC_APPID:"",
-                DC_TRACKING_APPID:"C6079041E388322EAB5F6D7718E86DB6F",
-                DC_REPORT_MODE:"",
-                WB_CHANNEL:"vivo",
-    ...
-            ]
-    }
-}
+android {    compileSdkVersion 28    buildToolsVersion '28.0.3'    publishNonDefault true    defaultConfig {    manifestPlaceholders = [    ....                DC_APPID:"",                DC_TRACKING_APPID:"C6079041E388322EAB5F6D7718E86DB6F",                DC_REPORT_MODE:"",                WB_CHANNEL:"vivo",    ...            ]    }}
 ```
 
 ## 混淆过滤
 
 ```text
--dontwarn com.android.installreferrer
--keep class com.appsflyer.** { *; }
+-dontwarn com.android.installreferrer-keep class com.appsflyer.** { *; }
 ```
 

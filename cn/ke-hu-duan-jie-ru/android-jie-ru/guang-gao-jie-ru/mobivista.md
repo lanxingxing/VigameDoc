@@ -5,9 +5,7 @@
 ### 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:MobVista:1.1.1'（国内）
-    和
-    implementation 'com.libVigame.AD:MobVistaOversea:2.0.4'（海外）
+    implementation 'com.libVigame.AD:MobVista:1.1.1'（国内）    和    implementation 'com.libVigame.AD:MobVistaOversea:2.0.4'（海外）
 ```
 
 ### 注意事项
@@ -19,15 +17,7 @@
 ### 混淆过滤
 
 ```text
--keepattributes Signature
--keepattributes *Annotation*
--keep class com.mintegral.** {*; }
--keep interface com.mintegral.** {*; }
--keep class android.support.v4.** { *; }
--dontwarn com.mintegral.**
--keep class **.R$* { public static final int mintegral*; }
--keep class com.alphab.** {*; }
--keep interface com.alphab.** {*; }
+-keepattributes Signature-keepattributes *Annotation*-keep class com.mintegral.** {*; }-keep interface com.mintegral.** {*; }-keep class android.support.v4.** { *; }-dontwarn com.mintegral.**-keep class **.R$* { public static final int mintegral*; }-keep class com.alphab.** {*; }-keep interface com.alphab.** {*; }
 ```
 
 ### 集成测试

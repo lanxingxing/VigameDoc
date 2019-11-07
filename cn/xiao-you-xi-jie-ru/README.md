@@ -21,7 +21,7 @@
 
 1\)下载SDK压缩包，解压至本地目录。
 
-[SDK下载](./SDK-xia-zai.md)
+[SDK下载](https://github.com/jieban0604/VigameDoc/tree/c9e6a1a6d52ccd7fb1aa761bc3048e7430fd8990/cn/xiao-you-xi-jie-ru/SDK-xia-zai.md)
 
 Demo克隆地址（Creator2.2.0制作）：
 
@@ -45,7 +45,7 @@ Demo克隆地址（Creator2.2.0制作）：
 
 查看输出，有服务器数据输出即表示接入成功。
 
-![image](./输出.png)
+![image](../../.gitbook/assets/shu-chu.png)
 
 ## 二、接入方法说明
 
@@ -147,7 +147,7 @@ dnsdk.tjSendEvent('事件名称',{'参数key' : '参数value'})
 
 方法接口：
 
-```text
+```javascript
 //关卡开始
 dnsdk.tjOnStart(object)
 //关卡进行中
@@ -245,8 +245,8 @@ dnsdk.onDataReceived(func)
 
 ```javascript
  dnsdk.onDataReceived(function (data) {
-        dnsdk.log(data);
-    });
+     dnsdk.log(data);
+ });
 ```
 
 #### 5.2 使用互推数据
@@ -341,7 +341,6 @@ dnsdk.tjSendClickEvent(object)
 
 ```javascript
 // 点击上报
-
 var tjData = {
  label: this.data.id,
  pushappid: this.data.pushAppID,

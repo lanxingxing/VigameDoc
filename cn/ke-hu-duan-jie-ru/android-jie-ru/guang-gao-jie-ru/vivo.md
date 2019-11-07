@@ -15,15 +15,7 @@
 ## 混淆过滤
 
 ```text
--keepattributes SourceFile,LineNumberTable
-#GDT
--keep class com.qq.e.** { public protected *; }
--keep class android.support.v4.app.NotificationCompat**{ public *; }
-#baidu
--keep class com.baidu.mobads.*.** { *; }
-#vivoSDK
--keep class com.vivo.*.** { *; }
--dontwarn com.androidquery.auth.**
+-keepattributes SourceFile,LineNumberTable#GDT-keep class com.qq.e.** { public protected *; }-keep class android.support.v4.app.NotificationCompat**{ public *; }#baidu-keep class com.baidu.mobads.*.** { *; }#vivoSDK-keep class com.vivo.*.** { *; }-dontwarn com.androidquery.auth.**
 ```
 
 ## 集成测试

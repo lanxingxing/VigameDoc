@@ -6,7 +6,7 @@
 
 ## 第一步：添加maven仓库地址
 
-```text
+```groovy
 buildscript {
     repositories {
         google()
@@ -17,7 +17,7 @@ buildscript {
 }
 ```
 
-```text
+```groovy
 allprojects {
     repositories {
         google()
@@ -34,7 +34,7 @@ allprojects {
 
 ## 第二步：引入仓库中的模块
 
-```text
+```groovy
     //vigame相关模块
     implementation 'com.libVigame.Proxy:Features:2.6.2'
     implementation 'com.libVigame.Loader:VigameLoader:2.6.0'
@@ -54,7 +54,7 @@ allprojects {
 
 修改MyApplication.java在对应生命周期中加入模块的调用代码：
 
-```text
+```java
 public class MyApplication extends Application {
     @Override
     public void onCreate() {
@@ -72,8 +72,8 @@ public class MyApplication extends Application {
 
 修改MainActivity，在对应生命周期中加入VigameLoader模块的调用代码：
 
-```text
-    @Override
+```java
+@Override
     protected void onResume() {
         super.onResume();
         VigameLoader.activityOnResume(this);
@@ -112,7 +112,7 @@ public class MyApplication extends Application {
 
 添加相关的参数配置，并将VigameStartActivity设置为启动的Activity
 
-```text
+```markup
 <meta-data
     android:name="com.vigame.sdk.appid"
     android:value="10001" />
@@ -156,7 +156,7 @@ public class MyApplication extends Application {
 
 建议使用如下示例的包名，以方便广告展示
 
-```text
+```groovy
 defaultConfig {
         applicationId "com.dn.tgxm.gg"
         ...

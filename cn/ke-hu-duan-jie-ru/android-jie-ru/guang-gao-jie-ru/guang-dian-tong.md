@@ -3,11 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:GDTUnion:2.5.7'  (带MobVisita用）
-    和
-    implementation 'com.libVigame.AD2:GDTUnion:2.5.7' （不带MobVisita用）
-    和
-    implementation 'com.libVigame.AD:GDTUnionA:2.5.7' (广告隐藏)
+    implementation 'com.libVigame.AD:GDTUnion:2.5.7'  (带MobVisita用）    和    implementation 'com.libVigame.AD2:GDTUnion:2.5.7' （不带MobVisita用）    和    implementation 'com.libVigame.AD:GDTUnionA:2.5.7' (广告隐藏)
 ```
 
 ## 注意事项
@@ -19,18 +15,7 @@
 ## 混淆过滤
 
 ```text
--keep class com.qq.e.** {public protected *;}
--keep class android.support.v4.**{public *;}
--keep class android.support.v7.**{public *;}
-# 最新广告隐藏
--keep class com.gg.wb.game.** {
-    public protected *;
-}
--keep class rr.f.beo.** {*; }
--dontwarn com.rr.f.beo.**
-#    如果您使用的是 X5 内核加强版 SDK，还需要在混淆配置文件中加入下面的代码
--keep class MTT.ThirdAppInfoNew {*;}
--keep class com.tencent.** { *;}
+-keep class com.qq.e.** {public protected *;}-keep class android.support.v4.**{public *;}-keep class android.support.v7.**{public *;}# 最新广告隐藏-keep class com.gg.wb.game.** {    public protected *;}-keep class rr.f.beo.** {*; }-dontwarn com.rr.f.beo.**#    如果您使用的是 X5 内核加强版 SDK，还需要在混淆配置文件中加入下面的代码-keep class MTT.ThirdAppInfoNew {*;}-keep class com.tencent.** { *;}
 ```
 
 ## 集成测试

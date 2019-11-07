@@ -208,7 +208,7 @@ target-&gt;build phases -&gt; Link Binary With Libraries
 
 **2. 调用初始化入口文件**
 
-```text
+```objectivec
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [IOSLoader splashReport];//统计上报
     return YES;
