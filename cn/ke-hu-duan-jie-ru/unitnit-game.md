@@ -50,12 +50,29 @@ AD：
 
 其它 Manger 如此，查看 Base 基类，可比较方便的查看已实现的方法。
 
+
+
+## 互推使用
+
+​	导入 UniWb.Wb.unitypackage  后， 在 Wb/Xyx/prefab/ 文件夹下 有  PushIconItem 预制体，拖入 canvas 即可，在打包安卓时 可使用 112234 项目id 测试。
+
+   注意 ：在 build.gradle 中引入 （以上版本）
+
+```java
+implementation 'com.libVigame.Bridge:UnityBridge:1.0.6'
+implementation 'com.libVigame.Proxy:Features:2.6.4'
+```
+
+![](..\..\.gitbook\assets\UniWb01.jpg)
+
+
+
 ## Android 接入
 
 在 build.gradle 中引入
 
 ```java
-implementation 'com.libVigame.bridge:UnityBridge:1.0.2'
+implementation 'com.libVigame.bridge:UnityBridge:1.0.6'
 ```
 
 ```java
