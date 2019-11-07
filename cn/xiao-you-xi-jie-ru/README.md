@@ -21,7 +21,7 @@
 
 1\)下载SDK压缩包，解压至本地目录。
 
-[SDK下载](https://github.com/jieban0604/VigameDoc/tree/c9e6a1a6d52ccd7fb1aa761bc3048e7430fd8990/cn/xiao-you-xi-jie-ru/SDK-xia-zai.md)
+[SDK下载](sdk-xia-zai.md)
 
 Demo克隆地址（Creator2.2.0制作）：
 

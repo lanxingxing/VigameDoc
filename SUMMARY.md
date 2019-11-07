@@ -81,7 +81,7 @@
       * [5.扩展能力](cn/ke-hu-duan-jie-ru/ye-wu-jie-kou/5.-kuo-zhan-neng-li.md)
       * [6.其他（未完）](cn/ke-hu-duan-jie-ru/ye-wu-jie-kou/6.-qi-ta.md)
   * [小游戏接入](cn/xiao-you-xi-jie-ru/README.md)
-    * [微信小游戏](cn/xiao-you-xi-jie-ru/wei-xin-xiao-you-xi.md)
+    * [SDK下载](cn/xiao-you-xi-jie-ru/sdk-xia-zai.md)
 * [English](en/README.md)
   * [For Client](en/ke-hu-duan-jie-ru/README.md)
     * [Android](en/ke-hu-duan-jie-ru/android-jie-ru.md)
