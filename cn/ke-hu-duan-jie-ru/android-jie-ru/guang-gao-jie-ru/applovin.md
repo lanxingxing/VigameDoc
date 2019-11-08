@@ -15,7 +15,8 @@ implementation 'com.libVigame.AD:AppLovin:2.1.6'
 ## 混淆过滤
 
 ```text
--keep class com.applovin.**-keep class com.applovin.** {*; }
+-keep class com.applovin.**
+-keep class com.applovin.** {*; }
 ```
 
 ## 集成测试

@@ -15,7 +15,8 @@
 ## 混淆过滤
 
 ```text
--dontwarn com.tuia.**-keep class com.tuia.** { *; }
+-dontwarn com.tuia.**
+-keep class com.tuia.** { *; }
 ```
 
 ## 集成测试

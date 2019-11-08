@@ -17,12 +17,26 @@
 需要在app的build.gradle的manifestPlaceholders中设置“HEADLINE\_APPID”的值,如下：
 
 ```text
-android {    compileSdkVersion 28    buildToolsVersion '28.0.3'    publishNonDefault true    defaultConfig {    manifestPlaceholders = [    ....            HEADLINE_APPID:"153354",    ...            ]    }}
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    publishNonDefault true
+    defaultConfig {
+    manifestPlaceholders = [
+    ....
+            HEADLINE_APPID:"153354",
+    ...
+            ]
+    }
+}
 ```
 
 ## 混淆过滤
 
 ```text
--keep com.bytedance.**-keep com.bytedance.**{*;}-keep com.ss.android.common.**-keep com.ss.android.common.**{*;}
+-keep com.bytedance.**
+-keep com.bytedance.**{*;}
+-keep com.ss.android.common.**
+-keep com.ss.android.common.**{*;}
 ```
 

@@ -15,13 +15,25 @@ description: 魅族
 assets目录加入feedata\_meizu.xml
 
 ```text
-<data>    <appid>3227804</appid>    <appkey>8a5e3ccb238e4b0aa9bb09eda9b97617</appkey>    <appsecret>QaZmRVJiEDd0Up3m1SdlbkgmfOTTN1ph</appsecret>    <feeinfo>        <ID>1101</ID>        <price>1</price>        <desc>30赠25枚钻石</desc>    </feeinfo></data>
+<data>
+    <appid>3227804</appid>
+    <appkey>8a5e3ccb238e4b0aa9bb09eda9b97617</appkey>
+    <appsecret>QaZmRVJiEDd0Up3m1SdlbkgmfOTTN1ph</appsecret>
+
+    <feeinfo>
+        <ID>1101</ID>
+        <price>1</price>
+        <desc>30赠25枚钻石</desc>
+    </feeinfo>
+
+</data>
 ```
 
 ## 混淆过滤
 
 ```text
--keep class com.meizu.**-keep class com.meizu.**{*;}
+-keep class com.meizu.**
+-keep class com.meizu.**{*;}
 ```
 
 ## 集成测试

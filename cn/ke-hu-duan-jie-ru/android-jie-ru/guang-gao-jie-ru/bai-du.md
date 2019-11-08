@@ -3,7 +3,9 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:BaiduMob:2.4.0'  (带MobVisita用）    和    implementation 'com.libVigame.AD2:BaiduMob:2.4.0'  （不带MobVisita用）
+    implementation 'com.libVigame.AD:BaiduMob:2.4.0'  (带MobVisita用）
+    和
+    implementation 'com.libVigame.AD2:BaiduMob:2.4.0'  （不带MobVisita用）
 ```
 
 ## 注意事项
@@ -15,7 +17,11 @@
 ## 混淆过滤
 
 ```text
--keepclassmembers    class *    extends    android.app.Activity{ public void *(android.view.View);    }-keepclassmembers    enum *{public static **[] values(); public static ** valueOf(java.lang.String);    }-keep class com.baidu.mobads.*.** {    *; }
+-keepclassmembers    class *    extends    android.app.Activity{ public void *(android.view.View);    }
+
+-keepclassmembers    enum *{public static **[] values(); public static ** valueOf(java.lang.String);    }
+
+-keep class com.baidu.mobads.*.** {    *; }
 ```
 
 ## 集成测试

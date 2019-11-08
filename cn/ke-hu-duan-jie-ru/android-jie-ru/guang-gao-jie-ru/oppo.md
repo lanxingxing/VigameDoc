@@ -15,7 +15,22 @@
 ## 混淆过滤
 
 ```text
--keep class com.oppo.** {public protected *;}-keep class okio.**{ *; }-keep class com.squareup.wire.**{ *; }-keep public class * extends com.squareup.wire.**{ *; }# Keep methods with Wire annotations (e.g. @ProtoField)-keepclassmembers class ** { @com.squareup.wire.ProtoField public *; @com.squareup.wire.ProtoEnum public *;}-keep public class com.cdo.oaps.base.**{ *; }-keepattributes *Annotation*-keepattributes *JavascriptInterface*#support-v4-keep class android.support.v4.** { *; }
+-keep class com.oppo.** {
+public protected *;
+}
+-keep class okio.**{ *; }
+-keep class com.squareup.wire.**{ *; }
+-keep public class * extends com.squareup.wire.**{ *; }
+# Keep methods with Wire annotations (e.g. @ProtoField)
+-keepclassmembers class ** {
+ @com.squareup.wire.ProtoField public *;
+ @com.squareup.wire.ProtoEnum public *;
+}
+-keep public class com.cdo.oaps.base.**{ *; }
+-keepattributes *Annotation*
+-keepattributes *JavascriptInterface*
+#support-v4
+-keep class android.support.v4.** { *; }
 ```
 
 ## 集成测试

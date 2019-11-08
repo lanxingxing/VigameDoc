@@ -23,13 +23,25 @@
 1.需要在app的build.gradle的manifestPlaceholders中设置“Fb\_share\_appId”的值,示例如下：
 
 ```text
-        android {            compileSdkVersion 28            buildToolsVersion '28.0.3'            publishNonDefault true            defaultConfig {                 manifestPlaceholders = [            ....                        Fb_share_appId:"370338263768260",            ...                        ]                }        }
+        android {
+            compileSdkVersion 28
+            buildToolsVersion '28.0.3'
+            publishNonDefault true
+            defaultConfig {
+                 manifestPlaceholders = [
+            ....
+                        Fb_share_appId:"370338263768260",
+            ...
+                        ]
+                }
+        }
 ```
 
 2.需要在res/values/strings.xml目录下添加：\("344465672947670"是你的faceAPPId\)
 
 ```text
-        <string name="facebook_app_id">370338263768260</string>        <string name="fb_login_protocol_scheme">fb370338263768260</string>
+        <string name="facebook_app_id">370338263768260</string>
+        <string name="fb_login_protocol_scheme">fb370338263768260</string>
 ```
 
 ## 混淆过滤
@@ -41,6 +53,8 @@
 ## fb登录需注意
 
 ```text
-需在mac电脑生成密钥散列，命令如下keytool -exportcert -alias YOUR_RELEASE_KEY_ALIAS -keystore YOUR_RELEASE_KEY_PATH | openssl sha1 -binary | openssl base64window系统生成的密钥散列有问题，需注意不要用window生成
+需在mac电脑生成密钥散列，命令如下
+keytool -exportcert -alias YOUR_RELEASE_KEY_ALIAS -keystore YOUR_RELEASE_KEY_PATH | openssl sha1 -binary | openssl base64
+window系统生成的密钥散列有问题，需注意不要用window生成
 ```
 

@@ -15,7 +15,13 @@
 ## 混淆过滤
 
 ```text
--keep class com.meizu.advertise.api.** {*;}-keep class com.meizu.advertise.plugin.api.Mzsdk {*;}-keep class com.meizu.advertise.plugin.api.Mzsdk$* {*;}-keep class com.meizu.advertise.config.** {*;}-keep class com.android.volley.** {*;}-keep class com.google.protobuf.** {*;}-dontwarn com.google.protobuf.**
+-keep class com.meizu.advertise.api.** {*;}
+-keep class com.meizu.advertise.plugin.api.Mzsdk {*;}
+-keep class com.meizu.advertise.plugin.api.Mzsdk$* {*;}
+-keep class com.meizu.advertise.config.** {*;}
+-keep class com.android.volley.** {*;}
+-keep class com.google.protobuf.** {*;}
+-dontwarn com.google.protobuf.**
 ```
 
 ## 集成测试

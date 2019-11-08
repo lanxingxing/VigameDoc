@@ -15,7 +15,8 @@
 ## 混淆过滤
 
 ```text
--keep class com.xiaomi.ad.**{*;}-keep class com.miui.zeus.**{*;}
+-keep class com.xiaomi.ad.**{*;}
+-keep class com.miui.zeus.**{*;}
 ```
 
 ## 集成测试

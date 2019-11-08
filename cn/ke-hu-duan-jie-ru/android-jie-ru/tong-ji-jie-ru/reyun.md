@@ -17,6 +17,15 @@
 需要在app的build.gradle的manifestPlaceholders中设置“ReYunAppKey”的值,如下：
 
 ```text
-android {   ...    defaultConfig {    manifestPlaceholders = [    ....            ReYunAppKey:"5bbb2803b465f5c58c000017",    ...            ]    }}
+android {
+   ...
+    defaultConfig {
+    manifestPlaceholders = [
+    ....
+            ReYunAppKey:"5bbb2803b465f5c58c000017",
+    ...
+            ]
+    }
+}
 ```
 

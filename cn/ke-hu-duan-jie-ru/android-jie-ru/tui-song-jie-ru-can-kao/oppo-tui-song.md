@@ -9,7 +9,9 @@ xxx_Implementation 'com.libVigame.Push:Oppo:1.0.0'
 ## 添加混淆
 
 ```text
-# OPPO 推送-dontwarn com.coloros.mcssdk.**-keep class com.coloros.mcssdk.** { *; }
+# OPPO 推送
+-dontwarn com.coloros.mcssdk.**
+-keep class com.coloros.mcssdk.** { *; }
 ```
 
 ## 注意事项
