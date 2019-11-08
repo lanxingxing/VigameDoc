@@ -57,7 +57,7 @@ AD：
 注意 ：在 build.gradle 中引入 （以上版本）
 
 ```java
-implementation 'com.libVigame.Bridge:UnityBridge:1.0.7'
+implementation 'com.libVigame.Bridge:UnityBridge:1.0.8'
 implementation 'com.libVigame.Proxy:Features:2.6.5'
 ```
 
@@ -68,7 +68,7 @@ implementation 'com.libVigame.Proxy:Features:2.6.5'
 在 build.gradle 中引入
 
 ```java
-implementation 'com.libVigame.bridge:UnityBridge:1.0.7'
+implementation 'com.libVigame.bridge:UnityBridge:1.0.8'
 ```
 
 ```java
