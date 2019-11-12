@@ -11,9 +11,15 @@ buildscript {
     repositories {
         google()
         jcenter()
+        //添加 动能 版本检测插件
+        maven { url 'http://gui.vigame.cn/plugin/' }
         //添加友盟仓库
         maven { url 'https://dl.bintray.com/umsdk/release' }
-    }    
+    }   
+    dependencies {
+        //添加 动能 版本检测插件
+        classpath 'com.wb.check:plugin:1.0.2'
+    }
 }
 ```
 
@@ -35,17 +41,22 @@ allprojects {
 ## 第二步：引入仓库中的模块
 
 ```groovy
+//添加插件引用
+apply plugin: 'Wb-check'
+def WB = getPlugins().findPlugin('Wb-check')
+
+
     //vigame相关模块
-    implementation 'com.libVigame.Proxy:Features:2.6.2'
-    implementation 'com.libVigame.Loader:VigameLoader:2.6.0'
-    implementation 'com.libVigame.Core:CoreManager:2.4.6'
-    implementation 'com.libVigame.Pay:PayManager:2.2.8'
-    implementation 'com.libVigame.AD2:ADManager:2.3.8'
-    implementation 'com.libVigame.TJ:TJManager:2.0.8'
-    implementation 'com.libVigame.Social:SocialManager:2.1.8'
-    implementation 'com.libVigame.Extention:ExtManager:2.0.1'
+    implementation WB.fixVersions('Proxy:Features')
+    implementation WB.fixVersions('Loader:VigameLoader')
+    implementation WB.fixVersions('Core:CoreManager')
+    implementation WB.fixVersions('Pay:PayManager')
+    implementation WB.fixVersions('AD2:ADManager')
+    implementation WB.fixVersions('TJ:TJManager')
+    implementation WB.fixVersions('Social:SocialManager')
+    implementation WB.fixVersions('Extention:ExtManager')
     //用到的第三方库
-    implementation 'com.libVigame.Core:android-query:2.1.1'
+    implementation WB.fixVersions('Core:android-query')
     implementation 'com.android.support:support-v4:28.0.0'
     implementation 'com.android.support:appcompat-v7:28.0.0'
 ```
