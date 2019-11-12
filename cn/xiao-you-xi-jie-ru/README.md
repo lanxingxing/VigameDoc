@@ -290,6 +290,8 @@ dnsdk.data.pushData.iconList
 | gameName | String | 推广产品的名称 |
 | extra | String | 额外参数 |
 
+> 注意：跳转小程序时，pushAppID和openPath字段需要同时用到，否则无法监控推送效果。
+
 #### 5.3 互推展示统计
 
 方法接口：
