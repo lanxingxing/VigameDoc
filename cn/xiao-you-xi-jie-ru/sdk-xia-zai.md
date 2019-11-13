@@ -2,6 +2,12 @@
 
 ## 历史版本
 
+#### 版本：v2.1  发布时间：2019-11-13
+
+[下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/2.1/dnsdk.zip)
+
+- 修复统计 tjSendShowEvent 和 tjSendClickEvent 统计不上问题
+
 #### 版本：v2.0  发布时间：2019-11-5
 
 [下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/2.0/dnsdk.zip)
