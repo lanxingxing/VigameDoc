@@ -84,7 +84,14 @@ public class MyApplication extends Application {
 修改MainActivity，在对应生命周期中加入VigameLoader模块的调用代码：
 
 ```java
-@Override
+	@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        VigameLoader.activityOnCreate(this);
+        //模块初始化
+        CoreNative.init();
+    }
+	@Override
     protected void onResume() {
         super.onResume();
         VigameLoader.activityOnResume(this);

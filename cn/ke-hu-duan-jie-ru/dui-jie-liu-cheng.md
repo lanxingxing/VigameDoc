@@ -57,15 +57,5 @@ B.使用动能的账号提包：
 1. 按照我们提供的正式产品参数、包名、证书进行打包后
 2. 提供ipa文件给我们。
 
-{% tabs %}
-{% tab title="First Tab" %}
-test Tab
-{% endtab %}
-
-{% tab title="Second Tab" %}
-test Tab2
-{% endtab %}
-{% endtabs %}
-
 
 
