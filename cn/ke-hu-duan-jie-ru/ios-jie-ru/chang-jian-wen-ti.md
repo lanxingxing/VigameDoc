@@ -94,31 +94,31 @@ SDK接入成功后，先提供测试apk给我们验收，验收通过后提供�
 
 #### 3.1 在info.plist添加Google广告配置 GADIsAdManagerApp：YES不配置会出现崩溃
 
-![&#x672A;&#x914D;&#x7F6E;Google&#x5E7F;&#x544A;ID](https://github.com/jieban0604/VigameDoc/tree/2c799ab02da6932b434951f2d747c5a7fb651f25/Users/eddy/VigameDoc/.gitbook/assets/1648908-10b02a368fa1b206.png)
+![&#x672A;&#x914D;&#x7F6E;Google&#x5E7F;&#x544A;ID](../../../.gitbook/assets/1648908-10b02a368fa1b206.png)
 
 #### 解决方式：
 
-![&#x6DFB;&#x52A0;Google&#x5E7F;&#x544A;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;](https://github.com/jieban0604/VigameDoc/tree/2c799ab02da6932b434951f2d747c5a7fb651f25/Users/eddy/VigameDoc/.gitbook/assets/1648908-89539912206f3690.png)
+![&#x6DFB;&#x52A0;Google&#x5E7F;&#x544A;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;](../../../.gitbook/assets/1648908-89539912206f3690.png)
 
-#### 3.2 Google广告由于用xib自动布局，需要最低iOS9版本会报如下错误 ![&#x7CFB;&#x7EDF;&#x7248;&#x672C;&#x592A;&#x4F4E;&#x62A5;&#x9519;](https://github.com/jieban0604/VigameDoc/tree/2c799ab02da6932b434951f2d747c5a7fb651f25/Users/eddy/VigameDoc/.gitbook/assets/1648908-60441f51b86e81a6.png)
+#### 3.2 Google广告由于用xib自动布局，需要最低iOS9版本会报如下错误 ![&#x7CFB;&#x7EDF;&#x7248;&#x672C;&#x592A;&#x4F4E;&#x62A5;&#x9519;](../../../.gitbook/assets/1648908-60441f51b86e81a6.png)
 
-#### 解决方式：![&#x8BBE;&#x7F6E;iOS&#x6700;&#x4F4E;&#x652F;&#x6301;9](https://github.com/jieban0604/VigameDoc/tree/2c799ab02da6932b434951f2d747c5a7fb651f25/Users/eddy/VigameDoc/.gitbook/assets/1648908-e94d66e37fb2142e.png)
+#### 解决方式：![&#x8BBE;&#x7F6E;iOS&#x6700;&#x4F4E;&#x652F;&#x6301;9](../../../.gitbook/assets/1648908-e94d66e37fb2142e.png)
 
 #### 3.3缺少include文件配置报错
 
-![&#x7F3A;&#x5C11;&#x914D;&#x7F6E;&#x9519;&#x8BEF;](https://github.com/jieban0604/VigameDoc/tree/2c799ab02da6932b434951f2d747c5a7fb651f25/Users/eddy/VigameDoc/.gitbook/assets/1648908-cf447bd6d14c7a26.png)
+![&#x7F3A;&#x5C11;&#x914D;&#x7F6E;&#x9519;&#x8BEF;](../../../.gitbook/assets/1648908-cf447bd6d14c7a26.png)
 
 #### 解决方式：
 
-![&#x6DFB;&#x52A0;include&#x5F15;&#x7528;](https://github.com/jieban0604/VigameDoc/tree/2c799ab02da6932b434951f2d747c5a7fb651f25/Users/eddy/VigameDoc/.gitbook/assets/1648908-933ec652fe73bbd7.png)
+![&#x6DFB;&#x52A0;include&#x5F15;&#x7528;](../../../.gitbook/assets/1648908-933ec652fe73bbd7.png)
 
 #### 3.4 缺少include中boost文件引入错误
 
-![&#x7F3A;&#x5C11;boost&#x5F15;&#x5165;&#x9519;&#x8BEF;](https://github.com/jieban0604/VigameDoc/tree/2c799ab02da6932b434951f2d747c5a7fb651f25/Users/eddy/VigameDoc/.gitbook/assets/1648908-5f38236e86b5d8e8.png)
+![&#x7F3A;&#x5C11;boost&#x5F15;&#x5165;&#x9519;&#x8BEF;](../../../.gitbook/assets/1648908-5f38236e86b5d8e8.png)
 
 #### 解决方式：
 
-![&#x6DFB;&#x52A0;boost&#x5F15;&#x7528;](https://github.com/jieban0604/VigameDoc/tree/2c799ab02da6932b434951f2d747c5a7fb651f25/Users/eddy/VigameDoc/.gitbook/assets/1648908-a4fce67fdbbba4ef.png)
+![&#x6DFB;&#x52A0;boost&#x5F15;&#x7528;](../../../.gitbook/assets/1648908-a4fce67fdbbba4ef.png)
 
 #### 3.5 weak typeof\(self\)wSelf = self报错：
 
@@ -130,11 +130,11 @@ Xcode－&gt; Build Settings-&gt; C Language Dialect修改配置，C99改为GNU99
 
 #### 3.6.确认c++ 编译项
 
-!\[\]\(/Users/eddy/VigameDoc/.gitbook/assets/2183351-cb8d2dc8d55a615c.png
+![](../../../.gitbook/assets/2183351-cb8d2dc8d55a615c.png
 
-![D970B31A66A9D0CC47F120ECE3C4F362.jpg](https://github.com/jieban0604/VigameDoc/tree/2c799ab02da6932b434951f2d747c5a7fb651f25/Users/eddy/VigameDoc/.gitbook/assets/1648908-dc7dca47a865b797.jpg)
+![D970B31A66A9D0CC47F120ECE3C4F362.jpg](../../../.gitbook/assets/1648908-dc7dca47a865b797.jpg)
 
 #### 解决方式：
 
-![](https://github.com/jieban0604/VigameDoc/tree/2c799ab02da6932b434951f2d747c5a7fb651f25/Users/eddy/VigameDoc/.gitbook/assets/2183351-cb8d2dc8d55a615c.png)
+![](../../../.gitbook/assets/2183351-cb8d2dc8d55a615c.png)
 
