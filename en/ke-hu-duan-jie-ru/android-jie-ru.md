@@ -2,7 +2,7 @@
 
 ### Clone URL of Demo：
 
-[http://dnsdk.vimedia.cn:8080/r/VigameDemo-Android.git](http://dnsdk.vimedia.cn:8080/r/VigameDemo-Android.git)
+[http://dnsdk.vimedia.cn:8080/r/VigameDemo-Android-Google.git](http://dnsdk.vimedia.cn:8080/r/VigameDemo-Android-Google.git)
 
 ## 1:Add maven repositories
 

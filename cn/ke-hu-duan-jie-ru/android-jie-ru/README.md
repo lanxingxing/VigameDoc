@@ -38,14 +38,17 @@ allprojects {
 }
 ```
 
-## 第二步：引入仓库中的模块
+## 第二步：引用插件
 
 ```groovy
 //添加插件引用
 apply plugin: 'Wb-check'
 def WB = getPlugins().findPlugin('Wb-check')
+```
 
+## 第三步：引入仓库中的模块
 
+```groovy
     //vigame相关模块
     implementation WB.fixVersions('Proxy:Features')
     implementation WB.fixVersions('Loader:VigameLoader')
@@ -61,7 +64,29 @@ def WB = getPlugins().findPlugin('Wb-check')
     implementation 'com.android.support:appcompat-v7:28.0.0'
 ```
 
-## 第三步：添加框架代码调用
+## 第四步：添加动能的混淆过滤文件
+
+```
+buildTypes {
+
+        release {
+            minifyEnabled true
+            shrinkResources false
+            // 此处添加 'vigame_proguard.pro' 过滤sdk的混淆
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro', 'vigame_proguard.pro'  
+            signingConfig signingConfigs.release
+            zipAlignEnabled true
+        }
+    }
+```
+
+
+
+> 如果release版本不开启混淆，可跳过
+
+
+
+## 第五步：添加框架代码调用
 
 修改MyApplication.java在对应生命周期中加入模块的调用代码：
 
@@ -84,7 +109,14 @@ public class MyApplication extends Application {
 修改MainActivity，在对应生命周期中加入VigameLoader模块的调用代码：
 
 ```java
-@Override
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        VigameLoader.activityOnCreate(this);
+        //模块初始化
+        CoreNative.init();
+    }
+    @Override
     protected void onResume() {
         super.onResume();
         VigameLoader.activityOnResume(this);
@@ -119,7 +151,7 @@ public class MyApplication extends Application {
     }
 ```
 
-## 第四步：修改Manifest文件
+## 第六步：修改Manifest文件
 
 添加相关的参数配置，并将VigameStartActivity设置为启动的Activity
 
@@ -146,7 +178,7 @@ public class MyApplication extends Application {
 </activity>
 ```
 
-## 第五步：放入配置文件并修改
+## 第七步：放入配置文件并修改
 
 拷贝VigameConfig.xml和agrement.html到assets目录
 
@@ -161,7 +193,7 @@ public class MyApplication extends Application {
 | IsSDK | 填true，请勿修改该标签 | 是 |
 | CompanyIndex | 公司名称ID，默认填1 | 是 |
 
-## 第六步：配置测试相关项
+## 第八步：配置测试相关项
 
 #### 1.修改app/build.gradle文件，修改包名、渠道名、umeng参数
 
