@@ -74,6 +74,13 @@ Modify MainActivity And add code in the corresponding life cycle：
 
 ```text
     @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        VigameLoader.activityOnCreate(this);
+        //init sdk
+        CoreNative.init();
+    }
+    @Override
     protected void onResume() {
         super.onResume();
         VigameLoader.activityOnResume(this);
