@@ -29,45 +29,25 @@ SDK接入成功后，先提供测试apk给我们验收，验收通过后提供�
 因为每个项目所用到的广告位名称有所区别。为了保证测试有效性，建议前期测试时使用Demo中的广告位名称，以下常用广告位名称可直接出广告：
 
 | 名称 | 广告类型 |
-
 | :--- | :--- |
-
 | banner | 横幅 |
-
 | home | 插屏 |
-
 | pause | 插屏 |
-
 | exit\_game | 插屏 |
-
 | level\_restart | 插屏 |
-
 | level\_fail | 插屏 |
-
 | level\_win | 插屏 |
-
 | game\_win | 插屏 |
-
 | game\_fail | 插屏 |
-
 | game\_pause | 插屏 |
-
 | level\_fail\_mfzs | 视频 |
-
 | rotary\_mfzs | 视频 |
-
 | home\_mfzs | 视频 |
-
 | gift\_mfzs | 视频 |
-
 | double\_fail\_mfzs | 视频 |
-
 | dj\_mfzs | 视频 |
-
 | double\_mfzs | 视频 |
-
 | item\_mfzs | 视频 |
-
 | sign\_game | 视频 |
 
 其他广告位名称，可能无法出广告。只需保证正确调用即可。
