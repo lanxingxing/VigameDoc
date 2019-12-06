@@ -130,7 +130,7 @@ Xcode－&gt; Build Settings-&gt; C Language Dialect修改配置，C99改为GNU99
 
 #### 3.6.确认c++ 编译项
 
-![](../../../.gitbook/assets/2183351-cb8d2dc8d55a615c.png
+!\[\]\(../../../.gitbook/assets/2183351-cb8d2dc8d55a615c.png
 
 ![D970B31A66A9D0CC47F120ECE3C4F362.jpg](../../../.gitbook/assets/1648908-dc7dca47a865b797.jpg)
 

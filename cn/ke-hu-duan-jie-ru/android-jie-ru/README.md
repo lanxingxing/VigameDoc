@@ -66,7 +66,7 @@ def WB = getPlugins().findPlugin('Wb-check')
 
 ## 第四步：添加动能的混淆过滤文件
 
-```
+```text
 buildTypes {
 
         release {
@@ -80,11 +80,7 @@ buildTypes {
     }
 ```
 
-
-
 > 如果release版本不开启混淆，可跳过
-
-
 
 ## 第五步：添加框架代码调用
 

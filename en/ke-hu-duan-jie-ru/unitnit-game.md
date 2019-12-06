@@ -10,8 +10,6 @@
 
 [http://dnsdk.vimedia.cn:8080/r/UnityDemo-Google.git](http://dnsdk.vimedia.cn:8080/r/UnityDemo-Google.git)
 
-
-
 ## Unity plugin for download:
 
 [UniWb.Wb](http://gui.vigame.cn/UniWb/wb/UniWb.Wb.unitypackage)
@@ -48,9 +46,7 @@ AD：
 
 View base class,you can find functions witch is implemented.
 
-
-
-## Android 
+## Android
 
 implementation module in app/build.gradle
 
@@ -85,7 +81,7 @@ You can also use UniWbActivity Activity directly.
 
 At the beginning of the game, if signature verification is required, the method is called and the st.txt file saves the hash of the signature.
 
-st.txt is in StreamingAssets 
+st.txt is in StreamingAssets
 
 st.txt 内容
 
@@ -93,7 +89,7 @@ st.txt 内容
 
 ## Signature configuration
 
-Download [vigame_signature_tool](http://gui.vigame.cn/signtool/vigame签名获取工具.apk)
+Download [vigame\_signature\_tool](http://gui.vigame.cn/signtool/vigame签名获取工具.apk)
 
 Sign the above apk with the signature to be added, and then add the signature information obtained in the above tool to the st.txt file
 
