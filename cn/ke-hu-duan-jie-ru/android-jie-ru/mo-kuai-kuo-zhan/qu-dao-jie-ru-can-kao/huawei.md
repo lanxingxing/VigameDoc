@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.Pay:Huawei:2.3.3'
+    implementation 'com.libVigame.Pay:Huawei:2.4.2'
 ```
 
 ## 配置文件说明
@@ -19,7 +19,7 @@ buildscript {
     }
     dependencies {
          ...
-        classpath 'com.huawei.agconnect:agcp:1.0.0.300'    
+        classpath 'com.huawei.agconnect:agcp:1.1.1.300'    
     }
 }
 
