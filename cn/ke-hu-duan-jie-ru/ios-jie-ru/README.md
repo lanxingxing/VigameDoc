@@ -173,35 +173,31 @@ target-&gt;build phases -&gt; Link Binary With Libraries
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [IOSLoader startLoaderLibrary];//初始化
+    [IOSLoader application:application DidFinishLaunchingWithOptions:launchOptions];//初始化
+    
+    [IOSLoader openSplash]; //闪屏广告
     return YES;
 }
 
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
 
-    if (userActivity.activityType == NSUserActivityTypeBrowsingWeb) {
-    [IOSLoader application:application continueUserActivity:userActivity];//appflyer统计相关设置
-    return YES;
-    }
-    return NO;
+    return [IOSLoader application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    [IOSLoader is_Active:false];//更新状态
+    [IOSLoader applicationDidEnterBackground:application];//更新状态
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-   [IOSLoader isAwaken];
+   [IOSLoader applicationWillEnterForeground:application];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    [IOSLoader is_Active:true]; //更新状态、开屏广告
-     [IOSLoader openAwakenAd];
+   [IOSLoader applicationDidBecomeActive:application];; //更新状态、开屏广告
 }
 
 -(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-    [IOSLoader isOpenURL];//解决唤醒广告在微信登录、充值频繁问题
-    return YES;
+    return [IOSLoader application:app openURL:url options:options];
 }
 ```
 
