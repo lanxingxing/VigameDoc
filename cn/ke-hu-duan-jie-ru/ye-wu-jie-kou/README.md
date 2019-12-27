@@ -14,3 +14,5 @@ description: 常用业务接口说明
 
 ## [5.扩展能力](5.-kuo-zhan-neng-li.md)
 
+## [6.社交能力](6.-she-jiao-neng-li.md)
+
