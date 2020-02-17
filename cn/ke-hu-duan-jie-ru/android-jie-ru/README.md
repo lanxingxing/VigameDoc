@@ -114,7 +114,7 @@ public class MyApplication extends VigameApplication {
 }
 ```
 
-#### 2.修改MainActivity
+#### 2.修改主Activity
 
 {% hint style="warning" %}
 Unity游戏可跳过该步骤，将主Acitivity改为UniWbActivity或其子类即可。
