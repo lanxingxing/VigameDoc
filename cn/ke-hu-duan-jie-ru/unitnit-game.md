@@ -18,61 +18,64 @@
 
 [UniWb.Wb](http://gui.vigame.cn/UniWb/wb/UniWb.Wb.unitypackage)
 
-## 使用
+## 导入Unity插件
 
-导入到工程后，有两个文件夹，**StreamingAssets/st.txt** 保存的是签名的信息，若需要新的签名则可以添加在这个文件中。
+将UniWb.Wb.unitypackage导入成功后，在资源管理界面中会出现名为**Streanming**与**Wb**两个文件夹
 
-UniWb/wb 是业务接口，主要有 ADManger , CoreManger, PayManger, ToolManger, XyxManger
+**StreamingAssets/st.txt** 保存的是签名的信息。
 
-接口在对应的 interface 文件夹下， 例如 AD 在 AD/interface/ADBase
+**Wb** 文件夹存放业务接口，主要有 ADManger , CoreManger, PayManger, ToolManger, XyxManger等。
 
 ## 接口使用
 
-AD：
+参考业务接口进行接入：
 
-```text
-      Wb.ADManager.Instance.OpenAd("banner");
-
-      bool result = Wb.ADManager.Instance.IsAdReady(adName);
-
-      Wb.ADManager.Instance.OpenAd("home_mfzs", result =>
-        {
-            if (result)
-            {
-                ShowBottomToast("视频广告打开成功", false);
-            }
-            else
-            {
-                ShowBottomToast("视频广告打开失败", true);
-            }
-        });
-```
-
-其它 Manger 如此，查看 Base 基类，可比较方便的查看已实现的方法。
+{% page-ref page="ye-wu-jie-kou/" %}
 
 ## 互推使用
 
-导入 UniWb.Wb.unitypackage 后， 在 Wb/Xyx/prefab/ 文件夹下 有 PushIconItem 预制体，拖入 canvas 即可，在打包安卓时 可使用 112234 项目id 测试。
+导入 UniWb.Wb.unitypackage 后， 在 Wb/Xyx/prefab/ 文件夹下 有 PushIconItem 预制体，拖入 canvas 即可。在打包安卓时 需使用 112234 项目id 测试。
 
-注意 ：在 build.gradle 中引入 （以上版本）
 
-```java
-implementation 'com.libVigame.Bridge:UnityBridge:1.0.9'
-implementation 'com.libVigame.Proxy:Features:2.6.6'
-```
 
 ![UniWb01](../../.gitbook/assets/uniwb01.png)
 
-## Android 接入
+## 签名验证
 
-在 build.gradle 中引入
+在游戏开始的时候，如果需要签名验证，调用该方法
 
-```java
-implementation 'com.libVigame.bridge:UnityBridge:1.0.8'
+```text
+ Wb.CoreManager.Instance.CheckSignature();
 ```
 
+StreamingAssets/st.txt 文件保存默认签名的哈希值，内容为：-49852205,1765204456
+
+如需添加自己的签名，可下载地址 [vigame签名获取工](http://gui.vigame.cn/signtool/vigame签名获取工具.apk)[具](http://gui.vigame.cn/signtool/vigame签名获取工具.apk)。
+
+然后用待添加的签名，签名上述apk，然后在 st.txt 文件里添加上述工具中获取到的签名信息。
+
+## Android 接入
+
+#### 1.添加Android相关模块
+
+参考以下链接进行接入：
+
+{% page-ref page="android-jie-ru/" %}
+
+{% hint style="warning" %}
+请跳过链接页面中第五步的第2条，因为后面已使用Activity继承代替。
+{% endhint %}
+
+#### 2.在 build.gradle 中加入Unity桥接模块
+
 ```java
-package org.cocos2dx.cpp;
+implementation WB.fixVersions('Bridge:UnityBridge')
+```
+
+#### 3.将主Acitivy继承UniWbActivity或者将UniWbActivity作为主Activity。
+
+```java
+package org.vigame.demo;
 import android.os.Bundle;
 import com.vigame.unitybridge.UniWbActivity;
 
@@ -86,33 +89,19 @@ public class AppActivity extends UniWbActivity
 }
 ```
 
-Activity 继承 UniWbActivity 即可， 与 unity 交互的 接口在 UniWbActivity 类中，可查看。
+{% hint style="info" %}
+UniWbActivity已经继承UnityPlayerActivity
+{% endhint %}
 
-也可直接 使用 UniWbActivity Activity
+## iOS 接入
 
-## 签名验证
+#### 1.添加iOS相关模块
 
-```text
- Wb.CoreManager.Instance.CheckSignature();
-```
+参考以下链接进行接入：
 
-在游戏开始的时候，如果需要签名验证，调用该方法， st.txt 文件保存签名的 哈希值。
+{% page-ref page="ios-jie-ru/" %}
 
-st.txt 放在 StreamingAssets 文件夹下
-
-st.txt 内容
-
--49852205,1765204456
-
-## 签名配置
-
-下载地址 [vigame签名获取工具](http://gui.vigame.cn/signtool/vigame签名获取工具.apk)
-
-用待添加的签名，签名上述apk，然后再 st.txt 文件里添加上述工具中获取到的签名信息
-
-## ios 接入
-
-ios 桥接文件修改
+#### 2.修改iOS 桥接文件
 
 在 项目 Bridge 文件下 修改 AdBridge.h 和 AdBridge.mm 文件， 直接全部覆盖
 

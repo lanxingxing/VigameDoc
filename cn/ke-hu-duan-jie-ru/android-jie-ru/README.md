@@ -84,7 +84,9 @@ buildTypes {
 
 ## 第五步：添加框架代码调用
 
-修改MyApplication.java在对应生命周期中加入模块的调用代码：
+#### 1.修改应用的Application类。
+
+在MyApplication类对应生命周期中加入模块的调用代码：
 
 ```java
 public class MyApplication extends Application {
@@ -102,7 +104,19 @@ public class MyApplication extends Application {
 }
 ```
 
-修改MainActivity，在对应生命周期中加入VigameLoader模块的调用代码：
+或者
+
+直接将MyApplication类继承VigameApplication：
+
+```groovy
+public class MyApplication extends VigameApplication {
+
+}
+```
+
+#### 2.修改MainActivity
+
+在对应生命周期中加入VigameLoader模块的调用代码：
 
 ```java
     @Override
