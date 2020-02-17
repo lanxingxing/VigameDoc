@@ -14,13 +14,11 @@
 
 [http://dnsdk.vimedia.cn:8080/r/UnityDemo-IOS.git](http://dnsdk.vimedia.cn:8080/r/UnityDemo-IOS.git)
 
-## 下载地址
-
-[UniWb.Wb](http://gui.vigame.cn/UniWb/wb/UniWb.Wb.unitypackage)
-
 ## 导入Unity插件
 
-将UniWb.Wb.unitypackage导入成功后，在资源管理界面中会出现名为**Streanming**与**Wb**两个文件夹
+插件下载地址：[UniWb.Wb](http://gui.vigame.cn/UniWb/wb/UniWb.Wb.unitypackage)
+
+将UniWb.Wb.unitypackage导入成功后，在资源管理界面中会出现名为**Streanming**与**Wb**两个文件夹。
 
 **StreamingAssets/st.txt** 保存的是签名的信息。
 
