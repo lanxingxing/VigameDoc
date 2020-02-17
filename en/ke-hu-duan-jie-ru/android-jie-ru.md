@@ -11,8 +11,8 @@ buildscript {
     repositories {
         google()
         jcenter()
-	//vigame plugin
-	maven { url 'http://gui.vigame.cn/plugin/' }
+    //vigame plugin
+    maven { url 'http://gui.vigame.cn/plugin/' }
         //umeng
         maven { url 'https://dl.bintray.com/umsdk/release' }
     }    
@@ -80,7 +80,7 @@ buildTypes {
 
 ## 5：Add code in the project
 
-#### 5.1 Modify Application.java 
+#### 5.1 Modify Application.java
 
 Add code in the corresponding life cycle in MyApplication class:
 
@@ -112,9 +112,7 @@ public class MyApplication extends VigameApplication {
 
 #### 5.2 Modify the main Activity
 
-{% hint style="warning" %}
-Unity games can skip this step and change the main Acitivity to UniWbActivity or its subclasses.
-{% endhint %}
+> Unity games can skip this step and change the main Acitivity to UniWbActivity or its subclasses.
 
 Modify MainActivity And add code in the corresponding life cycle：
 
@@ -211,11 +209,12 @@ Recommendation the package name as follows for Advertising display
 
 ```groovy
 defaultConfig {
-        applicationId "com.dn.tgxm.gg"
+        applicationId "com.gzsj.game.hw"
         ...
         manifestPlaceholders = [
-                UMENG_APPKEY     : "",
-                WB_CHANNEL       : "gg"
+                WB_PRJID:"333361",
+                AppsFlyer_DevKey:"X9NxxaMp4neHCFYreDxtd5",
+                WB_CHANNEL:"gg"
         ]
 }
 ```

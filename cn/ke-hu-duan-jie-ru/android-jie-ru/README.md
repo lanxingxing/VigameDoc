@@ -116,9 +116,7 @@ public class MyApplication extends VigameApplication {
 
 #### 2.修改主Activity
 
-{% hint style="warning" %}
-Unity游戏可跳过该步骤，将主Acitivity改为UniWbActivity或其子类即可。
-{% endhint %}
+> Unity游戏可跳过该步骤，将主Acitivity改为UniWbActivity或其子类即可。
 
 在对应生命周期中加入VigameLoader模块的调用代码：
 
