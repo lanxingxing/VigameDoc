@@ -53,7 +53,7 @@ dnsdk.data.pushData.iconList
 | icon | String | 推广产品图标地址 |
 | plist | String | 帧动画文件地址 |
 | pushImage | String | 推广产品二维码图 |
-| pushAppID | String | 推广产品的微信Appid |
+| pushAppID | String | 推广产品的微信Appid（oppo小游戏为包名） |
 | open | String | 打开类型（1.image 2.url 3.miniprogram） |
 | openPath | String | 打开的小程序的路径 |
 | gameName | String | 推广产品的名称 |
