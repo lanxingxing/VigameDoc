@@ -49,6 +49,8 @@ BannerAd 广告组件
 | top | number | 定义 banner 左上角距离屏幕上边的距离 |
 | width | number | 定义 banner 展示的宽度 |
 | heiht | number | 定义 banner 展示的高度 |
+| realWidth | number | banner 广告组件经过缩放后真实的宽度 |
+| realHeight | number | banner 广告组件经过缩放后真实的高度 |
 
 #### BannerAd.show\(\)
 
