@@ -6,6 +6,10 @@
 
 > 需确保sdk初始化时已传入广告配置，否则无效。
 
+#### 返回值
+
+BannerAd 广告组件
+
 ### dnsdk.destroyBanner\(\)
 
 快捷销毁banner。

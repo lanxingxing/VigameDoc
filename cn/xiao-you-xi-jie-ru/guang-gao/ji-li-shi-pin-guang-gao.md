@@ -6,6 +6,10 @@
 
 > 需确保sdk初始化时已传入广告配置，否则无效。
 
+#### 返回值
+
+RewardedVideoAd 广告组件
+
 ### dnsdk.createRewardedVideoAd\(object\)
 
 创建激励视频广告组件，调用该方法创建的激励视频广告是一个单例。
@@ -22,10 +26,6 @@ object
 
 RewardedVideoAd 广告组件
 
-#### 返回值
-
-true-可播放 false-不可播放
-
 ### RewardedVideoAd
 
 #### RewardedVideoAd.isLoaded\(\)
@@ -33,6 +33,10 @@ true-可播放 false-不可播放
 用于查询广告是否可播放。
 
 > 由于部分平台会自动预先加载。所以我们提供此接口用于查询是否有加载好的广告。
+
+#### 返回值
+
+true-可播放 false-不可播放
 
 #### RewardedVideoAd.show\(\)
 
