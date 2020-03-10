@@ -47,7 +47,15 @@ LayaDemo克隆地址（Laya1.0制作）:
 
 ### 4.测试
 
-查看输出，有以下数据输出即表示接入成功。
+查看输出，有服务器数据输出即表示接入成功。
 
-![xyxlog](../../.gitbook/assets/image%20%281%29.png)
+![image](../../.gitbook/assets/shu-chu.png)
+
+
+
+### 
+
+### 
+
+### 
 

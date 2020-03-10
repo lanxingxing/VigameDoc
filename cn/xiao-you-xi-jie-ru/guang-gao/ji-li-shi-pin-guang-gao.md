@@ -1,10 +1,22 @@
 # 激励视频广告
 
-### dnsdk.openRewardedVideo\(\)
+### dnsdk.openRewardedVideo\(function callback\)
 
 快捷打开视频。
 
 > 需确保sdk初始化时已传入广告配置，否则无效。
+
+#### 参数
+
+**function callback**
+
+用户点击 `关闭广告` 按钮的事件的回调函数
+
+Object res
+
+| 属性 | 类型 | 说明 |
+| :--- | :--- | :--- |
+| isEnded | boolean | 视频是否是在用户完整观看的情况下被关闭的 |
 
 #### 返回值
 
@@ -49,6 +61,18 @@ true-可播放 false-不可播放
 #### RewardedVideoAd.onClose\(function callback\)
 
 监听用户点击广告关闭事件。
+
+#### 参数
+
+**function callback**
+
+用户点击 `关闭广告` 按钮的事件的回调函数
+
+Object res
+
+| 属性 | 类型 | 说明 |
+| :--- | :--- | :--- |
+| isEnded | boolean | 视频是否是在用户完整观看的情况下被关闭的 |
 
 #### RewardedVideoAd.offClose\(function callback\)
 
