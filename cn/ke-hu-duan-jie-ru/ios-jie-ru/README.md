@@ -174,7 +174,7 @@ target-&gt;build phases -&gt; Link Binary With Libraries
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [IOSLoader application:application DidFinishLaunchingWithOptions:launchOptions];//初始化
-    
+
     [IOSLoader openSplash]; //闪屏广告
     return YES;
 }
