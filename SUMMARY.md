@@ -96,6 +96,7 @@
       * [Banner广告](cn/xiao-you-xi-jie-ru/guang-gao/banner-guang-gao.md)
       * [插屏广告](cn/xiao-you-xi-jie-ru/guang-gao/cha-ping-guang-gao.md)
       * [激励视频广告](cn/xiao-you-xi-jie-ru/guang-gao/ji-li-shi-pin-guang-gao.md)
+      * [其他广告](cn/xiao-you-xi-jie-ru/guang-gao/qi-ta-guang-gao.md)
     * [SDK下载](cn/xiao-you-xi-jie-ru/sdk-xia-zai.md)
 * [English](en/README.md)
   * [For Client](en/ke-hu-duan-jie-ru/README.md)
