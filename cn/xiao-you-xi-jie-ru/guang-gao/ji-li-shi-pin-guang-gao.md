@@ -98,9 +98,11 @@ Object res
 
 取消监听激励视频广告加载事件。
 
-#### RewardedVideoAd.onError\(function callback\)
+#### ~~RewardedVideoAd.onError\(function callback\)~~
 
 监听激励视频错误事件。
+
+> 因为SDK内部已经对onError进行处理，包括输出日志和重试操作，监听会造成覆盖。除非特殊情况，不推荐监听onError。
 
 **Object res**
 
@@ -111,7 +113,7 @@ Object res
 
 > 错误原因需参照具体平台的文档
 
-#### RewardedVideoAd.offError\(function callback\)
+#### ~~RewardedVideoAd.offError\(function callback\)~~
 
 取消监听激励视频错误事件
 
