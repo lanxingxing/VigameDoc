@@ -16,6 +16,21 @@ description: 腾讯YSDK
 | :--- | :--- | :--- |
 |  |  | eg： |
 
+
+
+### build.gradle中需添加
+
+```text
+ 
+  manifestPlaceholders = [
+                QQ_APPID:"游戏的QQAPPID",
+                WX_APPID:"游戏的微信APPID",
+               ...
+        ] 
+```
+
+## 
+
 ## 配置文件说明
 
 在包名目录下添加 .wxapi 包名，然后添加WXEntryActivity.java文件， 文件内容为
