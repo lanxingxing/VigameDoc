@@ -3,7 +3,15 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:TuiA:1.0.2'
+allprojects {
+    repositories {
+        maven { url 'https://dl.bintray.com/sunjiangrong/maven' }
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+
+implementation 'com.libVigame.AD:TuiA:1.0.5'
 ```
 
 ## 注意事项
