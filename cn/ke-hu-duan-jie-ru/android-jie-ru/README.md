@@ -11,8 +11,8 @@ buildscript {
     repositories {
         google()
         jcenter()
-        //添加 动能 版本检测插件
-        maven { url 'http://gui.vigame.cn/plugin/' }
+        //添加 动能maven仓库 版本检测插件
+        maven { url "http://dnsdk.vimedia.cn:8081/repository/vigame-public/" }
         //添加友盟仓库
         maven { url 'https://dl.bintray.com/umsdk/release' }
     }   
