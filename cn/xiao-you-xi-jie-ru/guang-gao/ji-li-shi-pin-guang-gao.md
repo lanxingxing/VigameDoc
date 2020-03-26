@@ -47,9 +47,9 @@ RewardedVideoAd 广告组件
 
 #### 返回值
 
-true-可播放 
+true：可播放 
 
-false-不可播放
+false：不可播放
 
 
 
