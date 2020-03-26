@@ -2,6 +2,15 @@
 
 ## 历史版本
 
+### 版本：v3.0 发布时间：2020-3-26
+
+- 增加onInit初始化监听
+- 增加桌面图标跳转功能（qq/oppo/vivo支持）
+- 支持头条渠道互推配置
+- Banner支持oppo、vivo、qq等平台的定时刷新
+- 增加插屏失败后自动重试功能
+- 重构接口：1.open方法增加success/fail/close回调  2.不再支持onXXX、offXXX、createXXX风格的接口。
+
 ### 版本：v2.2 发布时间：2020-3-9
 
 [下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/2.2/dnsdk.zip)

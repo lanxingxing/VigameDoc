@@ -57,7 +57,7 @@ dnsdk.data.pushData.iconList
 | open | String | 打开类型（1.image 2.url 3.miniprogram） |
 | openPath | String | 打开的小程序的路径 |
 | gameName | String | 推广产品的名称 |
-| extra | String | 额外参数 |
+| extraData | String | 需要传递给目标小程序的数据，目标小程序可在 `App.onLaunch`，`App.onShow` 中获取到这份数据 |
 
 > 注意：跳转小程序时，pushAppID和openPath字段需要同时用到，否则无法监控推送效果。
 

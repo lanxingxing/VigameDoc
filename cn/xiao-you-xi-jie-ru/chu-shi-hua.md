@@ -70,3 +70,47 @@ var adData = {
 dnsdk.init("20065", adData);
 ```
 
+### 2.初始化监听
+
+方法接口：
+
+```
+dnsdk.onInit(Object object);
+```
+
+参数说明：
+
+##### Object object:
+
+| 参数     | 参数类型 | 是否必传 | 描述                                         |
+| :------- | :------- | :------- | :------------------------------------------- |
+| success  | function | 否       | 接口调用成功的回调                           |
+| fail     | function | 否       | 接口调用失败的回调                           |
+| complete | function | 否       | 接口调用结束的回调（调用成功、失败都会执行） |
+
+##### Object res:
+
+| 参数     | 参数类型 | 描述                                           |
+| :------- | :------- | :--------------------------------------------- |
+| error    | int      | 错误码。0表示成功，其他表示网络错误。          |
+| provider | String   | 当前所在的平台(wechat/qq/oppo/vivo/tt)         |
+| openid   | String   | 能取到平台openid时为平台的openid，否则为uuid。 |
+| ptOpenid | String   | 平台的openid                                   |
+
+
+
+示例代码：
+
+```
+dnsdk.onInit({
+	success:function(res){
+		
+	},
+	fail:function(res){
+	
+	},
+	complete:function(res){
+	
+	}
+});
+```
