@@ -4,6 +4,8 @@
 
 ### 版本：v3.0 发布时间：2020-3-26
 
+[下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/3.0/dnsdk.zip)
+
 - 增加onInit初始化监听
 - 增加桌面图标跳转功能（qq/oppo/vivo支持）
 - 支持头条渠道互推配置

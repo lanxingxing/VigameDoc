@@ -4,8 +4,6 @@
 
 快捷打开banner，banner位于底部。如需自定义广告位置，请使用createBannerAd接口。
 
-> 需确保sdk初始化时已传入广告配置，否则无效。
-
 #### 参数
 
 object
