@@ -5,7 +5,7 @@
 方法接口：
 
 ```text
-dnsdk.tjSendEvent(eventId, object);
+dnsdk.tjSendCustomEvent(eventId, object);
 ```
 
 参数说明：
@@ -18,7 +18,7 @@ dnsdk.tjSendEvent(eventId, object);
 示例代码：
 
 ```javascript
-dnsdk.tjSendEvent('事件名称',{'参数key' : '参数value'})
+dnsdk.tjSendCustomEvent('事件名称',{'参数key' : '参数value'})
 ```
 
 ### 2.关卡统计
