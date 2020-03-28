@@ -1,10 +1,10 @@
 # Banner广告
 
-### dnsdk.openBanner\(object\)
+## dnsdk.openBanner\(object\)
 
 快捷打开banner，banner位于底部。如需自定义广告位置，请使用createBannerAd接口。
 
-#### 参数
+### 参数
 
 object
 
@@ -25,25 +25,24 @@ object
 | width | number | 是 | 定义 banner 展示的宽度 |
 | heiht | number | 是 | 定义 banner 展示的高度 |
 
-#### 返回值
+### 返回值
 
 BannerAd 广告组件
 
-#### 示例代码：
+### 示例代码：
 
+```text
+dnsdk.openBanner({
+    fail:function (err) {
+        console.log("打开banner失败 : " + JSON.stringify(err));
+    },
+    success :function () {
+        console.log("打开banner成功 ");
+    }
+});
 ```
-        dnsdk.openBanner({
-            fail:function (err) {
-                console.log("打开banner失败 : " + JSON.stringify(err));
-            },
-            success :function () {
-                console.log("打开banner成功 ");
-            }
-        });
-```
 
-
-
-### dnsdk.destroyBanner\(\)
+## dnsdk.destroyBanner\(\)
 
 快捷销毁banner。
+

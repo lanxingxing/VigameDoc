@@ -1,6 +1,6 @@
 # 统计
 
-### 1.自定义事件统计
+## 1.自定义事件统计
 
 方法接口：
 
@@ -21,7 +21,7 @@ dnsdk.tjSendCustomEvent(eventId, object);
 dnsdk.tjSendCustomEvent('事件名称',{'参数key' : '参数value'})
 ```
 
-### 2.关卡统计
+## 2.关卡统计
 
 > 此接口用于追踪玩家对关卡的完成情况等
 
@@ -36,7 +36,7 @@ dnsdk.tjOnRunning(object)
 dnsdk.tjOnEnd(object)
 ```
 
-#### dnsdk.tjOnStart关卡开始
+### dnsdk.tjOnStart关卡开始
 
 | 参数 | 描述 | 参数类型 | 规则 | 是否必传 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -54,7 +54,7 @@ dnsdk.tjOnStart({
 })
 ```
 
-#### dnsdk.tjOnRunning捕捉用户在关卡中的一些行为和操作
+### dnsdk.tjOnRunning捕捉用户在关卡中的一些行为和操作
 
 | 参数 | 描述 | 参数类型 | 规则 | 是否必传 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -85,7 +85,7 @@ dnsdk.tjOnRunning({
 })
 ```
 
-#### dnsdk.tjOnEnd 关卡结束
+### dnsdk.tjOnEnd 关卡结束
 
 | 参数 | 描述 | 参数类型 | 规则 | 是否必传 |  |
 | :--- | :--- | :--- | :--- | :--- | :--- |
