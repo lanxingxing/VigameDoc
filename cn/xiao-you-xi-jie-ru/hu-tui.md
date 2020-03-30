@@ -66,10 +66,14 @@ dnsdk.data.pushData.iconList
 方法接口：
 
 ```text
-dnsdk.tjSendShowEvent(object)
+dnsdk.tjSendShowEvent(eventid,object)
 ```
 
 参数说明：
+| 参数 | 类型 | 描述 |
+| :--- | :--- | :--- |
+| eventid | String | 事件名称，通常为互推数据列表标识 |
+| object | Object | 上报的信息 |
 
 #### Object object:
 
@@ -78,7 +82,6 @@ dnsdk.tjSendShowEvent(object)
 | label | 当前互推的唯一标识符 | String | 是 |
 | pushappid | 要跳转的appid | String | 是 |
 | placement | 展示界面名称标识 | String | 是 |
-| eventid | 互推数据列表标识 | String | 是 |
 
 示例代码：
 
@@ -87,10 +90,9 @@ dnsdk.tjSendShowEvent(object)
 var tjData = {
         label: this.data.id,
         pushappid: this.data.pushAppID,
-        placement: "home",
-          eventid: "grouppage"
+        placement: "home"
 };
-dnsdk.tjSendShowEvent("bottom", tjData);
+dnsdk.tjSendShowEvent("grouppage", tjData);
 ```
 
 #### 1.4 互推点击统计
@@ -98,10 +100,15 @@ dnsdk.tjSendShowEvent("bottom", tjData);
 方法接口：
 
 ```text
-dnsdk.tjSendClickEvent(object)
+dnsdk.tjSendClickEvent(eventid, object)
 ```
 
 参数说明：
+
+| 参数 | 类型 | 描述 |
+| :--- | :--- | :--- |
+| eventid | String | 事件名称，通常为互推数据列表标识 |
+| object | Object | 上报的信息 |
 
 #### Object object:
 
@@ -110,7 +117,6 @@ dnsdk.tjSendClickEvent(object)
 | label | 当前互推的唯一标识符 | String | 是 |
 | pushappid | 要跳转的appid | String | 是 |
 | placement | 展示界面名称标识 | String | 是 |
-| eventid | 互推数据列表标识 | String | 是 |
 
 示例代码：
 
@@ -119,11 +125,10 @@ dnsdk.tjSendClickEvent(object)
 var tjData = {
  label: this.data.id,
  pushappid: this.data.pushAppID,
- placement: "home",
- eventid: "grouppage"
- };
+ placement: "home"
+};
 
-dnsdk.tjSendClickEvent(tjData);
+dnsdk.tjSendClickEvent("grouppage", tjData);
 ```
 
 ### 2.小程序跳转
