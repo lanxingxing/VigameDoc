@@ -2,6 +2,12 @@
 
 ## 历史版本
 
+### 版本：v3.1 发布时间：2020-3-30
+
+[下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/3.1/dnsdk.zip)
+
+* 修复互推上报问题，互推点击和互推上报改为两个参数
+
 ### 版本：v3.0 发布时间：2020-3-26
 
 [下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/3.0/dnsdk.zip)
