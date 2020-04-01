@@ -111,3 +111,23 @@ dnsdk.onInit({
 });
 ```
 
+
+
+## 3.获取当前所在平台
+
+方法名称：
+
+```text
+dnsdk.getProvider()
+```
+
+返回值：
+
+| 标识 | 描述 |
+| :--- | :--- |
+| wechat | 微信小游戏 |
+| qq | QQ小游戏 |
+| tt | 头条小游戏 |
+| oppo | Oppo小游戏 |
+| vivo | Vivo小游戏 |
+

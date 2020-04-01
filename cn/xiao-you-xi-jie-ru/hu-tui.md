@@ -70,6 +70,7 @@ dnsdk.tjSendShowEvent(eventid,object)
 ```
 
 参数说明：
+
 | 参数 | 类型 | 描述 |
 | :--- | :--- | :--- |
 | eventid | String | 事件名称，通常为互推数据列表标识 |
@@ -170,4 +171,10 @@ dnsdk.navigateToMiniProgram({
   }
 })
 ```
+
+### 3.头条小游戏弹窗
+
+参考以下链接接入：
+
+[https://developer.toutiao.com/dev/cn/mini-game/develop/open-capacity/more-mini-game/tt.showmoregamesmodal](https://developer.toutiao.com/dev/cn/mini-game/develop/open-capacity/more-mini-game/tt.showmoregamesmodal)
 
