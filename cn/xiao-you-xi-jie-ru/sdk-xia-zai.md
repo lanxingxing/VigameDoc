@@ -2,6 +2,13 @@
 
 ## 历史版本
 
+### 版本：v3.2 发布时间：2020-4-8
+
+[下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/3.2/dnsdk.zip)
+
+* 增加dnsdk.hideBanner()和dnsdk.showBanner()
+* 优化vivo广告刷新逻辑
+
 ### 版本：v3.1 发布时间：2020-3-30
 
 [下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/3.1/dnsdk.zip)
