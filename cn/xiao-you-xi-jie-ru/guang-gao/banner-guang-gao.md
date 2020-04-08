@@ -46,3 +46,13 @@ dnsdk.openBanner({
 
 快捷销毁banner。
 
+## dnsdk.hideBanner\(\)
+
+隐藏banner，此时不会销毁。
+
+## dnsdk.showBanner\(\)
+
+展示之前被隐藏的banner。
+
+> 使用openBanner接口后会自动展示，不需要再单独调用showBanner。
+
