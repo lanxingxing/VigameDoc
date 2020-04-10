@@ -4,7 +4,7 @@
 
 #### 1.1 设置分享
 
-> 在微信、QQ小游戏生效
+> 在微信、QQ、头条小游戏生效
 
 > 将微信的wx.onShareAppMessage替换成dnsdk.onShareAppMessage
 
@@ -45,7 +45,7 @@ dnsdk.onShareAppMessage(callback);
 
 #### 1.2 分享
 
-> 在微信、QQ小游戏生效
+> 在微信、QQ、头条小游戏生效
 
 方法接口：
 
