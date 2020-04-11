@@ -14,13 +14,11 @@
 
 download：[UniWb.Wb](http://gui.vigame.cn/UniWb/wb/UniWb.Wb.unitypackage)
 
-Imported the UniWb.Wb.unitypackage, two folders named **Streanming ** and **Wb** will appear in the resource management interface.
+Imported the UniWb.Wb.unitypackage, two folders named **Streanming**  and **Wb** will appear in the resource management interface.
 
 **StreamingAssets/st.txt** saved signature info。
 
 **Wb** folder is interface, there are ADManger , CoreManger, PayManger, ToolManger, XyxManger etc。
-
-
 
 ## Use interface
 
@@ -51,7 +49,7 @@ Reference：
 {% page-ref page="android-jie-ru.md" %}
 
 {% hint style="warning" %}
-Please skip the 5.2，because we will use Activity  inherit instead.
+Please skip the 5.2，because we will use Activity inherit instead.
 {% endhint %}
 
 #### 2.Add UnityBridge module in build.gradle
