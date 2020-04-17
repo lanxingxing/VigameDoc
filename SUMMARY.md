@@ -35,6 +35,7 @@
           * [Ngad](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/guang-gao-jie-ru/ngad.md)
           * [360广告](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/guang-gao-jie-ru/360-guang-gao.md)
           * [Sigmob广告](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/guang-gao-jie-ru/sigmob.md)
+          * [快手广告](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/guang-gao-jie-ru/kuaishou.md)
         * [支付接入参考](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/zhi-fu-jie-ru-can-kao/README.md)
           * [微信支付](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/zhi-fu-jie-ru-can-kao/wei-xin-zhi-fu.md)
           * [支付宝](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/zhi-fu-jie-ru-can-kao/zhi-fu-bao.md)

@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation WB.fixVersions('AD:Sigmob')
+implementation WB.fixVersions('AD:Sigmob')
 ```
 
 ## 集成测试
