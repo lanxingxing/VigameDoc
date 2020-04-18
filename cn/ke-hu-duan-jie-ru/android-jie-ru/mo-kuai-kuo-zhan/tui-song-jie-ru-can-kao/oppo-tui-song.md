@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-xxx_Implementation 'com.libVigame.Push:Oppo:1.0.0'
+xxx_Implementation WB.fixVersions('Push:Oppo')
 ```
 
 ## 添加混淆

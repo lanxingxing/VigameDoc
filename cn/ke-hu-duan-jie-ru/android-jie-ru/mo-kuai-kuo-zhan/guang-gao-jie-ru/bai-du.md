@@ -3,9 +3,9 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:BaiduMob:2.4.0'  (带MobVisita用）
+    implementation WB.fixVersions('AD:BaiduMob'）  (带MobVisita用）
     和
-    implementation 'com.libVigame.AD2:BaiduMob:2.4.0'  （不带MobVisita用）
+    implementation WB.fixVersions('AD2:BaiduMob')  （不带MobVisita用）
 ```
 
 ## 注意事项

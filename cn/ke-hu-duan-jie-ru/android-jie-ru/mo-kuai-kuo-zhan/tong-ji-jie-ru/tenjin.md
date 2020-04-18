@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.TJ:Tenjin:1.0.0'
+    implementation WB.fixVersions('TJ:Tenjin')
 ```
 
 ## 混淆过滤

@@ -165,9 +165,12 @@ public class MyApplication extends VigameApplication {
 
 ## 第六步：修改Manifest文件
 
-添加相关的参数配置，并将VigameStartActivity设置为启动的Activity
+添加相关的参数配置，并将VigameStartActivity设置为启动的Activit，application标签的android:name 设置为com.libVigame.VigameApplication 或 xxx.xx.x.MyApplication
 
 ```markup
+ <application
+        android:name="org.vigame.demo.MyApplication"
+        >
 <meta-data
     android:name="com.vigame.sdk.appid"
     android:value="10001" />
@@ -188,22 +191,29 @@ public class MyApplication extends VigameApplication {
         <category android:name="android.intent.category.LAUNCHER" />
     </intent-filter>
 </activity>
+ </application>
 ```
 
 ## 第七步：放入配置文件并修改
 
 拷贝VigameConfig.xml和agrement.html到assets目录
 
-通过assets文件夹中的ConfigVigame.xml进行配置，属性说明如下：
+通过assets文件夹中的ConfigVigame.xml进行配置，注意必须属性一定要设置，属性说明如下：
 
 | 名称 | 解释 | 是否必须 |
 | :--- | :--- | :--- |
 | GameOpenActivity | 闪屏后进入的Activity路径名称 | 是 |
 | ScreenOrientation | 屏幕方向 | 是 |
-| SupportAdPositions | 支持的广告位名称 | 否 |
-| WithSplashAD | 是否出现闪屏广告（默认出现） | 否 |
 | IsSDK | 填true，请勿修改该标签 | 是 |
 | CompanyIndex | 公司名称ID，默认填1 | 是 |
+| SupportAdPositions | 支持的广告位名称 | 否 |
+| WithSplashAD | 是否出现闪屏广告（默认出现） | 否 |
+| Debug | true或false(Vigamelog 是否输出的标志) | 否 |
+| NoSplash | 不显示开屏时设置为true,默认不设置 | 否 |
+| AutoFullScreen | 是否把当前activity设置为全屏，默认为true | 否 |
+| FixSpecialScreen | 是否适配刘海屏，默认为true | 否 |
+| SplashTime | 闪屏持续时长，整数（单位毫秒） | 否 |
+| DelaySplashAD | 闪屏持续多长时间后打开开屏广告,默认为0 | 否 |
 
 ## 第八步：配置测试相关项
 

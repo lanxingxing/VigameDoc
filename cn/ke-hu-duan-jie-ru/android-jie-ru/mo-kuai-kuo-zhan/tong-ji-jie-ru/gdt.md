@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.TJ:GDT:2.0.0'
+    implementation WB.fixVersions('TJ:GDT')
 ```
 
 ## 配置文件说明

@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:Mi:2.2.7'
+    implementation WB.fixVersions('AD:Mi')
 ```
 
 ## 注意事项

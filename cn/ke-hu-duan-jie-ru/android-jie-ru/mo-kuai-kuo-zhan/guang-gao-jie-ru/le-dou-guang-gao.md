@@ -3,11 +3,11 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:LeDou:2.1.0'
+    implementation WB.fixVersions('AD:LeDou'）
 
 ## 注意事项
 
-```text
+​```text
     无
 ```
 

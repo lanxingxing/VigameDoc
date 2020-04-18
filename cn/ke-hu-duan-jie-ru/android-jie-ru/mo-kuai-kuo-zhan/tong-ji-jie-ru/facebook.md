@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.TJ:Facebook:2.1.6'
+    implementation WB.fixVersions('TJ:Facebook')
 ```
 
 ## Manifest

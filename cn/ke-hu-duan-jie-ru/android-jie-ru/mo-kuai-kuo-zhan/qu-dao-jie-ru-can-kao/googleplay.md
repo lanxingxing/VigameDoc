@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.Pay:GooglePlay:2.1.3'
+    implementation WB.fixVersions('Pay:GooglePlay')
 ```
 
 ## 配置文件说明

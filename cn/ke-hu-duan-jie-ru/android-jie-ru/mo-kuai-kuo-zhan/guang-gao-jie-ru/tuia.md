@@ -11,7 +11,7 @@ allprojects {
 }
 
 
-implementation 'com.libVigame.AD:TuiA:1.0.5'
+implementation WB.fixVersions('AD:TuiA'）
 ```
 
 ## 注意事项

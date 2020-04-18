@@ -3,11 +3,11 @@
 ## 模块引入
 
 ```text
-  implementation 'com.libVigame.Pay:VivoSingle:2.0.0' (Vivo单机计费  特殊说明才用此版本的sdk)
+  implementation WB.fixVersions('Pay:VivoSingle') (Vivo单机计费  特殊说明才用此版本的sdk)
   和
-  implementation 'com.libVigame.Pay:Vivo:2.2.0' (Vivo联运)
+  implementation WB.fixVersions('Pay:Vivo') (Vivo联运)
   和
-  implementation 'com.libVigame.Pay:VivoOverseas:2.0.4' (Vivo海外)
+  implementation WB.fixVersions('ay:VivoOverseas') (Vivo海外)
 ```
 
 ## Manifest参数选项

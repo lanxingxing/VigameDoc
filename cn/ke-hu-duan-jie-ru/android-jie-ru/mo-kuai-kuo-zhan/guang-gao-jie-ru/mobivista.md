@@ -5,9 +5,9 @@
 ### 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:MobVista:1.1.1'（国内）
+    implementation WB.fixVersions('AD:MobVista')（国内）
     和
-    implementation 'com.libVigame.AD:MobVistaOversea:2.0.4'（海外）
+    implementation WB.fixVersions('AD:MobVistaOversea')（海外）
 ```
 
 ### 注意事项

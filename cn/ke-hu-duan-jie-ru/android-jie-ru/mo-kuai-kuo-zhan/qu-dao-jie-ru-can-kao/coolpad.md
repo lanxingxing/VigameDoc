@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.Pay:Coolpad:2.1.1'
+    implementation WB.fixVersions('Pay:Coolpad')
 ```
 
 ## 配置文件说明

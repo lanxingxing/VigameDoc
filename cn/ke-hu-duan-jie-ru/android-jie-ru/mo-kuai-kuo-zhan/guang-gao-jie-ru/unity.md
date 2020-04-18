@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:Unity:2.1.5'
+    implementation WB.fixVersions('AD:Unity')
 ```
 
 ## 注意事项

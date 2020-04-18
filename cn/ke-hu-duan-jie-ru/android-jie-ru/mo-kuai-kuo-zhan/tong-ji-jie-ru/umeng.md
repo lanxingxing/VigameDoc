@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.TJ:UMeng:2.0.5'
+    implementation WB.fixVersions('TJ:UMeng')
 ```
 
 ## Manifest参数选项

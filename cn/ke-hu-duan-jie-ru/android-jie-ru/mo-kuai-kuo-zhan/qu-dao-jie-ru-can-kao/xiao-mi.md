@@ -7,9 +7,9 @@ description: 小米
 ## 模块引入
 
 ```text
-  implementation 'com.libVigame.Pay:MiPay_New:2.2.4'
+  implementation WB.fixVersions('Pay:MiPay_New')
   和
-  implementation 'com.libVigame.Pay:MiSingle:2.1.3' （单机计费）
+  implementation WB.fixVersions('Pay:MiSingle') （单机计费）
 ```
 
 ## 小米签名权限需注意

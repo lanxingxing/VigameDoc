@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.Pay:Oppo:2.1.7'
+    implementation WB.fixVersions('Pay:Oppo')
 ```
 
 ## Manifest参数选项

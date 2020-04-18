@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:Tapjoy:1.0.0'
+    implementation WB.fixVersions('AD:Tapjoy'）
 ```
 
 ## 注意事项

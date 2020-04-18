@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.Pay:Huawei:2.4.2'
+    implementation WB.fixVersions('Pay:Huawei')
 ```
 
 ## 配置文件说明

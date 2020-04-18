@@ -3,9 +3,9 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:Headline:2.6.6'
+    implementation WB.fixVersions('AD:Headline')
     和
-    implementation 'com.libVigame.AD:HeadlineA:2.6.6'（最新广告隐藏方式）
+    implementation WB.fixVersions('AD:HeadlineA')（最新广告隐藏方式）
 ```
 
 ## 混淆过滤

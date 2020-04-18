@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:OPPO:2.5.2'
+    implementation WB.fixVersions('AD:OPPO')
 ```
 
 ## 注意事项

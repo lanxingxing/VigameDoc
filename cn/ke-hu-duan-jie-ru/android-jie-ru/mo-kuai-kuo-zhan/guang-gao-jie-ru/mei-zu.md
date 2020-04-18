@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:Meizu:2.1.0'
+    implementation WB.fixVersions('AD:Meizu')
 ```
 
 ## 注意事项

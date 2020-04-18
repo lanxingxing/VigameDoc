@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:Shenqi:2.1.2'
+    implementation WB.fixVersions('AD:Shenqi')
 ```
 
 ## 注意事项

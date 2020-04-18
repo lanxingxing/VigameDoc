@@ -3,9 +3,9 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:Uniplay:2.1.7'
+    implementation WB.fixVersions('AD:Uniplay')
     和
-    implementation 'com.libVigame.AD:UniplayA:1.0.1'（隐藏广告）
+    implementation WB.fixVersions('AD:UniplayA')（隐藏广告）
 ```
 
 ## 注意事项

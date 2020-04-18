@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-implementation 'com.libVigame.AD:AppLovin:2.1.6'
+implementation WB.fixVersions('AD:AppLovin')
 ```
 
 ## 注意事项

@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:XinYi:2.0.0'
+    implementation WB.fixVersions('AD:XinYi')
 ```
 
 ## 集成测试

@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.Pay:Lenovo:2.1.4'
+    implementation WB.fixVersions('Pay:Lenovo')
 ```
 
 ## 配置文件说明

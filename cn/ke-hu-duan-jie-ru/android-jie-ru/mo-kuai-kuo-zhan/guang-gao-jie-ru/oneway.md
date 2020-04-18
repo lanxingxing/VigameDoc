@@ -3,13 +3,13 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:OneWay:2.2.1'
+    implementation WB.fixVersions('AD:OneWay')
 ```
 
 和
 
 ```text
-    implementation 'com.libVigame.AD:OneWayA:1.0.1'（隐藏广告方式）
+    implementation WB.fixVersions('AD:OneWayA')（隐藏广告方式）
 ```
 
 ## 注意事项

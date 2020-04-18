@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.TJ:AppsFlyer:2.0.8'
+    implementation WB.fixVersions('TJ:AppsFlyer')
 ```
 
 ## Manifest参数选项

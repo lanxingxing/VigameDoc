@@ -7,7 +7,7 @@ description: 三星
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.Pay:Samsung:2.1.0'
+    implementation WB.fixVersions('Pay:Samsung')
 ```
 
 ## Manifest参数选项

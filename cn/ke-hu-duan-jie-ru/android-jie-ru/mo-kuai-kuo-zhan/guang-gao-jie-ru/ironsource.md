@@ -1,9 +1,9 @@
 # IronSource
 
 ```text
-    implementation 'com.libVigame.AD:Ironsource:2.1.3'
+    implementation WB.fixVersions('AD:Ironsource')
     和
-    implementation 'com.libVigame.AD:Ironsource_JuHe:2.1.8' (聚合)
+    implementation WB.fixVersions('AD:Ironsource_JuHe') (聚合)
 ```
 
 ## 注意事项

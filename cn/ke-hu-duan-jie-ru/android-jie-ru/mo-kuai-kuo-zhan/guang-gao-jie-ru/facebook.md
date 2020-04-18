@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.AD:Facebook:2.3.1'
+    implementation WB.fixVersions('AD:Facebook'）
 ```
 
 ## 注意事项

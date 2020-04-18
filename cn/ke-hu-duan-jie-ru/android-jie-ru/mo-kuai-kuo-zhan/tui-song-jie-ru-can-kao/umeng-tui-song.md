@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-xxx_Implementation 'com.libVigame.Push:UMeng:2.2.0'
+xxx_Implementation WB.fixVersions('Push:UMeng')
 ```
 
 ## 其他注意事项

@@ -7,7 +7,7 @@ description: 腾讯YSDK
 ### 模块引入
 
 ```text
-    implementation 'com.libVigame.Pay:YSDK:2.1.6'
+    implementation WB.fixVersions('com.Pay:YSDK')
 ```
 
 ## Manifest参数选项

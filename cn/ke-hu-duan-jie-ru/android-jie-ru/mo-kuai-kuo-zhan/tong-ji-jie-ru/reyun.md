@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.TJ:ReYun:2.0.1'
+    implementation WB.fixVersions('TJ:ReYun')
 ```
 
 ## Manifest参数选项

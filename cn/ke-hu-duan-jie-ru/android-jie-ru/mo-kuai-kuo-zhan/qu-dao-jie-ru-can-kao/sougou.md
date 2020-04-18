@@ -3,7 +3,7 @@
 SouGou
 
 ```text
-    implementation 'com.libVigame.Pay:SouGou:2.1.2'
+    implementation WB.fixVersions('Pay:SouGou')
 ```
 
 ## Manifest参数选项
