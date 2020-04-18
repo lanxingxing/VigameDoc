@@ -1,12 +1,22 @@
 # SDK下载
 
-## 历史版本
+## 测试版本
+
+### 版本：v4.0-beta 发布时间：2020-4-17
+
+[下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.0beta/dnsdk.zip)
+
+* 修改各家banner广告切换方式
+* 修改头条、微信、QQ的视频刷新间隔
+* 头条、微信、QQ统计场景来源
+
+## 正式版本
 
 ### 版本：v3.2 发布时间：2020-4-8
 
 [下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/3.2/dnsdk.zip)
 
-* 增加dnsdk.hideBanner()和dnsdk.showBanner()
+* 增加dnsdk.hideBanner\(\)和dnsdk.showBanner\(\)
 * 优化vivo广告刷新逻辑
 
 ### 版本：v3.1 发布时间：2020-3-30
