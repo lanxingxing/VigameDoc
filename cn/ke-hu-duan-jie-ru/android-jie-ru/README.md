@@ -1,6 +1,10 @@
 # Android
 
-### Demo工程克隆地址：
+### Demo工程地址：
+
+http://dnsdk.vimedia.cn:8080/summary/VigameDemo-Android.git 
+
+### Demo工程git克隆地址：
 
 [http://dnsdk.vimedia.cn:8080/r/VigameDemo-Android.git](http://dnsdk.vimedia.cn:8080/r/VigameDemo-Android.git)
 
