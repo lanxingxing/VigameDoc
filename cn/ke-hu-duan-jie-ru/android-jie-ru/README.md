@@ -1,12 +1,10 @@
 # Android
 
-### Demo工程地址：
-
-http://dnsdk.vimedia.cn:8080/summary/VigameDemo-Android.git 
-
 ### Demo工程git克隆地址：
 
-[http://dnsdk.vimedia.cn:8080/r/VigameDemo-Android.git](http://dnsdk.vimedia.cn:8080/r/VigameDemo-Android.git)
+```groovy
+git clone http://dnsdk.vimedia.cn:8080/r/VigameDemo-Android.git
+```
 
 ## 第一步：添加maven仓库地址
 
@@ -212,7 +210,7 @@ public class MyApplication extends VigameApplication {
 | CompanyIndex | 公司名称ID，默认填1 | 是 |
 | SupportAdPositions | 支持的广告位名称 | 否 |
 | WithSplashAD | 是否出现闪屏广告（默认出现） | 否 |
-| Debug | true或false(Vigamelog 是否输出的标志) | 否 |
+| Debug | true或false\(Vigamelog 是否输出的标志\) | 否 |
 | NoSplash | 不显示开屏时设置为true,默认不设置 | 否 |
 | AutoFullScreen | 是否把当前activity设置为全屏，默认为true | 否 |
 | FixSpecialScreen | 是否适配刘海屏，默认为true | 否 |

@@ -25,11 +25,15 @@
 
 CreatorDemo克隆地址（Creator2.2.2制作）:
 
-[http://dnsdk.vimedia.cn:8080/r/CreatorDemo-H5.git](http://dnsdk.vimedia.cn:8080/r/CreatorDemo-H5.git)
+```text
+git clone http://dnsdk.vimedia.cn:8080/r/CreatorDemo-H5.git
+```
 
 LayaDemo克隆地址（Laya1.0制作）:
 
-[http://dnsdk.vimedia.cn:8080/r/WechatDemo-Laya.git](http://dnsdk.vimedia.cn:8080/r/WechatDemo-Laya.git)
+```text
+git clone http://dnsdk.vimedia.cn:8080/r/WechatDemo-Laya.git
+```
 
 2\)将"dnsdk.js"文件引入到项目中。
 

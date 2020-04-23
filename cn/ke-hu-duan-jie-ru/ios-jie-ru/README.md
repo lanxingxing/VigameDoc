@@ -1,8 +1,10 @@
 # iOS
 
-## Demo工程克隆地址：
+## Demo工程git克隆地址：
 
-[http://dnsdk.vimedia.cn:8080/r/VigameDemo-iOS.git](http://dnsdk.vimedia.cn:8080/r/VigameDemo-iOS.git)
+```objectivec
+git clone http://dnsdk.vimedia.cn:8080/r/VigameDemo-iOS.git
+```
 
 ## 1. 将相关的文件添加到工程中
 
