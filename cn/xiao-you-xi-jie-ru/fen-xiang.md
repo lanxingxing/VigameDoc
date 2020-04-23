@@ -1,11 +1,11 @@
 # 分享
 
-### 1.分享接口
+## 1.分享接口
 
-#### 1.1 设置分享
+### 1.1 设置分享
 
 > 在微信、QQ、头条小游戏生效
-
+>
 > 将微信的wx.onShareAppMessage替换成dnsdk.onShareAppMessage
 
 方法接口：
@@ -16,7 +16,7 @@ dnsdk.onShareAppMessage(callback);
 
 参数说明：
 
-#### function callback <a id="function-callback"></a>
+### function callback <a id="function-callback"></a>
 
 用户点击右上角菜单的「转发」按钮时触发的事件的回调函数
 
@@ -24,13 +24,19 @@ dnsdk.onShareAppMessage(callback);
 
 **Object res**
 
-| 属性 | 类型 | 说明 | 最低版本 |
+| 属性 | 是否必须 | 类型 | 说明 |
 | :--- | :--- | :--- | :--- |
-| title | string | 转发标题，不传则默认使用当前小游戏的昵称。 |  |
-| imageUrl | string | 转发显示图片的链接，可以是网络图片路径或本地图片文件路径或相对代码包根目录的图片文件路径。显示图片长宽比是 5:4 |  |
-| query | string | 查询字符串，必须是 key1=val1&key2=val2 的格式。从这条转发消息进入后，可通过 wx.getLaunchOptionsSync\(\) 或 wx.onShow\(\) 获取启动参数中的 query。 |  |
+| title | 否 | string | 转发标题，不传则默认使用服务器数据 |
+| imageUrl | 否 | string | 转发显示图片的链接，不传则使用服务器数据。可以是网络图片路径或本地图片文件路径或相对代码包根目录的图片文件路径。显示图片长宽比是 5:4 |
+| query | 否 | string | 查询字符串，必须是 key1=val1&key2=val2 的格式。从这条转发消息进入后，可通过 wx.getLaunchOptionsSync\(\) 或 wx.onShow\(\) 获取启动参数中的 query。 |
 
-示例代码：
+示例代码1：
+
+```javascript
+dnsdk.onShareAppMessage();//使用服务器数据
+```
+
+示例代码2：
 
 ```javascript
 //分享，监听用户点击右上角菜单的“转发”按钮时触发的事件
@@ -43,7 +49,9 @@ dnsdk.onShareAppMessage(callback);
   })
 ```
 
-#### 1.2 分享
+### 
+
+### 1.2 分享
 
 > 在微信、QQ、头条小游戏生效
 
@@ -55,7 +63,13 @@ dnsdk.shareAppMessage(object);
 
 > 将微信的wx.shareAppMessage替换成dnsdk.shareAppMessage
 
-示例代码：
+示例代码1：
+
+```javascript
+dnsdk.shareAppMessage();//使用服务器数据
+```
+
+示例代码2：
 
 ```javascript
 // 分享，主动拉起转发，进入选择通讯录界面
@@ -65,6 +79,4 @@ dnsdk.shareAppMessage(object);
     query    : 'id=89&select=2'//查询字符串，必须是 key1=val1&key2=val2 的格式。从这条转发消息进入后，可通过 wx.getLaunchOptionSync() 或 wx.onShow() 获取启动参数中的 query。
   })
 ```
-
-### 
 
