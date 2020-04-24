@@ -32,6 +32,8 @@ adData 属性：
 | bannerAdId | String | Banner广告ID |
 | interstitialAdId | String | 插屏广告ID |
 | rewardedVideoAdId | String | 激励视频广告ID |
+| boxAdId | String | QQ盒子广告ID |
+| nativeAdId | String | 原生广告ID |
 
 示例代码：
 
@@ -45,17 +47,20 @@ var adData = {
     oppo: {
         bannerAdId: "158197",
         interstitialAdId: "158198",
-        rewardedVideoAdId: "158203"
+        rewardedVideoAdId: "158203",
+        nativeAdId: "158200"
     },
     vivo: {
         bannerAdId: "a43ae2d881d24b37b37d2f8fc464470b",
         interstitialAdId: "5c70d8170f0245b8ba8893544b41169a",
-        rewardedVideoAdId: "9dd39bd805514e1f85b02a4316ecbe32"
+        rewardedVideoAdId: "9dd39bd805514e1f85b02a4316ecbe32",
+        nativeAdId: ""
     },
     qq: {
         bannerAdId: "ba4c4f87b2a6bdc4ec0d59bbaffc5723",
         interstitialAdId: "d4a1ecbcdc53cd0ba61769982c0fb603",
-        rewardedVideoAdId: "d710a7647e9e5de62294827aaee11665"
+        rewardedVideoAdId: "d710a7647e9e5de62294827aaee11665",
+        boxAdId: "0e8af24d66c04fec00ef26e58091f1ed"
     },
     tt: {
         bannerAdId: "1v2pi8lvk8w68965eg",
