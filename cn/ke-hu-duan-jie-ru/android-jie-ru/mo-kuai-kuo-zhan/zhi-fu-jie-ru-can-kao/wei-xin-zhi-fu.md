@@ -9,9 +9,7 @@ implementation WB.fixVersions('Social:WeChat')
 implementation WB.fixVersions('Pay:WeChatPay')
 ```
 
-{% hint style="info" %}
-以上两个模块有依赖关系，必须同时引入
-{% endhint %}
+> 以上两个模块有依赖关系，必须同时引入
 
 ## 第二步：添加入口文件
 
