@@ -14,11 +14,15 @@ description: 目前只在Oppo、Vivo小游戏平台有效
 
 NativeAd广告组件
 
-> 注意：当没有可用原生广告时，会返回null
+> 注意：当没有可用原生广告或者调用太频繁时，会返回null
 
 ## NativeAd
 
 原生广告
+
+### NativeAd.getData\(\)
+
+获取原生广告数据。
 
 ### NativeAd.show\(\)
 
