@@ -9,9 +9,7 @@
     implementation WB.fixVersions('Pay:AliPayApp')
 ```
 
-{% hint style="info" %}
-以上两个模块有依赖关系，必须同时引入
-{% endhint %}
+> 以上两个模块有依赖关系，必须同时引入
 
 ## 第二步：配置计费信息
 
