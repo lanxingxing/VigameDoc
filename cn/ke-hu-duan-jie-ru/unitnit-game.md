@@ -34,7 +34,7 @@ git clone http://dnsdk.vimedia.cn:8080/r/UnityDemo-IOS.git
 
 参考业务接口进行接入：
 
-{% page-ref page="ye-wu-jie-kou/" %}
+### [业务接口](ye-wu-jie-kou/)
 
 ## 互推使用
 
