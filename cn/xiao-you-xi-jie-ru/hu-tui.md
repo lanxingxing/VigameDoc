@@ -32,18 +32,34 @@ dnsdk.data.pushData
 dnsdk.data.pushData.iconList
 ```
 
-互推数据说明：
+互推数据使用说明：
 
-| 参数 | 类型 | 描述 |
+_**oppo**_
+
+| 参数 | 类型 | 互推位置 |
 | :--- | :--- | :--- |
-| iconList | Array | icon广告互推列表 |
-| bannerList | Array | 横幅式互推列表 |
-| plaqueList | Array | 插屏式互推列表 |
-| buttomList | Array | 首页的滚动互推列表 |
-| gouppageList | Array | 首页侧边栏热门推荐互推列表 |
-| moregroupList | Array | 分发页的更多游戏互推列表 |
-| hotgameList | Array | 分发页的大图滚动互推列表 |
-| fungameList | Array | 分发页的滚动互推列表 |
+| iconList | Array | icon样式（单个图标）互推 |
+| gouppageList | Array | 首页侧边栏、6宫格矩阵（结算、失败页面） |
+
+_**头条**_
+
+| 参数 | 类型 | 互推位置 |
+| :--- | :--- | :--- |
+| gouppageList | Array | 6宫格矩阵（结算、失败页面） |
+
+_**微信**_
+
+| 参数 | 类型 | 互推位置 |
+| :--- | :--- | :--- |
+| moregameList | Array | 首页开屏弹框 |
+| iconList | Array | 首页图标互推 |
+| bannerList | Array | 横幅式互推 |
+| plaqueList | Array | 插屏式互推 |
+| buttomList | Array | 猜你爱玩互推 |
+| gouppageList | Array | 6宫格矩阵（结算、失败页面） |
+| moregroupList | Array | 插屏好友图像 |
+| hotgameList | Array | 汇聚页热门推荐 |
+| fungameList | Array | 汇聚页好友在玩互推 |
 
 互推二级字段说明：
 
