@@ -34,7 +34,7 @@ git clone http://dnsdk.vimedia.cn:8080/r/UnityDemo-IOS.git
 
 参考业务接口进行接入：
 
-{% page-ref page="ye-wu-jie-kou/" %}
+### [业务接口](ye-wu-jie-kou/)
 
 ## 互推使用
 
@@ -72,11 +72,9 @@ StreamingAssets/st.txt 文件保存默认签名的哈希值，内容为：-49852
 
 参考以下链接进行接入：
 
-{% page-ref page="android-jie-ru/" %}
+### [Android](android-jie-ru/)
 
-{% hint style="warning" %}
-请跳过链接页面中第五步的第2条，因为后面已使用Activity继承代替。
-{% endhint %}
+> 请跳过链接页面中第五步的第2条，因为后面已使用Activity继承代替。
 
 #### 2.在 build.gradle 中加入Unity桥接模块
 
@@ -101,9 +99,7 @@ public class AppActivity extends UniWbActivity
 }
 ```
 
-{% hint style="info" %}
-UniWbActivity已经继承UnityPlayerActivity
-{% endhint %}
+> UniWbActivity已经继承UnityPlayerActivity
 
 ## iOS 接入
 
@@ -111,7 +107,7 @@ UniWbActivity已经继承UnityPlayerActivity
 
 参考以下链接进行接入：
 
-{% page-ref page="ios-jie-ru/" %}
+### [iOS](ios-jie-ru/)
 
 #### 2.修改iOS 桥接文件
 
