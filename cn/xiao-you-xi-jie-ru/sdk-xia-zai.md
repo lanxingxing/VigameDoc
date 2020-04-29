@@ -6,6 +6,12 @@
 
 ## 正式版本
 
+### 版本：v4.2-beta 发布时间：2020-4-29
+
+[下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.2/dnsdk.zip)
+
+- 增加预加载插屏广告
+
 ### 版本：v4.1 发布时间：2020-4-28
 
 [下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.1beta/dnsdk.zip)
