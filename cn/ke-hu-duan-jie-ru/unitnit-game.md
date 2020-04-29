@@ -48,9 +48,17 @@ icon类型的互推使用 **PushIconItem** 预制体，如图示中底部的四�
 
 在打包安卓时 需使用 112234 项目id 测试。
 
+**隐藏 互推要使用  PushItem 中的  SetVisible 接口  （重要） 不能自己隐藏**
+
+
+
 
 
 ![UniWb01](../../.gitbook/assets/uniwb01.png)
+
+
+
+
 
 ## 签名验证
 
