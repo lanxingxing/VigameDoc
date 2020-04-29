@@ -6,7 +6,7 @@ description: 目前只在Oppo、Vivo小游戏平台有效
 
 ## dnsdk.getNativeAd\(\)
 
-获取原生广告数据。
+获取原生广告组件。
 
 > 频次限制：原生广告展示后20s内调用getNativeAd会直接返回null。
 
