@@ -3,7 +3,10 @@
 ## 模块引入
 
 ```text
+    //不带opposdk的引入方式
     implementation WB.fixVersions('TJ:ReYun')
+     //带opposdk用以下方式
+     implementation WB.fixVersions('TJ:ReYun',‘2.0.4_OPPO’)
 ```
 
 ## Manifest参数选项
