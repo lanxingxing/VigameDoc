@@ -11,6 +11,21 @@
 ```text
     无
 ```
+## 添加仓库依赖
+```text
+repositories {
+    maven {
+        url  "https://dl.bintray.com/ironsource-mobile/android-adapters/"
+    }
+    maven {
+        url "https://dl.bintray.com/ironsource-mobile/android-sdk"
+    }
+    maven {
+        //Vungle SDK
+        url 'https://jitpack.io'
+    }
+}
+```
 
 ## 混淆过滤
 
