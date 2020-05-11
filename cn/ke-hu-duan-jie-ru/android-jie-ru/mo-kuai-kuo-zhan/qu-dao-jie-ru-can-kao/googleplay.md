@@ -51,13 +51,13 @@
 
         响应代码	                           值	       说明
 BILLING_RESPONSE_RESULT_OK	                 0	成功
-BILLING_RESPONSE_RESULT_USER_CANCELED	       1	用户按上一步或取消对话框
+BILLING_RESPONSE_RESULT_USER_CANCELED	         1	用户按上一步或取消对话框
 BILLING_RESPONSE_RESULT_SERVICE_UNAVAILABLE	 2	网络连接断开
 BILLING_RESPONSE_RESULT_BILLING_UNAVAILABLE	 3	所请求的类型不支持 Billing API 版本(支付环境问题)
 BILLING_RESPONSE_RESULT_ITEM_UNAVAILABLE	 4	请求的商品已不再出售。
-BILLING_RESPONSE_RESULT_DEVELOPER_ERROR	       5	提供给 API 的参数无效。此错误也可能说明未在 Google Play 中针对应用内购买结算正确签署或设置                                                     应用，或者应用在其清单中不具备所需的权限。
-BILLING_RESPONSE_RESULT_ERROR	               6	API 操作期间出现严重错误
+BILLING_RESPONSE_RESULT_DEVELOPER_ERROR	         5	提供给 API 的参数无效。此错误也可能说明未在 Google Play 中针对应用内购买结算正确签署或设置                                                     应用，或者应用在其清单中不具备所需的权限。
+BILLING_RESPONSE_RESULT_ERROR	                 6	API 操作期间出现严重错误
 BILLING_RESPONSE_RESULT_ITEM_ALREADY_OWNED	 7	未能购买，因为已经拥有此商品
-BILLING_RESPONSE_RESULT_ITEM_NOT_OWNED	       8	未能消费，因为尚未拥有此商品
+BILLING_RESPONSE_RESULT_ITEM_NOT_OWNED	         8	未能消费，因为尚未拥有此商品
 ```
 
