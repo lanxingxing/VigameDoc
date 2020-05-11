@@ -49,7 +49,7 @@
    或者是商品还没有发布成功，需要等待一段时间(很有可能，新发布的商品是无论怎么查询还是购买，谷歌那边都是没有响应的)
 7.错误码总结：
 
-        响应代码	                           值	       说明
+        响应代码	                               值	       说明
 BILLING_RESPONSE_RESULT_OK	                 0	成功
 BILLING_RESPONSE_RESULT_USER_CANCELED	         1	用户按上一步或取消对话框
 BILLING_RESPONSE_RESULT_SERVICE_UNAVAILABLE	 2	网络连接断开
