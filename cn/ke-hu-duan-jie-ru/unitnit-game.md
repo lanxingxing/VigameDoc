@@ -60,7 +60,7 @@ icon类型的互推使用 **PushIconItem** 预制体，如图示中底部的四�
  Wb.CoreManager.Instance.CheckSignature();
 ```
 
-StreamingAssets/st.txt 文件保存默认签名 加密后的哈希值，内容为：XCofRN4RZdaZBEeN2RrHCseZc5BbndCuNg6GRGeShdg=
+StreamingAssets/st.txt 文件保存默认签名 加密后的哈希值，内容为：kDiJOe7UjhVAbaGa7qTIIuFZo1fVMThwKsLeFVlk0AY=
 
 如需添加自己的签名，可下载地址 [vigame签名获取工](http://gui.vigame.cn/signtool/vigame签名获取工具.apk)[具](http://gui.vigame.cn/signtool/vigame签名获取工具.apk)。
 
