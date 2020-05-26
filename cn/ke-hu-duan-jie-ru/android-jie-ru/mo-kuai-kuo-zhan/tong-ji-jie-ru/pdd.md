@@ -40,3 +40,9 @@ android {
 -keep class com.xunmeng.pap.** {*;}
 ```
 
+
+
+## 注意事项
+
+查看接入是否成功 可以过滤   PAPTrans  查看log,如果输出  PAPTrans-e: report success 则是接入正常，其他是有问题。需参数和包名一致，产品名不一致也有可能导致上报失败
+
