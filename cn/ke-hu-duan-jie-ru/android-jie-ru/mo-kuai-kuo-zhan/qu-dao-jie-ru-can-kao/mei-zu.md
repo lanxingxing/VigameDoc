@@ -6,8 +6,19 @@ description: 魅族
 
 ## 模块引入
 
+本地引入，模块下载地址：http://192.168.1.252:8080/zip/?r=VigameAndroidLibrary.git&p=libPay/libPayExt_Meizu&h=master&format=zip
+
+setting.gradle中添加
+
+```
+include ':libPayExt_Meizu'
+project(':libPayExt_Meizu').projectDir = new File('目录\\libPayExt_Meizu')
+```
+
+app目录build.gradle中修改：
+
 ```text
-    implementation WB.fixVersions('Pay:Meizu')
+    xxxximplementation project(':libPayExt_Meizu')
 ```
 
 ## 配置文件说明
