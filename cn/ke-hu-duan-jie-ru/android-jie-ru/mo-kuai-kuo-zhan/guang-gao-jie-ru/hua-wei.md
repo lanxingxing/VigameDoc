@@ -44,6 +44,9 @@ repositories {
       ...  
     }
 }
+
+
+  xxxxxImplementation project(':libAD_Huawei')
 ```
 
 

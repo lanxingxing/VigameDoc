@@ -18,6 +18,7 @@
           * [百度](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/guang-gao-jie-ru/bai-du.md)
           * [Google国内](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/guang-gao-jie-ru/google-guo-nei.md)
           * [小米](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/guang-gao-jie-ru/xiao-mi.md)
+          * [小米聚合](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/guang-gao-jie-ru/xiao-mi-ju-he.md)
           * [Tapjoy](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/guang-gao-jie-ru/tapjoy.md)
           * [Vungle](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/guang-gao-jie-ru/vungle.md)
           * [玩转互联](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/guang-gao-jie-ru/wan-zhuan-hu-lian.md)
