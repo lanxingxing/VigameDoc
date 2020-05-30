@@ -106,7 +106,7 @@ pod 'IOSMaven/Notice' #Notice
   pod 'IOSMaven/Extension/Activity' #Activity
 ```
 5、添加vigame模块
-链接: https://pan.baidu.com/s/1r_XUoOEK3gbLd0ItTGwDtg 提取码: z7ya
+ 链接: https://pan.baidu.com/s/1dE6OxUYIrb5VHxPMgPYEcA 提取码: k3cd 
 
 ### 
 
