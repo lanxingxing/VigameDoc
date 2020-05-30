@@ -118,8 +118,6 @@ pod 'IOSMaven/Notice' #Notice
 
 `"$(SRCROOT)/Vigame/include"`
 
-`"$(SRCROOT)/Vigame/tools"`
-
 `"$(SRCROOT)/Vigame/deps/boost/include"`
 
 `"$(SRCROOT)/Vigame/deps/curl/include"`
@@ -137,11 +135,7 @@ pod 'IOSMaven/Notice' #Notice
 
    GADIsAdManagerApp：YES
 
-3. 如果项目中使用到Applovin广告在info.plist添加
-
-   AppLovinSdkKey：Occxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
-4. 在VigameLibrary.plist 中检测 company\_appid 、apple\_appid、company\_prijid.
+4. 在VigameLibrary.plist 中检测 company\_appid 、apple\_appid、company\_prijid、company\_appkey.
 
    以及相关的统计参数
 

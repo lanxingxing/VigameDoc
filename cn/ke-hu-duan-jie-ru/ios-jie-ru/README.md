@@ -37,11 +37,7 @@ git clone http://dnsdk.vimedia.cn:8080/r/VigameDemo-iOS.git
 
    GADIsAdManagerApp：YES
 
-3. 如果项目中使用到Applovin广告在info.plist添加
-
-   AppLovinSdkKey：Occxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
-4. 在VigameLibrary.plist 中检测 company\_appid 、apple\_appid、company\_prijid.
+4. 在VigameLibrary.plist 中检测 company\_appid 、apple\_appid、company\_prijid、company_appkey.
 
    以及相关的统计参数
 
