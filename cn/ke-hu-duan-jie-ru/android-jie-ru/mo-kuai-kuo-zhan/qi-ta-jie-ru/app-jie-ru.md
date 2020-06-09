@@ -38,7 +38,7 @@ void onResult(int type)
   //AppCore.CTYPE_GAME 
   //AppCore.CTYPE_SPLASH 
 
-  **回调返回成功后调用获取接口才能渠道数据**
+  **回调返回成功后调用获取接口才能取到数据**
 
 示例：
 
@@ -162,6 +162,16 @@ import com.temp.proxy.AppNative;
 
 
 ## 1.6 获取应用参数
+
+channel 配置  name为 com.app.sdk.channel
+
+项目id 配置  name为 com.app.sdk.prjid
+
+appid 配置  name为 com.app.sdk.appid
+
+appkey 配置  name为 com.app.sdk.appkey
+
+
 
 ```java
 import com.temp.proxy.AppUtils;
