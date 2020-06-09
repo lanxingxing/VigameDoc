@@ -81,6 +81,7 @@
           * [Qihoo](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/she-jiao-jie-ru/qihoo.md)
           * [微信](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/she-jiao-jie-ru/wei-xin.md)
           * [Facebook](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/she-jiao-jie-ru/facebook.md)
+        * [app SDK接入参考](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/qi-ta-jie-ru/app-jie-ru.md) 
       * [常见问题](cn/ke-hu-duan-jie-ru/android-jie-ru/chang-jian-wen-ti.md)
     * [iOS](cn/ke-hu-duan-jie-ru/ios-jie-ru/README.md)
       * [常见问题](cn/ke-hu-duan-jie-ru/ios-jie-ru/chang-jian-wen-ti.md)
