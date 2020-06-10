@@ -2,7 +2,17 @@
 
 ## 测试版本
 
-### 版本：v4.2-beta 发布时间：2020-5-13
+### 版本：v4.3-beat 发布时间：2020-6-8
+
+[下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.3/dnsdk.zip)
+
+- 修改头条视频的加载方式
+
+- 修改初始化接口，不传广告参数报错的问题
+
+  
+
+### 正式版本：v4.2 发布时间：2020-5-13
 
 [下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.2/dnsdk.zip)
 
