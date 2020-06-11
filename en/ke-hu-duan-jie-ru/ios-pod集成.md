@@ -2,30 +2,30 @@
 
 
 
-## 1. CocoaPods添加KTMSDK
+## 1. CocoaPods add KTMSDK
 
-自动部署可以省去您工程配置的时间。iOS SDK会通过CocoaPods进行发布，推荐您使用自动部署。 
+cocoapods can  save you time in project configuration.iOS SDK be published through cocoapods. It is recommended that you use pod.
 
-1.  安装CocoaPods 
+1.  Install CocoaPods 
 
-    CocoaPods是一个Swift和Objective-C项目的依赖管理器。它拥有超过49,000个第三方库，超过3,000,000个app都在使用cocoaPods做依赖管理，CocoaPods可以帮助你优雅的扩展你的项目。 如果您未安装过cocoaPods，可以通过以下命令行进行安装。更多详情请访问[CocoaPods官网](https://cocoapods.org/)。 
+Cocoapods is a dependency manager for swift and Objective-C projects. It has more than 49000 third-party libraries, and more than 300000 apps are using cocoapods for dependency management. Cocoapods can help you expand your projects gracefully. If you have not installed cocoapods, you can install it from the following command line. For more details, please visit [CocoaPods HomePage](https://cocoapods.org/)。 
 
     ```
     $ sudo gem install cocoapods
 
     ```
 
-    注意：安装过程可能会耗时比较长，也有可能收到网络状况导致失败，请多次尝试直到安装成功。 
+    Note: the installation process may take a long time, or it may fail due to network conditions. Please try again and again until the installation is successful.
 
-2.  配置Podfile文件 
+2.  Configure Podfile file 
 
-    在您的工程文件所在文件夹下有一个名为Podfile的文件。如果您第一次使用CocoaPods，可以在通过以下命令初始化一个Podfile文件： 
+There is a file named Podfile in the folder where your project files are located. If you use cocoapods for the first time, you can initialize a podfile with the following command:
 
     ```
     $ pod init
     ```
 
-    打开Podfile文件，应该是如下内容（具体内容可能会有一些出入）： 更具需求单pod需要接入的功能
+   open the Podfile file, the following contents should be included (there may be some differences in the specific contents): it has the function of accessing the demand list pod
 
     ```
     source 'http://wy@dnsdk.vimedia.cn:8080/r/IOSMavenSpec.git' #远程私有库地址
@@ -79,7 +79,7 @@
     end
     
     ```
-    注：ironsource聚合广告需单独导入
+    Note: ironsource aggregate ads need to be imported separately
     ```
     #IronSource 聚合广告按需添加
     pod 'IronSourceAdMobAdapter','4.3.10.1'
@@ -90,17 +90,17 @@
     pod 'IronSourceMintegralAdapter','4.3.1.0'
     ```
     
-## 2.添加vigame模块
-1、下载vigame
- 链接: https://pan.baidu.com/s/1dE6OxUYIrb5VHxPMgPYEcA 提取码: k3cd 
+## 2.Add Vigame Module
+1、download Vigame
+ url: https://pan.baidu.com/s/1dE6OxUYIrb5VHxPMgPYEcA    Extraction code: k3cd 
 
 
 
-2、添加所有的 .a 文件 路径和头文件链接
+2、add  Vigame file in your project
 
- (备注: 将deps文件删除引用。\)
+(Note: delete deps file .\)
 
-\(target-&gt;build setting -&gt; search path -&gt;Header Search Paths 中添加\) 特殊添加一项目录 路径
+\(target-&gt;build setting -&gt; search path -&gt;Header Search Paths add\) 
 
 `"$(SRCROOT)/Vigame/include"`
 
@@ -114,50 +114,50 @@
 
 ![](../../../.gitbook/assets/1648908-f0a533025fd7e71f.png)
 
-## 3. 添加必要配置
+## 3. Add Necessary Configuration
 
-1. 打开 Capabilities-&gt; Keychain Sharing 获取设备唯一标识
-2. 在info.plist添加Google广告配置
+1. Open Capabilities-&gt; Keychain Sharing 
+2. info.plist Add Admob Configuration
 
    GADIsAdManagerApp：YES
 
-4. 在VigameLibrary.plist 中检测 company\_appid 、apple\_appid、company\_prijid、company\_appkey.
+4. VigameLibrary.plist  add company\_appid 、apple\_appid、company\_prijid、company\_appkey.
 
-   以及相关的统计参数
+   configuration
 
-5. 如果出海外包带有Facebook广告 需要在info.plist文件中添加Facebook 中相关的配置如下：
+5. if contain Facebook ad   please find info.plist，add Facebook ad configuration：
 
    ![fb&#x914D;&#x7F6E;](../../../.gitbook/assets/2183351-96f3333dbc663e72.png)
 
-6. 苹果新出的规定无论有没有使用到相机相册都得申请 权限
-7. 游戏需要访问网络 需要有网络权限
-8. 游戏第三方可能会用到定位，所有游戏info.plist添加NSLocationWhenInUseUsageDescription
+6. Apple's new rules require permission to use camera albums or not
+7. Games need access to the network, and network permission is required
+8.  info.plist add  NSLocationWhenInUseUsageDescription
 
 
 
-## 4. 设备编译选项
+## 4. Device compilation options
 
-1. Enable Bitcode 设置为NO
+1. Enable Bitcode set  NO
 2. ![&#x8BBE;&#x7F6E;Bitcode](../../../.gitbook/assets/1648908-a8b9998bf49b9737.png)
 
 
-## 5. 接入微信配置（不接入忽略）
+## 5. Wechat（No Access Ignore）
 
-在info.plist文件添加
+info.plist  add
 
 ![](../../../.gitbook/assets/1648908-3b9d2adf2506a9a7.jpg)
 
-添加微信登陆URL Type
+add wechat URL Type
 
 ![](../../../.gitbook/assets/1648908-7aa347ae8a163c04.png)
 
-## 6. SDK初始化工作
+## 6. SDK initialization
 
-**1. 导入头文件**
+**1. import **
 
-在appDelegate文件中引入头文件`#import "IOSLoader.h"`
+`#import "IOSLoader.h"`
 
-**2. 调用初始化入口文件**
+**2. Call initialization method**
 
 ```objectivec
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -194,9 +194,9 @@
 }
 ```
 
-## 交互流程
+## Interaction Process
 
-1. 我们提供一个测试包名和证书（已上线的项目\#为了能出广告\#）
-2. 使用测试包名和证书出一个测试包--然后测试
-3. 测试完成后 换正式包名和证书出正式包上传苹果商店
+1. We provide a test package name and certificate (for the projects that have been launched, in order to be able to advertise)
+2. Use the test package name and certificate to generate a test package -- then test
+3. After the test, change the name and certificate of the official package and upload it to Apple store
 
