@@ -56,7 +56,7 @@ _**微信**_
 | bannerList | Array | 横幅式互推 |
 | plaqueList | Array | 插屏式互推 |
 | buttomList | Array | 猜你爱玩互推 |
-| gouppageList | Array | 6宫格矩阵（结算、失败页面） |
+| grouppageList | Array | 6宫格矩阵（结算、失败页面） |
 | moregroupList | Array | 插屏好友图像 |
 | hotgameList | Array | 汇聚页热门推荐 |
 | fungameList | Array | 汇聚页好友在玩互推 |
