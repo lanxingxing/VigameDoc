@@ -39,7 +39,7 @@ _**oppo**_
 | 参数 | 类型 | 互推位置 |
 | :--- | :--- | :--- |
 | iconList | Array | icon样式（单个图标）互推 |
-| gouppageList | Array | 首页侧边栏、6宫格矩阵（结算、失败页面） |
+| grouppageList | Array | 首页侧边栏、6宫格矩阵（结算、失败页面） |
 
 _**头条**_
 
