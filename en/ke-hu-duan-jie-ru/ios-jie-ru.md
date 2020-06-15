@@ -91,16 +91,15 @@ There is a file named Podfile in the folder where your project files are located
     ```
     
 ## 2.Add Vigame Module
-1、download Vigame
- url: https://pan.baidu.com/s/1dE6OxUYIrb5VHxPMgPYEcA    Extraction code: k3cd 
+1、auto set
+add auto.sh in your project，command auto.sh
+2、download Vigame
+url: https://pan.baidu.com/s/1dE6OxUYIrb5VHxPMgPYEcA    Extraction code: k3cd 
 
+add  .a  link
 
+ (Note: delete deps file。\)
 
-2、add  Vigame file in your project
-
-(Note: delete deps file .\)
-
-\(target-&gt;build setting -&gt; search path -&gt;Header Search Paths add\) 
 
 `"$(SRCROOT)/Vigame/include"`
 
@@ -112,7 +111,8 @@ There is a file named Podfile in the folder where your project files are located
 
 `"$(SRCROOT)/Vigame/deps/zlib/include"`
 
-![](../../../.gitbook/assets/1648908-f0a533025fd7e71f.png)
+
+
 
 ## 3. Add Necessary Configuration
 

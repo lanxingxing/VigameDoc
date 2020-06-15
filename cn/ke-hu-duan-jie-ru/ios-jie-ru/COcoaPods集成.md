@@ -90,13 +90,13 @@
     pod 'IronSourceMintegralAdapter','4.3.1.0'
     ```
     
-## 2.添加vigame模块
-1、下载vigame
+## 2.添加Vigame模块
+1、自动添加
+  添加auto.sh脚本到工程，执行auto脚本
+2、手动添加
  链接: https://pan.baidu.com/s/1dE6OxUYIrb5VHxPMgPYEcA 提取码: k3cd 
 
-
-
-2、添加所有的 .a 文件 路径和头文件链接
+添加所有的 .a 文件 路径和头文件链接
 
  (备注: 将deps文件删除引用。\)
 
@@ -113,6 +113,8 @@
 `"$(SRCROOT)/Vigame/deps/zlib/include"`
 
 ![](../../../.gitbook/assets/1648908-f0a533025fd7e71f.png)
+
+
 
 ## 3. 添加必要配置
 
