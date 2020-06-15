@@ -2,7 +2,17 @@
 
 ## 测试版本
 
-### 版本：v4.3-beat 发布时间：2020-6-8
+### 版本：v4.4-beta 发布时间：2020-6-15
+
+[下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.4/dnsdk.zip)
+
+- 增加魅族小游戏支持(Banner、 插屏、视频)
+
+  
+
+## 正式版本
+
+### 版本：v4.3 发布时间：2020-6-8
 
 [下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.3/dnsdk.zip)
 
@@ -12,13 +22,13 @@
 
   
 
-### 正式版本：v4.2 发布时间：2020-5-13
+### 版本：v4.2 发布时间：2020-5-13
 
 [下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.2/dnsdk.zip)
 
-* 增加预加载插屏广告
+- 增加预加载插屏广告
 
-## 正式版本
+  
 
 ### 版本：v4.1 发布时间：2020-4-28
 
