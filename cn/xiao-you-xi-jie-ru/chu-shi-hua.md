@@ -24,6 +24,7 @@ adData 属性：
 | tt | Object | 头条小游戏 |
 | oppo | Object | Oppo小游戏 |
 | vivo | Object | Vivo小游戏 |
+| meizu | Object | 魅族小游戏 |
 
 二级Object属性说明：
 
