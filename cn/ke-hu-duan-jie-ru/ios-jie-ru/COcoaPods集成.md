@@ -2,7 +2,7 @@
 
 
 
-## 1. 自动部署
+## 1. CocoaPods添加KTMSDK
 
 自动部署可以省去您工程配置的时间。iOS SDK会通过CocoaPods进行发布，推荐您使用自动部署。 
 
@@ -23,96 +23,82 @@
 
     ```
     $ pod init
-
     ```
 
-    打开Podfile文件，应该是如下内容（具体内容可能会有一些出入）： 
+    打开Podfile文件，应该是如下内容（具体内容可能会有一些出入）： 更具需求单pod需要接入的功能
 
     ```
-    # platform :ios, '9.0'
-    target 'podTest' do
-      # use_frameworks!
-      # Pods for podTest
+    source 'http://wy@dnsdk.vimedia.cn:8080/r/IOSMavenSpec.git' #远程私有库地址
+    source 'https://cdn.cocoapods.org/' #公有库地址
+    
+    platform :ios, '9.0'
+    target 'Unity-iPhone' do
+    
+    sdkVersion='1.0.0'
+    
+    ####--广告---###
+    pod 'KTMSDK/Ads/ByteDance',sdkVersion
+    pod 'Bytedance-UnionAD', '2.8.0.1'
+    pod 'KTMSDK/Ads/IronSource',sdkVersion
+    pod 'KTMSDK/Ads/Admob',sdkVersion
+    pod 'KTMSDK/Ads/GDT',sdkVersion
+    pod 'KTMSDK/Ads/Unity',sdkVersion
+    pod 'KTMSDK/Ads/Mintegral',sdkVersion
+    pod 'KTMSDK/Ads/Facebook',sdkVersion
+    pod 'KTMSDK/Ads/Applovin',sdkVersion
+    pod 'KTMSDK/Ads/KTMAd',sdkVersion
+    pod 'KTMSDK/Ads/Vungle',sdkVersion
+    
+    ####--统计---###
+    pod 'KTMSDK/Analysis/Umeng',sdkVersion
+    pod 'KTMSDK/Analysis/TrackingIO',sdkVersion
+    pod 'KTMSDK/Analysis/ByteDance',sdkVersion
+    pod 'KTMSDK/Analysis/DataEye',sdkVersion
+    pod 'KTMSDK/Analysis/Appsflyer',sdkVersion
+    pod 'KTMSDK/Analysis/Facebook',sdkVersion
+    pod 'KTMSDK/Analysis/Adjust',sdkVersion
+    pod 'KTMSDK/Analysis/Tenjin',sdkVersion
+    pod 'KTMSDK/Analysis/Google',sdkVersion
+    
+    ####--社交（登录）---###
+    pod 'KTMSDK/Social/wechat',sdkVersion
+    pod 'KTMSDK/Social/facebook',sdkVersion
+    pod 'KTMSDK/Social/apple',sdkVersion
+    
+    ####--扩展---###
+    pod 'KTMSDK/Extension/notice',sdkVersion
+    pod 'KTMSDK/Extension/activity',sdkVersion
+    pod 'KTMSDK/Extension/auth',sdkVersion
+    
+    ####--内购---###
+    pod 'KTMSDK/IAP',sdkVersion 
+    
+    ####--Bugly---###
+    pod 'KTMSDK/Bugly',sdkVersion
+    
     end
-
+    
     ```
-
-3、添加库地址
-
-```
-source 'http://wy@dnsdk.vimedia.cn:8080/r/IOSMavenSpec.git' #远程私有库地址
-source 'https://github.com/CocoaPods/Specs.git' #公有库地址
-```
-4、根据需求单添加所需的组件
-4.1 广告模块
-
-单独导入具体广告
-```
-  pod 'IOSMaven/Ads/Headline'   #头条(需单独pod 'Bytedance-UnionAD', '~>2.8.0.1')
-  pod 'IOSMaven/Ads/Google' #google
-  pod 'IOSMaven/Ads/GDT' #广点通
-  pod 'IOSMaven/Ads/Mintegral'  #Mintegral
-  pod 'IOSMaven/Ads/Unity' #Unity
-  pod 'IOSMaven/Ads/IronSource' #IronSource
-  pod 'IOSMaven/Ads/Facebook'  #Facebook
-  pod 'IOSMaven/Ads/Oneway'  #Oneway
-  pod 'IOSMaven/Ads/Tapjoy'  #Tapjoy
-  pod 'IOSMaven/Ads/Applovin'  #Applovin
-  pod 'IOSMaven/Ads/API' #API
-  pod 'IOSMaven/Ads/Vungle' #Vungle
- pod 'IOSMaven/Ads/IronSourceJH' #IronSourceJH 
-```
-```
-#IronSourceJH 需要单独添加
- pod 'IronSourceAppLovinAdapter','4.3.10.1'
- pod 'IronSourceMintegralAdapter','4.3.1.0'
- pod 'IronSourceUnityAdsAdapter','4.3.0.1'
-```
-4.2 统计模块（*热云需要单独导入SDK）
-```
-  pod 'IOSMaven/TJ/Umeng'  #Umeng
-  pod 'IOSMaven/TJ/HeadLine'  #HeadLine
-  pod 'IOSMaven/TJ/Facebook' #Facebook
-  pod 'IOSMaven/TJ/ReYun'  #ReYun
-  pod 'IOSMaven/TJ/Appsflyer'  #Appsflyer
-  pod 'IOSMaven/TJ/Adjust'  #Adjust
-  pod 'IOSMaven/TJ/Tenjin'  #Tenjin
-```
-4.3 公告模块
-```
-pod 'IOSMaven/Notice' #Notice
-```
-4.4 支付模块
-
-```
-  pod 'IOSMaven/Pay' #Pay
-```
-4.5 Bugly模块
-
-```
-  pod 'IOSMaven/Bug' #Bug
-```
-4.6 Social模块
-
-引入微信、facebook、apple
-```
-  pod 'IOSMaven/Social/weixin'
-  pod 'IOSMaven/Social/facebook'
-  pod 'IOSMaven/Social/appleSignIn'
-```
-4.7 Activity模块
-
-```
-  pod 'IOSMaven/Extension/Activity' #Activity
-```
-5、添加vigame模块
+    注：ironsource聚合广告需单独导入
+    ```
+    #IronSource 聚合广告按需添加
+    pod 'IronSourceAdMobAdapter','4.3.10.1'
+    pod 'IronSourceFacebookAdapter','4.3.14.0'
+    pod 'IronSourceUnityAdsAdapter','4.3.0.1'
+    pod 'IronSourceTikTokAdapter','4.1.2.7'
+    pod 'IronSourceAppLovinAdapter','4.3.10.1'
+    pod 'IronSourceMintegralAdapter','4.3.1.0'
+    ```
+    
+## 2.添加Vigame模块
+1、自动添加
+  添加auto.sh脚本到工程，执行auto脚本
+2、手动添加
  链接: https://pan.baidu.com/s/1dE6OxUYIrb5VHxPMgPYEcA 提取码: k3cd 
 
-### 
+添加所有的 .a 文件 路径和头文件链接
 
-## 2. 添加所有的 .a 文件 路径和头文件链接
-
-## (备注: 将deps文件删除引用。\)
+ (备注: 将deps文件删除引用。\)
 
 \(target-&gt;build setting -&gt; search path -&gt;Header Search Paths 中添加\) 特殊添加一项目录 路径
 
@@ -127,6 +113,8 @@ pod 'IOSMaven/Notice' #Notice
 `"$(SRCROOT)/Vigame/deps/zlib/include"`
 
 ![](../../../.gitbook/assets/1648908-f0a533025fd7e71f.png)
+
+
 
 ## 3. 添加必要配置
 
@@ -149,20 +137,13 @@ pod 'IOSMaven/Notice' #Notice
 
 
 
-## 5. 设备编译选项
-
-1. `Other Linker Flags添加-ObjC`
-
-![](../../../.gitbook/assets/2183351-f13ed84628186502.png.jpeg)
+## 4. 设备编译选项
 
 1. Enable Bitcode 设置为NO
 2. ![&#x8BBE;&#x7F6E;Bitcode](../../../.gitbook/assets/1648908-a8b9998bf49b9737.png)
 
-## 7. 设置项目为自动内存管理
 
-![&#x8BBE;&#x7F6E;ARC](../../../.gitbook/assets/2183351-ff19eccac2bf6326.png.jpeg) ![&#x8BBE;&#x7F6E;.png](../../../.gitbook/assets/1648908-2b663a3c58c6a41b.png)
-
-## 8. 接入微信配置（不接入忽略）
+## 5. 接入微信配置（不接入忽略）
 
 在info.plist文件添加
 
@@ -172,7 +153,7 @@ pod 'IOSMaven/Notice' #Notice
 
 ![](../../../.gitbook/assets/1648908-7aa347ae8a163c04.png)
 
-## 9. SDK初始化工作
+## 6. SDK初始化工作
 
 **1. 导入头文件**
 

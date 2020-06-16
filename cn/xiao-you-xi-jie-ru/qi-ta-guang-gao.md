@@ -24,3 +24,6 @@
 
 [https://developer.toutiao.com/dev/cn/mini-game/develop/open-capacity/ads/tt.createbannerad](https://developer.toutiao.com/dev/cn/mini-game/develop/open-capacity/ads/tt.createbannerad)
 
+**魅族：**
+
+[https://shimo.im/docs/enni3mhvNyo5fZOm/read]
