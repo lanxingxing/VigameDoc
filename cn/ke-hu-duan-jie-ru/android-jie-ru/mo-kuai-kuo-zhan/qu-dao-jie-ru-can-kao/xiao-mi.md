@@ -9,7 +9,7 @@ description: 小米
 ```text
   implementation WB.fixVersions('Pay:MiPay_New')
   和
-  implementation WB.fixVersions('Pay:MiSingle') （单机计费）
+  implementation WB.fixVersions('Pay:MiSingle') （单机计费,无特殊说明的情况下带这个模块）
 ```
 
 ## 小米签名权限需注意
@@ -23,7 +23,7 @@ description: 小米
 
 ## 配置文件说明
 
-assets目录加入feedata\_oppo.xml
+assets目录加入feedata\_mi.xml
 
 ```text
 <?xml version="1.0" encoding="utf-8"?>
