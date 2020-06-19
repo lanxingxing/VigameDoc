@@ -3,7 +3,11 @@
 ## 模块引入
 
 ```text
+    //根据需求单确定要带哪个模块
+    //如果是说 带oppo sdk 
     implementation WB.fixVersions('Pay:Oppo')
+    //如果是说带oppo 超休闲sdk
+    implementation WB.fixVersions('Pay:Oppo_Casual')
 ```
 
 ## Manifest参数选项
