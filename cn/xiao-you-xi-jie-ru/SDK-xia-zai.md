@@ -2,15 +2,29 @@
 
 ## 测试版本
 
-### 版本：v4.4-beta 发布时间：2020-6-15
+### 版本：v4.5-beta 发布时间：2020-6-22
+
+[下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.5/dnsdk.zip)
+
+- 增加百度小游戏支持(Banner、 视频)
+
+- 抖音banner ,重新打开接口
+
+- oppo 原生插屏和banner , 1 分钟内，不可打开 或获取数据为 null
+
+- 头条视频不再预加载，每次打开时，将重新创建
+
+  
+
+## 正式版本
+
+### 版本：v4.4 发布时间：2020-6-15
 
 [下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.4/dnsdk.zip)
 
 - 增加魅族小游戏支持(Banner、 插屏、视频)
 
 - 修复微信插屏预加载一直 onError 的问题
-
-## 正式版本
 
 ### 版本：v4.3 发布时间：2020-6-8
 

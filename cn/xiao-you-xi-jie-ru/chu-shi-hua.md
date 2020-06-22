@@ -67,12 +67,19 @@ var adData = {
         bannerAdId: "1v2pi8lvk8w68965eg",
         interstitialAdId: "11286cj144c4d5g841",
         rewardedVideoAdId: "18g7egd3mm9222217j"
-    }
+    },
     meizu : {
         bannerAdId: "R6tj9yn1",
         interstitialAdId: "NR0RmW64",
         rewardedVideoAdId: "lJTAVJyc",
-    }
+    },
+    baidu: {
+        bannerAdId: "7118598",
+        bannerAdSidId: "a693805c",
+
+        rewardedVideoAdId: "7117411",
+        rewardedVideoAdSidId: "a693805c",
+     }
 };
 
 //初始化
@@ -142,4 +149,5 @@ dnsdk.getProvider()
 | oppo | Oppo小游戏 |
 | vivo | Vivo小游戏 |
 | meizu | 魅族小游戏 |
+| baidu | 百度小游戏 |
 
