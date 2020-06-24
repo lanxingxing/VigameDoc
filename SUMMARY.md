@@ -53,6 +53,7 @@
           * [GDT](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/tong-ji-jie-ru/gdt.md)
           * [爱奇艺](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/tong-ji-jie-ru/aiqiyi.md)
           * [拼多多](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/tong-ji-jie-ru/pdd.md)
+          * [快手](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/tong-ji-jie-ru/kuaishou.md)
         * [渠道接入参考](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/qu-dao-jie-ru-can-kao/README.md)
           * [联想](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/qu-dao-jie-ru-can-kao/lenovo.md)
           * [GooglePlay](cn/ke-hu-duan-jie-ru/android-jie-ru/mo-kuai-kuo-zhan/qu-dao-jie-ru-can-kao/googleplay.md)
