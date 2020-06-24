@@ -70,34 +70,37 @@ AppCore.getInstance().setCfgLoadCallBack(new AppCore.CfgLoadedCallBack() {
 
 ```
 /**
-     * 获取广告配置   在获取到服务器配置之前会返回上次获取到的数据
+     * 获取广告配置
+     * 返回类型   ADConfig
      **/
-AppCore.getInstance().getAdConfig();
-    /**
-     * 获取 开屏配置   在获取到服务器配置之前会返回上次获取到的数据
-     **/
-AppCore.getInstance().getSplashCfg();
-/**
-     * 获取 开屏配置 
-     * 在获取到服务器配置之前会返回上次获取到的数据
-     * 优先返回广告配置 其次返回开屏配置
-     **/
-AppCore.getInstance().getModifiedSplashCfg();
-/**
-     * 获取 互推配置   在获取到服务器配置之前会返回上次获取到的数据
+AppCore.getInstance().getAdConfig();    
+ /**
+     * 获取 互推配置
+     * 返回类型   XYXConfig
      **/
 AppCore.getInstance().getXyxConfig();
 /**
-     * 更新开屏广告配置   
+     * 获取 游戏配置
      **/
-AppCore.getInstance().updateSplashCfg();
-
-
+AppCore.getInstance().getGameConfig();
 ```
 
 
 
-## 1.5 native常用接口
+## 1.5 互推上报接口
+
+```
+/**
+     * 展示上报    
+     **/
+AppCore.getInstance().getXyxConfig().exposureShow(XYXItem item);  
+/**
+     * 点击上报    
+     **/
+AppCore.getInstance().getXyxConfig().exposureClick(XYXItem item);  
+```
+
+## 1.6 native常用接口
 
 ```java
 import com.temp.proxy.AppNative;
@@ -161,7 +164,7 @@ import com.temp.proxy.AppNative;
 
 
 
-## 1.6 获取应用参数
+## 1.7 获取应用参数
 
 channel 配置  name为 com.app.sdk.channel
 
