@@ -14,6 +14,12 @@ git clone http://dnsdk.vimedia.cn:8080/r/UnityDemo.git
 git clone http://dnsdk.vimedia.cn:8080/r/UnityDemo-Android.git
 ```
 
+### Android 多渠道模板工程：（仅供内部使用）
+
+```cpp
+git clone http://192.168.1.252:8080/r/android/UnityDemo-Android-Ex.git
+```
+
 ### Xcode 工程：
 
 ```cpp
