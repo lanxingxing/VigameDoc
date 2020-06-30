@@ -92,9 +92,14 @@
     
 ## 2.添加Vigame模块
 1、自动添加
-  添加auto.sh脚本到工程，执行auto脚本
+ 
+```
+  cd /Users/xx/xx
+  git clone https://github.com/hohua88/Vigame.git
+  ```
+  配置可以执行Vigame模块中的auto.sh脚本，具体参见 [脚本构建](脚本构建.md)
 2、手动添加
- 链接: https://pan.baidu.com/s/1dE6OxUYIrb5VHxPMgPYEcA 提取码: k3cd 
+ 链接:https://github.com/hohua88/vigame 
 
 添加所有的 .a 文件 路径和头文件链接
 
@@ -123,24 +128,13 @@
 
    GADIsAdManagerApp：YES
 
-4. 在VigameLibrary.plist 中检测 company\_appid 、apple\_appid、company\_prijid、company\_appkey.
-
-   以及相关的统计参数
-
-5. 如果出海外包带有Facebook广告 需要在info.plist文件中添加Facebook 中相关的配置如下：
+3. 如果出海外包带有Facebook广告 需要在info.plist文件中添加Facebook 中相关的配置如下：
 
    ![fb&#x914D;&#x7F6E;](../../../.gitbook/assets/2183351-96f3333dbc663e72.png)
 
-6. 苹果新出的规定无论有没有使用到相机相册都得申请 权限
-7. 游戏需要访问网络 需要有网络权限
-8. 游戏第三方可能会用到定位，所有游戏info.plist添加NSLocationWhenInUseUsageDescription
-
-
-
-## 4. 设备编译选项
-
-1. Enable Bitcode 设置为NO
-2. ![&#x8BBE;&#x7F6E;Bitcode](../../../.gitbook/assets/1648908-a8b9998bf49b9737.png)
+4. 苹果新出的规定无论有没有使用到相机相册都得申请 权限
+5. 游戏需要访问网络 需要有网络权限
+6. 游戏第三方可能会用到定位，所有游戏info.plist添加NSLocationWhenInUseUsageDescription
 
 
 ## 5. 接入微信配置（不接入忽略）
