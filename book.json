@@ -1,0 +1,91 @@
+{
+    "title": "VigameDOC",
+    "description": "Vigame documentation",
+    "author":"sipeed",
+    "plugins": [
+        "my-toolbar",
+        "-lunr",
+        "-search",
+        "-search-title",
+        "search-pro",
+        "anchor-navigation-ex",
+        "anchorjs",
+        "sharing",
+        "splitter",
+        "edit-link",
+        "ga",
+        "chapter-fold"
+    ],
+    "styles": {
+        "website": "./styles/website.css"
+    },
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/jieban0604/VigameDoc"
+        },
+        "my-toolbar": {
+            "buttons": [
+                {
+                    "label": "Github",
+                    "text":" ",
+                    "icon": "fa fa-github",
+                    "position": "left",
+                    "target": "_blank",
+                    "url": "https://github.com/jieban0604/VigameDoc"
+                }
+            ]
+        },
+        "search": {
+            "maxIndexSize": 1000000000
+        },
+
+        "lunr": {
+            "maxIndexSize": 1000000000
+        },
+        "edit-link": {
+            "base": "https://github.com/jieban0604/VigameDoc/blob/master/README.md",
+            "label": ""
+        },
+        "sharing": {
+            "douban": false,
+            "facebook": false,
+            "google": false,
+            "hatenaBookmark": false,
+            "instapaper": false,
+            "line": false,
+            "linkedin": false,
+            "messenger": false,
+            "pocket": false,
+            "qq": false,
+            "qzone": false,
+            "stumbleupon": false,
+            "twitter": false,
+            "viber": false,
+            "vk": false,
+            "weibo": false,
+            "whatsapp": false,
+            "all": [
+                "weibo",
+                "facebook",
+                "google",
+                "twitter",
+                "vk"
+            ]
+        },
+        "anchor-navigation-ex": {
+            "associatedWithSummary": false,
+            "showLevel": true,
+            "multipleH1": false,
+            "mode": "float",
+            "pageTop": {
+                "showLevelIcon": true,
+                "level1Icon": "fa fa-angle-double-right",
+                "level2Icon": "fa fa-angle-double-right",
+                "level3Icon": "fa fa-angle-double-right"
+            }
+        },
+        "ga": {
+            "token": "UA-119047820-2"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+/config/
+gulpfile.js
+.markdownlint.json
+package.json
+.gitignore
+.bookignore
+*.xlsx
+*.orig
+*.less
+*.ai
+.travis.yml
+deploy.sh
+serve.sh
+serve_daemon.sh
+
