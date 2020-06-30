@@ -6,21 +6,12 @@
 
 [下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.5/dnsdk.zip)
 
-- 增加百度小游戏支持(Banner、 视频)
-
-- 抖音banner ,重新打开接口
-
-- oppo 原生插屏和banner , 1 分钟内，不可打开 或获取数据为 null
-
-- 头条视频不再预加载，每次打开时，将重新创建
-
-- 头条视频 isLoad 默认改为成功
-
-- 去除 oppo 原生广告 20 秒限制 
-
-  
-  
-  
+* 增加百度小游戏支持\(Banner、 视频\)
+* 抖音banner ,重新打开接口
+* oppo 原生插屏和banner , 1 分钟内，不可打开 或获取数据为 null
+* 头条视频不再预加载，每次打开时，将重新创建
+* 头条视频 isLoad 默认改为成功
+* 去除 oppo 原生广告 20 秒限制
 
 ## 正式版本
 
@@ -28,27 +19,22 @@
 
 [下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.4/dnsdk.zip)
 
-- 增加魅族小游戏支持(Banner、 插屏、视频)
-
-- 修复微信插屏预加载一直 onError 的问题
+* 增加魅族小游戏支持\(Banner、 插屏、视频\)
+* 修复微信插屏预加载一直 onError 的问题
 
 ### 版本：v4.3 发布时间：2020-6-8
 
 [下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.3/dnsdk.zip)
 
-- 修改头条视频的加载方式
-
-- 修改初始化接口，不传广告参数报错的问题
-
-- 修复微信插屏预加载一直 onError 的问题
+* 修改头条视频的加载方式
+* 修改初始化接口，不传广告参数报错的问题
+* 修复微信插屏预加载一直 onError 的问题
 
 ### 版本：v4.2 发布时间：2020-5-13
 
 [下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.2/dnsdk.zip)
 
-- 增加预加载插屏广告
-
-  
+* 增加预加载插屏广告
 
 ### 版本：v4.1 发布时间：2020-4-28
 

@@ -56,7 +56,7 @@ icon类型的互推使用 **PushIconItem** 预制体，如图示中底部的四�
 
 **隐藏 互推要使用 PushItem 中的 SetVisible 接口 （重要） 不能自己隐藏**
 
-若在有的手机上无法正常显示，查看 Project Serrings-> Other Settings-> Auto Graphics API 是否勾选 （需要勾选）
+若在有的手机上无法正常显示，查看 Project Serrings-&gt; Other Settings-&gt; Auto Graphics API 是否勾选 （需要勾选）
 
 ![UniWb01](../../.gitbook/assets/uniwb01.png)
 
@@ -76,7 +76,7 @@ StreamingAssets/st.txt 文件保存默认签名 加密后的哈希值，内容�
 
 然后用待添加的签名，签名上述apk，用加密工具加密签名的哈希值， 然后在 st.txt 文件里添加上述工具中获取到的签名信息 （注意明文签名用英文逗号分割）。
 
-![UniWb01](../../.gitbook/assets/WbAESGUI .png)
+![UniWb01](../../.gitbook/assets/WbAESGUI%20.png)
 
 ## Android 接入
 

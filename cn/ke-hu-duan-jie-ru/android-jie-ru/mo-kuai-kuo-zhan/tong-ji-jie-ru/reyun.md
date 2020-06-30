@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation WB.fixVersions('TJ:ReYun')    
+    implementation WB.fixVersions('TJ:ReYun')
 ```
 
 ## Manifest参数选项
@@ -28,8 +28,6 @@ android {
     }
 }
 ```
-
-
 
 **问题排查**
 

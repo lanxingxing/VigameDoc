@@ -1,4 +1,4 @@
-# KuaiShou
+# 快手
 
 ## 模块引入
 
@@ -22,8 +22,6 @@ android {
 }
 ```
 
-
-
 ## 混淆过滤
 
 ```text
@@ -40,6 +38,6 @@ register sdk success
 report log success eventName:EVENT_ACTIVE
 
 失败log:
-register sdk fail :  
+register sdk fail :
 ```
 

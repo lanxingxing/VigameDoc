@@ -2,7 +2,7 @@
 
 ## dnsdk.openBanner\(object\)
 
-**openBanner**  在整体游戏进程中，只调用一次，游戏中会自动刷新。
+**openBanner** 在整体游戏进程中，只调用一次，游戏中会自动刷新。
 
 快捷打开banner，banner位于底部。如需自定义广告位置，请使用createBannerAd接口。
 

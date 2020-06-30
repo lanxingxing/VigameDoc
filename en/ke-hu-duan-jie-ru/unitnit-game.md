@@ -14,7 +14,7 @@
 
 download：[UniWb.Wb](http://gui.vigame.cn/UniWb/wb/UniWb.Wb.unitypackage)
 
-Imported the UniWb.Wb.unitypackage, two folders named **Streanming**  and **Wb** will appear in the resource management interface.
+Imported the UniWb.Wb.unitypackage, two folders named **Streanming** and **Wb** will appear in the resource management interface.
 
 **StreamingAssets/st.txt** saved signature info。
 
@@ -45,7 +45,6 @@ Then sign the apk with a new signature, and then add the signature information o
 #### 1.Add Android modules
 
 Reference：
-
 
 > Please skip the 5.2，because we will use Activity inherit instead.
 
