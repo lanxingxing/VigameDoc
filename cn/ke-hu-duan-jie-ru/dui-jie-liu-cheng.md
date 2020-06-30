@@ -4,6 +4,8 @@
 
 ![Android&#x5BF9;&#x63A5;&#x6D41;&#x7A0B;](../../.gitbook/assets/android_duijie.png)
 
+<img src="../../.gitbook/assets/android_duijie.png" alt="Android&#x5BF9;&#x63A5;&#x6D41;&#x7A0B;">
+
 ### **1. 接入sdk**
 
 参考[《Android接入流程》](android-jie-ru/)接入SDK。  
