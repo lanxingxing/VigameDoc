@@ -24,7 +24,7 @@ Imported the UniWb.Wb.unitypackage, two folders named **Streanming**  and **Wb**
 
 Reference bellow:
 
-{% page-ref page="ye-wu-jie-kou-1/" %}
+### [interface](ye-wu-jie-kou-1/)
 
 ## Signature verification
 
@@ -46,11 +46,8 @@ Then sign the apk with a new signature, and then add the signature information o
 
 Reference：
 
-{% page-ref page="android-jie-ru.md" %}
 
-{% hint style="warning" %}
-Please skip the 5.2，because we will use Activity inherit instead.
-{% endhint %}
+> Please skip the 5.2，because we will use Activity inherit instead.
 
 #### 2.Add UnityBridge module in build.gradle
 
@@ -75,7 +72,5 @@ public class AppActivity extends UniWbActivity
 }
 ```
 
-{% hint style="info" %}
-UniWbActivity has inherited UnityPlayerActivity
-{% endhint %}
+> UniWbActivity has inherited UnityPlayerActivity
 
