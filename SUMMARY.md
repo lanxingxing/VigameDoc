@@ -86,7 +86,7 @@
       * [常见问题](cn/ke-hu-duan-jie-ru/android-jie-ru/chang-jian-wen-ti.md)
     * [iOS](cn/ke-hu-duan-jie-ru/ios-jie-ru/README.md)
       * [脚本构建](cn/ke-hu-duan-jie-ru/ios-jie-ru/jiao-ben-gou-jian.md)
-      * [CocoaPods集成](CocoaPods-ji-cheng.md)](cn/ke-hu-duan-jie-ru/ios-jie-ru/CocoaPods-ji-cheng.md)
+      * [CocoaPods集成](cn/ke-hu-duan-jie-ru/ios-jie-ru/cocoapods-ji-cheng.md)
       * [常见问题](cn/ke-hu-duan-jie-ru/ios-jie-ru/chang-jian-wen-ti.md)
     * [Unity](cn/ke-hu-duan-jie-ru/unitnit-game.md)
     * [业务接口](cn/ke-hu-duan-jie-ru/ye-wu-jie-kou/README.md)
