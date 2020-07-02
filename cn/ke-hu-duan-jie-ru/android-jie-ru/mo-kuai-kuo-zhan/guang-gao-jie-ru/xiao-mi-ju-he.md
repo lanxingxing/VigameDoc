@@ -2,26 +2,8 @@
 
 ## 模块引入
 
-需本地引入，模块下载链接：[http://192.168.1.252:8080/zip/?r=VigameAndroidLibrary.git&p=libAD/libAD\_Mi\_Mediation&h=master&format=zip](http://192.168.1.252:8080/zip/?r=VigameAndroidLibrary.git&p=libAD/libAD_Mi_Mediation&h=master&format=zip)
-
-setting.gradle中添加
-
-include ':libAD\_Mi\_Mediation' project\(':libAD\_Mi\_Mediation'\).projectDir = new File\('目录\libAD\_Mi\_Mediation'\)
-
-app目录build.gradle中修改：
-
 ```text
-repositories {
-    flatDir {
-      ...
-        dirs project(':libAD_Mi_Mediation').file('libs')
-      ...  
-    }
-}
-
-
-
-xxxxxImplementation project(':libAD_Mi_Mediation')
+xxxxxImplementation WB.fixVersions('AD:Mi_JuHe')
 ```
 
 ## 注意事项

@@ -2,33 +2,8 @@
 
 ## 模块引入
 
-1.1.0版本 采用本地导入的方式： 1.模块下载地址：
-
 ```text
-http://192.168.1.252:8080/tree/VigameAndroidLibrary.git/master/libAD
-```
-
-下载libAD\_Ad360的zip格式的模块到本地并解压；
-
-2.采用本地导入的方式，将libAD\_Ad360当做一个module引入你的工程当中
-
-3.在app的build.gardle的dependencies前加入如下代码：
-
-```text
-    repositories {
-        flatDir {
-            dirs 'libs'
-            dirs project(':libAD_Ad360').file('libs')
-        }
-    }
-```
-
-4.在app的build.gardle的dependencies中加入以下代码
-
-```text
-    implementation project(':libAD_Ad360')
-    compile(name: 'msadsdk-release', ext: 'aar')
-    compile(name: 'news-lib-newssdk-release', ext: 'aar')
+    implementation WB.fixVersions('AD:Ad360')
 ```
 
 ## 注意事项
@@ -39,7 +14,7 @@ implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
 处理方式有下面两种，任选一种：
 1.注释掉pl.droidsonroids.gif:android-gif-drawable:1.2.6模块，不过出其他渠道的包需要这个模块，建议采用第二种方式
 2.在build.gradle的dependencies之前加入模块去重复的代码
-```text
+​```text
 configurations {
     all*.exclude group: 'pl.droidsonroids.gif'
 }
@@ -48,7 +23,7 @@ configurations {
 ```text
 ## 混淆过滤
 
-```text
+​```text
 -ignorewarning
 -repackageclasses ''
 -allowaccessmodification
