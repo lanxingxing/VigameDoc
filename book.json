@@ -43,7 +43,7 @@
             "maxIndexSize": 1000000000
         },
         "edit-link": {
-            "base": "https://github.com/jieban0604/VigameDoc/blob/master/README.md",
+            "base": "https://github.com/jieban0604/VigameDoc/blob/master",
             "label": ""
         },
         "sharing": {
