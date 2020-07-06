@@ -74,7 +74,7 @@
         },
         "anchor-navigation-ex": {
             "associatedWithSummary": false,
-            "showLevel": true,
+            "showLevel": false,
             "multipleH1": false,
             "mode": "float",
             "pageTop": {
