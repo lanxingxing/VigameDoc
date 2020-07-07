@@ -174,7 +174,7 @@ Add related parameter configuration, And use VigameStartActivity as launch item.
     android:name="com.vigame.sdk.prjid"
     android:value="333360" />
 <meta-data
-    android:name="com.vigame.purchase.channel"
+    android:name="com.vigame.sdk.channel"
     android:value="${WB_CHANNEL}" />
 
 <activity android:name="com.libVigame.VigameStartActivity"
