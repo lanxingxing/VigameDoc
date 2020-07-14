@@ -20,7 +20,7 @@ buildscript {
     }   
     dependencies {
         //添加 动能 版本检测插件
-        classpath 'com.wb.check:plugin:1.0.2'
+        classpath 'com.wb.check:plugin:1.0.3'
     }
 }
 ```
