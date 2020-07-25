@@ -62,8 +62,11 @@ def WB = getPlugins().findPlugin('Wb-check')
     implementation WB.fixVersions('Extention:ExtManager')
     //用到的第三方库
     implementation WB.fixVersions('Core:android-query')
-    implementation 'com.android.support:support-v4:28.0.0'
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
 ```
 
 ## 第四步：添加动能的混淆过滤文件
