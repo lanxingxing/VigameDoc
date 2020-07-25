@@ -40,6 +40,18 @@ allprojects {
 }
 ```
 
+
+
+根目录下gradle.properties文件中添加：
+
+```
+#魅族注释掉下面这句，其他的需要打开
+android.enableJetifier=true
+
+android.useAndroidX=true
+android.injected.testOnly=false
+```
+
 ## 第二步：引用插件
 
 ```groovy
