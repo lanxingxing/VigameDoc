@@ -95,11 +95,13 @@
 ```text
   cd /Users/xx/xx
   git clone https://github.com/hohua88/Vigame.git
+  git clone https://github.com/hohua88/deps.git
 ```
 
-配置可以执行Vigame模块中的auto.sh脚本，具体参见 [脚本构建](https://github.com/jieban0604/VigameDoc/tree/ae57de14708d5444e6f1ef3b4a82ef875535b3a9/cn/ke-hu-duan-jie-ru/ios-jie-ru/脚本构建.md) 2、手动添加 链接:[https://github.com/hohua88/vigame](https://github.com/hohua88/vigame)
+配置可以执行Vigame模块中的auto.sh脚本，具体参见 [脚本构建](https://github.com/jieban0604/VigameDoc/tree/ae57de14708d5444e6f1ef3b4a82ef875535b3a9/cn/ke-hu-duan-jie-ru/ios-jie-ru/脚本构建.md)
+2、手动添加 链接:[https://github.com/hohua88/vigame](https://github.com/hohua88/vigame)
 
-添加所有的 .a 文件 路径和头文件链接
+### 2.1. 添加所有的 .a 文件 路径和头文件链接
 
 \(备注: 将deps文件删除引用。\)
 
@@ -117,7 +119,7 @@
 
 ![](../../../.gitbook/assets/1648908-f0a533025fd7e71f.png)
 
-## 3. 添加必要配置
+### 2.2. 添加必要配置
 
 1. 打开 Capabilities-&gt; Keychain Sharing 获取设备唯一标识
 2. 在info.plist添加Google广告配置
@@ -132,7 +134,7 @@
 5. 游戏需要访问网络 需要有网络权限
 6. 游戏第三方可能会用到定位，所有游戏info.plist添加NSLocationWhenInUseUsageDescription
 
-## 5. 接入微信配置（不接入忽略）
+### 2.3. 接入微信配置（不接入忽略）
 
 在info.plist文件添加
 
@@ -143,7 +145,7 @@
 ![](../../../.gitbook/assets/1648908-7aa347ae8a163c04.png)
 
 ## 6. SDK初始化工作
-
+注：使用WbUnity插件可忽略此步
 **1. 导入头文件**
 
 在appDelegate文件中引入头文件`#import "IOSLoader.h"`
