@@ -20,8 +20,8 @@ description: 腾讯YSDK
 
 ```text
   manifestPlaceholders = [
-                QQ_APPID:"游戏的QQAPPID",
-                WX_APPID:"游戏的微信APPID",
+                QQ_APP_ID:"游戏的QQAPPID",
+                WX_APP_ID:"游戏的微信APPID",
                ...
         ]
 ```
