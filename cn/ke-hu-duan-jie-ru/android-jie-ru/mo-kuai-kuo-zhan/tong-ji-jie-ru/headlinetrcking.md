@@ -40,3 +40,8 @@ android {
 -keep com.ss.android.common.**{*;}
 ```
 
+
+
+
+
+可通过过滤  TeaLog 查看log

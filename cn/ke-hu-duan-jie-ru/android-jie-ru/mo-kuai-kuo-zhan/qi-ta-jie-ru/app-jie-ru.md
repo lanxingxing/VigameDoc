@@ -1,8 +1,12 @@
 ## 1.0 引入模块
 
 ```java
-	xxximplementation WB.fixVersions('Proxy:APP')
+	//    使用插件
+xxximplementation WB.fixVersions('Proxy:APP')
 ```
+
+    //    不使用插件的方法
+     xxximplementation "com.libVigame.Proxy:APP:1.0.8"   
 
 ## 1.1 初始化(application中调用)
 
@@ -111,7 +115,7 @@ import com.temp.proxy.AppNative;
  //自定义事件，需初始化后调用
     AppNative.nativeOnEventLabel(String key,String val);
    //自定义事件，需初始化后调用。map 中  key 和 value 都不能含有 '=' 和 ','
-    AppNative.nativeOnEventMap(String key, HashMap<String,String> map)
+    AppNative.nativeOnEventMap(String key, Map<String,String> map)
     //账号登录  暂时不可用
      AppNative.nativeOnSignIn(String account,String acountType);
     // 账号登出  暂时不可用
