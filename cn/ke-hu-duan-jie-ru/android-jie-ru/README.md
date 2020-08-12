@@ -40,11 +40,9 @@ allprojects {
 }
 ```
 
-
-
 根目录下gradle.properties文件中添加：
 
-```
+```text
 #魅族注释掉下面这句，其他的需要打开
 android.enableJetifier=true
 

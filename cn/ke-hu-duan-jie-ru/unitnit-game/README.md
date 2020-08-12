@@ -28,7 +28,7 @@ git clone http://dnsdk.vimedia.cn:8080/r/UnityDemo-IOS.git
 
 ## 导入Unity插件
 
-插件下载地址：[UniWb.Wb](http://gui.vigame.cn/UniWb/wb/UniWb.Wb.unitypackage)
+### \*\*\*\*[**插件下载**](cha-jian-xia-zai.md)\*\*\*\*
 
 将UniWb.Wb.unitypackage导入成功后，在资源管理界面中会出现名为**Streanming**与**Wb**两个文件夹。
 
@@ -40,43 +40,7 @@ git clone http://dnsdk.vimedia.cn:8080/r/UnityDemo-IOS.git
 
 参考业务接口进行接入：
 
-### [业务接口](ye-wu-jie-kou/)
-
-## 互推使用
-
-导入 UniWb.Wb.unitypackage 后， 在 Wb/Xyx/prefab/ 文件夹下可以找到不同的互推样式。
-
-视频类型的请使用**PushHotItem**，如图示中大的互推。
-
-icon类型的互推使用 **PushIconItem** 预制体，如图示中底部的四个。
-
-将预制体拖入 canvas 即可。
-
-在打包安卓时 需使用 112234 项目id 测试。
-
-**隐藏 互推要使用 PushItem 中的 SetVisible 接口 （重要） 不能自己隐藏**
-
-若在有的手机上无法正常显示，查看 Project Serrings-&gt; Other Settings-&gt; Auto Graphics API 是否勾选 （需要勾选）
-
-![UniWb01](../../.gitbook/assets/uniwb01.png)
-
-## 签名验证
-
-在游戏开始的时候，如果需要签名验证，调用该方法
-
-```text
- Wb.CoreManager.Instance.CheckSignature();
-```
-
-StreamingAssets/st.txt 文件保存默认签名 加密后的哈希值，内容为：kDiJOe7UjhVAbaGa7qTIIuFZo1fVMThwKsLeFVlk0AY=
-
-如需添加自己的签名，可下载地址 [vigame签名获取工](http://gui.vigame.cn/signtool/vigame签名获取工具.apk)[具](http://gui.vigame.cn/signtool/vigame签名获取工具.apk)。
-
-[加密工具下载](http://gui.vigame.cn/WbAESGUI/WbAESGUI.exe)
-
-然后用待添加的签名，签名上述apk，用加密工具加密签名的哈希值， 然后在 st.txt 文件里添加上述工具中获取到的签名信息 （注意明文签名用英文逗号分割）。
-
-![UniWb01](../../.gitbook/assets/WbAESGUI%20.png)
+### [业务接口](../ye-wu-jie-kou/)
 
 ## Android 接入
 
@@ -84,7 +48,7 @@ StreamingAssets/st.txt 文件保存默认签名 加密后的哈希值，内容�
 
 参考以下链接进行接入：
 
-### [Android](android-jie-ru/)
+### [Android](../android-jie-ru/)
 
 > 请跳过链接页面中第五步的第2条，因为后面已使用Activity继承代替。
 
@@ -119,7 +83,7 @@ public class AppActivity extends UniWbActivity
 
 参考以下链接进行接入：
 
-### [iOS](ios-jie-ru/)
+### [iOS](../ios-jie-ru/)
 
 #### 2.修改iOS 桥接文件
 

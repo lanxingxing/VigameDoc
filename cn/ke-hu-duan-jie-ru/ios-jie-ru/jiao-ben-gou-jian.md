@@ -17,11 +17,11 @@ git clone https://github.com/hohua88/deps.git
 
 ## 2.2 手动下载
 
-[地址](https://github.com/hohua88/Vigame)
-[地址](https://github.com/hohua88/deps)
+[地址](https://github.com/hohua88/Vigame) [地址](https://github.com/hohua88/deps)
+
 ## 3.修改ExportOptions.plist
-测试包不需要更改，正式包建议自己打包，用脚本需改动较多
-![&#x4FEE;&#x6539;&#x8BC1;&#x4E66;&#x914D;&#x7F6E;](https://github.com/jieban0604/VigameDoc/tree/ae57de14708d5444e6f1ef3b4a82ef875535b3a9/.gitbook/assets/xiu_gai_zheng_shu.png)
+
+测试包不需要更改，正式包建议自己打包，用脚本需改动较多 ![&#x4FEE;&#x6539;&#x8BC1;&#x4E66;&#x914D;&#x7F6E;](https://github.com/jieban0604/VigameDoc/tree/ae57de14708d5444e6f1ef3b4a82ef875535b3a9/.gitbook/assets/xiu_gai_zheng_shu.png)
 
 ## 4.执行auto.sh脚本
 

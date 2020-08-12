@@ -98,8 +98,7 @@
   git clone https://github.com/hohua88/deps.git
 ```
 
-配置可以执行Vigame模块中的auto.sh脚本，具体参见 [脚本构建](https://github.com/jieban0604/VigameDoc/tree/ae57de14708d5444e6f1ef3b4a82ef875535b3a9/cn/ke-hu-duan-jie-ru/ios-jie-ru/脚本构建.md)
-2、手动添加 链接:[https://github.com/hohua88/vigame](https://github.com/hohua88/vigame)
+配置可以执行Vigame模块中的auto.sh脚本，具体参见 [脚本构建](https://github.com/jieban0604/VigameDoc/tree/ae57de14708d5444e6f1ef3b4a82ef875535b3a9/cn/ke-hu-duan-jie-ru/ios-jie-ru/脚本构建.md) 2、手动添加 链接:[https://github.com/hohua88/vigame](https://github.com/hohua88/vigame)
 
 ### 2.1. 添加所有的 .a 文件 路径和头文件链接
 
@@ -145,8 +144,8 @@
 ![](../../../.gitbook/assets/1648908-7aa347ae8a163c04.png)
 
 ## 6. SDK初始化工作
-注：使用WbUnity插件可忽略此步
-**1. 导入头文件**
+
+注：使用WbUnity插件可忽略此步 **1. 导入头文件**
 
 在appDelegate文件中引入头文件`#import "IOSLoader.h"`
 
