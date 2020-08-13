@@ -6,7 +6,7 @@
 
 ### 版本：v1.1-beta 发布时间：2020-8-12
 
-[下载](http://gui.vigame.cn/UniWb/wb/DN_PLUGIN_UNITY_20200804.unitypackage)
+[下载](http://gui.vigame.cn/UniWb/wb/DN_PLUGIN_UNITY_1.1.unitypackage)
 
 * 修复Unity打包工具在Unity2018上读取不到string而崩溃的问题；
 * 支持修改渠道号功能；
