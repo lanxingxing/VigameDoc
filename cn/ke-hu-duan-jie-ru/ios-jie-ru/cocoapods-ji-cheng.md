@@ -12,7 +12,7 @@
    $ sudo gem install cocoapods
    ```
 
-   注意：安装过程可能会耗时比较长，也有可能收到网络状况导致失败，请多次尝试直到安装成功。
+注意：安装过程可能会耗时比较长，也有可能收到网络状况导致失败，请多次尝试直到安装成功。
 
 2. 配置Podfile文件
 
@@ -29,13 +29,14 @@
    source 'https://cdn.cocoapods.org/' #公有库地址
 
    platform :ios, '9.0'
-   target 'Unity-iPhone' do
+   target 'YourTargenname' do
 
-   sdkVersion='1.0.0'
-
+   sdkVersion='1.0.3'
+   ####--基础功能---###
+   pod 'KTMSDK/KTMSDK',sdkVersion
+   pod 'KTMSDK/Common',sdkVersion
    ####--广告---###
    pod 'KTMSDK/Ads/ByteDance',sdkVersion
-   pod 'Bytedance-UnionAD', '2.8.0.1'
    pod 'KTMSDK/Ads/IronSource',sdkVersion
    pod 'KTMSDK/Ads/Admob',sdkVersion
    pod 'KTMSDK/Ads/GDT',sdkVersion
@@ -63,9 +64,7 @@
    pod 'KTMSDK/Social/apple',sdkVersion
 
    ####--扩展---###
-   pod 'KTMSDK/Extension/notice',sdkVersion
-   pod 'KTMSDK/Extension/activity',sdkVersion
-   pod 'KTMSDK/Extension/auth',sdkVersion
+   pod 'KTMSDK/Extension',sdkVersion
 
    ####--内购---###
    pod 'KTMSDK/IAP',sdkVersion 
@@ -88,37 +87,14 @@
    pod 'IronSourceMintegralAdapter','4.3.1.0'
    ```
 
-## 2.添加Vigame模块
+## 2.下载Vigame资源
 
-1、自动添加
+Vigame资源包含构建脚本、出包证书及打包依赖的plist文件,可以使用里面证书出测试包
+[Vigamne下载](https://github.com/hohua88/Vigame.git)
 
-```text
-  cd /Users/xx/xx
-  git clone https://github.com/hohua88/Vigame.git
-  git clone https://github.com/hohua88/deps.git
-```
+## 3.工程配置
 
-配置可以执行Vigame模块中的auto.sh脚本，具体参见 [脚本构建](https://github.com/jieban0604/VigameDoc/tree/ae57de14708d5444e6f1ef3b4a82ef875535b3a9/cn/ke-hu-duan-jie-ru/ios-jie-ru/脚本构建.md) 2、手动添加 链接:[https://github.com/hohua88/vigame](https://github.com/hohua88/vigame)
-
-### 2.1. 添加所有的 .a 文件 路径和头文件链接
-
-\(备注: 将deps文件删除引用。\)
-
-\(target-&gt;build setting -&gt; search path -&gt;Header Search Paths 中添加\) 特殊添加一项目录 路径
-
-`"$(SRCROOT)/Vigame/include"`
-
-`"$(SRCROOT)/Vigame/deps/boost/include"`
-
-`"$(SRCROOT)/Vigame/deps/curl/include"`
-
-`"$(SRCROOT)/Vigame/deps/openssl/include"`
-
-`"$(SRCROOT)/Vigame/deps/zlib/include"`
-
-![](../../../.gitbook/assets/1648908-f0a533025fd7e71f.png)
-
-### 2.2. 添加必要配置
+### 3.1. 添加必要配置
 
 1. 打开 Capabilities-&gt; Keychain Sharing 获取设备唯一标识
 2. 在info.plist添加Google广告配置
@@ -128,12 +104,12 @@
 3. 如果出海外包带有Facebook广告 需要在info.plist文件中添加Facebook 中相关的配置如下：
 
    ![fb&#x914D;&#x7F6E;](../../../.gitbook/assets/2183351-96f3333dbc663e72.png)
+4. 设置Enable BitCode 为NO
+5. 苹果新出的规定无论有没有使用到相机相册都得申请 权限
+6. 游戏需要访问网络 需要有网络权限
+7. 游戏第三方可能会用到定位，所有游戏info.plist添加NSLocationWhenInUseUsageDescription
 
-4. 苹果新出的规定无论有没有使用到相机相册都得申请 权限
-5. 游戏需要访问网络 需要有网络权限
-6. 游戏第三方可能会用到定位，所有游戏info.plist添加NSLocationWhenInUseUsageDescription
-
-### 2.3. 接入微信配置（不接入忽略）
+### 3.2. 接入微信配置（不接入忽略）
 
 在info.plist文件添加
 
@@ -143,11 +119,12 @@
 
 ![](../../../.gitbook/assets/1648908-7aa347ae8a163c04.png)
 
-## 6. SDK初始化工作
 
-注：使用WbUnity插件可忽略此步 **1. 导入头文件**
+## 4. SDK初始化工作
+注：使用DN_PLUGIN_UNITY_1.x.unitypackage插件可忽略初始化配置
+**1. 导入头文件**
 
-在appDelegate文件中引入头文件`#import "IOSLoader.h"`
+在appDelegate文件中引入头文件`#import <KTMSDK/KTMSDK.h>`
 
 **2. 调用初始化入口文件**
 

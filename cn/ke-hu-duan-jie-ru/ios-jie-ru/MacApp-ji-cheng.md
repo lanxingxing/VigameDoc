@@ -1,13 +1,13 @@
 # iOS
-
+(注：使用DN_PLUGIN_UNITY_1.x.unitypackage插件可忽略 )
 ## 1. SDK初始化工作 
-(注：使用WbUnity插件可忽略)
-### 2.1. 导入头文件
 
-在appDelegate文件中引入头文件
-`#import "IOSLoader.h"`
+### 1.1. 导入头文件
 
-### 2.2. 调用初始化入口文件
+在UIApplicationDelegate实现类文件中引入头文件
+`#import <KTMSDK/KTMSDK.h>`
+
+### 1.2. 调用初始化入口文件
 
 ```objectivec
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -44,10 +44,8 @@
 }
 ```
 ## 2. 集成Vigame
-使用KTMRobot.dmg，添加相应的参数即可完成SDK对接，并且会生成一个测试包上传到fir.im，提供生成的二维码给到我们测试即可。
-![](../../../.gitbook/assets/KTMRobot.png)
+使用KTMRobot.dmg，添加相应的参数即可完成SDK对接，并且会生成一个测试包上传到fir.im(可勾选是否上传)，提供生成的二维码给到我们测试即可。
 
-按照截图中需求，填入所需选项点击构建即可（Vigame选项第一次必选，后续不更新SDK可以勾掉）
 ## 交互流程
 
 1. 使用Mac构建工具自动构建测试包--然后测试
