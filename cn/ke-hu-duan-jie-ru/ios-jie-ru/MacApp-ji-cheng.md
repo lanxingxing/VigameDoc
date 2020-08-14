@@ -1,4 +1,4 @@
-# iOS
+# MacApp自动集成
 (注：使用DN_PLUGIN_UNITY_1.x.unitypackage插件可忽略 )
 ## 1. SDK初始化工作 
 
@@ -43,7 +43,7 @@
     return [IOSLoader application:app openURL:url options:options];
 }
 ```
-## 2. 集成Vigame
+## 2. 自动集成
 使用KTMRobot.dmg，添加相应的参数即可完成SDK对接，并且会生成一个测试包上传到fir.im(可勾选是否上传)，提供生成的二维码给到我们测试即可。
 
 ## 交互流程
