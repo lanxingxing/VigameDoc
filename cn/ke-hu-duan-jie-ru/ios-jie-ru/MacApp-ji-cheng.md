@@ -1,6 +1,6 @@
 # MacApp自动集成
-(注：使用DN_PLUGIN_UNITY_1.x.unitypackage插件可忽略 )
-## 1. SDK初始化工作 
+(注：使用DN_PLUGIN_UNITY_1.x.unitypackage插件可忽略初始化 )
+## 1. SDK初始化
 
 ### 1.1. 导入头文件
 

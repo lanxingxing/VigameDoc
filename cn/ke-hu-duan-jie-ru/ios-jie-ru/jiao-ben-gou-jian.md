@@ -19,7 +19,6 @@ git clone https://github.com/hohua88/Vigame.git
 [地址](https://github.com/hohua88/Vigame) 
 
 
-
 ## 3.执行auto.sh脚本
 
 ```text
