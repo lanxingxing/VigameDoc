@@ -89,7 +89,7 @@
       * [CocoaPods集成](cn/ke-hu-duan-jie-ru/ios-jie-ru/cocoapods-ji-cheng.md)
       * [常见问题](cn/ke-hu-duan-jie-ru/ios-jie-ru/chang-jian-wen-ti.md)
     * [Unity](cn/ke-hu-duan-jie-ru/unitnit-game/README.md)
-      * [签名验证](file://192.168.1.252/webDoc/VigameDoc/cn/ke-hu-duan-jie-ru/unitnit-game/qian-ming-yan-zheng.html)
+      * [签名验证](cn/ke-hu-duan-jie-ru/unitnit-game/qian-ming-yan-zheng.md)
       * [互推使用](cn/ke-hu-duan-jie-ru/unitnit-game/hu-tui-shi-yong.md)
       * [插件下载](cn/ke-hu-duan-jie-ru/unitnit-game/cha-jian-xia-zai.md)
     * [业务接口](cn/ke-hu-duan-jie-ru/ye-wu-jie-kou/README.md)
