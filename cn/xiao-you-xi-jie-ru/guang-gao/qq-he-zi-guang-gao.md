@@ -1,8 +1,8 @@
 ---
-description: 目前只在QQ小游戏平台有效
+description: 目前只在QQ、Oppo小游戏平台有效
 ---
 
-# QQ盒子广告
+# 盒子广告
 
 ## dnsdk.openBoxAd\(object\)
 

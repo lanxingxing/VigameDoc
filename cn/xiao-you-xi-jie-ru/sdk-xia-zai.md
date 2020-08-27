@@ -2,6 +2,15 @@
 
 ## 测试版本
 
+### 版本：v4.6-beta 发布时间：2020-8-27
+
+[下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.6/dnsdk.zip)
+
+- 修复vivo平台请求互推数据时拿不到platform的问题
+- 修改头条视频为启动时预加载，加载失败后会自动重试
+- 修复视频可能多通知一次加载成功的问题
+- 增加oppo盒子广告
+
 ### 版本：v4.5-beta 发布时间：2020-6-22
 
 [下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.5/dnsdk.zip)
