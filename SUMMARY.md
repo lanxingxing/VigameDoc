@@ -109,7 +109,7 @@
       * [Banner广告](cn/xiao-you-xi-jie-ru/guang-gao/banner-guang-gao.md)
       * [插屏广告](cn/xiao-you-xi-jie-ru/guang-gao/cha-ping-guang-gao.md)
       * [激励视频广告](cn/xiao-you-xi-jie-ru/guang-gao/ji-li-shi-pin-guang-gao.md)
-      * [QQ盒子广告](cn/xiao-you-xi-jie-ru/guang-gao/qq-he-zi-guang-gao.md)
+      * [盒子广告](cn/xiao-you-xi-jie-ru/guang-gao/qq-he-zi-guang-gao.md)
       * [原生广告](cn/xiao-you-xi-jie-ru/guang-gao/yuan-sheng-guang-gao.md)
     * [桌面图标](cn/xiao-you-xi-jie-ru/zhuo-mian-tu-biao.md)
     * [其他](cn/xiao-you-xi-jie-ru/qi-ta-guang-gao.md)
