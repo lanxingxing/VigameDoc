@@ -28,7 +28,7 @@ git clone http://dnsdk.vimedia.cn:8080/r/UnityDemo-IOS.git
 
 ## 导入Unity插件
 
-### \*\*\*\*[**插件下载**](cha-jian-xia-zai.md)\*\*\*\*
+### [**插件下载**](cha-jian-xia-zai.md)
 
 将UniWb.Wb.unitypackage导入成功后，在资源管理界面中会出现名为**Streanming**与**Wb**两个文件夹。
 
