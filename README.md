@@ -1,3 +1,3 @@
 # Introduction
 
-介绍sdk的接入过程
+介绍sdk的接入过程。
