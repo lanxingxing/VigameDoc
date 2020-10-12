@@ -2,16 +2,23 @@
 
 ## 测试版本
 
-### 版本：v4.6-beta 发布时间：2020-8-27
 
-[下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.6/dnsdk.zip)
+
+## 正式版本
+
+
+
+### 版本：v4.6.2 发布时间：2020-9-24
+
+[下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.6/dnsdk_v4.6.2.zip)
 
 - 修复vivo平台请求互推数据时拿不到platform的问题
 - 修改头条视频为启动时预加载，加载失败后会自动重试
 - 修复视频可能多通知一次加载成功的问题
 - 增加oppo盒子广告
+- 修复魅族小游戏插屏失败后不能重新加载的问题
 
-### 版本：v4.5-beta 发布时间：2020-6-22
+### 版本：v4.5 发布时间：2020-6-22
 
 [下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.5/dnsdk.zip)
 
@@ -21,8 +28,6 @@
 * 头条视频不再预加载，每次打开时，将重新创建
 * 头条视频 isLoad 默认改为成功
 * 去除 oppo 原生广告 20 秒限制
-
-## 正式版本
 
 ### 版本：v4.4 发布时间：2020-6-15
 
