@@ -62,11 +62,11 @@ def WB = getPlugins().findPlugin('Wb-check')
 
 ```groovy
     //vigame相关模块
-    implementation WB.fixVersions('Proxy:Features')
+    implementation WB.fixVersions('Proxy:Features_new')
     implementation WB.fixVersions('Loader:VigameLoader')
     implementation WB.fixVersions('Core:CoreManager')
     implementation WB.fixVersions('Pay:PayManager')
-    implementation WB.fixVersions('AD2:ADManager')
+    implementation WB.fixVersions('AD3:ADManager')
     implementation WB.fixVersions('TJ:TJManager')
     implementation WB.fixVersions('Social:SocialManager')
     implementation WB.fixVersions('Extention:ExtManager')
@@ -196,7 +196,7 @@ public class MyApplication extends VigameApplication {
     android:name="com.vigame.sdk.prjid"
     android:value="333360" />
 <meta-data
-    android:name="com.vigame.purchase.channel"
+    android:name="com.vigame.sdk.channel"
     android:value="${WB_CHANNEL}" />
 
 <activity android:name="com.libVigame.VigameStartActivity"
