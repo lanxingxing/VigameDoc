@@ -3,8 +3,15 @@
 
 
 ## 最新版本
+### 版本：v1.3.1 发布时间：2020-10-22
 
-### 版本：v1.2.0-beta 发布时间：2020-9-17
+[下载](http://gui.vigame.cn/UniWb/wb/DN_PLUGIN_UNITY_1.3.1.unitypackage)
+
+* 增加Android构建和Android打包功能，提升打包效率
+* 修复视频播放失败导致游戏静音的问题
+
+## 正式版本
+### 版本：v1.2.0 发布时间：2020-9-17
 
 [下载](http://gui.vigame.cn/UniWb/wb/DN_PLUGIN_UNITY_1.2.0.unitypackage)
 
@@ -13,8 +20,6 @@
 * 支持自动生成微信相关Entry文件
 * 增加支付相关配置功能
 * 去掉插件中包含的多余内容（闪屏图片、plugin/Android资源等）
-
-## 正式版本
 
 ### 版本：v1.1 发布时间：2020-8-12
 
