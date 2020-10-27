@@ -3,12 +3,14 @@
 
 
 ## 最新版本
-### 版本：v1.3.1 发布时间：2020-10-22
+### 版本：v1.3.2 发布时间：2020-10-27
 
-[下载](http://gui.vigame.cn/UniWb/wb/DN_PLUGIN_UNITY_1.3.1.unitypackage)
+[下载](http://gui.vigame.cn/UniWb/wb/DN_PLUGIN_UNITY_1.3.2.unitypackage)
 
 * 增加Android构建和Android打包功能，提升打包效率
 * 修复视频播放失败导致游戏静音的问题
+* 默认使用新版广告模块
+* 配置工具支持替换appid、appkey
 
 ## 正式版本
 ### 版本：v1.2.0 发布时间：2020-9-17
