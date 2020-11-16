@@ -3,7 +3,7 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.TJ:IQiYi:1.0.0'
+    implementation WB.fixVersions('TJ:IQiYi')
 ```
 
 ## Manifest参数选项
