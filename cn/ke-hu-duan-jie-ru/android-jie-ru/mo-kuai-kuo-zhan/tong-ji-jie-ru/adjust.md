@@ -3,32 +3,20 @@
 ## 模块引入
 
 ```text
-    implementation 'com.libVigame.TJ:Adjust:1.0.1'
+    implementation 'com.libVigame.TJ:Adjust:1.0.5'
 ```
 
 ## 配置文件说明
 
-```text
-在工程目录下的 build.gradle中添加
-buildscript {    
-    dependencies {
-        ...
-        classpath 'com.google.gms:google-services:3.0.0'   // 使用 firebase 要添加
-       ...
-    }
-}
-```
+
 
 ```text
 需要在app的build.gradle的添加如下配置：
-apply plugin: 'com.google.gms.google-services'//一定要有，不然统计不到卸载数据
 android {
     manifestPlaceholders = [
     ....
-                ADJUST_KEY:"xxx", //应用识别码,adjust后台获取               
+                ADJUST_TOKEN:"xxx", //应用识别码,adjust后台获取               
                 ADJUST_TESTMODEL:"false", //是否是测试模式， 测试时设置为 true，注意正式版一定要为false
-                ADJUST_APPSECRET:"1,2,1,4,5", //签名配置，再adjust后台 sdk签名中获取 注意不能带 （ ）字符
-
     ...
             ]
     }
