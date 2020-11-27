@@ -76,7 +76,7 @@ def WB = getPlugins().findPlugin('Wb-check')
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.percentlayout:percentlayout:1.0.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
 ```
 
 ## 第四步：添加动能的混淆过滤文件
