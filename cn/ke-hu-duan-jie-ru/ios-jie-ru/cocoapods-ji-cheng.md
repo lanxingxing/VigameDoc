@@ -31,13 +31,13 @@
    platform :ios, '9.0'
    target 'YourTargenname' do
 
-   sdkVersion='1.0.3'
+   sdkVersion='2.0.3'
    ####--基础功能---###
    pod 'KTMSDK/KTMSDK',sdkVersion
    pod 'KTMSDK/Common',sdkVersion
    ####--广告---###
-   pod 'KTMSDK/Ads/ByteDance',sdkVersion
-   pod 'KTMSDK/Ads/IronSource',sdkVersion
+   pod 'KTMSDK/Ads/Bytedance',sdkVersion
+   pod 'KTMSDK/Ads/Ironsource',sdkVersion
    pod 'KTMSDK/Ads/Admob',sdkVersion
    pod 'KTMSDK/Ads/GDT',sdkVersion
    pod 'KTMSDK/Ads/Unity',sdkVersion
@@ -46,12 +46,12 @@
    pod 'KTMSDK/Ads/Applovin',sdkVersion
    pod 'KTMSDK/Ads/KTMAd',sdkVersion
    pod 'KTMSDK/Ads/Vungle',sdkVersion
-
+   pod 'KTMSDK/Ads/Sigmob',sdkVersion
+   pod 'KTMSDK/Ads/Kuaishou',sdkVersion
    ####--统计---###
    pod 'KTMSDK/Analysis/Umeng',sdkVersion
    pod 'KTMSDK/Analysis/TrackingIO',sdkVersion
    pod 'KTMSDK/Analysis/ByteDance',sdkVersion
-   pod 'KTMSDK/Analysis/DataEye',sdkVersion
    pod 'KTMSDK/Analysis/Appsflyer',sdkVersion
    pod 'KTMSDK/Analysis/Facebook',sdkVersion
    pod 'KTMSDK/Analysis/Adjust',sdkVersion
@@ -59,18 +59,15 @@
    pod 'KTMSDK/Analysis/Google',sdkVersion
 
    ####--社交（登录）---###
-   pod 'KTMSDK/Social/wechat',sdkVersion
-   pod 'KTMSDK/Social/facebook',sdkVersion
-   pod 'KTMSDK/Social/apple',sdkVersion
+   pod 'KTMSDK/Social/Wechat',sdkVersion
+   pod 'KTMSDK/Social/Facebook',sdkVersion
+   pod 'KTMSDK/Social/Apple',sdkVersion
 
    ####--扩展---###
-   pod 'KTMSDK/Extension',sdkVersion
+   pod 'KTMSDK/Extension/Bugly',sdkVersion
 
    ####--内购---###
    pod 'KTMSDK/IAP',sdkVersion 
-
-   ####--Bugly---###
-   pod 'KTMSDK/Bugly',sdkVersion
 
    end
    ```
@@ -79,17 +76,16 @@
 
    ```text
    #IronSource 聚合广告按需添加
-   pod 'IronSourceAdMobAdapter','4.3.10.1'
-   pod 'IronSourceFacebookAdapter','4.3.14.0'
-   pod 'IronSourceUnityAdsAdapter','4.3.0.1'
-   pod 'IronSourceTikTokAdapter','4.1.2.7'
-   pod 'IronSourceAppLovinAdapter','4.3.10.1'
-   pod 'IronSourceMintegralAdapter','4.3.1.0'
+   pod 'IronSourceAdMobAdapter','4.3.17.1'
+   pod 'IronSourceFacebookAdapter','4.3.21.0'
+   pod 'IronSourceUnityAdsAdapter','4.3.6.0'
+   pod 'IronSourcePangleAdapter','4.1.10.0'
+   pod 'IronSourceAppLovinAdapter','4.3.20.0'
    ```
 
 ## 2.下载Vigame资源
 
-Vigame资源包含构建脚本、出包证书及打包依赖的plist文件,可以使用里面证书出测试包
+Vigame资源包含构建脚本、出包证书及打包依赖的plist文件,可以使用里面证书出测试包,证书密码：123456
 [Vigamne下载](https://github.com/hohua88/Vigame.git)
 
 ## 3.工程配置
