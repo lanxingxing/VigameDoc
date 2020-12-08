@@ -1,7 +1,13 @@
 # SDK下载
 
 ## 测试版本
+### 版本：v4.6.5 发布时间：2020-12-8
 
+[下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.6/dnsdk_v4.6.5.zip)
+
+- 增加华为小游戏广告支持
+- oppo小游戏banner默认不刷新
+- 增加关卡控制接口
 
 
 ## 正式版本
