@@ -5,6 +5,11 @@
 
 
 ## 正式版本
+### 版本：v4.6.3 发布时间：2020-12-3
+
+[下载](http://dnsdk.oss-cn-shenzhen.aliyuncs.com/wechat/4.6/dnsdk_v4.6.3.zip)
+
+- 增加isAdBeOpen业务接口
 
 
 
