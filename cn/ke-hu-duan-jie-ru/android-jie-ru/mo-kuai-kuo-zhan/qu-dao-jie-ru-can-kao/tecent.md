@@ -6,9 +6,24 @@ description: 腾讯YSDK
 
 ### 模块引入
 
+
+
+本地引入，模块下载地址：[http://192.168.1.252:8080/zip/?r=VigameAndroidLibrary.git&p=libPay/libPayExt_YSDK&h=master&format=zip](http://192.168.1.252:8080/zip/?r=VigameAndroidLibrary.git&p=libPay/libPayExt_YSDK&h=master&format=zip)
+
+setting.gradle中添加
+
 ```text
-    implementation WB.fixVersions('com.Pay:YSDK')
+include ':libPayExt_YSDK'
+project(':libPayExt_YSDK').projectDir = new File('目录\\libPayExt_YSDK')
 ```
+
+app目录build.gradle中修改：
+
+```text
+    xxxximplementation project(':libPayExt_YSDK')
+```
+
+## 
 
 ## Manifest参数选项
 
