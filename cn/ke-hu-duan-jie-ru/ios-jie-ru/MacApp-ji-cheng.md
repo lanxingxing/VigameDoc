@@ -10,37 +10,52 @@
 ### 1.2. 调用初始化入口文件
 
 ```objectivec
-- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [IOSLoader splashReport];//统计上报
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey,id> *)launchOptions {
+    
+    [super application:application didFinishLaunchingWithOptions:launchOptions];
+    [IOSLoader application:application DidFinishLaunchingWithOptions:launchOptions];
+    
+    [IOSLoader openSplash];
     return YES;
-}
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [IOSLoader application:application DidFinishLaunchingWithOptions:launchOptions];//初始化
-
-    [IOSLoader openSplash]; //闪屏广告
-    return YES;
-}
-
-- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
-
-    return [IOSLoader application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
-}
-
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    [IOSLoader applicationDidEnterBackground:application];//更新状态
-}
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-   [IOSLoader applicationWillEnterForeground:application];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-   [IOSLoader applicationDidBecomeActive:application];; //更新状态、开屏广告
+    [super applicationDidBecomeActive:application];
+    [IOSLoader applicationDidBecomeActive:application];
 }
 
--(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-    return [IOSLoader application:app openURL:url options:options];
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    [super applicationDidEnterBackground:application];
+    [IOSLoader applicationDidEnterBackground:application];
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    [super applicationWillEnterForeground:application];
+    [IOSLoader applicationWillEnterForeground:application];
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    [super applicationWillTerminate:application];
+    [IOSLoader applicationWillTerminate:application];
+}
+
+- (BOOL)application:(UIApplication*)app openURL:(NSURL*)url options:(NSDictionary<NSString*, id>*)options
+{
+    [super application:app openURL:url options:options];
+    [IOSLoader application:app openURL:url options:options];
+    return  YES;
+}
+- (BOOL)application:(UIApplication*)application willFinishLaunchingWithOptions:(NSDictionary*)launchOptions {
+    [super application:application willFinishLaunchingWithOptions:launchOptions];
+    [IOSLoader splashReport];
+    
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler
+{
+    [super application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
+    return [IOSLoader application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
 }
 ```
 ## 2. 自动集成
