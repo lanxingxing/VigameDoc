@@ -3,6 +3,24 @@
 
 
 ## 最新版本
+### 版本：v1.4.2 发布时间：2020-12-21
+
+[下载](http://gui.vigame.cn/UniWb/wb/DN_PLUGIN_UNITY_1.4.2.unitypackage)
+
+* 修复Unity新老版本判断问题
+* 补充部分ios缺失的接口实现
+* 修复图片互推展示问题
+
+### 版本：v1.4.1 发布时间：2020-12-15
+
+[下载](http://gui.vigame.cn/UniWb/wb/DN_PLUGIN_UNITY_1.4.1.unitypackage)
+
+* 互推支持marketplus打开方式
+* 增加打包工具生成apk后自动重命名
+* 增加sdk签名验证事件打点：dn_checksign_start/dn_checksign_succ/dn_checksign_fail
+* 修复原生广告渲染区域限制在画布内
+* 互推支持marketplus跳转
+
 ### 版本：v1.4.0 发布时间：2020-11-11
 
 [下载](http://gui.vigame.cn/UniWb/wb/DN_PLUGIN_UNITY_1.4.0.unitypackage)
