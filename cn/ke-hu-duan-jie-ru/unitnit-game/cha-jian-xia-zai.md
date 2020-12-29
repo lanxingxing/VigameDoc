@@ -3,6 +3,13 @@
 
 
 ## 最新版本
+### 版本：v1.4.4 发布时间：2020-12-25
+
+[下载](http://gui.vigame.cn/UniWb/wb/DN_PLUGIN_UNITY_1.4.4.unitypackage)
+
+- 原生广告老接口实现保持不变，增加新的原生广告接口
+- 将prefab目录调整到外层
+
 ### 版本：v1.4.3 发布时间：2020-12-23
 
 [下载](http://gui.vigame.cn/UniWb/wb/DN_PLUGIN_UNITY_1.4.3.unitypackage)
