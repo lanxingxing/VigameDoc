@@ -36,10 +36,6 @@ allprojects {
         maven {
             url "https://dl.bintray.com/ironsource-mobile/android-sdk"
         }
-        maven {
-            //Vungle SDK
-            url 'https://jitpack.io'
-        }
     }
 }
 ```
