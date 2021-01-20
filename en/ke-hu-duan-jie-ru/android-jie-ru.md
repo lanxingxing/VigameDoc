@@ -2,34 +2,44 @@
 
 ### Clone URL of Demo：
 
-[http://dnsdk.vimedia.cn:8080/r/VigameDemo-Android-Google.git](http://dnsdk.vimedia.cn:8080/r/VigameDemo-Android-Google.git)
+[http://dnsdk.vimedia.cn:8080/summary/UnityDemo-Google.git](http://dnsdk.vimedia.cn:8080/summary/UnityDemo-Google.git)
 
 ## 1:Add maven repositories
 
 ```text
 buildscript {
     repositories {
-        google()
         jcenter()
-    //vigame plugin
-    maven { url 'http://gui.vigame.cn/plugin/' }
-        //umeng
-        maven { url 'https://dl.bintray.com/umsdk/release' }
-    }    
+        google()
+        //WB plugin
+        maven { url "http://dnsdk.vimedia.cn:8081/repository/vigame-public/" }
+    }
+    dependencies {
+        classpath 'com.wb.check:plugin:1.0.3'
+        //WB plugin
+        classpath 'com.android.tools.build:gradle:3.2.1'
+    }
 }
 ```
 
 ```text
 allprojects {
     repositories {
-        google()
         jcenter()
-
-        //vigame
+        google()
+        //WB maven
         maven { url "http://dnsdk.vimedia.cn:8081/repository/vigame-public/" }
 
-        //umeng
-        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven {
+            url  "https://dl.bintray.com/ironsource-mobile/android-adapters/"
+        }
+        maven {
+            url "https://dl.bintray.com/ironsource-mobile/android-sdk"
+        }
+        maven {
+            //Vungle SDK
+            url 'https://jitpack.io'
+        }
     }
 }
 ```
@@ -44,20 +54,28 @@ def WB = getPlugins().findPlugin('Wb-check')
 ## 3：Implementation modules
 
 ```groovy
-    //vigame modules
-    implementation WB.fixVersions('Proxy:Features')
+    //vigame common modules
+    implementation WB.fixVersions('Bridge:UnityBridge')
+    implementation WB.fixVersions('Proxy:Features_new')
     implementation WB.fixVersions('Loader:VigameLoader')
     implementation WB.fixVersions('Core:CoreManager')
     implementation WB.fixVersions('Pay:PayManager')
-    implementation WB.fixVersions('AD2:ADManager')
-    implementation WB.fixVersions('TJ:TJManager')
+    implementation WB.fixVersions('AD3:ADManager')
     implementation WB.fixVersions('Social:SocialManager')
     implementation WB.fixVersions('Extention:ExtManager')
+    implementation WB.fixVersions('TJ:TJManager')
+    implementation WB.fixVersions('Push:PHManager')
 
     //third library
     implementation WB.fixVersions('Core:android-query')
     implementation 'com.android.support:support-v4:28.0.0'
     implementation 'com.android.support:appcompat-v7:28.0.0'
+    
+    //vigame google channel modules
+    implementation WB.fixVersions('AD3:Ironsource_JuHe')
+    implementation WB.fixVersions('Pay:GooglePlay')
+    implementation WB.fixVersions('TJ:Facebook')
+    implementation WB.fixVersions('TJ:AppsFlyer')
 ```
 
 ## 4：Add proguard config
@@ -157,6 +175,24 @@ Modify MainActivity And add code in the corresponding life cycle：
         super.onRestart();
         VigameLoader.activityOnRestart(this);
     }
+    Or
+
+Made your AppActivity class inherit UniWbActivity:
+
+```groovy
+public class AppActivity extends UniWbActivity {
+
+    private static final String TAG = "AppActivity";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+    //when you override the funtion,don't forget super it
+        super.onCreate(savedInstanceState);
+        setKeyEnable();
+        
+    }
+
+}
 ```
 
 ## 6. Modify AndroidManifest.xml
@@ -164,26 +200,38 @@ Modify MainActivity And add code in the corresponding life cycle：
 Add related parameter configuration, And use VigameStartActivity as launch item.
 
 ```text
-<meta-data
-    android:name="com.vigame.sdk.appid"
-    android:value="10001" />
-<meta-data
-    android:name="com.vigame.sdk.appkey"
-    android:value="abcdefg" />
-<meta-data
-    android:name="com.vigame.sdk.prjid"
-    android:value="333360" />
-<meta-data
-    android:name="com.vigame.sdk.channel"
-    android:value="${WB_CHANNEL}" />
+       <meta-data
+            android:name="com.vigame.sdk.appid"
+            android:value="${WB_AppId}" /><!--15265-->
+       <meta-data
+            android:name="com.vigame.sdk.appkey"
+            android:value="${WB_AppKey}" />
+        <meta-data
+            android:name="com.vigame.sdk.prjid"
+            android:value="${WB_PRJID}" /><!--10001,20350,333360-->
 
-<activity android:name="com.libVigame.VigameStartActivity"
-    android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-    <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-    </intent-filter>
-</activity>
+        <meta-data
+            android:name="com.vigame.sdk.channel"
+            android:value="${WB_CHANNEL}" />
+
+        <activity android:name="com.libVigame.VigameStartActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--MainActivity-->
+        <activity android:name="org.cocos2dx.cpp.AppActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+            >
+            <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+        </activity>
 ```
 
 ## 7. Put in the configuration file and modify
@@ -212,9 +260,12 @@ defaultConfig {
         applicationId "com.gzsj.game.hw"
         ...
         manifestPlaceholders = [
-                WB_PRJID:"333361",
-                AppsFlyer_DevKey:"X9NxxaMp4neHCFYreDxtd5",
-                WB_CHANNEL:"gg"
+                WB_PRJID    : "333361",
+                WB_CHANNEL: "google",
+                WB_AppId :"37683 ",
+                WB_AppKey:"wfm542g5dc40n0qmynbtxhthj2kdnhcm7gc99fs1ts8jloayyz",
+                ADMOB_APP_ID: "ca-app-pub-7851203648968517~5682113463",
+                AppsFlyer_DevKey:"X9NxxaMp4neHCFYreDxtd5"
         ]
 }
 ```
