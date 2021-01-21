@@ -178,37 +178,36 @@ Modify MainActivity And add code in the corresponding life cycle：
 Add related parameter configuration, And use VigameStartActivity as launch item.
 
 ```text
-       <meta-data
+
+        <meta-data
             android:name="com.vigame.sdk.appid"
-            android:value="${WB_AppId}" /><!--15265-->
-       <meta-data
+            android:value="${WB_AppId}" />
+        <meta-data
             android:name="com.vigame.sdk.appkey"
             android:value="${WB_AppKey}" />
         <meta-data
             android:name="com.vigame.sdk.prjid"
-            android:value="${WB_PRJID}" /><!--10001,20350,333360-->
-
+            android:value= "${WB_PRJID}"/> <!--"230680" -->
         <meta-data
             android:name="com.vigame.sdk.channel"
             android:value="${WB_CHANNEL}" />
 
         <activity android:name="com.libVigame.VigameStartActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-            android:screenOrientation="portrait"
-            >
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--MainActivity-->
-        <activity android:name="org.cocos2dx.cpp.AppActivity"
-                  android:label="@string/app_name"
-                  android:screenOrientation="portrait"
-                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-                  android:configChanges="orientation|keyboardHidden|screenSize"
-            >
-            <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+        <activity android:name="com.wb.application.MainActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/MyFullScreenTheme"
+            android:launchMode="singleTop"
+           >
         </activity>
 ```
 
