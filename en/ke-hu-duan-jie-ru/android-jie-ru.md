@@ -2,7 +2,7 @@
 
 ### Clone URL of Demo：
 
-[http://dnsdk.vimedia.cn:8080/summary/UnityDemo-Google.git](http://dnsdk.vimedia.cn:8080/summary/UnityDemo-Google.git)
+[http://dnsdk.vimedia.cn:8080/summary/VigameDemo-Android-Google.git](http://dnsdk.vimedia.cn:8080/summary/VigameDemo-Android-Google.git)
 
 ## 1:Add maven repositories
 
@@ -51,7 +51,6 @@ def WB = getPlugins().findPlugin('Wb-check')
 
 ```groovy
     //vigame common modules
-    implementation WB.fixVersions('Bridge:UnityBridge')
     implementation WB.fixVersions('Proxy:Features_new')
     implementation WB.fixVersions('Loader:VigameLoader')
     implementation WB.fixVersions('Core:CoreManager')
@@ -60,6 +59,7 @@ def WB = getPlugins().findPlugin('Wb-check')
     implementation WB.fixVersions('Social:SocialManager')
     implementation WB.fixVersions('Extention:ExtManager')
     implementation WB.fixVersions('TJ:TJManager')
+    implementation WB.fixVersions('Core:PushService')
     implementation WB.fixVersions('Push:PHManager')
 
     //third library
@@ -171,24 +171,6 @@ Modify MainActivity And add code in the corresponding life cycle：
         super.onRestart();
         VigameLoader.activityOnRestart(this);
     }
-    Or
-
-Made your AppActivity class inherit UniWbActivity:
-
-```groovy
-public class AppActivity extends UniWbActivity {
-
-    private static final String TAG = "AppActivity";
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-    //when you override the funtion,don't forget super it
-        super.onCreate(savedInstanceState);
-        setKeyEnable();
-        
-    }
-
-}
 ```
 
 ## 6. Modify AndroidManifest.xml
