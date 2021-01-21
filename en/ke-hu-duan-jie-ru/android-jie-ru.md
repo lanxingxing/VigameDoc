@@ -59,7 +59,6 @@ def WB = getPlugins().findPlugin('Wb-check')
     implementation WB.fixVersions('Social:SocialManager')
     implementation WB.fixVersions('Extention:ExtManager')
     implementation WB.fixVersions('TJ:TJManager')
-    implementation WB.fixVersions('Core:PushService')
     implementation WB.fixVersions('Push:PHManager')
 
     //third library
