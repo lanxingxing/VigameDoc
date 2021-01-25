@@ -3,6 +3,14 @@
 
 
 ## 最新版本
+### 版本：v1.4.6-beta 发布时间：2020-1-25
+
+[下载](http://gui.vigame.cn/UniWb/wb/DN_PLUGIN_UNITY_1.4.6-beta.unitypackage)
+
+- 接口调整：增加震动时间接口；原生广告接口调整为OpenYsAd
+- UnityEditor支持使用新模块打包
+- UnityEditor支持【打包并运行】
+
 ### 版本：v1.4.4 发布时间：2020-12-25
 
 [下载](http://gui.vigame.cn/UniWb/wb/DN_PLUGIN_UNITY_1.4.4.unitypackage)
