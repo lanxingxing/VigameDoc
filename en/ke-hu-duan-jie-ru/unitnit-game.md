@@ -12,7 +12,7 @@
 
 ## Import Unity Plugin
 
-download：[UniWb.Wb](http://gui.vigame.cn/UniWb/wb/UniWb.Wb.unitypackage)
+download：Please obtain from Vigame.
 
 Imported the UniWb.Wb.unitypackage, two folders named **Streanming** and **Wb** will appear in the resource management interface.
 
