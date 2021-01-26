@@ -44,7 +44,7 @@ Then sign the apk with a new signature, and then add the signature information o
 
 #### 1.Add Android modules
 
-Reference：
+Reference：[Android](https://docs.dnsdk.vimedia.cn/en/ke-hu-duan-jie-ru/android-jie-ru)
 
 > Please skip the 5.2，because we will use Activity inherit instead.
 
