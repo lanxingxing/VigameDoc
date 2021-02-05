@@ -18,7 +18,7 @@ Imported the UniWb.Wb.unitypackage, two folders named **Streanming** and **Wb** 
 
 **StreamingAssets/st.txt** saved signature info。
 
-**Wb** folder is interface, there are ADManger , CoreManger, PayManger, ToolManger, XyxManger etc。
+**Wb** folder is interface, there are ADManger , CoreManger, PayManger, ToolManger, XyxManger etc.
 
 ## Use interface
 
