@@ -53,5 +53,5 @@ git clone http://dnsdk.vimedia.cn:8080/r/WechatDemo-Laya.git
 
 查看输出，有上报数据输出即表示接入成功。
 
-![loginPost](../../.gitbook/assets/image.png)
+![loginPost](../../.gitbook/assets/image%20%283%29.png)
 

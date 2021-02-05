@@ -14,7 +14,7 @@
 
 注意：安装过程可能会耗时比较长，也有可能收到网络状况导致失败，请多次尝试直到安装成功。
 
-2. 配置Podfile文件
+1. 配置Podfile文件
 
    在您的工程文件所在文件夹下有一个名为Podfile的文件。如果您第一次使用CocoaPods，可以在通过以下命令初始化一个Podfile文件：
 
@@ -85,8 +85,7 @@
 
 ## 2.下载Vigame资源
 
-Vigame资源包含构建脚本、出包证书及打包依赖的plist文件,可以使用里面证书出测试包,证书密码：123456
-[Vigamne下载](https://github.com/hohua88/Vigame.git)
+Vigame资源包含构建脚本、出包证书及打包依赖的plist文件,可以使用里面证书出测试包,证书密码：123456 [Vigamne下载](https://github.com/hohua88/Vigame.git)
 
 ## 3.工程配置
 
@@ -100,6 +99,7 @@ Vigame资源包含构建脚本、出包证书及打包依赖的plist文件,可�
 3. 如果出海外包带有Facebook广告 需要在info.plist文件中添加Facebook 中相关的配置如下：
 
    ![fb&#x914D;&#x7F6E;](../../../.gitbook/assets/2183351-96f3333dbc663e72.png)
+
 4. 设置Enable BitCode 为NO
 5. 苹果新出的规定无论有没有使用到相机相册都得申请 权限
 6. 游戏需要访问网络 需要有网络权限
@@ -115,10 +115,9 @@ Vigame资源包含构建脚本、出包证书及打包依赖的plist文件,可�
 
 ![](../../../.gitbook/assets/1648908-7aa347ae8a163c04.png)
 
-
 ## 4. SDK初始化工作
-注：使用DN_PLUGIN_UNITY_1.x.unitypackage插件可忽略初始化配置
-**1. 导入头文件**
+
+注：使用DN\_PLUGIN\_UNITY\_1.x.unitypackage插件可忽略初始化配置 **1. 导入头文件**
 
 在appDelegate文件中引入头文件`#import <KTMSDK/KTMSDK.h>`
 
@@ -126,10 +125,10 @@ Vigame资源包含构建脚本、出包证书及打包依赖的plist文件,可�
 
 ```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey,id> *)launchOptions {
-    
+
     [super application:application didFinishLaunchingWithOptions:launchOptions];
     [IOSLoader application:application DidFinishLaunchingWithOptions:launchOptions];
-    
+
     [IOSLoader openSplash];
     return YES;
 }
@@ -163,7 +162,7 @@ Vigame资源包含构建脚本、出包证书及打包依赖的plist文件,可�
 - (BOOL)application:(UIApplication*)application willFinishLaunchingWithOptions:(NSDictionary*)launchOptions {
     [super application:application willFinishLaunchingWithOptions:launchOptions];
     [IOSLoader splashReport];
-    
+
     return YES;
 }
 

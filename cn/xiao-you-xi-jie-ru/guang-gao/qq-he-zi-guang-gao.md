@@ -39,5 +39,3 @@ dnsdk.openBoxAd({
 });
 ```
 
-
-

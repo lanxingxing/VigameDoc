@@ -1,26 +1,21 @@
 # TopOn广告
 
-
-
 ## 模块引入
 
 app目录build.gradle中修改：
 
 ```text
   xxxxxImplementation WB.fixVersions('AD:TopOn')
-  
 ```
 
 ## 注意事项
 
 ```text
-
 TopOn需要在assets目录下创建topon_ad_info.xml文件
 所有的广告参数都在这里配置
 
 一个广告id同一时间只有一个广告，如果有多个广告位使用同一个id，返回的状态都是一样的。
 一个广告位展示了广告，所有使用该广告id的广告位调用isAdReady方法返回的状态都会是false。
-
 ```
 
 ## 广告配置
@@ -32,7 +27,7 @@ topon_ad_info的内容如下
 <data>
     <!-- placementId是代码位ID、adsourceId是广告源ID -->
     <!-- sourcetype : toutiao-头条，qq-腾讯，mintegral-Mintegral，kuaishou-快手，sigmob-Sigmob，baidu-百度 -->
-   
+
     <placementId>887357694</placementId>
     <adsourceId>104182</adsourceId>
     <sourcetype>toutiao</sourcetype>
@@ -42,7 +37,6 @@ topon_ad_info的内容如下
 ## 混淆过滤
 
 ```text
-
 -keep class com.androidquery.callback.** {*;}
 -keep class com.ss.sys.ces.* {*;}
 -keep class com.bytedance.sdk.openadsdk.** { *; }
@@ -223,9 +217,9 @@ topon_ad_info的内容如下
 -dontwarn com.bun.miitmdid.core.**
 
 ######################### sigmob ########################
-
 ```
 
 ## 集成测试
 
 通过TopOnAdManager 和 UnityPlayerActivity 、anythink过滤日志查看广告状态，或者直接通过弹出的广告进行判断
+

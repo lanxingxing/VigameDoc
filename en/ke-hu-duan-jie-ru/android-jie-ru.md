@@ -65,7 +65,7 @@ def WB = getPlugins().findPlugin('Wb-check')
     implementation WB.fixVersions('Core:android-query')
     implementation 'com.android.support:support-v4:28.0.0'
     implementation 'com.android.support:appcompat-v7:28.0.0'
-    
+
     //vigame google channel modules
     implementation WB.fixVersions('AD3:Ironsource_JuHe')
     implementation WB.fixVersions('Pay:GooglePlay')
@@ -177,7 +177,6 @@ Modify MainActivity And add code in the corresponding life cycle：
 Add related parameter configuration, And use VigameStartActivity as launch item.
 
 ```text
-
         <meta-data
             android:name="com.vigame.sdk.appid"
             android:value="${WB_AppId}" />

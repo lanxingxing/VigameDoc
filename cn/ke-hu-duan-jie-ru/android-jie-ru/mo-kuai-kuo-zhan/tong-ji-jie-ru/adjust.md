@@ -8,8 +8,6 @@
 
 ## 配置文件说明
 
-
-
 ```text
 需要在app的build.gradle的添加如下配置：
 android {
