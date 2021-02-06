@@ -1,22 +1,22 @@
 # Creator
 
-## Demo¹¤³Ì¿ËÂ¡µØÖ· £º
+## Demoå·¥ç¨‹å…‹éš†åœ°å€ ï¼š
 
-### Creator¹¤³Ì£º
+### Creatorå·¥ç¨‹ï¼š
 
 ```cpp
 git clone http://dnsdk.vimedia.cn:8080/r/CreatorDemo.git
 ```
 
-## Creator²å¼ş
+## Creatoræ’ä»¶
 
-½«CreatorDemoÏîÄ¿ÖĞµÄassets/WbÄ¿Â¼¿½±´µ½×Ô¼ºµÄ¹¤³ÌÄ¿Â¼ÏÂ¼´¿ÉÊ¹ÓÃ¡£
+å°†CreatorDemoé¡¹ç›®ä¸­çš„assets/Wbç›®å½•æ‹·è´åˆ°è‡ªå·±çš„å·¥ç¨‹ç›®å½•ä¸‹å³å¯ä½¿ç”¨ã€‚
 
-Ö÷ÒªÓĞ ADManger , CoreManger, PayManger, ToolMangerµÈ¡£
+ä¸»è¦æœ‰ ADManger , CoreManger, PayManger, ToolMangerç­‰ã€‚
 
-## ½Ó¿ÚÊ¹ÓÃ
+## æ¥å£ä½¿ç”¨
 
-µ¼ÈëÍ·ÎÄ¼ş²¢Ê¹ÓÃ½Ó¿Ú
+å¯¼å…¥å¤´æ–‡ä»¶å¹¶ä½¿ç”¨æ¥å£
 
 ```typescript
 import {Wb} from "../../Wb/Scripts/Define";
@@ -24,9 +24,9 @@ import {Wb} from "../../Wb/Scripts/Define";
 Wb.ADManager.Instance.openAd("home_mfzs");
 ```
 
-¾ßÌåÊ¹ÓÃ£¬Çë²Î¿¼ÒµÎñ½Ó¿Ú½øĞĞ½ÓÈë£º
+å…·ä½“ä½¿ç”¨ï¼Œè¯·å‚è€ƒä¸šåŠ¡æ¥å£è¿›è¡Œæ¥å…¥ï¼š
 
-### [ÒµÎñ½Ó¿Ú](../ye-wu-jie-kou/)
+### [ä¸šåŠ¡æ¥å£](../ye-wu-jie-kou/)
 
-## Android¶Ô½Ó
+## Androidå¯¹æ¥
 
